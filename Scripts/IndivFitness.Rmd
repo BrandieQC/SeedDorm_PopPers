@@ -1,0 +1,174 @@
+---
+title: "IndivFitness"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Code for calculating individual fitness and producing Figure 3
+
+## Load Libraries
+```{r}
+library(tidyverse)
+
+BQDNDPalette <- c("#FF9900","#00CC00","#B266FF", "#999999", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+level_orderenvt <- c('Control','High Humidity','Native Soil','Litter')
+
+Dorm_order <- c("High", "Mixed", "Low")
+```
+
+## Load Lifetime Fitness 
+Combining survival and rep output
+
+```{r}
+#processing steps done to raw data:
+#removed M12 & M1 (fruit #>1, but only 1 indiv) - year 1
+#removed J4 & C9 (fruit #=0 & only 1 indiv) - year 1
+#removed A5 year 2 (fruit #=0, only 1 indiv)
+#removed K12 year 1 b/c only 1 indiv
+#added 0s for non rep indivs for A0 and F9
+
+lifetimefitness_supp <- read_csv("../Processed.Data/LifetimeFitness_supp.csv") %>%
+  mutate(Dormancy=if_else(Dormancy=="NonDorm",
+                          "Non-Dormant", Dormancy))
+```
+
+## Lifetime fitness
+```{r}
+lifetimefitness_supp_pop_summary<-lifetimefitness_supp %>% 
+  group_by(PopId, Block, Year, Dormancy, Envt) %>% 
+  filter(!is.na(Fruits)) %>% 
+  summarise (meanFruits=mean(Fruits), SE=sd(Fruits)/sqrt(n()))
+
+lifetimefitness_supp_summary <- lifetimefitness_supp %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  group_by(Year, Dormancy, Envt) %>% 
+  filter(!is.na(Fruits)) %>% 
+  summarise (meanFruits=mean(Fruits), SE=sd(Fruits)/sqrt(n()))
+
+lifetimefitness_supp_summary$Envt <- factor(lifetimefitness_supp_summary$Envt, levels = level_orderenvt)
+lifetimefitness_supp_summary$Dormancy <- factor(lifetimefitness_supp_summary$Dormancy, levels = Dorm_order)
+
+lifetimefitness_supp_summary %>% 
+  ggplot(aes(x=Year, y=meanFruits, group=Dormancy, fill=Dormancy)) +
+     geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanFruits-SE,ymax=meanFruits+SE),
+                  width=.2, position = position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Year") + ylab("Avg # Siliques") +
+    scale_fill_manual(values=BQDNDPalette) +
+    theme(text=element_text(size=37), 
+          panel.background = element_rect(fill = NA, color = "black")) +
+    scale_y_continuous(expand = c(0, 0), limits = c(0, 150)) +
+    scale_x_discrete(limits=c("1", "2")) +
+    facet_grid(. ~Envt)
+ggsave("../Figures/Fig3C_LifetimeFit_Envt.png", width=18, height=7.5, units="in")
+```
+
+### Sample Sizes
+```{r}
+samplesizes_pop <- lifetimefitness_supp %>%
+  filter(!is.na(Fruits)) %>% 
+  group_by(PopId, Year) %>% #indivs per pop
+  summarise(n=n())
+samplesizes_pop %>% filter(n==1) #none 
+
+sample_sizes <- lifetimefitness_supp %>% 
+  filter(!is.na(Fruits)) %>% 
+  group_by(Dormancy, Envt, Year) %>% 
+  summarise(n=n())
+sample_sizes
+summary(sample_sizes)
+```
+
+## Reproductive Output 
+Only individuals that survived to reproduce
+```{r}
+reponly <- lifetimefitness_supp %>% filter(Fruits !=0)
+
+df2litter <- tibble(Year=2, Dormancy=c("High", "Mixed"), 
+                    Envt="Litter", meanFruits=0, SE=0)
+
+reponly_supp_summary <- reponly %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  group_by(Year, Dormancy, Envt) %>% 
+  filter(!is.na(Fruits)) %>% 
+  summarise (meanFruits=mean(Fruits), SE=sd(Fruits)/sqrt(n())) %>% 
+  bind_rows(df2litter)
+
+reponly_supp_summary$Envt <- factor(reponly_supp_summary$Envt, levels = level_orderenvt)
+reponly_supp_summary$Dormancy <- factor(reponly_supp_summary$Dormancy, levels = Dorm_order)
+
+reponly_supp_summary %>% 
+  ggplot(aes(x=Year, y=meanFruits, group=Dormancy, fill=Dormancy)) +
+     geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanFruits-SE,ymax=meanFruits+SE),
+                  width=.2, position = position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Year") + ylab("Avg # Siliques") +
+    scale_fill_manual(values=BQDNDPalette) +
+    theme(text=element_text(size=37), 
+          panel.background = element_rect(fill = NA, color = "black")) +
+    scale_y_continuous(expand = c(0, 0), limits = c(0, 180)) +
+     scale_x_discrete(limits=c("1", "2")) +
+    facet_grid(. ~Envt)
+ggsave("../Figures/Fig3B_RepOutput_Envt.png", width=18, height=7.5, units="in")
+```
+
+### Sample Sizes
+```{r}
+sample_sizes_reponly <- reponly %>% 
+  filter(!is.na(Fruits)) %>% 
+  group_by(Dormancy, Envt, Year) %>% 
+  summarise(n=n())
+sample_sizes_reponly
+summary(sample_sizes_reponly)
+```
+
+## Survival to Rep
+```{r}
+survtorep <- lifetimefitness_supp %>% 
+  mutate(Surv=ifelse(Fruits==0, 0, 1))
+
+survtorep_supp_summary <- survtorep %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  group_by(Year, Dormancy, Envt) %>% 
+  filter(!is.na(Surv)) %>% 
+  summarise (meanSurv=mean(Surv), SE=sd(Surv)/sqrt(n()))
+
+survtorep_supp_summary$Envt <- factor(survtorep_supp_summary$Envt, levels = level_orderenvt)
+survtorep_supp_summary$Dormancy <- factor(survtorep_supp_summary$Dormancy, levels = Dorm_order)
+
+survtorep_supp_summary %>% 
+  ggplot(aes(x=Year, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),
+                width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Year") + ylab("Avg Survival to Rep") +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=37), 
+        panel.background = element_rect(fill = NA, color = "black")) +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 1.05)) +
+  scale_x_discrete(limits=c("1", "2")) +
+  facet_grid(. ~Envt)
+ggsave("../Figures/Fig3A_IndivSurvtoRep_Envt.png", width=18, height=7.5, units="in")
+```
+
+### Sample Sizes
+```{r}
+sample_sizes_surv <- survtorep %>% 
+  filter(!is.na(Surv)) %>% 
+  group_by(Dormancy, Envt, Year) %>% 
+  summarise(n=n())
+sample_sizes_surv
+summary(sample_sizes_surv)
+```
