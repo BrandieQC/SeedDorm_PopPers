@@ -30,7 +30,9 @@ censusdates_all_julian <- censusdates_all %>%
 
 ## Load Population Census Data
 ```{r}
-dndallyearspop_long <- read_csv("../Raw.Data/AllYearsPopCensus_PopSize.csv") %>% 
+#processing steps:
+#removed censuses (1.21 and 1.28) with partial data
+dndallyearspop_long <- read_csv("../Processed.Data/AllYearsPopCensus_PopSize.csv") %>% 
   unite("PopId", c(Col, Row)) #create PopId column 
 
 dndallyearspop_long_circle <- dndallyearspop_long %>% 
