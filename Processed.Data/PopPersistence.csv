@@ -1,0 +1,161 @@
+PopId,Block,RILSet,Dormancy,Envt,sumY1Total,Y1Germ,sumY1Rep,Y1Rep,sumy2Total,y2Germ,sumy2Rep,y2Rep,sumy3Total,y3Germ,Y1Persistence,Y2Persistence,Y3Resurrection
+A_0,1,Italy x Sweden,Dormant,Straw Litter,233,Established,46,Persisted,30,Established,0,Disappeared,526,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+A_1,1,Germany x Tajikistan,Dormant,Control,80,Established,23,Persisted,716,Established,1,Persisted,995,Established,Established and Persisted,Persisted,Persisted
+A_2,1,UK x USA,Dormant,Control,20,Established,1,Persisted,44,Established,0,Disappeared,10,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+A_3,1,Italy x Sweden,Non-Dormant,Straw Litter,1523,Established,90,Persisted,6,Established,0,Disappeared,165,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+A_4,1,Italy x Sweden,Mixed,High Humidity,1080,Established,362,Persisted,1938,Established,116,Persisted,2330,Established,Established and Persisted,Persisted,Persisted
+A_5,2,Italy x Sweden,Mixed,Straw Litter,96,Established,31,Persisted,1,Established,0,Disappeared,182,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+A_6,2,Germany x Tajikistan,Dormant,Straw Litter,8,Established,1,Persisted,3,Established,0,Disappeared,NA,NA,Established and Persisted,Persisted then Disappeared,NA
+A_7,2,Italy x Sweden,Mixed,Native Soil,400,Established,233,Persisted,84,Established,68,Persisted,198,Established,Established and Persisted,Persisted,Persisted
+A_8,2,UK x USA,Mixed,Control,44,Established,7,Persisted,89,Established,1,Persisted,69,Established,Established and Persisted,Persisted,Persisted
+A_9,3,Italy x Sweden,Dormant,Native Soil,276,Established,171,Persisted,491,Established,179,Persisted,316,Established,Established and Persisted,Persisted,Persisted
+A_10,3,Italy x Sweden,Non-Dormant,Straw Litter,5,Established,1,Persisted,0,Never Established,0,Disappeared,3,Established,Established and Persisted,Disappeared after Year 1,Reappeared
+A_11,3,UK x USA,Dormant,Control,5,Established,5,Persisted,80,Established,0,Disappeared,55,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+A_12,3,Germany x Tajikistan,Mixed,Control,18,Established,12,Persisted,127,Established,0,Disappeared,30,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+B_0,1,Italy x Sweden,Dormant,Native Soil,146,Established,88,Persisted,0,Never Established,0,Disappeared,27,Established,Established and Persisted,Disappeared after Year 1,Reappeared
+B_1,1,Italy x Sweden,Mixed,Control,103,Established,10,Persisted,161,Established,0,Disappeared,171,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+B_2,1,Italy x Sweden,Non-Dormant,High Humidity,2069,Established,373,Persisted,271,Established,2,Persisted,1589,Established,Established and Persisted,Persisted,Persisted
+B_3,1,Germany x Tajikistan,Non-Dormant,Control,2,Established,0,Disappeared,48,Established,0,Disappeared,246,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+B_4,1,Italy x Sweden,Dormant,High Humidity,973,Established,552,Persisted,149,Established,70,Persisted,3288,Established,Established and Persisted,Persisted,Persisted
+B_5,2,UK x USA,Dormant,Control,16,Established,6,Persisted,146,Established,0,Disappeared,14,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+B_6,2,Italy x Sweden,Non-Dormant,High Humidity,141,Established,29,Persisted,370,Established,34,Persisted,1686,Established,Established and Persisted,Persisted,Persisted
+B_7,2,Italy x Sweden,Mixed,Control,160,Established,106,Persisted,89,Established,13,Persisted,1481,Established,Established and Persisted,Persisted,Persisted
+B_8,2,Germany x Tajikistan,Non-Dormant,Control,5,Established,0,Disappeared,131,Established,0,Disappeared,0,Never Established,Established then Disappeared,Reappeared then Disappeared,Disappeared
+B_9,3,UK x USA,Mixed,Control,12,Established,2,Persisted,25,Established,5,Persisted,39,Established,Established and Persisted,Persisted,Persisted
+B_10,3,UK x USA,Non-Dormant,Control,1,Established,0,Disappeared,0,Never Established,0,Disappeared,8,Established,Established then Disappeared,Disappeared after Year 1,Reappeared
+B_11,3,Italy x Sweden,Non-Dormant,Native Soil,183,Established,99,Persisted,9,Established,0,Disappeared,113,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+B_12,3,Italy x Sweden,Mixed,Native Soil,180,Established,104,Persisted,3,Established,0,Disappeared,167,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+B_13,3,Italy x Sweden,Dormant,Straw Litter,18,Established,6,Persisted,0,Never Established,0,Disappeared,73,Established,Established and Persisted,Disappeared after Year 1,Reappeared
+C_0,1,Germany x Tajikistan,Non-Dormant,Straw Litter,15,Established,2,Persisted,0,Never Established,0,Disappeared,NA,NA,Established and Persisted,Disappeared after Year 1,NA
+C_1,1,Italy x Sweden,Dormant,Control,83,Established,12,Persisted,30,Established,2,Persisted,677,Established,Established and Persisted,Persisted,Persisted
+C_2,1,Italy x Sweden,Non-Dormant,Control,18,Established,8,Persisted,62,Established,0,Disappeared,171,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+C_3,1,Italy x Sweden,Mixed,Straw Litter,163,Established,35,Persisted,10,Established,0,Disappeared,463,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+C_4,1,Germany x Tajikistan,Dormant,Straw Litter,24,Established,11,Persisted,0,Never Established,0,Disappeared,NA,NA,Established and Persisted,Disappeared after Year 1,NA
+C_5,2,UK x USA,Non-Dormant,Control,3,Established,3,Persisted,126,Established,0,Disappeared,87,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+C_6,2,Germany x Tajikistan,Dormant,Control,5,Established,0,Disappeared,92,Established,0,Disappeared,1,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+C_7,2,Italy x Sweden,Dormant,Control,54,Established,13,Persisted,81,Established,16,Persisted,567,Established,Established and Persisted,Persisted,Persisted
+C_9,3,Italy x Sweden,Mixed,Control,3,Established,2,Persisted,6,Established,3,Persisted,185,Established,Established and Persisted,Persisted,Persisted
+C_10,3,Italy x Sweden,Dormant,High Humidity,34,Established,12,Persisted,159,Established,34,Persisted,786,Established,Established and Persisted,Persisted,Persisted
+C_11,3,Germany x Tajikistan,Non-Dormant,Straw Litter,0,Never Established,0,Disappeared,4,Established,0,Disappeared,NA,NA,Never Established,Newly Established then Disappeared,NA
+C_12,3,Germany x Tajikistan,Dormant,Control,4,Established,3,Persisted,12,Established,0,Disappeared,23,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+C_13,3,Italy x Sweden,Mixed,High Humidity,16,Established,5,Persisted,2,Established,0,Disappeared,281,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+D_0,1,UK x USA,Mixed,Control,127,Established,21,Persisted,63,Established,0,Disappeared,372,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+D_1,1,Germany x Tajikistan,Mixed,Control,20,Established,2,Persisted,436,Established,0,Disappeared,541,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+D_2,1,Italy x Sweden,Non-Dormant,Native Soil,151,Established,59,Persisted,83,Established,30,Persisted,11,Established,Established and Persisted,Persisted,Persisted
+D_3,1,Italy x Sweden,Mixed,Native Soil,170,Established,98,Persisted,114,Established,53,Persisted,122,Established,Established and Persisted,Persisted,Persisted
+D_4,1,UK x USA,Non-Dormant,Control,14,Established,5,Persisted,48,Established,0,Disappeared,19,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+D_5,2,Italy x Sweden,Mixed,High Humidity,243,Established,84,Persisted,1108,Established,102,Persisted,1471,Established,Established and Persisted,Persisted,Persisted
+D_6,2,Italy x Sweden,Dormant,High Humidity,189,Established,94,Persisted,473,Established,90,Persisted,2425,Established,Established and Persisted,Persisted,Persisted
+D_8,2,Italy x Sweden,Non-Dormant,Straw Litter,31,Established,8,Persisted,207,Established,49,Persisted,893,Established,Established and Persisted,Persisted,Persisted
+D_9,3,Italy x Sweden,Non-Dormant,Control,41,Established,8,Persisted,148,Established,37,Persisted,362,Established,Established and Persisted,Persisted,Persisted
+D_10,3,Italy x Sweden,Mixed,Straw Litter,11,Established,2,Persisted,81,Established,0,Disappeared,30,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+D_11,3,Germany x Tajikistan,Non-Dormant,Control,8,Established,4,Persisted,239,Established,0,Disappeared,8,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+D_12,3,Germany x Tajikistan,Dormant,Straw Litter,1,Established,1,Persisted,3,Established,0,Disappeared,NA,NA,Established and Persisted,Persisted then Disappeared,NA
+D_13,3,Italy x Sweden,Dormant,Control,20,Established,12,Persisted,8,Established,0,Disappeared,414,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+E_1,4,Italy x Sweden,Non-Dormant,Native Soil,230,Established,75,Persisted,21,Established,7,Persisted,68,Established,Established and Persisted,Persisted,Persisted
+E_2,4,Italy x Sweden,Mixed,Control,70,Established,19,Persisted,233,Established,2,Persisted,2673,Established,Established and Persisted,Persisted,Persisted
+E_3,4,Italy x Sweden,Non-Dormant,Control,44,Established,2,Persisted,186,Established,0,Disappeared,367,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+E_4,4,Germany x Tajikistan,Non-Dormant,Straw Litter,8,Established,0,Disappeared,56,Established,0,Disappeared,NA,NA,Established then Disappeared,Reappeared then Disappeared,NA
+E_5,2,Germany x Tajikistan,Non-Dormant,Straw Litter,1,Established,0,Disappeared,159,Established,0,Disappeared,NA,NA,Established then Disappeared,Reappeared then Disappeared,NA
+E_7,2,Italy x Sweden,Dormant,Straw Litter,29,Established,9,Persisted,79,Established,0,Disappeared,48,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+E_8,2,Italy x Sweden,Non-Dormant,Control,7,Established,0,Disappeared,26,Established,0,Disappeared,3,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+E_9,6,Italy x Sweden,Dormant,Native Soil,122,Established,71,Persisted,510,Established,97,Persisted,1029,Established,Established and Persisted,Persisted,Persisted
+E_10,6,Germany x Tajikistan,Mixed,Control,11,Established,9,Persisted,37,Established,0,Disappeared,133,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+E_11,6,Italy x Sweden,Dormant,Control,2,Established,2,Persisted,2,Established,0,Disappeared,47,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+E_12,6,Italy x Sweden,Mixed,Control,12,Established,4,Persisted,19,Established,2,Persisted,169,Established,Established and Persisted,Persisted,Persisted
+E_13,3,Italy x Sweden,Non-Dormant,High Humidity,34,Established,0,Disappeared,159,Established,0,Disappeared,3,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+F_1,4,Germany x Tajikistan,Dormant,Control,27,Established,1,Persisted,212,Established,0,Disappeared,15,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+F_2,4,UK x USA,Non-Dormant,Control,15,Established,3,Persisted,91,Established,1,Persisted,1,Established,Established and Persisted,Persisted,Persisted
+F_3,4,Italy x Sweden,Dormant,High Humidity,315,Established,137,Persisted,607,Established,30,Persisted,5131,Established,Established and Persisted,Persisted,Persisted
+F_4,4,Italy x Sweden,Mixed,High Humidity,193,Established,82,Persisted,867,Established,57,Persisted,4063,Established,Established and Persisted,Persisted,Persisted
+F_6,2,Italy x Sweden,Dormant,Native Soil,165,Established,70,Persisted,127,Established,17,Persisted,621,Established,Established and Persisted,Persisted,Persisted
+F_7,2,Germany x Tajikistan,Mixed,Control,9,Established,2,Persisted,377,Established,0,Disappeared,3,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+F_8,2,Italy x Sweden,Non-Dormant,Native Soil,148,Established,60,Persisted,165,Established,3,Persisted,124,Established,Established and Persisted,Persisted,Persisted
+F_9,6,Italy x Sweden,Non-Dormant,Control,8,Established,2,Persisted,0,Never Established,0,Disappeared,19,Established,Established and Persisted,Disappeared after Year 1,Reappeared
+F_10,6,Germany x Tajikistan,Dormant,Control,14,Established,1,Persisted,64,Established,0,Disappeared,2,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+F_11,6,UK x USA,Mixed,Control,7,Established,6,Persisted,2,Established,1,Persisted,808,Established,Established and Persisted,Persisted,Persisted
+F_12,6,Italy x Sweden,Non-Dormant,Native Soil,106,Established,59,Persisted,186,Established,18,Persisted,57,Established,Established and Persisted,Persisted,Persisted
+F_13,6,Germany x Tajikistan,Dormant,Straw Litter,0,Never Established,0,Disappeared,0,Never Established,0,Disappeared,NA,NA,Never Established,Never Established,NA
+G_1,4,Germany x Tajikistan,Non-Dormant,Control,10,Established,2,Persisted,36,Established,0,Disappeared,0,Never Established,Established and Persisted,Persisted then Disappeared,Disappeared
+G_2,4,Italy x Sweden,Dormant,Control,18,Established,9,Persisted,110,Established,0,Disappeared,3265,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+G_3,4,Italy x Sweden,Mixed,Straw Litter,86,Established,22,Persisted,39,Established,0,Disappeared,1622,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+G_5,5,Italy x Sweden,Dormant,Control,51,Established,34,Persisted,662,Established,7,Persisted,1714,Established,Established and Persisted,Persisted,Persisted
+G_6,5,UK x USA,Mixed,Control,38,Established,0,Disappeared,32,Established,0,Disappeared,35,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+G_7,5,Italy x Sweden,Mixed,Control,12,Established,6,Persisted,24,Established,0,Disappeared,125,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+G_8,5,Germany x Tajikistan,Dormant,Control,10,Established,9,Persisted,103,Established,0,Disappeared,122,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+G_9,6,Italy x Sweden,Dormant,High Humidity,35,Established,11,Persisted,99,Established,0,Disappeared,729,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+G_10,6,Italy x Sweden,Mixed,Straw Litter,19,Established,1,Persisted,0,Never Established,0,Disappeared,262,Established,Established and Persisted,Disappeared after Year 1,Reappeared
+G_11,6,Italy x Sweden,Mixed,Native Soil,147,Established,99,Persisted,590,Established,6,Persisted,424,Established,Established and Persisted,Persisted,Persisted
+G_12,6,UK x USA,Dormant,Control,12,Established,7,Persisted,143,Established,6,Persisted,300,Established,Established and Persisted,Persisted,Persisted
+G_13,6,Germany x Tajikistan,Non-Dormant,Straw Litter,1,Established,1,Persisted,23,Established,0,Disappeared,NA,NA,Established and Persisted,Persisted then Disappeared,NA
+H_1,4,UK x USA,Dormant,Control,4,Established,3,Persisted,41,Established,0,Disappeared,182,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+H_2,4,Italy x Sweden,Non-Dormant,Straw Litter,3,Established,0,Disappeared,0,Never Established,0,Disappeared,11,Established,Established then Disappeared,Disappeared after Year 1,Reappeared
+H_4,4,Germany x Tajikistan,Dormant,Straw Litter,1,Established,0,Disappeared,0,Never Established,0,Disappeared,NA,NA,Established then Disappeared,Disappeared after Year 1,NA
+H_5,5,UK x USA,Dormant,Control,17,Established,6,Persisted,4,Established,0,Disappeared,167,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+H_6,5,Italy x Sweden,Non-Dormant,Straw Litter,7,Established,0,Disappeared,16,Established,0,Disappeared,2,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+H_7,5,Italy x Sweden,Non-Dormant,Control,6,Established,0,Disappeared,183,Established,0,Disappeared,8,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+H_8,5,Italy x Sweden,Dormant,Straw Litter,5,Established,0,Disappeared,55,Established,0,Disappeared,72,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+H_9,6,Germany x Tajikistan,Non-Dormant,Control,0,Never Established,0,Disappeared,323,Established,0,Disappeared,0,Never Established,Never Established,Newly Established then Disappeared,Disappeared
+H_10,6,Italy x Sweden,Mixed,High Humidity,233,Established,80,Persisted,270,Established,34,Persisted,1229,Established,Established and Persisted,Persisted,Persisted
+H_11,6,UK x USA,Non-Dormant,Control,0,Never Established,0,Disappeared,117,Established,0,Disappeared,2,Established,Never Established,Newly Established then Disappeared,Reappeared
+H_12,6,Italy x Sweden,Dormant,Straw Litter,27,Established,12,Persisted,18,Established,0,Disappeared,90,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+I_1,4,Italy x Sweden,Non-Dormant,High Humidity,6,Established,0,Disappeared,0,Never Established,0,Disappeared,51,Established,Established then Disappeared,Disappeared after Year 1,Reappeared
+I_3,4,Germany x Tajikistan,Mixed,Control,18,Established,1,Persisted,0,Never Established,0,Disappeared,38,Established,Established and Persisted,Disappeared after Year 1,Reappeared
+I_4,4,Italy x Sweden,Dormant,Straw Litter,5,Established,4,Persisted,1,Established,0,Disappeared,606,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+I_5,5,Germany x Tajikistan,Non-Dormant,Control,9,Established,0,Disappeared,11,Established,0,Disappeared,0,Never Established,Established then Disappeared,Reappeared then Disappeared,Disappeared
+I_6,5,Germany x Tajikistan,Dormant,Straw Litter,18,Established,0,Disappeared,14,Established,0,Disappeared,NA,NA,Established then Disappeared,Reappeared then Disappeared,NA
+I_7,5,Italy x Sweden,Non-Dormant,High Humidity,4,Established,0,Disappeared,135,Established,0,Disappeared,2,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+I_8,5,Germany x Tajikistan,Non-Dormant,Straw Litter,9,Established,0,Disappeared,41,Established,0,Disappeared,NA,NA,Established then Disappeared,Reappeared then Disappeared,NA
+I_9,5,Italy x Sweden,Mixed,High Humidity,36,Established,0,Disappeared,410,Established,0,Disappeared,10,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+I_10,5,Italy x Sweden,Mixed,Straw Litter,15,Established,0,Disappeared,117,Established,0,Disappeared,33,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+I_11,6,Italy x Sweden,Non-Dormant,Straw Litter,0,Never Established,0,Disappeared,57,Established,0,Disappeared,3,Established,Never Established,Newly Established then Disappeared,Reappeared
+I_12,6,Italy x Sweden,Non-Dormant,High Humidity,23,Established,0,Disappeared,39,Established,0,Disappeared,3,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+J_2,4,Italy x Sweden,Dormant,Native Soil,224,Established,112,Persisted,230,Established,3,Persisted,526,Established,Established and Persisted,Persisted,Persisted
+J_3,4,UK x USA,Mixed,Control,15,Established,2,Persisted,1,Established,0,Disappeared,47,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+J_4,4,Italy x Sweden,Mixed,Native Soil,138,Established,84,Persisted,246,Established,0,Disappeared,661,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+J_5,5,Italy x Sweden,Dormant,Native Soil,240,Established,104,Persisted,268,Established,0,Disappeared,1848,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+J_6,5,Italy x Sweden,Non-Dormant,Native Soil,43,Established,19,Persisted,33,Established,0,Disappeared,40,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+J_7,5,Italy x Sweden,Dormant,High Humidity,37,Established,17,Persisted,34,Established,1,Persisted,349,Established,Established and Persisted,Persisted,Persisted
+J_8,5,Germany x Tajikistan,Mixed,Control,4,Established,2,Persisted,48,Established,0,Disappeared,0,Never Established,Established and Persisted,Persisted then Disappeared,Disappeared
+J_9,5,Italy x Sweden,Mixed,Native Soil,208,Established,93,Persisted,346,Established,6,Persisted,1864,Established,Established and Persisted,Persisted,Persisted
+J_10,5,UK x USA,Non-Dormant,Control,0,Never Established,0,Disappeared,100,Established,0,Disappeared,6,Established,Never Established,Newly Established then Disappeared,Reappeared
+J_11,8,Italy x Sweden,Dormant,High Humidity,11,Established,0,Disappeared,8,Established,0,Disappeared,198,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+J_12,8,Italy x Sweden,Non-Dormant,Control,5,Established,0,Disappeared,100,Established,0,Disappeared,2,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_1,7,Italy x Sweden,Non-Dormant,Straw Litter,2,Established,2,Persisted,38,Established,0,Disappeared,186,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+K_2,7,UK x USA,Dormant,Control,4,Established,0,Disappeared,310,Established,0,Disappeared,44,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_3,7,UK x USA,Mixed,Control,1,Established,0,Disappeared,309,Established,0,Disappeared,5,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_4,7,Italy x Sweden,Dormant,Control,8,Established,4,Persisted,1088,Established,43,Persisted,434,Established,Established and Persisted,Persisted,Persisted
+K_5,7,Italy x Sweden,Non-Dormant,High Humidity,23,Established,0,Disappeared,26,Established,0,Disappeared,3,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_6,7,Italy x Sweden,Mixed,Straw Litter,0,Never Established,0,Disappeared,25,Established,0,Disappeared,5,Established,Never Established,Newly Established then Disappeared,Reappeared
+K_7,7,Germany x Tajikistan,Mixed,Control,7,Established,0,Disappeared,214,Established,0,Disappeared,1,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_8,8,Italy x Sweden,Non-Dormant,High Humidity,2,Established,0,Disappeared,28,Established,0,Disappeared,6,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_9,8,Germany x Tajikistan,Dormant,Straw Litter,12,Established,1,Persisted,28,Established,0,Disappeared,NA,NA,Established and Persisted,Persisted then Disappeared,NA
+K_10,8,Italy x Sweden,Non-Dormant,Straw Litter,7,Established,0,Disappeared,115,Established,0,Disappeared,11,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_11,8,Italy x Sweden,Mixed,High Humidity,40,Established,0,Disappeared,32,Established,0,Disappeared,3,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_12,8,Italy x Sweden,Dormant,Straw Litter,1,Established,0,Disappeared,65,Established,0,Disappeared,23,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+K_13,8,Germany x Tajikistan,Mixed,Control,6,Established,2,Persisted,77,Established,0,Disappeared,0,Never Established,Established and Persisted,Persisted then Disappeared,Disappeared
+L_1,7,Italy x Sweden,Dormant,High Humidity,7,Established,0,Disappeared,685,Established,0,Disappeared,13,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+L_2,7,Italy x Sweden,Dormant,Straw Litter,4,Established,0,Disappeared,118,Established,0,Disappeared,22,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+L_3,7,Italy x Sweden,Dormant,Native Soil,119,Established,84,Persisted,53,Established,0,Disappeared,366,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+L_4,7,UK x USA,Non-Dormant,Control,1,Established,0,Disappeared,22,Established,0,Disappeared,1,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+L_5,7,Germany x Tajikistan,Dormant,Straw Litter,144,Established,46,Persisted,107,Established,0,Disappeared,NA,NA,Established and Persisted,Persisted then Disappeared,NA
+L_6,7,Italy x Sweden,Mixed,High Humidity,67,Established,22,Persisted,148,Established,8,Persisted,1516,Established,Established and Persisted,Persisted,Persisted
+L_7,7,Italy x Sweden,Mixed,Native Soil,125,Established,67,Persisted,437,Established,43,Persisted,302,Established,Established and Persisted,Persisted,Persisted
+L_8,8,Germany x Tajikistan,Non-Dormant,Control,1,Established,0,Disappeared,41,Established,0,Disappeared,2,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+L_9,8,UK x USA,Non-Dormant,Control,1,Established,0,Disappeared,127,Established,0,Disappeared,5,Established,Established then Disappeared,Reappeared then Disappeared,Reappeared
+L_10,8,Italy x Sweden,Dormant,Native Soil,148,Established,101,Persisted,68,Established,2,Persisted,59,Established,Established and Persisted,Persisted,Persisted
+L_11,8,Italy x Sweden,Dormant,Control,21,Established,9,Persisted,220,Established,16,Persisted,1583,Established,Established and Persisted,Persisted,Persisted
+L_12,8,UK x USA,Dormant,Control,11,Established,3,Persisted,431,Established,0,Disappeared,30,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+L_13,8,Germany x Tajikistan,Dormant,Control,71,Established,15,Persisted,131,Established,0,Disappeared,235,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+M_1,7,Italy x Sweden,Non-Dormant,Native Soil,72,Established,25,Persisted,115,Established,0,Disappeared,79,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+M_2,7,Germany x Tajikistan,Dormant,Control,3,Established,0,Disappeared,36,Established,0,Disappeared,0,Never Established,Established then Disappeared,Reappeared then Disappeared,Disappeared
+M_3,7,Germany x Tajikistan,Non-Dormant,Straw Litter,0,Never Established,0,Disappeared,75,Established,0,Disappeared,NA,NA,Never Established,Newly Established then Disappeared,NA
+M_4,7,Germany x Tajikistan,Non-Dormant,Control,0,Never Established,0,Disappeared,74,Established,0,Disappeared,0,Never Established,Never Established,Newly Established then Disappeared,Disappeared
+M_5,7,Italy x Sweden,Non-Dormant,Control,0,Never Established,0,Disappeared,105,Established,0,Disappeared,1,Established,Never Established,Newly Established then Disappeared,Reappeared
+M_6,7,Italy x Sweden,Mixed,Control,98,Established,29,Persisted,42,Established,2,Persisted,908,Established,Established and Persisted,Persisted,Persisted
+M_8,8,UK x USA,Mixed,Control,87,Established,49,Persisted,358,Established,28,Persisted,1635,Established,Established and Persisted,Persisted,Persisted
+M_9,8,Italy x Sweden,Mixed,Control,176,Established,58,Persisted,104,Established,24,Persisted,1399,Established,Established and Persisted,Persisted,Persisted
+M_10,8,Germany x Tajikistan,Non-Dormant,Straw Litter,22,Established,11,Persisted,26,Established,0,Disappeared,NA,NA,Established and Persisted,Persisted then Disappeared,NA
+M_11,8,Italy x Sweden,Mixed,Straw Litter,35,Established,1,Persisted,57,Established,0,Disappeared,265,Established,Established and Persisted,Persisted then Disappeared,Reappeared
+M_12,8,Italy x Sweden,Non-Dormant,Native Soil,70,Established,44,Persisted,77,Established,4,Persisted,0,Never Established,Established and Persisted,Persisted,Disappeared
+M_13,8,Italy x Sweden,Mixed,Native Soil,206,Established,108,Persisted,74,Established,18,Persisted,81,Established,Established and Persisted,Persisted,Persisted

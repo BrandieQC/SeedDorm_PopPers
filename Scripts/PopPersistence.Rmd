@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Code for calculating population persistence (Figure 5)
+# Code for calculating population persistence
 
 Incorporate information from inside and outside the circle
 
@@ -161,4 +161,6 @@ allpopclassupdate3 <- allpopclassupdate2 %>%
 
 allpopclassupdate3trts <- treatments %>% 
   left_join(allpopclassupdate3) 
+write_csv(allpopclassupdate3trts, "../Processed.Data/PopPersistence.csv")
 ```
+

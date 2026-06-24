@@ -1,0 +1,562 @@
+---
+title: "PopPers_figs"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Code for making population persistence figures (Figures 5 and S9F)
+
+## Load libraries and constants
+```{r}
+library(tidyverse)
+
+level_order_y1 <- c("Never Established", "Established then Disappeared", "Established and Persisted")
+level_order_y2 <- c("Disappeared after Year 1", "Newly Established then Disappeared", "Reappeared then Disappeared", "Persisted then Disappeared", "Persisted")
+level_order_y3 <- c("Disappeared", "Reappeared", "Persisted")
+```
+
+## Load Pop Persistence Data
+```{r}
+poppers <- read_csv("../Processed.Data/PopPersistence.csv")
+```
+
+## Year 1 
+```{r}
+BSy1 <- poppers %>% 
+  select(PopId:Envt, Y1Persistence) %>% 
+  filter(RILSet=="Germany x Tajikistan", Envt=="Control")
+
+TCy1 <- poppers %>% 
+  select(PopId:Envt, Y1Persistence) %>% 
+  filter(RILSet=="UK x USA")
+
+ISy1 <- poppers %>% 
+  select(PopId:Envt, Y1Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Control")
+
+y1humid <- poppers %>% 
+  select(PopId:Envt, Y1Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="High Humidity")
+
+y1soil <- poppers %>% 
+  select(PopId:Envt, Y1Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Native Soil")
+
+y1straw <- poppers %>% 
+  select(PopId:Envt, Y1Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Straw Litter" )
+```
+
+### Germany x Tajikistan
+```{r}
+#First, make a contingency table from the data 
+BSy1_contingtable <- table(BSy1$Dormancy, BSy1$Y1Persistence)
+
+#make a graph - convert to long format 
+BSy1prop <- prop.table(BSy1_contingtable, 1) #proportions 
+
+BSdfpers <- as.data.frame.matrix(BSy1prop)
+BSdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+BSdfpers$RIL <-c("Germany x Tajikistan", "Germany x Tajikistan", "Germany x Tajikistan")
+
+#Perform a chi-square test 
+BSy1chisq <- chisq.test(BSy1_contingtable)
+
+BSdfpers_long <- gather(BSdfpers, Status, Proportion, "Established and Persisted":"Never Established", factor_key=TRUE)
+  
+BSy1persgraph <- BSdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y1))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    #labs(y=paste0("Prop. of","\n", "Populations"), x="Dormancy") + 
+    theme(text=element_text(size=30), legend.position = "none", 
+          axis.title.y=element_blank(), axis.text.y=element_blank(),
+          axis.title.x=element_blank(), axis.text.x=element_blank()) +
+    scale_x_discrete(expand = expansion(mult = c(0,0))) + 
+    scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) + 
+    scale_fill_manual(values=c("#000000", "#E69F00", "#009E73"))
+ggsave("../Figures/PopPersistence/FigS9F_PopPers_GermTaj_Y1.png", width=10, height=5, units="in")
+```
+
+### UK x USA
+```{r}
+#First, make a contingency table from the data
+TCy1_contingtable <- table(TCy1$Dormancy, TCy1$Y1Persistence)
+  
+#Perform a chi-square test 
+TCy1chisq <- chisq.test(TCy1_contingtable)
+
+#make a graph - convert to long format 
+TCy1prop <- prop.table(TCy1_contingtable, 1) #proportions 
+  
+TCdfpers <- as.data.frame.matrix(TCy1prop)
+TCdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+TCdfpers$RIL <-c("UK x USA", "UK x USA", "UK x USA")
+
+TCdfpers_long <- gather(TCdfpers, Status, Proportion, "Established and Persisted":"Never Established", factor_key=TRUE)
+
+TCy1persgraph <- TCdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y1))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    #labs(y=paste0("Prop. of","\n", "Populations"), x="Dormancy") + 
+    theme(text=element_text(size=30), legend.position = "none", 
+          axis.title.y=element_blank(), axis.text.y=element_blank(),
+          axis.title.x=element_blank(), axis.text.x=element_blank()) +
+    scale_x_discrete(expand = expansion(mult = c(0,0))) + 
+    scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) + 
+    scale_fill_manual(values=c("#000000", "#E69F00", "#009E73"))
+ggsave("../Figures/PopPersistence/FigS9F_PopPers_UKUSA_Y1.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Control
+```{r}
+#First, make a contingency table from the data
+ISy1_contingtable <- table(ISy1$Dormancy, ISy1$Y1Persistence)
+
+#Perform a chi-square test 
+ISy1chisq <- chisq.test(ISy1_contingtable)
+
+#make a graph - convert to long format 
+ISy1prop <- prop.table(ISy1_contingtable, 1) #proportions 
+
+ISdfpers <- as.data.frame.matrix(ISy1prop)
+ISdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+ISdfpers$RIL <-c("Italy x Sweden", "Italy x Sweden", "Italy x Sweden")
+
+ISdfpers_long <- gather(ISdfpers, Status, Proportion, "Established and Persisted":"Never Established", factor_key=TRUE)
+  
+ISy1persgraph <- ISdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y1))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    #labs(y=paste0("Prop. of","\n", "Populations"), x="Dormancy") + 
+    theme(text=element_text(size=30), legend.position = "none", 
+          axis.title.y=element_blank(), axis.text.y=element_blank(),
+          axis.title.x=element_blank(), axis.text.x=element_blank()) +
+    scale_x_discrete(expand = expansion(mult = c(0,0))) + 
+    scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#000000", "#E69F00", "#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISCtrl_Y1.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden HH
+```{r}
+#First, make a contingency table from the data
+y1humid_contingtable <- table(y1humid$Dormancy, y1humid$Y1Persistence)
+
+#Perform a chi-square test 
+y1humidchisq <- chisq.test(y1humid_contingtable)
+
+#make a graph - convert to long format 
+y1humidprop <- prop.table(y1humid_contingtable, 1) #proportions 
+
+humiddfpers <- as.data.frame.matrix(y1humidprop)
+humiddfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+humiddfpers$RIL <-c("High Humidity","High Humidity","High Humidity")
+
+humiddfpers_long <- gather(humiddfpers, Status, Proportion, "Established and Persisted":"Established then Disappeared", factor_key=TRUE)
+
+humidy1persgraph <- humiddfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y1))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#E69F00", "#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISHH_Y1.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Native Soil
+```{r}
+#First, make a contingency table from the data
+y1soil_contingtable <- table(y1soil$Dormancy, y1soil$Y1Persistence)
+
+#Perform a chi-square test 
+y1soilchisq <- chisq.test(y1soil_contingtable)
+
+#make a graph - convert to long format 
+y1soilprop <- prop.table(y1soil_contingtable, 1) #proportions 
+
+soildfpers <- as.data.frame.matrix(y1soilprop)
+soildfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+soildfpers$RIL <-c("Drought","Drought","Drought")
+
+soildfpers_long <- gather(soildfpers, Status, Proportion, "Established and Persisted", factor_key=TRUE)
+  
+soily1persgraph <- soildfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y1))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISNS_Y1.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Litter
+```{r}
+#First, make a contingency table from the data
+y1straw_contingtable <- table(y1straw$Dormancy, y1straw$Y1Persistence)
+
+#Perform a chi-square test 
+y1strawchisq <- chisq.test(y1straw_contingtable)
+
+#make a graph - convert to long format 
+y1strawprop <- prop.table(y1straw_contingtable, 1) #proportions 
+
+strawdfpers <- as.data.frame.matrix(y1strawprop)
+strawdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+strawdfpers$RIL <-c("Drought","Drought","Drought")
+
+strawdfpers_long <- gather(strawdfpers, Status, Proportion, "Established and Persisted":"Never Established", factor_key=TRUE)
+  
+strawy1persgraph <- strawdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y1))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#000000", "#E69F00", "#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISLitter_Y1.png", width=10, height=5, units="in")
+```
+
+## Year 2
+```{r}
+BSy2 <- poppers %>% 
+  select(PopId:Envt, Y2Persistence) %>% 
+  filter(RILSet=="Germany x Tajikistan", Envt=="Control")
+
+TCy2 <- poppers %>% 
+  select(PopId:Envt, Y2Persistence) %>% 
+  filter(RILSet=="UK x USA")
+
+ISy2 <- poppers %>% 
+  select(PopId:Envt, Y2Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Control")
+
+y2humid <- poppers %>% 
+  select(PopId:Envt, Y2Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="High Humidity")
+
+y2soil <- poppers %>% 
+  select(PopId:Envt, Y2Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Native Soil")
+
+y2straw <- poppers %>% 
+  select(PopId:Envt, Y2Persistence) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Straw Litter" )
+```
+
+### Germany x Tajikistan
+```{r}
+#First, make a contingency table from the data
+BSy2_contingtable <- table(BSy2$Dormancy, BSy2$Y2Persistence)
+  
+#Perform a chi-square test 
+BSy2chisq <- chisq.test(BSy2_contingtable)
+
+#make a graph - convert to long format 
+BSy2prop <- prop.table(BSy2_contingtable, 1) #proportions 
+
+BSdfpers <- as.data.frame.matrix(BSy2prop)
+BSdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+BSdfpers$RIL <-c("Germany x Tajikistan", "Germany x Tajikistan", "Germany x Tajikistan")
+BSdfpers_long <- gather(BSdfpers, Status, Proportion, "Disappeared after Year 1":"Reappeared then Disappeared", factor_key=TRUE)
+  
+BSy1persgraph <- BSdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y2))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#994C00", "#E69F00","#D55E00","#009E73"))
+ggsave("../Figures/PopPersistence/FigS9F_PopPers_GermTaj_Y2.png", width=10, height=5, units="in")
+```
+
+### UK x USA
+```{r}
+#First, make a contingency table from the data
+TCy2_contingtable <- table(TCy2$Dormancy, TCy2$Y2Persistence)
+
+#Perform a chi-square test 
+TCy2chisq <- chisq.test(TCy2_contingtable)
+
+#make a graph - convert to long format 
+TCy2prop <- prop.table(TCy2_contingtable, 1) #proportions 
+
+TCdfpers <- as.data.frame.matrix(TCy2prop)
+TCdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+TCdfpers$RIL <-c("UK x USA", "UK x USA", "UK x USA")
+
+TCdfpers_long <- gather(TCdfpers, Status, Proportion, "Disappeared after Year 1":"Reappeared then Disappeared", factor_key=TRUE)
+  
+TCy1persgraph <- TCdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y2))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#994C00", "#E69F00","#D55E00","#009E73"))
+ggsave("../Figures/PopPersistence/FigS9F_PopPers_UKUSA_Y2.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Control
+```{r}
+#First, make a contingency table from the data
+ISy2_contingtable <- table(ISy2$Dormancy, ISy2$Y2Persistence)
+
+#Perform a chi-square test 
+ISy2chisq <- chisq.test(ISy2_contingtable)
+
+#make a graph - convert to long format 
+ISy2prop <- prop.table(ISy2_contingtable, 1) #proportions 
+
+ISdfpers <- as.data.frame.matrix(ISy2prop)
+ISdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+ISdfpers$RIL <-c("Italy x Sweden", "Italy x Sweden", "Italy x Sweden")
+
+ISdfpers_long <- gather(ISdfpers, Status, Proportion, "Disappeared after Year 1":"Reappeared then Disappeared", factor_key=TRUE)
+  
+ISy1persgraph <- ISdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y2))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#994C00", "#E69F00","#D55E00","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISCtrl_Y2.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden HH
+```{r}
+#First, make a contingency table from the data
+y2humid_contingtable <- table(y2humid$Dormancy, y2humid$Y2Persistence)
+
+#Perform a chi-square test 
+y2humidchisq <- chisq.test(y2humid_contingtable)
+
+#make a graph - convert to long format 
+y2humidprop <- prop.table(y2humid_contingtable, 1) #proportions 
+
+humiddfpers <- as.data.frame.matrix(y2humidprop)
+humiddfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+humiddfpers$RIL <-c("Drought","Drought","Drought")
+humiddfpers_long <- gather(humiddfpers, Status, Proportion, "Disappeared after Year 1":"Reappeared then Disappeared", factor_key=TRUE)
+  
+humidy1persgraph <- humiddfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y2))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99", "#E69F00","#D55E00","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISHH_Y2.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Native Soil
+```{r}
+#First, make a contingency table from the data
+y2soil_contingtable <- table(y2soil$Dormancy, y2soil$Y2Persistence)
+
+#Perform a chi-square test 
+y2soilchisq <- chisq.test(y2soil_contingtable)
+
+#make a graph - convert to long format 
+y2soilprop <- prop.table(y2soil_contingtable, 1) #proportions 
+
+soildfpers <- as.data.frame.matrix(y2soilprop)
+soildfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+soildfpers$RIL <-c("Drought","Drought","Drought")
+soildfpers_long <- gather(soildfpers, Status, Proportion, "Disappeared after Year 1":"Persisted then Disappeared", factor_key=TRUE)
+  
+soily1persgraph <- soildfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y2))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#D55E00","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISNS_Y2.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Litter
+```{r}
+#First, make a contingency table from the data
+y2straw_contingtable <- table(y2straw$Dormancy, y2straw$Y2Persistence)
+
+#Perform a chi-square test 
+y2strawchisq <- chisq.test(y2straw_contingtable)
+
+#make a graph - convert to long format 
+y2strawprop <- prop.table(y2straw_contingtable, 1) #proportions 
+
+strawdfpers <- as.data.frame.matrix(y2strawprop)
+strawdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+strawdfpers$RIL <-c("Drought","Drought","Drought")
+strawdfpers_long <- gather(strawdfpers, Status, Proportion, "Disappeared after Year 1":"Reappeared then Disappeared", factor_key=TRUE)
+  
+strawy1persgraph <- strawdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y2))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#994C00", "#E69F00","#D55E00","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISLitter_Y2.png", width=10, height=5, units="in")
+```
+
+## Year 3
+```{r}
+BSy3 <- poppers %>% 
+  select(PopId:Envt, Y3Resurrection) %>% 
+  filter(RILSet=="Germany x Tajikistan", Envt=="Control")
+
+TCy3 <- poppers %>% 
+  select(PopId:Envt, Y3Resurrection) %>% 
+  filter(RILSet=="UK x USA")
+
+ISy3 <- poppers %>% 
+  select(PopId:Envt, Y3Resurrection) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Control")
+
+y3humid <- poppers %>% 
+  select(PopId:Envt, Y3Resurrection) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="High Humidity")
+
+y3soil <- poppers %>% 
+  select(PopId:Envt, Y3Resurrection) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Native Soil")
+
+y3straw <- poppers %>% 
+  select(PopId:Envt, Y3Resurrection) %>% 
+  filter(RILSet=="Italy x Sweden", Envt=="Straw Litter" )
+```
+
+### Germany x Tajikistan
+```{r}
+#First, make a contingency table from the data
+BSy3_contingtable <- table(BSy3$Dormancy, BSy3$Y3Resurrection)
+
+#Perform a chi-square test 
+BSy3chisq <- chisq.test(BSy3_contingtable)
+
+#make a graph - convert to long format 
+BSy3prop <- prop.table(BSy3_contingtable, 1) #proportions 
+
+BSdfpers <- as.data.frame.matrix(BSy3prop)
+BSdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+BSdfpers$RIL <-c("Germany x Tajikistan", "Germany x Tajikistan", "Germany x Tajikistan")
+BSdfpers_long <- gather(BSdfpers, Status, Proportion, "Disappeared":"Reappeared", factor_key=TRUE)
+  
+BSy1persgraph <- BSdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y3))) +  
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#00CCCC","#009E73"))
+ggsave("../Figures/PopPersistence/FigS9F_PopPers_GermTaj_Y3.png", width=10, height=5, units="in")
+```
+
+### UK x USA
+```{r}
+#First, make a contingency table from the data
+TCy3_contingtable <- table(TCy3$Dormancy, TCy3$Y3Resurrection)
+
+#Perform a chi-square test 
+TCy3chisq <- chisq.test(TCy3_contingtable)
+
+#make a graph - convert to long format 
+TCy3prop <- prop.table(TCy3_contingtable, 1) #proportions 
+
+TCdfpers <- as.data.frame.matrix(TCy3prop)
+TCdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+TCdfpers$RIL <-c("UK x USA", "UK x USA", "UK x USA")
+TCdfpers_long <- gather(TCdfpers, Status, Proportion, "Persisted":"Reappeared", factor_key=TRUE)
+  
+TCy1persgraph <- TCdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y3))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#00CCCC","#009E73"))
+ggsave("../Figures/PopPersistence/FigS9F_PopPers_UKUSA_Y3.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Control
+```{r}
+#First, make a contingency table from the data
+ISy3_contingtable <- table(ISy3$Dormancy, ISy3$Y3Resurrection)
+
+#Perform a chi-square test 
+ISy3chisq <- chisq.test(ISy3_contingtable)
+
+#make a graph - convert to long format 
+ISy3prop <- prop.table(ISy3_contingtable, 1) #proportions 
+
+ISdfpers <- as.data.frame.matrix(ISy3prop)
+ISdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+ISdfpers$RIL <-c("Italy x Sweden", "Italy x Sweden", "Italy x Sweden")
+ISdfpers_long <- gather(ISdfpers, Status, Proportion, "Persisted":"Reappeared", factor_key=TRUE)
+  
+ISy1persgraph <- ISdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y3))) +  
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#00CCCC","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISCtrl_Y3.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden HH
+```{r}
+#First, make a contingency table from the data
+y3humid_contingtable <- table(y3humid$Dormancy, y3humid$Y3Resurrection)
+
+#Perform a chi-square test 
+y3humidchisq <- chisq.test(y3humid_contingtable)
+
+#make a graph - convert to long format 
+y3humidprop <- prop.table(y3humid_contingtable, 1) #proportions 
+
+humiddfpers <- as.data.frame.matrix(y3humidprop)
+humiddfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+humiddfpers$RIL <-c("Drought","Drought","Drought")
+humiddfpers_long <- gather(humiddfpers, Status, Proportion, "Persisted":"Reappeared", factor_key=TRUE)
+  
+humidy1persgraph <- humiddfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y3))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#00CCCC","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISHH_Y3.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Native Soil
+```{r}
+#First, make a contingency table from the data
+y3soil_contingtable <- table(y3soil$Dormancy, y3soil$Y3Resurrection)
+
+#Perform a chi-square test 
+y3soilchisq <- chisq.test(y3soil_contingtable)
+
+#make a graph - convert to long format 
+y3soilprop <- prop.table(y3soil_contingtable, 1) #proportions 
+
+soildfpers <- as.data.frame.matrix(y3soilprop)
+soildfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+soildfpers$RIL <-c("Drought","Drought","Drought")
+soildfpers_long <- gather(soildfpers, Status, Proportion, "Disappeared":"Reappeared", factor_key=TRUE)
+  
+soily1persgraph <- soildfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y3))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#FFFF99","#00CCCC","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISNS_Y3.png", width=10, height=5, units="in")
+```
+
+### Italy x Sweden Litter
+```{r}
+#First, make a contingency table from the data
+y3straw_contingtable <- table(y3straw$Dormancy, y3straw$Y3Resurrection)
+
+#Perform a chi-square test 
+y3strawchisq <- chisq.test(y3straw_contingtable)
+
+#make a graph - convert to long format 
+y3strawprop <- prop.table(y3straw_contingtable, 1) #proportions 
+
+strawdfpers <- as.data.frame.matrix(y3strawprop)
+strawdfpers$DORM <- c("Dormant", "Mixed", "Non-Dormant")
+strawdfpers$RIL <-c("Drought","Drought","Drought")
+strawdfpers_long <- gather(strawdfpers, Status, Proportion, "Persisted":"Reappeared", factor_key=TRUE)
+  
+strawy1persgraph <- strawdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(Status, level=level_order_y3))) + 
+    geom_bar(stat="identity", position = "fill", alpha=0.9) + 
+    theme_classic() + 
+    theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
+    scale_fill_manual(values=c("#00CCCC","#009E73"))
+ggsave("../Figures/PopPersistence/Fig5_PopPers_ISLitter_Y3.png", width=10, height=5, units="in")
+```
