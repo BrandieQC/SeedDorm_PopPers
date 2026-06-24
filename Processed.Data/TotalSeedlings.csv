@@ -1,0 +1,465 @@
+PopId,Block,RILSet,Dormancy,Envt,Totalsdls,Year
+A_0,1,Italy x Sweden,Dormant,Litter,60,1
+A_1,1,Germany x Tajikistan,Dormant,Control,34,1
+A_10,3,Italy x Sweden,Non-Dormant,Litter,4,1
+A_11,3,UK x USA,Dormant,Control,0,1
+A_12,3,Germany x Tajikistan,Mixed,Control,4,1
+A_2,1,UK x USA,Dormant,Control,12,1
+A_3,1,Italy x Sweden,Non-Dormant,Litter,243,1
+A_4,1,Italy x Sweden,Mixed,High Humidity,147,1
+A_5,2,Italy x Sweden,Mixed,Litter,21,1
+A_6,2,Germany x Tajikistan,Dormant,Litter,4,1
+A_7,2,Italy x Sweden,Mixed,Native Soil,52,1
+A_8,2,UK x USA,Mixed,Control,14,1
+A_9,3,Italy x Sweden,Dormant,Native Soil,38,1
+B_0,1,Italy x Sweden,Dormant,Native Soil,10,1
+B_1,1,Italy x Sweden,Mixed,Control,32,1
+B_10,3,UK x USA,Non-Dormant,Control,1,1
+B_11,3,Italy x Sweden,Non-Dormant,Native Soil,23,1
+B_12,3,Italy x Sweden,Mixed,Native Soil,29,1
+B_13,3,Italy x Sweden,Dormant,Litter,0,1
+B_2,1,Italy x Sweden,Non-Dormant,High Humidity,532,1
+B_3,1,Germany x Tajikistan,Non-Dormant,Control,2,1
+B_4,1,Italy x Sweden,Dormant,High Humidity,56,1
+B_5,2,UK x USA,Dormant,Control,9,1
+B_6,2,Italy x Sweden,Non-Dormant,High Humidity,20,1
+B_7,2,Italy x Sweden,Mixed,Control,12,1
+B_8,2,Germany x Tajikistan,Non-Dormant,Control,5,1
+B_9,3,UK x USA,Mixed,Control,9,1
+C_0,1,Germany x Tajikistan,Non-Dormant,Litter,2,1
+C_1,1,Italy x Sweden,Dormant,Control,20,1
+C_10,3,Italy x Sweden,Dormant,High Humidity,19,1
+C_11,3,Germany x Tajikistan,Non-Dormant,Litter,0,1
+C_12,3,Germany x Tajikistan,Dormant,Control,1,1
+C_13,3,Italy x Sweden,Mixed,High Humidity,3,1
+C_2,1,Italy x Sweden,Non-Dormant,Control,1,1
+C_3,1,Italy x Sweden,Mixed,Litter,41,1
+C_4,1,Germany x Tajikistan,Dormant,Litter,8,1
+C_5,2,UK x USA,Non-Dormant,Control,0,1
+C_6,2,Germany x Tajikistan,Dormant,Control,5,1
+C_7,2,Italy x Sweden,Dormant,Control,8,1
+C_9,3,Italy x Sweden,Mixed,Control,1,1
+D_0,1,UK x USA,Mixed,Control,46,1
+D_1,1,Germany x Tajikistan,Mixed,Control,13,1
+D_10,3,Italy x Sweden,Mixed,Litter,8,1
+D_11,3,Germany x Tajikistan,Non-Dormant,Control,4,1
+D_12,3,Germany x Tajikistan,Dormant,Litter,0,1
+D_13,3,Italy x Sweden,Dormant,Control,5,1
+D_2,1,Italy x Sweden,Non-Dormant,Native Soil,51,1
+D_3,1,Italy x Sweden,Mixed,Native Soil,26,1
+D_4,1,UK x USA,Non-Dormant,Control,6,1
+D_5,2,Italy x Sweden,Mixed,High Humidity,49,1
+D_6,2,Italy x Sweden,Dormant,High Humidity,29,1
+D_8,2,Italy x Sweden,Non-Dormant,Litter,11,1
+D_9,3,Italy x Sweden,Non-Dormant,Control,28,1
+E_1,4,Italy x Sweden,Non-Dormant,Native Soil,35,1
+E_10,6,Germany x Tajikistan,Mixed,Control,0,1
+E_11,6,Italy x Sweden,Dormant,Control,0,1
+E_12,6,Italy x Sweden,Mixed,Control,3,1
+E_13,3,Italy x Sweden,Non-Dormant,High Humidity,15,1
+E_2,4,Italy x Sweden,Mixed,Control,38,1
+E_3,4,Italy x Sweden,Non-Dormant,Control,21,1
+E_4,4,Germany x Tajikistan,Non-Dormant,Litter,8,1
+E_5,2,Germany x Tajikistan,Non-Dormant,Litter,1,1
+E_7,2,Italy x Sweden,Dormant,Litter,16,1
+E_8,2,Italy x Sweden,Non-Dormant,Control,4,1
+E_9,6,Italy x Sweden,Dormant,Native Soil,8,1
+F_1,4,Germany x Tajikistan,Dormant,Control,7,1
+F_10,6,Germany x Tajikistan,Dormant,Control,8,1
+F_11,6,UK x USA,Mixed,Control,0,1
+F_12,6,Italy x Sweden,Non-Dormant,Native Soil,12,1
+F_13,6,Germany x Tajikistan,Dormant,Litter,0,1
+F_2,4,UK x USA,Non-Dormant,Control,8,1
+F_3,4,Italy x Sweden,Dormant,High Humidity,63,1
+F_4,4,Italy x Sweden,Mixed,High Humidity,37,1
+F_6,2,Italy x Sweden,Dormant,Native Soil,28,1
+F_7,2,Germany x Tajikistan,Mixed,Control,7,1
+F_8,2,Italy x Sweden,Non-Dormant,Native Soil,20,1
+F_9,6,Italy x Sweden,Non-Dormant,Control,3,1
+G_1,4,Germany x Tajikistan,Non-Dormant,Control,7,1
+G_10,6,Italy x Sweden,Mixed,Litter,10,1
+G_11,6,Italy x Sweden,Mixed,Native Soil,10,1
+G_12,6,UK x USA,Dormant,Control,3,1
+G_13,6,Germany x Tajikistan,Non-Dormant,Litter,0,1
+G_2,4,Italy x Sweden,Dormant,Control,5,1
+G_3,4,Italy x Sweden,Mixed,Litter,18,1
+G_5,5,Italy x Sweden,Dormant,Control,6,1
+G_6,5,UK x USA,Mixed,Control,22,1
+G_7,5,Italy x Sweden,Mixed,Control,4,1
+G_8,5,Germany x Tajikistan,Dormant,Control,0,1
+G_9,6,Italy x Sweden,Dormant,High Humidity,19,1
+H_1,4,UK x USA,Dormant,Control,1,1
+H_10,6,Italy x Sweden,Mixed,High Humidity,50,1
+H_11,6,UK x USA,Non-Dormant,Control,0,1
+H_12,6,Italy x Sweden,Dormant,Litter,7,1
+H_2,4,Italy x Sweden,Non-Dormant,Litter,3,1
+H_4,4,Germany x Tajikistan,Dormant,Litter,1,1
+H_5,5,UK x USA,Dormant,Control,6,1
+H_6,5,Italy x Sweden,Non-Dormant,Litter,5,1
+H_7,5,Italy x Sweden,Non-Dormant,Control,4,1
+H_8,5,Italy x Sweden,Dormant,Litter,3,1
+H_9,6,Germany x Tajikistan,Non-Dormant,Control,0,1
+I_1,4,Italy x Sweden,Non-Dormant,High Humidity,5,1
+I_10,5,Italy x Sweden,Mixed,Litter,9,1
+I_11,6,Italy x Sweden,Non-Dormant,Litter,0,1
+I_12,6,Italy x Sweden,Non-Dormant,High Humidity,16,1
+I_3,4,Germany x Tajikistan,Mixed,Control,9,1
+I_4,4,Italy x Sweden,Dormant,Litter,0,1
+I_5,5,Germany x Tajikistan,Non-Dormant,Control,7,1
+I_6,5,Germany x Tajikistan,Dormant,Litter,12,1
+I_7,5,Italy x Sweden,Non-Dormant,High Humidity,3,1
+I_8,5,Germany x Tajikistan,Non-Dormant,Litter,8,1
+I_9,5,Italy x Sweden,Mixed,High Humidity,20,1
+J_10,5,UK x USA,Non-Dormant,Control,0,1
+J_11,8,Italy x Sweden,Dormant,High Humidity,5,1
+J_12,8,Italy x Sweden,Non-Dormant,Control,4,1
+J_2,4,Italy x Sweden,Dormant,Native Soil,24,1
+J_3,4,UK x USA,Mixed,Control,11,1
+J_4,4,Italy x Sweden,Mixed,Native Soil,10,1
+J_5,5,Italy x Sweden,Dormant,Native Soil,26,1
+J_6,5,Italy x Sweden,Non-Dormant,Native Soil,8,1
+J_7,5,Italy x Sweden,Dormant,High Humidity,10,1
+J_8,5,Germany x Tajikistan,Mixed,Control,1,1
+J_9,5,Italy x Sweden,Mixed,Native Soil,23,1
+K_1,7,Italy x Sweden,Non-Dormant,Litter,0,1
+K_10,8,Italy x Sweden,Non-Dormant,Litter,4,1
+K_11,8,Italy x Sweden,Mixed,High Humidity,28,1
+K_12,8,Italy x Sweden,Dormant,Litter,1,1
+K_13,8,Germany x Tajikistan,Mixed,Control,3,1
+K_2,7,UK x USA,Dormant,Control,3,1
+K_3,7,UK x USA,Mixed,Control,0,1
+K_4,7,Italy x Sweden,Dormant,Control,0,1
+K_5,7,Italy x Sweden,Non-Dormant,High Humidity,14,1
+K_6,7,Italy x Sweden,Mixed,Litter,0,1
+K_7,7,Germany x Tajikistan,Mixed,Control,5,1
+K_8,8,Italy x Sweden,Non-Dormant,High Humidity,1,1
+K_9,8,Germany x Tajikistan,Dormant,Litter,9,1
+L_1,7,Italy x Sweden,Dormant,High Humidity,5,1
+L_10,8,Italy x Sweden,Dormant,Native Soil,5,1
+L_11,8,Italy x Sweden,Dormant,Control,7,1
+L_12,8,UK x USA,Dormant,Control,7,1
+L_13,8,Germany x Tajikistan,Dormant,Control,24,1
+L_2,7,Italy x Sweden,Dormant,Litter,4,1
+L_3,7,Italy x Sweden,Dormant,Native Soil,2,1
+L_4,7,UK x USA,Non-Dormant,Control,1,1
+L_5,7,Germany x Tajikistan,Dormant,Litter,60,1
+L_6,7,Italy x Sweden,Mixed,High Humidity,7,1
+L_7,7,Italy x Sweden,Mixed,Native Soil,15,1
+L_8,8,Germany x Tajikistan,Non-Dormant,Control,1,1
+L_9,8,UK x USA,Non-Dormant,Control,1,1
+M_1,7,Italy x Sweden,Non-Dormant,Native Soil,8,1
+M_10,8,Germany x Tajikistan,Non-Dormant,Litter,3,1
+M_11,8,Italy x Sweden,Mixed,Litter,10,1
+M_12,8,Italy x Sweden,Non-Dormant,Native Soil,6,1
+M_13,8,Italy x Sweden,Mixed,Native Soil,28,1
+M_2,7,Germany x Tajikistan,Dormant,Control,2,1
+M_3,7,Germany x Tajikistan,Non-Dormant,Litter,0,1
+M_4,7,Germany x Tajikistan,Non-Dormant,Control,0,1
+M_5,7,Italy x Sweden,Non-Dormant,Control,0,1
+M_6,7,Italy x Sweden,Mixed,Control,31,1
+M_8,8,UK x USA,Mixed,Control,18,1
+M_9,8,Italy x Sweden,Mixed,Control,36,1
+A_0,1,Italy x Sweden,Dormant,Litter,18,2
+A_1,1,Germany x Tajikistan,Dormant,Control,291,2
+A_10,3,Italy x Sweden,Non-Dormant,Litter,0,2
+A_11,3,UK x USA,Dormant,Control,43,2
+A_12,3,Germany x Tajikistan,Mixed,Control,31,2
+A_2,1,UK x USA,Dormant,Control,4,2
+A_3,1,Italy x Sweden,Non-Dormant,Litter,6,2
+A_4,1,Italy x Sweden,Mixed,High Humidity,549,2
+A_5,2,Italy x Sweden,Mixed,Litter,1,2
+A_6,2,Germany x Tajikistan,Dormant,Litter,0,2
+A_7,2,Italy x Sweden,Mixed,Native Soil,0,2
+A_8,2,UK x USA,Mixed,Control,24,2
+A_9,3,Italy x Sweden,Dormant,Native Soil,3,2
+B_0,1,Italy x Sweden,Dormant,Native Soil,0,2
+B_1,1,Italy x Sweden,Mixed,Control,78,2
+B_10,3,UK x USA,Non-Dormant,Control,0,2
+B_11,3,Italy x Sweden,Non-Dormant,Native Soil,2,2
+B_12,3,Italy x Sweden,Mixed,Native Soil,1,2
+B_13,3,Italy x Sweden,Dormant,Litter,0,2
+B_2,1,Italy x Sweden,Non-Dormant,High Humidity,94,2
+B_3,1,Germany x Tajikistan,Non-Dormant,Control,7,2
+B_4,1,Italy x Sweden,Dormant,High Humidity,37,2
+B_5,2,UK x USA,Dormant,Control,45,2
+B_6,2,Italy x Sweden,Non-Dormant,High Humidity,211,2
+B_7,2,Italy x Sweden,Mixed,Control,53,2
+B_8,2,Germany x Tajikistan,Non-Dormant,Control,45,2
+B_9,3,UK x USA,Mixed,Control,13,2
+C_0,1,Germany x Tajikistan,Non-Dormant,Litter,0,2
+C_1,1,Italy x Sweden,Dormant,Control,17,2
+C_10,3,Italy x Sweden,Dormant,High Humidity,50,2
+C_11,3,Germany x Tajikistan,Non-Dormant,Litter,2,2
+C_12,3,Germany x Tajikistan,Dormant,Control,3,2
+C_13,3,Italy x Sweden,Mixed,High Humidity,0,2
+C_2,1,Italy x Sweden,Non-Dormant,Control,32,2
+C_3,1,Italy x Sweden,Mixed,Litter,0,2
+C_4,1,Germany x Tajikistan,Dormant,Litter,0,2
+C_5,2,UK x USA,Non-Dormant,Control,38,2
+C_6,2,Germany x Tajikistan,Dormant,Control,24,2
+C_7,2,Italy x Sweden,Dormant,Control,9,2
+C_9,3,Italy x Sweden,Mixed,Control,2,2
+D_0,1,UK x USA,Mixed,Control,33,2
+D_1,1,Germany x Tajikistan,Mixed,Control,205,2
+D_10,3,Italy x Sweden,Mixed,Litter,41,2
+D_11,3,Germany x Tajikistan,Non-Dormant,Control,11,2
+D_12,3,Germany x Tajikistan,Dormant,Litter,0,2
+D_13,3,Italy x Sweden,Dormant,Control,2,2
+D_2,1,Italy x Sweden,Non-Dormant,Native Soil,8,2
+D_3,1,Italy x Sweden,Mixed,Native Soil,7,2
+D_4,1,UK x USA,Non-Dormant,Control,17,2
+D_5,2,Italy x Sweden,Mixed,High Humidity,239,2
+D_6,2,Italy x Sweden,Dormant,High Humidity,103,2
+D_8,2,Italy x Sweden,Non-Dormant,Litter,57,2
+D_9,3,Italy x Sweden,Non-Dormant,Control,2,2
+E_1,4,Italy x Sweden,Non-Dormant,Native Soil,3,2
+E_10,6,Germany x Tajikistan,Mixed,Control,16,2
+E_11,6,Italy x Sweden,Dormant,Control,1,2
+E_12,6,Italy x Sweden,Mixed,Control,7,2
+E_13,3,Italy x Sweden,Non-Dormant,High Humidity,89,2
+E_2,4,Italy x Sweden,Mixed,Control,54,2
+E_3,4,Italy x Sweden,Non-Dormant,Control,61,2
+E_4,4,Germany x Tajikistan,Non-Dormant,Litter,13,2
+E_5,2,Germany x Tajikistan,Non-Dormant,Litter,25,2
+E_7,2,Italy x Sweden,Dormant,Litter,23,2
+E_8,2,Italy x Sweden,Non-Dormant,Control,11,2
+E_9,6,Italy x Sweden,Dormant,Native Soil,39,2
+F_1,4,Germany x Tajikistan,Dormant,Control,42,2
+F_10,6,Germany x Tajikistan,Dormant,Control,12,2
+F_11,6,UK x USA,Mixed,Control,1,2
+F_12,6,Italy x Sweden,Non-Dormant,Native Soil,67,2
+F_13,6,Germany x Tajikistan,Dormant,Litter,0,2
+F_2,4,UK x USA,Non-Dormant,Control,36,2
+F_3,4,Italy x Sweden,Dormant,High Humidity,206,2
+F_4,4,Italy x Sweden,Mixed,High Humidity,280,2
+F_6,2,Italy x Sweden,Dormant,Native Soil,54,2
+F_7,2,Germany x Tajikistan,Mixed,Control,151,2
+F_8,2,Italy x Sweden,Non-Dormant,Native Soil,56,2
+F_9,6,Italy x Sweden,Non-Dormant,Control,0,2
+G_1,4,Germany x Tajikistan,Non-Dormant,Control,11,2
+G_10,6,Italy x Sweden,Mixed,Litter,0,2
+G_11,6,Italy x Sweden,Mixed,Native Soil,91,2
+G_12,6,UK x USA,Dormant,Control,75,2
+G_13,6,Germany x Tajikistan,Non-Dormant,Litter,0,2
+G_2,4,Italy x Sweden,Dormant,Control,23,2
+G_3,4,Italy x Sweden,Mixed,Litter,9,2
+G_5,5,Italy x Sweden,Dormant,Control,186,2
+G_6,5,UK x USA,Mixed,Control,11,2
+G_7,5,Italy x Sweden,Mixed,Control,5,2
+G_8,5,Germany x Tajikistan,Dormant,Control,28,2
+G_9,6,Italy x Sweden,Dormant,High Humidity,16,2
+H_1,4,UK x USA,Dormant,Control,9,2
+H_10,6,Italy x Sweden,Mixed,High Humidity,133,2
+H_11,6,UK x USA,Non-Dormant,Control,56,2
+H_12,6,Italy x Sweden,Dormant,Litter,4,2
+H_2,4,Italy x Sweden,Non-Dormant,Litter,0,2
+H_4,4,Germany x Tajikistan,Dormant,Litter,0,2
+H_5,5,UK x USA,Dormant,Control,2,2
+H_6,5,Italy x Sweden,Non-Dormant,Litter,5,2
+H_7,5,Italy x Sweden,Non-Dormant,Control,48,2
+H_8,5,Italy x Sweden,Dormant,Litter,28,2
+H_9,6,Germany x Tajikistan,Non-Dormant,Control,122,2
+I_1,4,Italy x Sweden,Non-Dormant,High Humidity,0,2
+I_10,5,Italy x Sweden,Mixed,Litter,62,2
+I_11,6,Italy x Sweden,Non-Dormant,Litter,7,2
+I_12,6,Italy x Sweden,Non-Dormant,High Humidity,16,2
+I_3,4,Germany x Tajikistan,Mixed,Control,0,2
+I_4,4,Italy x Sweden,Dormant,Litter,0,2
+I_5,5,Germany x Tajikistan,Non-Dormant,Control,4,2
+I_6,5,Germany x Tajikistan,Dormant,Litter,0,2
+I_7,5,Italy x Sweden,Non-Dormant,High Humidity,35,2
+I_8,5,Germany x Tajikistan,Non-Dormant,Litter,0,2
+I_9,5,Italy x Sweden,Mixed,High Humidity,120,2
+J_10,5,UK x USA,Non-Dormant,Control,70,2
+J_11,8,Italy x Sweden,Dormant,High Humidity,3,2
+J_12,8,Italy x Sweden,Non-Dormant,Control,6,2
+J_2,4,Italy x Sweden,Dormant,Native Soil,41,2
+J_3,4,UK x USA,Mixed,Control,1,2
+J_4,4,Italy x Sweden,Mixed,Native Soil,72,2
+J_5,5,Italy x Sweden,Dormant,Native Soil,130,2
+J_6,5,Italy x Sweden,Non-Dormant,Native Soil,7,2
+J_7,5,Italy x Sweden,Dormant,High Humidity,3,2
+J_8,5,Germany x Tajikistan,Mixed,Control,10,2
+J_9,5,Italy x Sweden,Mixed,Native Soil,156,2
+K_1,7,Italy x Sweden,Non-Dormant,Litter,5,2
+K_10,8,Italy x Sweden,Non-Dormant,Litter,15,2
+K_11,8,Italy x Sweden,Mixed,High Humidity,5,2
+K_12,8,Italy x Sweden,Dormant,Litter,13,2
+K_13,8,Germany x Tajikistan,Mixed,Control,2,2
+K_2,7,UK x USA,Dormant,Control,70,2
+K_3,7,UK x USA,Mixed,Control,54,2
+K_4,7,Italy x Sweden,Dormant,Control,256,2
+K_5,7,Italy x Sweden,Non-Dormant,High Humidity,3,2
+K_6,7,Italy x Sweden,Mixed,Litter,2,2
+K_7,7,Germany x Tajikistan,Mixed,Control,27,2
+K_8,8,Italy x Sweden,Non-Dormant,High Humidity,5,2
+K_9,8,Germany x Tajikistan,Dormant,Litter,2,2
+L_1,7,Italy x Sweden,Dormant,High Humidity,212,2
+L_10,8,Italy x Sweden,Dormant,Native Soil,5,2
+L_11,8,Italy x Sweden,Dormant,Control,29,2
+L_12,8,UK x USA,Dormant,Control,154,2
+L_13,8,Germany x Tajikistan,Dormant,Control,18,2
+L_2,7,Italy x Sweden,Dormant,Litter,28,2
+L_3,7,Italy x Sweden,Dormant,Native Soil,2,2
+L_4,7,UK x USA,Non-Dormant,Control,2,2
+L_5,7,Germany x Tajikistan,Dormant,Litter,10,2
+L_6,7,Italy x Sweden,Mixed,High Humidity,16,2
+L_7,7,Italy x Sweden,Mixed,Native Soil,116,2
+L_8,8,Germany x Tajikistan,Non-Dormant,Control,10,2
+L_9,8,UK x USA,Non-Dormant,Control,15,2
+M_1,7,Italy x Sweden,Non-Dormant,Native Soil,68,2
+M_10,8,Germany x Tajikistan,Non-Dormant,Litter,4,2
+M_11,8,Italy x Sweden,Mixed,Litter,21,2
+M_12,8,Italy x Sweden,Non-Dormant,Native Soil,26,2
+M_13,8,Italy x Sweden,Mixed,Native Soil,17,2
+M_2,7,Germany x Tajikistan,Dormant,Control,11,2
+M_3,7,Germany x Tajikistan,Non-Dormant,Litter,23,2
+M_4,7,Germany x Tajikistan,Non-Dormant,Control,10,2
+M_5,7,Italy x Sweden,Non-Dormant,Control,26,2
+M_6,7,Italy x Sweden,Mixed,Control,6,2
+M_8,8,UK x USA,Mixed,Control,60,2
+M_9,8,Italy x Sweden,Mixed,Control,13,2
+A_0,1,Italy x Sweden,Dormant,Litter,73,3
+A_1,1,Germany x Tajikistan,Dormant,Control,74,3
+A_10,3,Italy x Sweden,Non-Dormant,Litter,3,3
+A_11,3,UK x USA,Dormant,Control,13,3
+A_12,3,Germany x Tajikistan,Mixed,Control,6,3
+A_2,1,UK x USA,Dormant,Control,1,3
+A_3,1,Italy x Sweden,Non-Dormant,Litter,10,3
+A_4,1,Italy x Sweden,Mixed,High Humidity,249,3
+A_5,2,Italy x Sweden,Mixed,Litter,30,3
+A_7,2,Italy x Sweden,Mixed,Native Soil,3,3
+A_8,2,UK x USA,Mixed,Control,8,3
+A_9,3,Italy x Sweden,Dormant,Native Soil,19,3
+B_0,1,Italy x Sweden,Dormant,Native Soil,1,3
+B_1,1,Italy x Sweden,Mixed,Control,27,3
+B_10,3,UK x USA,Non-Dormant,Control,4,3
+B_11,3,Italy x Sweden,Non-Dormant,Native Soil,4,3
+B_12,3,Italy x Sweden,Mixed,Native Soil,12,3
+B_13,3,Italy x Sweden,Dormant,Litter,23,3
+B_2,1,Italy x Sweden,Non-Dormant,High Humidity,108,3
+B_3,1,Germany x Tajikistan,Non-Dormant,Control,39,3
+B_4,1,Italy x Sweden,Dormant,High Humidity,273,3
+B_5,2,UK x USA,Dormant,Control,0,3
+B_6,2,Italy x Sweden,Non-Dormant,High Humidity,193,3
+B_7,2,Italy x Sweden,Mixed,Control,179,3
+B_8,2,Germany x Tajikistan,Non-Dormant,Control,0,3
+B_9,3,UK x USA,Mixed,Control,3,3
+C_1,1,Italy x Sweden,Dormant,Control,137,3
+C_10,3,Italy x Sweden,Dormant,High Humidity,152,3
+C_12,3,Germany x Tajikistan,Dormant,Control,11,3
+C_13,3,Italy x Sweden,Mixed,High Humidity,20,3
+C_2,1,Italy x Sweden,Non-Dormant,Control,40,3
+C_3,1,Italy x Sweden,Mixed,Litter,106,3
+C_5,2,UK x USA,Non-Dormant,Control,6,3
+C_6,2,Germany x Tajikistan,Dormant,Control,1,3
+C_7,2,Italy x Sweden,Dormant,Control,74,3
+C_9,3,Italy x Sweden,Mixed,Control,20,3
+D_0,1,UK x USA,Mixed,Control,39,3
+D_1,1,Germany x Tajikistan,Mixed,Control,134,3
+D_10,3,Italy x Sweden,Mixed,Litter,7,3
+D_11,3,Germany x Tajikistan,Non-Dormant,Control,0,3
+D_13,3,Italy x Sweden,Dormant,Control,42,3
+D_2,1,Italy x Sweden,Non-Dormant,Native Soil,2,3
+D_3,1,Italy x Sweden,Mixed,Native Soil,0,3
+D_4,1,UK x USA,Non-Dormant,Control,0,3
+D_5,2,Italy x Sweden,Mixed,High Humidity,119,3
+D_6,2,Italy x Sweden,Dormant,High Humidity,167,3
+D_8,2,Italy x Sweden,Non-Dormant,Litter,149,3
+D_9,3,Italy x Sweden,Non-Dormant,Control,11,3
+E_1,4,Italy x Sweden,Non-Dormant,Native Soil,3,3
+E_10,6,Germany x Tajikistan,Mixed,Control,10,3
+E_11,6,Italy x Sweden,Dormant,Control,2,3
+E_12,6,Italy x Sweden,Mixed,Control,32,3
+E_13,3,Italy x Sweden,Non-Dormant,High Humidity,3,3
+E_2,4,Italy x Sweden,Mixed,Control,254,3
+E_3,4,Italy x Sweden,Non-Dormant,Control,64,3
+E_7,2,Italy x Sweden,Dormant,Litter,14,3
+E_8,2,Italy x Sweden,Non-Dormant,Control,0,3
+E_9,6,Italy x Sweden,Dormant,Native Soil,99,3
+F_1,4,Germany x Tajikistan,Dormant,Control,7,3
+F_10,6,Germany x Tajikistan,Dormant,Control,0,3
+F_11,6,UK x USA,Mixed,Control,50,3
+F_12,6,Italy x Sweden,Non-Dormant,Native Soil,3,3
+F_2,4,UK x USA,Non-Dormant,Control,1,3
+F_3,4,Italy x Sweden,Dormant,High Humidity,638,3
+F_4,4,Italy x Sweden,Mixed,High Humidity,407,3
+F_6,2,Italy x Sweden,Dormant,Native Soil,36,3
+F_7,2,Germany x Tajikistan,Mixed,Control,0,3
+F_8,2,Italy x Sweden,Non-Dormant,Native Soil,10,3
+F_9,6,Italy x Sweden,Non-Dormant,Control,5,3
+G_1,4,Germany x Tajikistan,Non-Dormant,Control,0,3
+G_10,6,Italy x Sweden,Mixed,Litter,26,3
+G_11,6,Italy x Sweden,Mixed,Native Soil,12,3
+G_12,6,UK x USA,Dormant,Control,21,3
+G_2,4,Italy x Sweden,Dormant,Control,335,3
+G_3,4,Italy x Sweden,Mixed,Litter,244,3
+G_5,5,Italy x Sweden,Dormant,Control,202,3
+G_6,5,UK x USA,Mixed,Control,16,3
+G_7,5,Italy x Sweden,Mixed,Control,28,3
+G_8,5,Germany x Tajikistan,Dormant,Control,3,3
+G_9,6,Italy x Sweden,Dormant,High Humidity,161,3
+H_1,4,UK x USA,Dormant,Control,25,3
+H_10,6,Italy x Sweden,Mixed,High Humidity,268,3
+H_11,6,UK x USA,Non-Dormant,Control,0,3
+H_12,6,Italy x Sweden,Dormant,Litter,4,3
+H_2,4,Italy x Sweden,Non-Dormant,Litter,5,3
+H_5,5,UK x USA,Dormant,Control,33,3
+H_6,5,Italy x Sweden,Non-Dormant,Litter,1,3
+H_7,5,Italy x Sweden,Non-Dormant,Control,1,3
+H_8,5,Italy x Sweden,Dormant,Litter,12,3
+H_9,6,Germany x Tajikistan,Non-Dormant,Control,0,3
+I_1,4,Italy x Sweden,Non-Dormant,High Humidity,8,3
+I_10,5,Italy x Sweden,Mixed,Litter,6,3
+I_11,6,Italy x Sweden,Non-Dormant,Litter,1,3
+I_12,6,Italy x Sweden,Non-Dormant,High Humidity,2,3
+I_3,4,Germany x Tajikistan,Mixed,Control,0,3
+I_4,4,Italy x Sweden,Dormant,Litter,57,3
+I_5,5,Germany x Tajikistan,Non-Dormant,Control,0,3
+I_7,5,Italy x Sweden,Non-Dormant,High Humidity,0,3
+I_9,5,Italy x Sweden,Mixed,High Humidity,4,3
+J_10,5,UK x USA,Non-Dormant,Control,2,3
+J_11,8,Italy x Sweden,Dormant,High Humidity,42,3
+J_12,8,Italy x Sweden,Non-Dormant,Control,2,3
+J_2,4,Italy x Sweden,Dormant,Native Soil,78,3
+J_3,4,UK x USA,Mixed,Control,21,3
+J_4,4,Italy x Sweden,Mixed,Native Soil,76,3
+J_5,5,Italy x Sweden,Dormant,Native Soil,88,3
+J_6,5,Italy x Sweden,Non-Dormant,Native Soil,3,3
+J_7,5,Italy x Sweden,Dormant,High Humidity,45,3
+J_8,5,Germany x Tajikistan,Mixed,Control,0,3
+J_9,5,Italy x Sweden,Mixed,Native Soil,182,3
+K_1,7,Italy x Sweden,Non-Dormant,Litter,46,3
+K_10,8,Italy x Sweden,Non-Dormant,Litter,4,3
+K_11,8,Italy x Sweden,Mixed,High Humidity,2,3
+K_12,8,Italy x Sweden,Dormant,Litter,7,3
+K_13,8,Germany x Tajikistan,Mixed,Control,0,3
+K_2,7,UK x USA,Dormant,Control,15,3
+K_3,7,UK x USA,Mixed,Control,0,3
+K_4,7,Italy x Sweden,Dormant,Control,13,3
+K_5,7,Italy x Sweden,Non-Dormant,High Humidity,1,3
+K_6,7,Italy x Sweden,Mixed,Litter,1,3
+K_7,7,Germany x Tajikistan,Mixed,Control,1,3
+K_8,8,Italy x Sweden,Non-Dormant,High Humidity,3,3
+L_1,7,Italy x Sweden,Dormant,High Humidity,4,3
+L_10,8,Italy x Sweden,Dormant,Native Soil,5,3
+L_11,8,Italy x Sweden,Dormant,Control,169,3
+L_12,8,UK x USA,Dormant,Control,9,3
+L_13,8,Germany x Tajikistan,Dormant,Control,44,3
+L_2,7,Italy x Sweden,Dormant,Litter,7,3
+L_3,7,Italy x Sweden,Dormant,Native Soil,25,3
+L_4,7,UK x USA,Non-Dormant,Control,0,3
+L_6,7,Italy x Sweden,Mixed,High Humidity,96,3
+L_7,7,Italy x Sweden,Mixed,Native Soil,32,3
+L_8,8,Germany x Tajikistan,Non-Dormant,Control,0,3
+L_9,8,UK x USA,Non-Dormant,Control,0,3
+M_1,7,Italy x Sweden,Non-Dormant,Native Soil,10,3
+M_11,8,Italy x Sweden,Mixed,Litter,65,3
+M_12,8,Italy x Sweden,Non-Dormant,Native Soil,0,3
+M_13,8,Italy x Sweden,Mixed,Native Soil,3,3
+M_2,7,Germany x Tajikistan,Dormant,Control,0,3
+M_4,7,Germany x Tajikistan,Non-Dormant,Control,0,3
+M_5,7,Italy x Sweden,Non-Dormant,Control,0,3
+M_6,7,Italy x Sweden,Mixed,Control,26,3
+M_8,8,UK x USA,Mixed,Control,183,3
+M_9,8,Italy x Sweden,Mixed,Control,161,3

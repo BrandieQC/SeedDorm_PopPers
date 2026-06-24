@@ -1,0 +1,334 @@
+---
+title: "PopDemog_figs"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Code for Figures 2, 4, S9
+
+## Load Libraries and other constants
+```{r}
+library(tidyverse)
+
+BQDNDPalette <- c("#FF9900","#00CC00","#B266FF", "#999999", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+RILS_order <- c("Italy x Sweden","Germany x Tajikistan","UK x USA")
+
+Dorm_order <- c("High", "Mixed", "Low")
+
+Envt_order <- c('Control','High Humidity','Native Soil','Litter')
+```
+
+## Seedling Number - Figs 2a and S9A
+```{r}
+allyearstotalsdls <- read_csv("../Processed.Data/TotalSeedlings.csv")
+```
+
+### Control Treatment 
+```{r}
+allyearstotalsdls_summary_CTRL <- allyearstotalsdls %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(Envt=="Control") %>% 
+  group_by(Year, Dormancy, RILSet) %>% 
+  filter(!is.na(Totalsdls)) %>% 
+  summarize(meanSdls=mean(Totalsdls), SE=sd(Totalsdls)/sqrt(n()))
+
+allyearstotalsdls_summary_CTRL$Dormancy <- factor(allyearstotalsdls_summary_CTRL$Dormancy, levels = Dorm_order)
+
+allyearstotalsdls_summary_CTRL %>% 
+  ggplot(aes(x=Year, y=meanSdls, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSdls-SE,ymax=meanSdls+SE),
+                width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Year") +
+  ylab(paste0("Total Seedling Number")) +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=37),  panel.background = element_rect(fill = NA, color = "black")) +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 200)) + 
+  scale_x_discrete(limits=c("1", "2", "3")) +
+  facet_grid(. ~factor(RILSet, level = RILS_order))
+ggsave("../Figures/FigS9A_sdlnum_Ctrl.png", width=18, height=9, units="in")
+```
+
+### Italy x Sweden RIL Set
+```{r}
+allyearstotalsdls_summary_ENVT <- allyearstotalsdls %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  group_by(Year, Dormancy, Envt) %>% 
+  filter(!is.na(Totalsdls)) %>% 
+  summarize(meanSdls=mean(Totalsdls), SE=sd(Totalsdls)/sqrt(n()))
+
+allyearstotalsdls_summary_ENVT$Dormancy <- factor(allyearstotalsdls_summary_ENVT$Dormancy, levels = Dorm_order)
+allyearstotalsdls_summary_ENVT$Envt <- factor(allyearstotalsdls_summary_ENVT$Envt, levels = Envt_order)
+
+allyearstotalsdls_summary_ENVT %>% 
+  ggplot(aes(x=Year, y=meanSdls, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSdls-SE,ymax=meanSdls+SE),
+                width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Year") +
+  ylab(paste0("Total Seedling Number")) +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=37),  panel.background = element_rect(fill = NA, color = "black")) +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 350)) + 
+  scale_x_discrete(limits=c("1", "2", "3")) +
+  facet_grid(. ~Envt)
+ggsave("../Figures/Fig2A_sdlnum_ENVT.png", width=18, height=9, units="in")
+```
+
+## Change in Seedling Number - Fig 4 and S9E
+```{r}
+sdls_flucts_long <- read_csv("../Processed.Data/SdlFlucts.csv")
+```
+
+### Control Treatment
+```{r}
+sdls_flucts_summary_CTRL <- sdls_flucts_long %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(Envt=="Control") %>% 
+  group_by(Timepoint, Dormancy, RILSet) %>% 
+  filter(!is.na(Fluct)) %>% 
+  summarize(meanSdls=mean(Fluct), SE=sd(Fluct)/sqrt(n()))
+
+sdls_flucts_summary_CTRL$Dormancy <- factor(sdls_flucts_summary_CTRL$Dormancy, levels = Dorm_order)
+
+sdls_flucts_summary_CTRL %>% 
+  ggplot(aes(x=Timepoint, y=meanSdls, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSdls-SE,ymax=meanSdls+SE),
+                width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Time Period") +
+  ylab(paste0("Change in Seedling #")) +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=37),  panel.background = element_rect(fill = NA, color = "black")) +
+  facet_grid(. ~factor(RILSet, level = RILS_order))
+ggsave("../Figures/FigS9E_sdlnumflucts_Ctrl.png", width=18, height=9, units="in")
+```
+
+### Italy x Swden RIL set
+```{r}
+sdls_flucts_summary_ENVT <- sdls_flucts_long %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  group_by(Timepoint, Dormancy, Envt) %>% 
+  filter(!is.na(Fluct)) %>% 
+  summarize(meanSdls=mean(Fluct), SE=sd(Fluct)/sqrt(n()))
+
+sdls_flucts_summary_ENVT$Dormancy <- factor(sdls_flucts_summary_ENVT$Dormancy, levels = Dorm_order)
+sdls_flucts_summary_ENVT$Envt <- factor(sdls_flucts_summary_ENVT$Envt, levels = Envt_order)
+
+sdls_flucts_summary_ENVT %>% 
+  ggplot(aes(x=Timepoint, y=meanSdls, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSdls-SE,ymax=meanSdls+SE),
+                width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Time Period") +
+  ylab(paste0("Change in Seedling #")) +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=37),  panel.background = element_rect(fill = NA, color = "black")) +
+  facet_grid(. ~Envt)
+ggsave("../Figures/Fig4_sdlnumflucts_ENVT.png", width=18, height=9, units="in")
+```
+
+## Seedling Establishment - Fig 2b and S9B
+```{r}
+totseasonalsdlssurv <- read_csv("../Processed.Data/TOTALSeasonalSeedlingEstablishment.csv")
+```
+
+### Control Treatment
+```{r}
+totseasonalsdlssurv_summary_CTRL <- totseasonalsdlssurv %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(Envt=="Control") %>% 
+  group_by(Season, Dormancy, RILSet) %>% 
+  filter(!is.na(seasonalEst)) %>% 
+  summarize(meanSurv=mean(seasonalEst), SE=sd(seasonalEst)/sqrt(n()))
+
+totseasonalsdlssurv_summary_CTRL$Season <- factor(totseasonalsdlssurv_summary_CTRL$Season, levels = c('1_Summer','1_Autumn','2_Summer','2_Autumn'))
+totseasonalsdlssurv_summary_CTRL$Dormancy <- factor(totseasonalsdlssurv_summary_CTRL$Dormancy, levels = Dorm_order)
+
+seasonalsurv_ctrl_plot <- totseasonalsdlssurv_summary_CTRL %>% ggplot(aes(x=Season, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),width=.2, position = 
+                  position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Year_Season") +
+  ylab(paste0("Proportion of Seedling Establishment")) +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=30), panel.background = element_rect(fill = NA, color = "black"), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+  scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(-0.005, 1)) +
+  facet_grid(factor(RILSet, level = RILS_order) ~.)
+ggsave("../Figures/FigS9B_seasonalSdlEst_Ctrl.png", width=16, height=12, units="in")
+```
+
+### Italy x Swden RIL set
+```{r}
+totseasonalsdlssurv_summary_IS <- totseasonalsdlssurv %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  group_by(Season, Dormancy, Envt) %>% 
+  filter(!is.na(seasonalEst)) %>% 
+  summarize(meanSurv=mean(seasonalEst), SE=sd(seasonalEst)/sqrt(n()))
+
+totseasonalsdlssurv_summary_IS$Envt <- factor(totseasonalsdlssurv_summary_IS$Envt, levels = Envt_order)
+totseasonalsdlssurv_summary_IS$Season <- factor(totseasonalsdlssurv_summary_IS$Season, levels = c('1_Summer','1_Autumn','2_Summer','2_Autumn'))
+totseasonalsdlssurv_summary_IS$Dormancy <- factor(totseasonalsdlssurv_summary_IS$Dormancy, levels = Dorm_order)
+
+seasonalsurv_IS_plot <- totseasonalsdlssurv_summary_IS %>% 
+  ggplot(aes(x=Season, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Year_Season") +
+  ylab(paste0("Proportion of Seedling Establishment")) +
+  scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=30), panel.background = element_rect(fill = NA, color = "black"), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+  scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(-0.005, 1)) +
+  facet_grid(Envt ~.)
+ggsave("../Figures/Fig2B_seasonalSdlEst_Envt.png", width=16, height=12, units="in")
+```
+
+## Survival to Rosette from Seedling - Fig 2c and S9C
+```{r}
+sdltorosettesurv_calc <- read_csv("../Processed.Data/SurvtoRose.csv")
+```
+
+### Control Treatment
+```{r}
+survtorose_1_CTRL_summary <- sdltorosettesurv_calc %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(Envt=="Control") %>% 
+  filter(Year != 3)%>%
+  group_by(Year, Dormancy, RILSet) %>% 
+  filter(!is.na(SurvtoRose)) %>% 
+  summarize(meanSurv=mean(SurvtoRose), SE=sd(SurvtoRose)/sqrt(n()))
+
+survtorose_1_CTRL_summary$Dormancy <- factor(survtorose_1_CTRL_summary$Dormancy, levels = Dorm_order)
+
+survtorose_1_CTRL_summary %>% 
+    ggplot(aes(x=Year, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+     geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Year") +
+    ylab("Survival to Rosette") +
+    scale_fill_manual(values=BQDNDPalette) +
+    theme(text=element_text(size=37), panel.background = element_rect(fill = NA, color = "black")) +
+    scale_y_continuous(expand = expansion(mult = c(0, 0)), limits = c(-0.001, 1)) +
+    scale_x_continuous(breaks = seq(1, 3, by = 1)) +
+    facet_grid(. ~factor(RILSet, level = RILS_order))
+ggsave("../Figures/FigS9C_SurvtoRose_Ctrl.png", width=18, height=9, units="in")
+```
+
+### Italy x Swden RIL set
+```{r}
+survtorose_1_IS_summary <- sdltorosettesurv_calc %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  filter(Year != 3)%>%
+  group_by(Year, Dormancy, Envt) %>% 
+  filter(!is.na(SurvtoRose)) %>% 
+  summarize(meanSurv=mean(SurvtoRose), SE=sd(SurvtoRose)/sqrt(n()))
+
+survtorose_1_IS_summary$Dormancy <- factor(survtorose_1_IS_summary$Dormancy, levels = Dorm_order)
+survtorose_1_IS_summary$Envt <- factor(survtorose_1_IS_summary$Envt, levels = Envt_order)
+
+survtorose_1_IS_summary %>% 
+    ggplot(aes(x=Year, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+     geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Year") +
+    ylab("Survival to Rosette") +
+    scale_fill_manual(values=BQDNDPalette) +
+    theme(text=element_text(size=37), panel.background = element_rect(fill = NA, color = "black")) +
+    scale_y_continuous(expand = expansion(mult = c(0, 0)), limits = c(-0.001, 1)) +
+    scale_x_continuous(breaks = seq(1, 3, by = 1)) +
+    facet_grid(. ~Envt)
+ggsave("../Figures/Fig2C_SurvtoRose_ENVT.png", width=18, height=9, units="in")
+```
+
+## Survival to Reproduction from Rosette - Fig 2D and S9D
+```{r}
+survtoFRMD_circle_calc <- read_csv("../Processed.Data/RoseSurvtoFRMD.csv")
+```
+
+### Control Treatment
+```{r}
+df_frmd_ctrl <- tibble(Year=c(2,2), Dormancy=c("High", "Low"), RILSet=c("UK x USA", "UK x USA"), meanSurv=0, SE=0)
+
+survtoFRMD_CTRL_summary <- survtoFRMD_circle_calc %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(Envt=="Control") %>% 
+  group_by(Year, Dormancy, RILSet) %>% 
+  filter(!is.na(RoseSurv)) %>% 
+  summarize(meanSurv=mean(RoseSurv), SE=sd(RoseSurv)/sqrt(n())) %>% 
+  bind_rows(df_frmd_ctrl)
+
+survtoFRMD_CTRL_summary$Dormancy <- factor(survtoFRMD_CTRL_summary$Dormancy, levels = Dorm_order)
+
+survtoFRMD_CTRL_summary %>% 
+    ggplot(aes(x=Year, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+     geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Year") +
+    ylab("Rosette to Reproductive Survival") +
+    scale_fill_manual(values=BQDNDPalette) +
+    scale_x_continuous(breaks = seq(1, 3, by = 1)) +
+   theme(text=element_text(size=37), panel.background = element_rect(fill = NA, color = "black")) +
+  scale_y_continuous(expand = expansion(mult = c(0.001,0)), limits = c(0, 1)) +
+   facet_grid(. ~factor(RILSet, level = RILS_order))
+ggsave("../Figures/FigS9D_SurvtoFRMD_CTRL.png", width=18, height=9, units="in")
+```
+
+### Italy x Swden RIL set
+```{r}
+survtoFRMD_ENVT_summary <- survtoFRMD_circle_calc %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  group_by(Year, Dormancy, Envt) %>% 
+  filter(!is.na(RoseSurv)) %>% 
+  summarize(meanSurv=mean(RoseSurv), SE=sd(RoseSurv)/sqrt(n()))
+
+survtoFRMD_ENVT_summary$Dormancy <- factor(survtoFRMD_ENVT_summary$Dormancy, levels = Dorm_order)
+survtoFRMD_ENVT_summary$Envt <- factor(survtoFRMD_ENVT_summary$Envt, levels = Envt_order)
+
+survtoFRMD_ENVT_summary %>% 
+  ggplot(aes(x=Year, y=meanSurv, group=Dormancy, fill=Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanSurv-SE,ymax=meanSurv+SE),
+                width=.2, position = position_dodge(0.75)) +
+  theme_classic() +
+  xlab("Year") +
+  ylab("Rosette to Reproductive Survival") +
+  scale_fill_manual(values=BQDNDPalette) +
+  scale_x_continuous(breaks = seq(1, 3, by = 1)) +
+  theme(text=element_text(size=37), panel.background = element_rect(fill = NA, color = "black")) +
+  scale_y_continuous(expand = expansion(mult = c(0, .2)), limits = c(0, 1)) +
+  facet_grid(. ~Envt)
+ggsave("../Figures/Fig2D_SurvtoFRMD_ENVT.png", width=18, height=9, units="in")
+```

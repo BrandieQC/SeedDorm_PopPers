@@ -1,0 +1,657 @@
+---
+title: "PopDemog"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Code for prepping population demography
+Population size at different life stages + Transitions between stages
+
+## Load Libraries 
+```{r}
+library(tidyverse)
+```
+
+## Load Census Date Info
+```{r}
+censusdates_all <- read_csv("../Raw.Data/CensusDates_All.csv") %>% #accounts for variety in dates per censusN
+  unite("PopId", c(Col, Row)) %>%  #create PopId column 
+  mutate(Date=mdy(Date))
+
+censusdates_all_julian <- censusdates_all %>% 
+  mutate(JulianDate=yday(Date)) %>% 
+  mutate(CensusN=as.character(CensusN))
+```
+
+## Load Population Census Data
+```{r}
+dndallyearspop_long <- read_csv("../Raw.Data/AllYearsPopCensus_PopSize.csv") %>% 
+  unite("PopId", c(Col, Row)) #create PopId column 
+
+dndallyearspop_long_circle <- dndallyearspop_long %>% 
+  select(Block:Ident, CensusN:mat.dead.circle) #keep only the data for inside the circle (most consistent)
+```
+
+## Long --> Wide
+Make a separate wide dataframe for each life stage to facilitate calculations of class size and survival
+```{r}
+sdls_circle_wide <- dndallyearspop_long_circle %>% 
+  select(Block:SeedlingN.circle) %>% 
+  pivot_wider(names_from = CensusN,
+              values_from = SeedlingN.circle)
+
+rosettes_circle_wide <- dndallyearspop_long_circle %>% 
+  select(Block:CensusN, RosetteN.circle) %>% 
+  pivot_wider(names_from = CensusN,
+              values_from = RosetteN.circle)
+
+FRMD_circle_wide <- dndallyearspop_long_circle %>% 
+  select(Block:CensusN, Fruiting.circle, mat.dead.circle) %>% 
+  mutate(FRMDTotal=Fruiting.circle+mat.dead.circle) %>% #combine fruiting and mature individuals (successful rep)
+  select(-Fruiting.circle, -mat.dead.circle) %>% 
+  pivot_wider(names_from = CensusN,
+              values_from = FRMDTotal)
+```
+
+## Rosette Number
+Sum of new rosettes in circle
+```{r}
+rosettes_circle_wide_new <- rosettes_circle_wide
+
+rosettes_circle_wide_new[8:64] = rosettes_circle_wide_new[8:64] - rosettes_circle_wide_new[(8:64)-1] #rosettes at time t+1 minus rosettes at time t
+
+# convert back to long 
+newrosettes_circle_long <- rosettes_circle_wide_new %>% 
+  pivot_longer("1.01":"3.23", names_to = "CensusN", values_to = "Newrosettes") %>% 
+  mutate(Newrosettes=if_else(Newrosettes<0, 0, Newrosettes)) %>%  #convert negatives to 0 (means some rosettes died between censuses and no new rosettes)
+  mutate(CensusN=as.character(CensusN))
+
+#add in date info
+newrosettes_circle_long_dates <- newrosettes_circle_long %>% 
+  left_join(censusdates_all_julian)
+```
+
+### By Year
+```{r}
+y1totalrosettes <- newrosettes_circle_long_dates %>% 
+  filter(Year=="1") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(Totalrosettes=sum(Newrosettes, na.rm = TRUE)) %>% 
+  mutate(Year=1)
+
+y2totalrosettes <- newrosettes_circle_long_dates %>% 
+  filter(Year=="2") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(Totalrosettes=sum(Newrosettes, na.rm = TRUE)) %>% 
+  mutate(Year=2)
+
+y3totalrosettes <- newrosettes_circle_long_dates %>% 
+  filter(Year=="3") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(Totalrosettes=sum(Newrosettes, na.rm = TRUE)) %>% 
+  mutate(Year=3)
+
+allyearstotalrosettes <- y1totalrosettes %>% 
+  bind_rows(y2totalrosettes) %>% 
+  bind_rows(y3totalrosettes)
+```
+
+### Sample Sizes
+```{r}
+allyearstotalrosettes %>% 
+  filter(!is.na(Totalrosettes)) %>% 
+  group_by(RILSet, Dormancy, Envt, Year) %>% 
+  summarise(n=n())
+```
+
+## Seedling Number 
+```{r}
+newrosettes_circle_wide_noneg <- newrosettes_circle_long %>% #new rosette per census with negs removed 
+  pivot_wider(names_from = CensusN,
+              values_from = Newrosettes) #convert back to wide
+
+# Subtract new rosettes from old seedlings (sdls that turned into rosettes)
+oldsdls_circle_wide <- sdls_circle_wide
+oldsdls_circle_wide[7:63] = oldsdls_circle_wide[7:63] - newrosettes_circle_wide_noneg[8:64]
+
+oldsdls_circle_long <- 
+  oldsdls_circle_wide %>% 
+  pivot_longer("1.01":"3.23", names_to = "CensusN", values_to = "oldsdls")
+
+#Subtract corrected old seedlings from total seedlings to get new seedlings 
+sdls_circle_wide_new <- sdls_circle_wide
+sdls_circle_wide_new[8:64] = sdls_circle_wide_new[8:64] - oldsdls_circle_wide[(8:64)-1]
+
+newsdls_circle_long <- 
+  sdls_circle_wide_new %>% 
+  pivot_longer("1.01":"3.23", names_to = "CensusN", values_to = "Newsdls") %>% 
+  mutate(Newsdls=if_else(Newsdls<0, 0, Newsdls)) %>%  #convert negatives to 0 (means some new sdls died between censuses and no new sdls)
+  mutate(CensusN=as.character(CensusN))
+
+# add in date info 
+newsdls_circle_long_dates <- 
+  newsdls_circle_long %>% 
+  left_join(censusdates_all_julian)
+```
+
+### By Year
+```{r}
+y1totalsdls <- newsdls_circle_long_dates %>% 
+  filter(Year=="1") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(Totalsdls=sum(Newsdls, na.rm = TRUE)) %>% 
+  mutate(Year=1)
+
+y2totalsdls <- newsdls_circle_long_dates %>% 
+  filter(Year=="2") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(Totalsdls=sum(Newsdls, na.rm = TRUE)) %>% 
+  mutate(Year=2)
+
+y3totalsdls <- newsdls_circle_long_dates %>% 
+  filter(Year=="3") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(Totalsdls=sum(Newsdls, na.rm = TRUE)) %>% 
+  mutate(Year=3)
+
+allyearstotalsdls <- y1totalsdls %>% 
+  bind_rows(y2totalsdls) %>% 
+  bind_rows(y3totalsdls)
+
+write_csv(allyearstotalsdls, "../Processed.Data/TotalSeedlings.csv")
+```
+
+### Sample Sizes
+```{r}
+allyearstotalsdls %>% 
+  filter(!is.na(Totalsdls)) %>% 
+  group_by(RILSet, Dormancy, Envt, Year) %>% 
+  summarise(n=n())
+```
+
+### Seedling Number Fluctuations
+```{r}
+allyearstotalsdls_wide <- 
+  allyearstotalsdls %>% 
+  pivot_wider(names_from = Year,
+              names_prefix = "Year_",
+              values_from = Totalsdls)
+  
+sdls_flucts <- allyearstotalsdls_wide %>% 
+  mutate("Yr 1-2" = Year_1 - Year_2, 
+         "Yr 2-3" = Year_2 - Year_3)
+
+#convert to long 
+sdls_flucts_long <- 
+  sdls_flucts %>% 
+  select(PopId:Envt, "Yr 1-2":"Yr 2-3") %>% 
+  pivot_longer("Yr 1-2":"Yr 2-3", names_to = "Timepoint", values_to = "Fluct")
+
+write_csv(sdls_flucts_long, "../Processed.Data/SdlFlucts.csv")
+```
+
+## Total Successful Reproductive Individuals 
+Fruiting + Mature/Dead
+```{r}
+FRMD_circle_wide_new <- FRMD_circle_wide
+
+FRMD_circle_wide_new[8:64] = FRMD_circle_wide_new[8:64] - FRMD_circle_wide_new[(8:64)-1]
+
+newFRMD_circle_long <- FRMD_circle_wide_new %>% 
+  pivot_longer("1.01":"3.23", names_to = "CensusN",
+               values_to = "NewFRMD") %>%
+  mutate(NewFRMD=if_else(NewFRMD<0, 0, NewFRMD)) %>% 
+  mutate(CensusN=as.character(CensusN))
+
+#add in date info
+newFRMD_circle_long_dates <- newFRMD_circle_long %>% 
+  left_join(censusdates_all_julian)
+```
+
+### By Year
+```{r}
+y1totalFRMD <- newFRMD_circle_long_dates %>% 
+  filter(Year=="1") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(TotalFRMD=sum(NewFRMD, na.rm = TRUE)) %>% 
+  mutate(Year=1)
+
+y2totalFRMD <- newFRMD_circle_long_dates %>% 
+  filter(Year=="2") %>% 
+  group_by(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  summarise(TotalFRMD=sum(NewFRMD, na.rm = TRUE)) %>% 
+  mutate(Year=2)
+
+allyearstotalFRMD <- y1totalFRMD %>% 
+  bind_rows(y2totalFRMD) 
+```
+
+### Sample Sizes
+```{r}
+allyearstotalFRMD %>% 
+  filter(!is.na(TotalFRMD)) %>% 
+  group_by(RILSet, Dormancy, Envt, Year) %>% 
+  summarise(n=n())
+```
+
+## Seedling Establishment
+```{r}
+sdls_circle_long <- dndallyearspop_long_circle %>% select(Block:Ident, CensusN, SeedlingN.circle) #raw number of seedlings
+```
+
+### Year 1
+```{r}
+#year 1
+sdls_circle_long_y1 <- sdls_circle_long %>% filter(CensusN<1.25) %>%
+  rename(CensusNSdl = CensusN, PrevSdls=SeedlingN.circle) #raw number of seedlings at each census --> previous seedlings, cut the last census off
+
+newrosettes_circle_long_y1 <- newrosettes_circle_long %>% 
+  filter(CensusN<1.26) %>% 
+  rename(CensusNRose = CensusN) %>% 
+  filter(CensusNRose !=1.01) #number new rosettes each week with negs removed --> new rosettes the following week, cut the first census off
+
+newrosettes_circle_long_y1$CensusNRose <- as.numeric(newrosettes_circle_long_y1$CensusNRose)
+newrosettes_circle_long_y1$CensusNSdl <- ifelse(newrosettes_circle_long_y1$CensusNRose==1.22,newrosettes_circle_long_y1$CensusNRose-0.02 ,newrosettes_circle_long_y1$CensusNRose - 0.01) #add CenusNSdl back in (1 week or 2 weeks prior) #new rosettes for following week
+
+twoweeknewrosettes_circle_long_y1 <- newrosettes_circle_long %>%
+  filter(CensusN<1.26) %>% 
+  rename(CensusNRose2wk = CensusN, Newrosettes2wk=Newrosettes) %>% 
+  filter(CensusNRose2wk >1.02) #number new rosettes each week with negs removed --> new rosettes the following week, cut the first 2 censuses off
+twoweeknewrosettes_circle_long_y1$CensusNRose2wk <- as.numeric(twoweeknewrosettes_circle_long_y1$CensusNRose2wk)
+twoweeknewrosettes_circle_long_y1$CensusNSdl <- ifelse(twoweeknewrosettes_circle_long_y1$CensusNRose2wk==1.22,twoweeknewrosettes_circle_long_y1$CensusNRose2wk-0.03 ,twoweeknewrosettes_circle_long_y1$CensusNRose2wk - 0.02) #add CenusNSdl back in (1 week or 2 weeks prior) #new rosettes for two weeks later, need to add censusnsdls 1.24
+
+census24sdls <- sdls_circle_long_y1 %>% 
+  filter(CensusNSdl==1.24) %>% 
+  select(Block:CensusNSdl) %>% 
+  mutate(CensusNRose2wk=NA, Newrosettes2wk=0)
+census20sdls <- sdls_circle_long_y1 %>% 
+  filter(CensusNSdl==1.2) %>% 
+  select(Block:CensusNSdl) %>% 
+  mutate(CensusNRose2wk=NA, Newrosettes2wk=0)
+
+twoweeknewrosettes_circle_bind_y1 <- bind_rows(twoweeknewrosettes_circle_long_y1, census20sdls, census24sdls)
+
+nextwksdls_circle_long_y1 <- sdls_circle_long %>% 
+  filter(CensusN<1.26) %>% 
+  rename(CensusNxtWkSdl = CensusN, NextWkSdls=SeedlingN.circle) %>% 
+  filter(CensusNxtWkSdl != 1.01) #cut the first census off
+nextwksdls_circle_long_y1$CensusNxtWkSdl <- as.numeric(as.character(nextwksdls_circle_long_y1$CensusNxtWkSdl))
+nextwksdls_circle_long_y1$CensusNSdl <- ifelse(nextwksdls_circle_long_y1$CensusNxtWkSdl==1.22,nextwksdls_circle_long_y1$CensusNxtWkSdl-0.02,nextwksdls_circle_long_y1$CensusNxtWkSdl - 0.01) #next week raw seedling number 
+
+newsdls_circle_long_names <- newsdls_circle_long %>% rename(CensusNSdl=CensusN)  #new seedlings at each census (includes rapidly growing rose)
+
+#rapid rose for new sdls subtraction 
+rapidrose_y1_sub <- merge(sdls_circle_long_y1, newrosettes_circle_long_y1) %>% 
+  mutate(PrevRapidRose=ifelse(Newrosettes>PrevSdls, Newrosettes-PrevSdls, 0)) %>%
+  select(Block:CensusNSdl, PrevRapidRose) %>% mutate(CensusRapidRose=CensusNSdl)
+rapidrose_y1_sub$CensusNSdl <- ifelse(rapidrose_y1_sub$CensusRapidRose==1.2,rapidrose_y1_sub$CensusRapidRose+0.02,rapidrose_y1_sub$CensusRapidRose + 0.01)
+census1sdlsv2 <- sdls_circle_long_y1 %>% 
+  filter(CensusNSdl==1.01) %>% select(Block:CensusNSdl) %>% 
+  mutate(CensusRapidRose=0, PrevRapidRose=0)
+rapidrose_bind_y1 <- bind_rows(census1sdlsv2, rapidrose_y1_sub)
+
+#rapid rose for adding to newsdls
+rapidrose_y1_add <- merge(sdls_circle_long_y1, newrosettes_circle_long_y1) %>%
+  mutate(CurRapidRose=ifelse(Newrosettes>PrevSdls, Newrosettes-PrevSdls, 0)) %>%
+  select(Block:CensusNSdl, CurRapidRose) %>% mutate(CensusCurRapidRose=CensusNSdl)
+
+calcoldsdlsfromnew_y1a <-merge(rapidrose_bind_y1, rapidrose_y1_add)
+calcoldsdlsfromnew_y1b <- merge(calcoldsdlsfromnew_y1a, newsdls_circle_long_names)
+calcoldsdlsfromnew_y1c <- merge(calcoldsdlsfromnew_y1b, newrosettes_circle_long_y1)
+calcoldsdlsfromnew_y1 <- calcoldsdlsfromnew_y1c %>% 
+  mutate(AdjNew=Newsdls+CurRapidRose-PrevRapidRose, OldfromNew=AdjNew-Newrosettes) #remaining seedlings from new 
+
+oldsdlsfromnew_noneg_y1 <- calcoldsdlsfromnew_y1
+oldsdlsfromnew_noneg_y1$OldfromNew <- ifelse(oldsdlsfromnew_noneg_y1$OldfromNew < 0, 0, oldsdlsfromnew_noneg_y1$OldfromNew) #Turn negatives --> 0s 
+oldsdlsfromnew_noneg_y1$CensusNSdl <- as.character(oldsdlsfromnew_noneg_y1$CensusNSdl)
+oldsdlsfromnew_noneg_y1$CensusNSdl <- as.numeric(oldsdlsfromnew_noneg_y1$CensusNSdl)
+oldsdls_circle_long_y1 <- oldsdlsfromnew_noneg_y1 %>% 
+  filter(CensusNSdl<1.25) %>% 
+  select(Block:CensusNSdl, OldfromNew) %>%  
+  mutate(CensusNOldSdls=CensusNSdl) #cut the last census off #remained sdls after 1 week 
+
+#make the below for a week before the census we're calculating survival for 
+wkbeforeoldsdls_circle_long_y1 <- oldsdlsfromnew_noneg_y1 %>% 
+  select(Block:Ident, CensusNWkOldSdls=CensusNSdl, WkOldSdls=OldfromNew) %>% 
+  filter(CensusNWkOldSdls<1.24) #cut the last 2 censuses off
+wkbeforeoldsdls_circle_long_y1$CensusNSdl <- ifelse(wkbeforeoldsdls_circle_long_y1$CensusNWkOldSdls==1.2,wkbeforeoldsdls_circle_long_y1$CensusNWkOldSdls+0.02,wkbeforeoldsdls_circle_long_y1$CensusNWkOldSdls + 0.01) #line up with CensusNsdls 1 week later 
+#add CenusNSdl 1.01
+census1sdls <- sdls_circle_long_y1 %>% 
+  filter(CensusNSdl==1.01) %>% select(Block:CensusNSdl) %>% 
+  mutate(CensusNWkOldSdls=0, WkOldSdls=0)
+wkbeforeoldsdls_circle_bind_y1 <- bind_rows(census1sdls, wkbeforeoldsdls_circle_long_y1)
+
+y1sdlsurv <- merge(sdls_circle_long_y1, newsdls_circle_long_names)
+y1sdlsurv <- merge(y1sdlsurv, rapidrose_bind_y1)
+y1sdlsurv <- merge(y1sdlsurv, rapidrose_y1_add)
+y1sdlsurv <- merge(y1sdlsurv, nextwksdls_circle_long_y1)
+y1sdlsurv <- merge(y1sdlsurv, newrosettes_circle_long_y1)
+y1sdlsurv <- merge(y1sdlsurv, twoweeknewrosettes_circle_bind_y1)
+y1sdlsurv <- merge(y1sdlsurv, oldsdls_circle_long_y1)
+y1sdlsurv <- merge(y1sdlsurv, wkbeforeoldsdls_circle_bind_y1)
+
+#year 1: up to census 1.20 = 1 week intervals between censuses 
+y1sdlsurv_1wk <- y1sdlsurv %>% filter(CensusNSdl<1.2)
+
+#Number that survived to rosette for 1 week (includes rapid growers): new rose - remaining seedlings from prior week --> wkbeforeoldsdls  
+y1sdlsurv_1wk_rosesurv <- y1sdlsurv_1wk %>%
+  mutate(SurvtoRose=ifelse(Newrosettes-WkOldSdls<0, 0, Newrosettes-WkOldSdls))
+#y1sdlsurv_1wk_rosesurv %>% filter(SurvtoRose<0)
+  
+#how many remaining sdls after 1 week survived to the 2nd week?
+#rose t+2 > old sdls(t), survivors = OldfromNew(t)
+#rose t+2 < old sdls(t), survivors = new rose(t+2)
+y1sdlsurv_1wk_oldsurv <- y1sdlsurv_1wk_rosesurv %>%
+  mutate(OldSdlSurv=ifelse(Newrosettes+NextWkSdls==0,0,
+                           ifelse(Newrosettes2wk>=OldfromNew, OldfromNew,
+                                  Newrosettes2wk)))
+
+#total survivors (add SurvtoRose and OldSdlSurv)
+y1totsurvs <- y1sdlsurv_1wk_oldsurv %>% rowwise() %>% 
+  mutate(TotSurv=sum(SurvtoRose, OldSdlSurv, na.rm = TRUE))
+
+#adjusted new (subtract the rapidrose from new sdls)
+y1adjnew_totsurvs <- y1totsurvs %>%
+  mutate(AdjNew=Newsdls+CurRapidRose-PrevRapidRose)
+
+y1sdlsurv_1wk_survivors_weeklyest <- y1adjnew_totsurvs %>% 
+  select(Block:CensusNSdl, AdjNew, TotSurv) %>% 
+  mutate(WeeklyEst=TotSurv/AdjNew)
+#when AdjNew=0, weeklyest=totsurv/totsurv, totsurv/adjnew 
+#y1sdlsurv_1wk_survivors_weeklyest %>% filter(WeeklyEst>1) 
+
+#year 1: 2 weeks b/t censuses starting 1.2-1.22 (no census 1.21), 2 weeks interval ends with census 1.25 (gap to 1.26 = 2 months) --> stop calculating survival after census 1.24
+y1sdlsurv_2wk <- y1sdlsurv %>% filter(CensusNSdl>1.19)
+y1sdlsurv_2wk_survivors <- y1sdlsurv_2wk %>%
+  mutate(AdjNew=Newsdls+CurRapidRose-PrevRapidRose, 
+         TotSurv = ifelse(Newrosettes > Newsdls, AdjNew,
+                          ifelse(OldfromNew>NextWkSdls,
+                                 (NextWkSdls+Newrosettes),
+                                 (OldfromNew+Newrosettes))))
+
+#the above accounts for rapid growers even when previous week's seedlings = 0 
+y1sdlsurv_2wk_survivors_weeklyest <- y1sdlsurv_2wk_survivors %>%
+  select(Block:CensusNSdl, AdjNew, TotSurv) %>% 
+  mutate(WeeklyEst=TotSurv/AdjNew)
+
+#allyear 1
+allyear1surv <- bind_rows(y1sdlsurv_1wk_survivors_weeklyest, y1sdlsurv_2wk_survivors_weeklyest)
+```
+
+### Year 2
+```{r}
+sdls_circle_long_y2 <- sdls_circle_long %>% 
+  filter(CensusN>=2.01 & CensusN<2.15) %>% 
+  rename(CensusNSdl = CensusN, PrevSdls=SeedlingN.circle) #raw number of seedlings at each census --> previous seedlings, cut the last census off
+
+newrosettes_circle_long_y2 <- newrosettes_circle_long %>% 
+  filter(CensusN>=2.01 & CensusN<2.16) %>% 
+  rename(CensusNRose = CensusN) %>% 
+  filter(CensusNRose !=2.01) #number new rosettes each week with negs removed --> new rosettes the following week, cut the first census off
+newrosettes_circle_long_y2$CensusNRose <- as.numeric(newrosettes_circle_long_y2$CensusNRose)
+newrosettes_circle_long_y2$CensusNSdl <- newrosettes_circle_long_y2$CensusNRose - 0.01 #add CenusNSdl back in #new rosettes for following week
+
+twoweeknewrosettes_circle_long_y2 <- newrosettes_circle_long %>%
+  filter(CensusN>=2.01 & CensusN<2.16) %>% 
+  rename(CensusNRose2wk = CensusN, Newrosettes2wk=Newrosettes) %>%
+  filter(CensusNRose2wk >2.02) #number new rosettes each week with negs removed --> new rosettes the following week, cut the first 2 censuses off
+twoweeknewrosettes_circle_long_y2$CensusNRose2wk <- as.numeric(twoweeknewrosettes_circle_long_y2$CensusNRose2wk)
+twoweeknewrosettes_circle_long_y2$CensusNSdl <- twoweeknewrosettes_circle_long_y2$CensusNRose2wk - 0.02 #add CenusNSdl back in (1 week or 2 weeks prior)
+#new rosettes for two weeks later, need to add censusnsdls 2.14
+census14sdls <- sdls_circle_long_y2 %>% 
+  filter(CensusNSdl==2.14) %>% 
+  select(Block:CensusNSdl) %>% mutate(CensusNRose2wk=NA, Newrosettes2wk=0)
+twoweeknewrosettes_circle_bind_y2 <- bind_rows(twoweeknewrosettes_circle_long_y2, census14sdls)
+
+nextwksdls_circle_long_y2 <- sdls_circle_long %>% 
+  filter(CensusN>=2.01 & CensusN<2.16) %>% 
+  rename(CensusNxtWkSdl = CensusN, NextWkSdls=SeedlingN.circle) %>%
+  filter(CensusNxtWkSdl != 2.01) #cut the first census off
+nextwksdls_circle_long_y2$CensusNxtWkSdl <- as.numeric(as.character(nextwksdls_circle_long_y2$CensusNxtWkSdl))
+nextwksdls_circle_long_y2$CensusNSdl <- nextwksdls_circle_long_y2$CensusNxtWkSdl - 0.01 #next week raw seedling number 
+
+#rapid rose for new sdls subtraction 
+rapidrose_y2_sub <- merge(sdls_circle_long_y2, newrosettes_circle_long_y2) %>%
+  mutate(PrevRapidRose=ifelse(Newrosettes>PrevSdls, Newrosettes-PrevSdls, 0)) %>%
+  select(Block:CensusNSdl, PrevRapidRose) %>% 
+  mutate(CensusRapidRose=CensusNSdl)
+rapidrose_y2_sub$CensusNSdl <- rapidrose_y2_sub$CensusRapidRose + 0.01
+
+census2.1sdlsv2 <- sdls_circle_long_y2 %>% 
+  filter(CensusNSdl==2.01) %>% select(Block:CensusNSdl) %>%
+  mutate(CensusRapidRose=0, PrevRapidRose=0)
+rapidrose_bind_y2 <- bind_rows(census2.1sdlsv2, rapidrose_y2_sub)
+
+#rapid rose for adding to newsdls
+rapidrose_y2_add <- merge(sdls_circle_long_y2, newrosettes_circle_long_y2) %>%
+  mutate(CurRapidRose=ifelse(Newrosettes>PrevSdls, Newrosettes-PrevSdls, 0)) %>%
+  select(Block:CensusNSdl, CurRapidRose) %>% mutate(CensusCurRapidRose=CensusNSdl)
+
+calcoldsdlsfromnew_y2a <-merge(rapidrose_bind_y2, rapidrose_y2_add)
+calcoldsdlsfromnew_y2b <- merge(calcoldsdlsfromnew_y2a, newsdls_circle_long_names)
+calcoldsdlsfromnew_y2c <- merge(calcoldsdlsfromnew_y2b, newrosettes_circle_long_y2)
+calcoldsdlsfromnew_y2 <- calcoldsdlsfromnew_y2c %>% 
+  mutate(AdjNew=Newsdls+CurRapidRose-PrevRapidRose, OldfromNew=AdjNew-Newrosettes) #remaining seedlings from new 
+
+oldsdlsfromnew_noneg_y2 <- calcoldsdlsfromnew_y2
+oldsdlsfromnew_noneg_y2$OldfromNew <- ifelse(oldsdlsfromnew_noneg_y2$OldfromNew < 0, 0, oldsdlsfromnew_noneg_y2$OldfromNew) #Turn negatives --> 0s 
+oldsdlsfromnew_noneg_y2$CensusNSdl <- as.character(oldsdlsfromnew_noneg_y2$CensusNSdl)
+oldsdlsfromnew_noneg_y2$CensusNSdl <- as.numeric(oldsdlsfromnew_noneg_y2$CensusNSdl)
+oldsdls_circle_long_y2 <- oldsdlsfromnew_noneg_y2 %>% 
+  filter(CensusNSdl>=2.01 & CensusNSdl<2.15) %>% 
+  select(Block:CensusNSdl, OldfromNew) %>%  
+  mutate(CensusNOldSdls=CensusNSdl)  #cut the last census off #remained sdls after 1 week (new sdls - newrose)
+
+#make the below for a week before the census we're calculating survival for 
+wkbeforeoldsdls_circle_long_y2 <- oldsdlsfromnew_noneg_y2 %>% 
+  select(Block:Ident, CensusNWkOldSdls=CensusNSdl, WkOldSdls=OldfromNew) %>%
+  filter(CensusNWkOldSdls>=2.01 & CensusNWkOldSdls<2.14) #cut the last 2 censuses off
+wkbeforeoldsdls_circle_long_y2$CensusNSdl <- wkbeforeoldsdls_circle_long_y2$CensusNWkOldSdls + 0.01 #line up with CensusNsdls 1 week later 
+
+#add CenusNSdl 2.01
+census2.1sdls <- sdls_circle_long_y2 %>% 
+  filter(CensusNSdl==2.01) %>% 
+  select(Block:CensusNSdl) %>% 
+  mutate(CensusNWkOldSdls=0, WkOldSdls=0)
+wkbeforeoldsdls_circle_bind_y2 <- bind_rows(census2.1sdls, wkbeforeoldsdls_circle_long_y2)
+
+y2sdlsurv <- merge(sdls_circle_long_y2, newsdls_circle_long_names)
+y2sdlsurv <- merge(y2sdlsurv, rapidrose_bind_y2)
+y2sdlsurv <- merge(y2sdlsurv, rapidrose_y2_add)
+y2sdlsurv <- merge(y2sdlsurv, nextwksdls_circle_long_y2)
+y2sdlsurv <- merge(y2sdlsurv, newrosettes_circle_long_y2)
+y2sdlsurv <- merge(y2sdlsurv, twoweeknewrosettes_circle_bind_y2)
+y2sdlsurv <- merge(y2sdlsurv, oldsdls_circle_long_y2)
+y2sdlsurv <- merge(y2sdlsurv, wkbeforeoldsdls_circle_bind_y2)
+
+#year 2: 1 week b/t 2.01 and 2.02, no survival for 2.02 germs; 1 week interval 2.04-2.07; 2.11-2.12
+y2sdlsurv_1wk_a <- y2sdlsurv %>% filter(CensusNSdl==2.01)
+y2sdlsurv_1wk_b <- y2sdlsurv %>% filter(CensusNSdl>2.03 & CensusNSdl<2.08)
+y2sdlsurv_1wk_c <- y2sdlsurv %>% filter(CensusNSdl==2.11)
+y2sdlsurv_1wk_all <- bind_rows(y2sdlsurv_1wk_a, y2sdlsurv_1wk_b, y2sdlsurv_1wk_c)
+
+#Number that survived to rosette for 1 week (includes rapid growers): new rose - remaining seedlings from prior week --> wkbeforeoldsdls  
+y2sdlsurv_1wk_all_rosesurv <- y2sdlsurv_1wk_all %>%
+  mutate(SurvtoRose=ifelse(Newrosettes-WkOldSdls<0, 0, Newrosettes-WkOldSdls))
+
+#how many remaining sdls after 1 week survived to the 2nd week?
+#rose t+2 > old sdls(t), survivors = OldfromNew(t)
+#rose t+2 < old sdls(t), survivors = new rose(t+2)
+y2sdlsurv_1wk_oldsurv <- y2sdlsurv_1wk_all_rosesurv %>% 
+  mutate(OldSdlSurv=ifelse(Newrosettes+NextWkSdls==0,0,
+                           ifelse(Newrosettes2wk>=OldfromNew, 
+                                  OldfromNew, Newrosettes2wk)))
+
+#total survivors (add SurvtoRose and OldSdlSurv)
+y2tot1wksurvs <- y2sdlsurv_1wk_oldsurv %>% rowwise() %>%
+  mutate(TotSurv=sum(SurvtoRose, OldSdlSurv, na.rm = TRUE))
+
+#adjusted new (subtract the rapidrose from new sdls)
+y2adjnew_totsurvs <- y2tot1wksurvs %>%
+  mutate(AdjNew=Newsdls+CurRapidRose-PrevRapidRose)
+y2sdlsurv_1wk_survivors_weeklyest <- y2adjnew_totsurvs %>% 
+  select(Block:CensusNSdl, AdjNew, TotSurv) %>% 
+  mutate(WeeklyEst=TotSurv/AdjNew)
+
+
+#year 2: 2 weeks b/t censuses 2.03-2.04; starts again 2.08-2.09; 2.12-2.13; 2.14-2.15 (gap to 2.16 = 1 month) ---> stop calculating after 2.14
+#2.1 to 2.11 = 3 weeks & 2.13-2.14
+y2sdlsurv_2wk_a <- y2sdlsurv %>% filter(CensusNSdl==2.03)
+y2sdlsurv_2wk_b <- y2sdlsurv %>% filter(CensusNSdl>2.07 & CensusNSdl<2.11)
+y2sdlsurv_2wk_c <- y2sdlsurv %>% filter(CensusNSdl>2.11)
+y2sdlsurv_2wk_all <- bind_rows(y2sdlsurv_2wk_a, y2sdlsurv_2wk_b, y2sdlsurv_2wk_c)
+y2sdlsurv_2wk_survivors<-y2sdlsurv_2wk_all %>%
+  mutate(AdjNew=Newsdls+CurRapidRose-PrevRapidRose, 
+         TotSurv = ifelse(Newrosettes > Newsdls, AdjNew, 
+                          ifelse(OldfromNew>NextWkSdls,
+                                 (NextWkSdls+Newrosettes),
+                                 (OldfromNew+Newrosettes))))
+#the above accounts for rapid growers even when previous week's seedlings = 0 
+y2sdlsurv_2wk_survivors_weeklyest <- y2sdlsurv_2wk_survivors %>%
+  select(Block:CensusNSdl, AdjNew, TotSurv) %>% 
+  mutate(WeeklyEst=TotSurv/AdjNew)
+
+#all year 2
+allyear2surv <- bind_rows(y2sdlsurv_1wk_survivors_weeklyest, y2sdlsurv_2wk_survivors_weeklyest)
+```
+
+### Combine Year 1 and 2
+```{r}
+#combine year 1 and 2 
+bothyearssurv <- bind_rows(allyear1surv, allyear2surv)
+
+#add in year info see old code
+censusdates_all_julian2 <- censusdates_all_julian 
+censusdates_all_julian2$CensusNSdl <- censusdates_all_julian2$CensusN
+bothyearssurv$CensusNSdl <- as.character(bothyearssurv$CensusNSdl)
+bothyears_sdlsurv_years <- merge(bothyearssurv,censusdates_all_julian2)
+
+bothyears_sdlsurv_years_num <- bothyears_sdlsurv_years %>%
+  mutate(CensusNSdl=as.numeric(CensusNSdl))
+```
+
+### Seasonal Seedling Establishment
+```{r}
+seasonalsdlest2 <- bothyears_sdlsurv_years_num %>%
+  mutate(Season=ifelse(CensusNSdl<=1.14, "1_Summer",
+                       ifelse(CensusNSdl>=1.16 & CensusNSdl<=1.24, "1_Autumn",
+                              ifelse(CensusNSdl>=2.01 & CensusNSdl<=2.09, "2_Summer",
+                                     ifelse(CensusNSdl>=2.10 & CensusNSdl<=2.14, "2_Autumn", NA)))))
+#seasonalsdlest2 %>% filter(is.na(Season))
+
+#total by pop
+totseasonalsdlssurv <- seasonalsdlest2 %>% 
+  group_by(PopId, Season, Year, Block, RILSet, Dormancy, Envt, Ident) %>% 
+  summarise(TotPopSurv=sum(TotSurv, na.rm = TRUE), 
+            TotPopAdjNew=sum(AdjNew, na.rm = TRUE)) %>% 
+  filter(!is.na(Season)) %>%  
+  mutate(seasonalEst=TotPopSurv/TotPopAdjNew)
+
+write_csv(totseasonalsdlssurv, "../Processed.Data/TOTALSeasonalSeedlingEstablishment.csv")
+```
+
+### Sample Sizes
+```{r}
+sample_sizes <- totseasonalsdlssurv %>% 
+  group_by(RILSet, Dormancy, Envt, Season) %>% 
+  summarise(n=sum(!is.na(seasonalEst))) %>% 
+  unite("RILENVT", c(RILSet, Envt), remove = FALSE) %>% 
+  filter(RILENVT!="Germany x Tajikistan_Litter") %>% 
+  select(-RILENVT)
+sample_sizes
+summary(sample_sizes)
+
+IS_N <- sample_sizes %>% filter(RILSet=="Italy x Sweden") #%>% 
+  #ungroup() %>% 
+  #group_by(Dormancy, Envt) %>% 
+  #summarise(min_n = min(n), max_n=max(n), median_n=median(n))
+summary(IS_N)
+
+GS_N <- sample_sizes %>% filter(RILSet=="Germany x Tajikistan") %>%
+  filter(Season!="1_Summer")
+summary(GS_N)
+
+UU_N <- sample_sizes %>% filter(RILSet=="UK x USA") %>%
+  filter(Season!="1_Summer")
+summary(UU_N)
+```
+
+## Total rosettes/total seedlings
+```{r}
+sdltorosettesurv <- merge(allyearstotalrosettes, allyearstotalsdls)
+sdltorosettesurv_calc <- sdltorosettesurv %>% 
+  mutate(SurvtoRose = ifelse(Totalsdls==0, NA,
+                             Totalrosettes/Totalsdls))
+write_csv(sdltorosettesurv_calc, "../Processed.Data/SurvtoRose.csv")
+```
+
+### Sample Sizes
+```{r}
+sample_sizes <- sdltorosettesurv_calc %>% 
+  group_by(RILSet, Dormancy, Envt, Year) %>% 
+  summarise(n=sum(!is.na(SurvtoRose))) %>% 
+  unite("RILENVT", c(RILSet, Envt), remove = FALSE) %>% 
+  filter(RILENVT!="Germany x Tajikistan_Litter") %>% 
+  select(-RILENVT)
+sample_sizes
+summary(sample_sizes)
+
+IS_N <- sample_sizes %>% filter(RILSet=="Italy x Sweden") 
+summary(IS_N)
+
+GS_N <- sample_sizes %>% filter(RILSet=="Germany x Tajikistan")
+summary(GS_N)
+
+UU_N <- sample_sizes %>% filter(RILSet=="UK x USA") 
+summary(UU_N)
+```
+
+## Total FRMD/total rosettes
+```{r}
+allyearstotalrosettes_noy3 <- subset(allyearstotalrosettes, Year!="3")
+
+survtoFRMD_circle <- merge(allyearstotalFRMD, allyearstotalrosettes_noy3)
+survtoFRMD_circle_calc <- survtoFRMD_circle %>% 
+  mutate(RoseSurv = ifelse(Totalrosettes==0, NA,
+                           ifelse(Totalrosettes<TotalFRMD, 1,
+                                  TotalFRMD/Totalrosettes)))
+write_csv(survtoFRMD_circle_calc, "../Processed.Data/RoseSurvtoFRMD.csv")
+```
+
+### Sample Sizes
+```{r}
+sample_sizes <- survtoFRMD_circle_calc %>% 
+  group_by(RILSet, Dormancy, Envt, Year) %>% 
+  summarise(n=sum(!is.na(RoseSurv))) %>% 
+  unite("RILENVT", c(RILSet, Envt), remove = FALSE) %>% 
+  filter(RILENVT!="Germany x Tajikistan_Litter") %>% 
+  select(-RILENVT)
+sample_sizes
+summary(sample_sizes)
+
+IS_N_1 <- sample_sizes %>% filter(RILSet=="Italy x Sweden") %>% 
+  filter(Year==1)
+summary(IS_N_1)
+IS_N_2 <- sample_sizes %>% filter(RILSet=="Italy x Sweden") %>% 
+  filter(Year==2)
+summary(IS_N_2)
+
+GS_N_1 <- sample_sizes %>% filter(RILSet=="Germany x Tajikistan") %>% 
+  filter(Year==1)
+summary(GS_N_1)
+GS_N_2 <- sample_sizes %>% filter(RILSet=="Germany x Tajikistan") %>% 
+  filter(Year==2)
+summary(GS_N_2)
+
+UU_N_1 <- sample_sizes %>% filter(RILSet=="UK x USA") %>% 
+  filter(Year==1)
+summary(UU_N_1)
+UU_N_2 <- sample_sizes %>% filter(RILSet=="UK x USA") %>% 
+  filter(Year==2)
+summary(UU_N_2)
+```
