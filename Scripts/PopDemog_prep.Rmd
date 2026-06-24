@@ -183,8 +183,8 @@ allyearstotalsdls_wide <-
               values_from = Totalsdls)
   
 sdls_flucts <- allyearstotalsdls_wide %>% 
-  mutate("Yr 1-2" = Year_1 - Year_2, 
-         "Yr 2-3" = Year_2 - Year_3)
+  mutate("Yr 1-2" = Year_2 - Year_1, 
+         "Yr 2-3" = Year_3 - Year_2)
 
 #convert to long 
 sdls_flucts_long <- 

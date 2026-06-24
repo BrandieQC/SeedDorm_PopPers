@@ -99,7 +99,7 @@ sdls_flucts_summary_CTRL <- sdls_flucts_long %>%
   filter(Envt=="Control") %>% 
   group_by(Timepoint, Dormancy, RILSet) %>% 
   filter(!is.na(Fluct)) %>% 
-  summarize(meanSdls=mean(Fluct), SE=sd(Fluct)/sqrt(n()))
+  summarise(meanSdls=mean(Fluct), SE=sd(Fluct)/sqrt(n()))
 
 sdls_flucts_summary_CTRL$Dormancy <- factor(sdls_flucts_summary_CTRL$Dormancy, levels = Dorm_order)
 
@@ -125,7 +125,7 @@ sdls_flucts_summary_ENVT <- sdls_flucts_long %>%
   filter(RILSet=="Italy x Sweden") %>% 
   group_by(Timepoint, Dormancy, Envt) %>% 
   filter(!is.na(Fluct)) %>% 
-  summarize(meanSdls=mean(Fluct), SE=sd(Fluct)/sqrt(n()))
+  summarise(meanSdls=mean(Fluct), SE=sd(Fluct)/sqrt(n()))
 
 sdls_flucts_summary_ENVT$Dormancy <- factor(sdls_flucts_summary_ENVT$Dormancy, levels = Dorm_order)
 sdls_flucts_summary_ENVT$Envt <- factor(sdls_flucts_summary_ENVT$Envt, levels = Envt_order)
