@@ -1,0 +1,164 @@
+---
+title: "PopPersistence"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Code for calculating population persistence (Figure 5)
+
+Incorporate information from inside and outside the circle
+
+## Load Libraries
+```{r}
+library(tidyverse)
+```
+
+## Load Population Census Data
+```{r}
+dndallyearspop <- read_csv("../Raw.Data/AllYearsPopCensus.csv") %>% 
+  unite("PopId", c(Col,Row))
+
+treatments <- dndallyearspop %>% 
+  select(PopId, Block, RILSet, Dormancy, Envt) %>% 
+  unique()
+```
+
+## no germ in year 1
+```{r}
+totaly1popsize <- dndallyearspop %>% 
+  filter(Year==1) %>% 
+  group_by(PopId) %>% 
+  summarise(sumY1Total=sum(TOTAL, na.rm = TRUE))
+
+establishedy1 <- totaly1popsize %>% 
+  mutate(Y1Germ = ifelse(sumY1Total == 0,
+                         "Never Established",
+                         "Established"))
+
+failedy1 <- totaly1popsize %>% 
+  filter(sumY1Total==0) 
+nrow(failedy1) #10 populations had no germination in year 1 
+```
+
+## No rep in year 1
+```{r}
+repy1 <- dndallyearspop %>% 
+  filter(Year==1) %>% 
+  mutate(RepTotal=select(., c(Bolting.circle, Bolting.OC, Flowering.circle,
+                              Flowering.OC, Fruiting.circle, Fruiting.OC,
+                              mat.dead.circle, mat.dead.OC)) %>% 
+                                rowSums(na.rm = TRUE)) #now have a column with all rep categories summed
+
+totaly1rep <- repy1 %>%  
+  group_by(PopId) %>% 
+  summarise(sumY1Rep=sum(RepTotal, na.rm = TRUE))
+
+extincty1 <- totaly1rep %>% mutate(Y1Rep = ifelse(sumY1Rep == 0,
+                                                  "Disappeared",
+                                                  "Persisted"))
+
+extinctpopsY1 <- totaly1rep %>% filter(sumY1Rep==0)
+nrow(extinctpopsY1)
+#48 populations had no reproduction in year 1 (minus the 10 that didn't germinate, that's 38)
+```
+
+## no germ in year 2
+```{r}
+totaly2popsize <- dndallyearspop %>% 
+  filter(Year==2) %>%  
+  group_by(PopId) %>% 
+  summarise(sumy2Total=sum(TOTAL, na.rm = TRUE))
+
+establishedy2 <- totaly2popsize %>% mutate(y2Germ = ifelse(sumy2Total == 0,
+                                                           "Never Established",
+                                                           "Established"))
+
+failedy2 <- subset(totaly2popsize, sumy2Total==0)
+nrow(failedy2) #13 populations had no germination in year 2
+```
+
+## no rep in year 2
+```{r}
+repy2 <- dndallyearspop %>% 
+  filter(Year==2) %>% 
+  mutate(RepTotal=select(., c(Bolting.circle, Bolting.OC, Flowering.circle,
+                              Flowering.OC, Fruiting.circle, 
+                              Fruiting.OC, mat.dead.circle, mat.dead.OC)) %>%
+           rowSums(na.rm = TRUE)) #now have a column with all rep categories summed
+
+totaly2rep <- repy2 %>%  
+  group_by(PopId) %>% 
+  summarise(sumy2Rep=sum(RepTotal, na.rm = TRUE))
+
+extincty2 <- totaly2rep %>% mutate(y2Rep = ifelse(sumy2Rep == 0,
+                                                  "Disappeared",
+                                                  "Persisted"))
+
+extinctpopsy2 <- subset(totaly2rep, sumy2Rep==0)
+nrow(extinctpopsy2)
+#112 populations went extinct in year 2 (minus the 13 that had no germination that's 99)
+```
+
+## no germ in year 3
+```{r}
+totaly3popsize <- dndallyearspop %>% 
+  filter(Year==3) %>%  
+  group_by(PopId) %>% 
+  filter(!is.na(TOTAL)) %>% 
+  summarise(sumy3Total=sum(TOTAL, na.rm = TRUE))
+
+establishedy3 <- totaly3popsize %>% 
+  mutate(y3Germ = ifelse(sumy3Total == 0,
+                         "Never Established", "Established"))
+
+failedy3 <- subset(totaly3popsize, sumy3Total==0)
+nrow(failedy3)
+#9 populations had no germination in year 3 
+```
+
+## combine all classifications into one dataframe 
+```{r}
+allpopclass <- establishedy1 %>% 
+  left_join(extincty1) %>% 
+  left_join(establishedy2) %>% 
+  left_join(extincty2) %>% 
+  left_join(establishedy3)
+
+allpopclassupdate <- allpopclass %>% 
+  mutate(Y1Persistence = ifelse(sumY1Total == 0, "Never Established",
+                                ifelse(sumY1Rep==0,
+                                       "Established then Disappeared", 
+                                       "Established and Persisted")))
+
+allpopclassupdate2 <- allpopclassupdate %>% 
+  mutate(Y2Persistence = ifelse(sumY1Total==0 & sumy2Total == 0, 
+                                "Never Established", 
+                                ifelse(sumy2Total==0, 
+                                       "Disappeared after Year 1",
+                                       ifelse(sumY1Total==0 & sumy2Total>0 &
+                                                sumy2Rep==0,
+                                              "Newly Established then Disappeared",
+                                              ifelse(sumY1Rep==0 & sumy2Total>0 &
+                                                       sumy2Rep==0,
+                                                     "Reappeared then Disappeared",
+                                                    ifelse(sumY1Rep>0 & sumy2Rep==0,
+                                                      "Persisted then Disappeared",
+                                                      "Persisted"))))))
+
+
+allpopclassupdate3 <- allpopclassupdate2 %>% 
+  mutate(Y3Resurrection = ifelse(sumy3Total==0, "Disappeared",
+                                 ifelse(sumy2Total==0 & sumy3Total>0,
+                                        "Reappeared",
+                                        ifelse(sumy2Rep==0 & sumy3Total>0,
+                                               "Reappeared",
+                                               "Persisted"))))
+
+allpopclassupdate3trts <- treatments %>% 
+  left_join(allpopclassupdate3) 
+```
