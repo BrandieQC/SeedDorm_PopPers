@@ -101,6 +101,7 @@ y3totalrosettes <- newrosettes_circle_long_dates %>%
 allyearstotalrosettes <- y1totalrosettes %>% 
   bind_rows(y2totalrosettes) %>% 
   bind_rows(y3totalrosettes)
+write_csv(allyearstotalrosettes, "../Processed.Data/TotalRosettes.csv")
 ```
 
 ### Sample Sizes
@@ -231,6 +232,7 @@ y2totalFRMD <- newFRMD_circle_long_dates %>%
 
 allyearstotalFRMD <- y1totalFRMD %>% 
   bind_rows(y2totalFRMD) 
+write_csv(allyearstotalFRMD, "../Processed.Data/TotalRep.csv")
 ```
 
 ### Sample Sizes
