@@ -1,0 +1,194 @@
+---
+title: "SBPots_GermProps"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# SB Pots Germ Props (Fig S8)
+
+## Load Libraries
+```{r}
+library(tidyverse)
+library(gridExtra)
+
+BQSBPalette <- c("#FF9900","#B266FF", "#00CC00","#999999", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+get_legend<-function(myggplot){
+  tmp <- ggplot_gtable(ggplot_build(myggplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)
+}
+
+sem <- function(x, na.rm=FALSE) {         #for calculating standard error
+  sd(x,na.rm=na.rm)/sqrt(length(na.omit(x)))
+} 
+```
+
+## Load the SB data
+```{r}
+allsbdata <- read_csv("../Raw.Data/AllSBData.csv") #SB pots weekly census data 
+allsbdata_pop <- unite(allsbdata, "PopId", c(Col,Row)) #create PopId column 
+```
+
+## Total Germ by Year 
+```{r}
+allsbdatatotal_year <- allsbdata_pop %>% 
+  group_by(PopId, Block, Dormancy, EnvtTrt, Year) %>% 
+  summarise(ConfTotal = sum(Confirmed.Total, na.rm = TRUE), 
+            MaxTotal = sum(Max.Total, na.rm = TRUE))
+```
+
+## Germ Prop by Year
+```{r}
+sbgermprop_years <- allsbdatatotal_year %>% 
+  mutate(GermProp_Conf = (ConfTotal/114), GermProp_Max = (MaxTotal/114))
+```
+
+## Germ Prop Means by Treatment
+```{r}
+allsbdata_germprop_year_summary <- sbgermprop_years %>% 
+  group_by(Year, Dormancy, EnvtTrt) %>%
+  summarise(meanGermProp_Conf = mean(GermProp_Conf),
+            SEC=sd(GermProp_Conf)/sqrt(n()),
+            meanGermProp_Max=mean(GermProp_Max), SEM=sd(GermProp_Max)/sqrt(n())) %>%
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low"),
+         Dormancy=str_replace(Dormancy, "Dormant", "High")) 
+```
+
+## Year 1 Germ Figure
+```{r}
+y1germpropconf_summaryplot <- allsbdata_germprop_year_summary %>% 
+  filter(Year==1) %>% 
+  ggplot(aes(x=EnvtTrt, y=meanGermProp_Conf, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanGermProp_Conf-SEC,
+                      ymax=meanGermProp_Conf+SEC),
+                  width=.2, 
+                  position =position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Year 1 Germination Proportion") +
+   scale_fill_manual(values=BQSBPalette) +
+    theme(text=element_text(size=37)) +
+   ggtitle("Confirmed Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+
+y1germpropmax_summaryplot <- allsbdata_germprop_year_summary %>% 
+   filter(Year==1) %>% 
+  ggplot(aes(x=EnvtTrt, y=meanGermProp_Max, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanGermProp_Max-SEM,
+                      ymax=meanGermProp_Max+SEM),
+                  width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Year 1 Germination Proportion") +
+   scale_fill_manual(values=BQSBPalette) +
+    theme(text=element_text(size=37)) +
+   ggtitle("Max Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+
+legend <- get_legend(y1germpropconf_summaryplot)
+y1germpropconf_summaryplot <- y1germpropconf_summaryplot + theme(legend.position="none")
+y1germpropmax_summaryplot <- y1germpropmax_summaryplot + theme(legend.position="none")
+ grid.arrange(y1germpropconf_summaryplot, y1germpropmax_summaryplot, legend, ncol=3, widths=c(3.12, 3.12, 1.09)) 
+  #HEIGHT = 900, WIDTH = 2300
+```
+
+## Year 2 Germ Figure 
+```{r}
+y2germpropconf_summaryplot <- allsbdata_germprop_year_summary %>% 
+  filter(Year==2) %>% 
+  ggplot(aes(x=EnvtTrt, y=meanGermProp_Conf, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanGermProp_Conf-SEC,
+                      ymax=meanGermProp_Conf+SEC),
+                  width=.2, 
+                  position =position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Year 2 Germination Proportion") +
+   scale_fill_manual(values=BQSBPalette) +
+    theme(text=element_text(size=37)) +
+   ggtitle("Confirmed Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+
+y2germpropmax_summaryplot <- allsbdata_germprop_year_summary %>% 
+   filter(Year==2) %>% 
+  ggplot(aes(x=EnvtTrt, y=meanGermProp_Max, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanGermProp_Max-SEM,
+                      ymax=meanGermProp_Max+SEM),
+                  width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Year 2 Germination Proportion") +
+   scale_fill_manual(values=BQSBPalette) +
+    theme(text=element_text(size=37)) +
+   ggtitle("Max Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+
+legend <- get_legend(y2germpropconf_summaryplot)
+y2germpropconf_summaryplot <- y2germpropconf_summaryplot + theme(legend.position="none")
+y2germpropmax_summaryplot <- y2germpropmax_summaryplot + theme(legend.position="none")
+ grid.arrange(y2germpropconf_summaryplot, y2germpropmax_summaryplot, legend, ncol=3, widths=c(3.12, 3.12, 1.09)) 
+  #HEIGHT = 900, WIDTH = 2300
+```
+
+## Seed Mortality 
+```{r}
+allsbdatatotal <- allsbdata_pop %>% 
+  group_by(PopId, Block, Dormancy, EnvtTrt) %>% 
+  summarise(ConfTotal = sum(Confirmed.Total, na.rm = TRUE), MaxTotal = sum(Max.Total, na.rm = TRUE)) %>% 
+  mutate(ConfDead=114-ConfTotal, MaxDead=114-MaxTotal,
+         ConfDeadProp=ConfDead/114, MaxDeadProp=MaxDead/114)
+
+seedmort_summary <- allsbdatatotal %>% 
+  group_by(Dormancy, EnvtTrt) %>% 
+  summarise(meanDeadProp_Conf=mean(ConfDeadProp), SEC=sd(ConfDeadProp)/sqrt(n()),
+            meanDeadProp_Max=mean(MaxDeadProp), SEM=sd(MaxDeadProp)/sqrt(n())) 
+
+seedmort_conf_plot <- seedmort_summary %>% 
+  ggplot(aes(x=EnvtTrt, y=meanDeadProp_Conf, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanDeadProp_Conf-SEC,
+                      ymax=meanDeadProp_Conf+SEC),
+                  width=.2, 
+                  position =position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Proportion of Seed Mortality") +
+   scale_fill_manual(values=BQSBPalette) +
+    theme(text=element_text(size=37)) +
+   ggtitle("Confirmed Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+
+seedmort_max_plot <- seedmort_summary %>% 
+  ggplot(aes(x=EnvtTrt, y=meanDeadProp_Max, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanDeadProp_Max-SEM,
+                      ymax=meanDeadProp_Max+SEM),
+                  width=.2, 
+                  position =position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Proportion of Seed Mortality") +
+   scale_fill_manual(values=BQSBPalette) +
+    theme(text=element_text(size=37)) +
+   ggtitle("Max Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+
+legend <- get_legend(seedmort_conf_plot)
+seedmort_conf_plot <- seedmort_conf_plot + theme(legend.position="none")
+seedmort_max_plot <- seedmort_max_plot + theme(legend.position="none")
+ grid.arrange(seedmort_conf_plot, seedmort_max_plot, legend, ncol=3, widths=c(3.12, 3.12, 1.09)) 
+  #HEIGHT = 900, WIDTH = 2300
+```
