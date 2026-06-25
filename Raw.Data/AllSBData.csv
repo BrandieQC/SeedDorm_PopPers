@@ -1,0 +1,3913 @@
+﻿Block,Col,Row,Dormancy,EnvtTrt,DataCollector,Date,Year,Confirmed.Total,Max.Total
+2,A,6,Dormant,Control,BQ,5/13/21,1,0,0
+2,A,6,Dormant,Control,BQ,5/20/21,1,0,0
+2,A,6,Dormant,Control,BQ,5/26/21,1,0,0
+2,A,6,Dormant,Control,BQ,6/2/21,1,0,0
+2,A,6,Dormant,Control,BQ,6/10/21,1,0,0
+2,A,6,Dormant,Control,BQ,6/16/21,1,0,0
+2,A,6,Dormant,Control,KD,6/23/21,1,0,0
+2,A,6,Dormant,Control,BQ,6/30/21,1,0,0
+2,A,6,Dormant,Control,BQ,7/7/21,1,0,0
+2,A,6,Dormant,Control,BQ,7/14/21,1,0,0
+2,A,6,Dormant,Control,KD,7/21/21,1,0,0
+2,A,6,Dormant,Control,KD,7/28/21,1,0,0
+2,A,6,Dormant,Control,BQ,8/4/21,1,0,0
+2,A,6,Dormant,Control,BQ,8/11/21,1,0,0
+2,A,6,Dormant,Control,BQ,8/17/21,1,0,0
+2,A,6,Dormant,Control,DW,8/25/21,1,0,0
+2,A,6,Dormant,Control,DW,9/2/21,1,0,0
+2,A,6,Dormant,Control,DW,9/8/21,1,0,0
+2,A,6,Dormant,Control,DW,9/15/21,1,0,0
+2,A,6,Dormant,Control,DW,9/22/21,1,0,0
+2,A,6,Dormant,Control,DW,9/29/21,1,4,8
+2,A,6,Dormant,Control,DW,10/6/21,1,3,3
+2,A,6,Dormant,Control,DW,10/13/21,1,1,1
+2,A,6,Dormant,Control,DW,10/20/21,1,0,6
+2,A,6,Dormant,Control,DW,10/27/21,1,0,0
+2,A,6,Dormant,Control,DW,11/3/21,1,5,5
+2,A,6,Dormant,Control,DW,11/10/21,1,1,1
+2,A,6,Dormant,Control,DW,11/17/21,1,1,1
+2,A,6,Dormant,Control,CF,11/22/21,1,0,0
+2,A,6,Dormant,Control,BQ,12/1/21,1,0,0
+2,A,6,Dormant,Control,BQ,12/8/21,1,0,0
+2,A,6,Dormant,Control,BQ,12/15/21,1,0,0
+2,A,6,Dormant,Control,BQ,12/22/21,1,0,0
+2,A,6,Dormant,Control,N/A,12/29/21,1,0,0
+2,A,6,Dormant,Control,BQ,1/5/22,1,0,0
+2,A,6,Dormant,Control,BQ,1/12/22,1,0,0
+2,A,6,Dormant,Control,BQ,1/19/22,1,0,0
+2,A,6,Dormant,Control,DW,1/28/22,1,0,0
+2,A,6,Dormant,Control,BQ,2/3/22,1,0,0
+2,A,6,Dormant,Control,DW ,2/11/22,1,0,0
+2,A,6,Dormant,Control,DW,2/18/22,1,0,0
+2,A,6,Dormant,Control,DW ,2/25/22,1,0,0
+2,A,6,Dormant,Control,DW ,3/4/22,1,0,0
+2,A,6,Dormant,Control,BQ,3/11/22,1,0,0
+2,A,6,Dormant,Control,DW,3/18/22,1,0,0
+2,A,6,Dormant,Control,DW,3/25/22,1,0,1
+2,A,6,Dormant,Control,DW ,4/8/22,1,0,0
+2,A,6,Dormant,Control,DW,4/15/22,1,0,0
+2,A,6,Dormant,Control,BQ,4/22/22,1,0,0
+2,A,6,Dormant,Control,ET ,4/29/22,1,0,0
+2,A,6,Dormant,Control,ET,5/5/22,1,0,0
+2,A,6,Dormant,Control,BQ,5/13/22,2,0,0
+2,A,6,Dormant,Control,BQ,5/19/22,2,0,0
+2,A,6,Dormant,Control,CX,5/25/22,2,0,0
+2,A,6,Dormant,Control,CX,6/10/22,2,0,0
+2,A,6,Dormant,Control,BQ,6/17/22,2,0,0
+2,A,6,Dormant,Control,BQ,6/24/22,2,0,0
+2,A,6,Dormant,Control,BQ,6/29/22,2,0,0
+2,A,6,Dormant,Control,BQ,7/15/22,2,0,0
+2,A,6,Dormant,Control,BQ,7/22/22,2,0,0
+2,A,6,Dormant,Control,ET,7/29/22,2,0,0
+2,A,6,Dormant,Control,ET,8/2/22,2,0,0
+2,A,6,Dormant,Control,ET,8/5/22,2,0,0
+2,A,6,Dormant,Control,BQ,8/12/22,2,0,0
+2,A,6,Dormant,Control,BQ,8/19/22,2,0,0
+2,A,6,Dormant,Control,BQ,8/26/22,2,0,0
+2,A,6,Dormant,Control,BQ,9/2/22,2,0,0
+2,A,6,Dormant,Control,BQ,9/9/22,2,0,0
+2,A,6,Dormant,Control,BQ,9/16/22,2,0,0
+2,A,6,Dormant,Control,BQ,9/23/22,2,0,0
+2,A,6,Dormant,Control,ET,9/29/22,2,0,0
+2,A,6,Dormant,Control,YK,10/7/22,2,0,0
+2,A,6,Dormant,Control,YK,10/14/22,2,0,0
+2,A,6,Dormant,Control,YK,10/21/22,2,0,0
+2,A,6,Dormant,Control,ET,10/26/22,2,0,0
+2,A,6,Dormant,Control,BQ,11/4/22,2,0,0
+2,A,6,Dormant,Control,ET,11/10/22,2,0,0
+2,A,6,Dormant,Control,YK,11/18/22,2,0,0
+2,A,6,Dormant,Control,ET,11/22/22,2,0,0
+2,A,6,Dormant,Control,YK,12/2/22,2,0,0
+2,A,6,Dormant,Control,BQ & EG,12/9/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,5/13/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,5/20/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,5/26/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,6/2/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,6/10/21,1,20,20
+2,A,6,Non-Dormant,Control,BQ,6/16/21,1,0,0
+2,A,6,Non-Dormant,Control,KD,6/23/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,6/30/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,7/7/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,7/14/21,1,15,15
+2,A,6,Non-Dormant,Control,KD,7/21/21,1,0,0
+2,A,6,Non-Dormant,Control,KD,7/28/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,8/4/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,8/11/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,8/17/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,8/25/21,1,1,4
+2,A,6,Non-Dormant,Control,DW,9/2/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,9/8/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,9/15/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,9/22/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,9/29/21,1,2,5
+2,A,6,Non-Dormant,Control,DW,10/6/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,10/13/21,1,1,1
+2,A,6,Non-Dormant,Control,DW,10/20/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,10/27/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,11/3/21,1,1,1
+2,A,6,Non-Dormant,Control,DW,11/10/21,1,0,0
+2,A,6,Non-Dormant,Control,DW,11/17/21,1,0,0
+2,A,6,Non-Dormant,Control,CF,11/22/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,12/1/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,12/8/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,12/15/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,12/22/21,1,0,0
+2,A,6,Non-Dormant,Control,N/A,12/29/21,1,0,0
+2,A,6,Non-Dormant,Control,BQ,1/5/22,1,0,0
+2,A,6,Non-Dormant,Control,BQ,1/12/22,1,0,0
+2,A,6,Non-Dormant,Control,BQ,1/19/22,1,0,0
+2,A,6,Non-Dormant,Control,DW,1/28/22,1,0,0
+2,A,6,Non-Dormant,Control,BQ,2/3/22,1,0,0
+2,A,6,Non-Dormant,Control,DW,2/11/22,1,0,0
+2,A,6,Non-Dormant,Control,DW,2/18/22,1,0,0
+2,A,6,Non-Dormant,Control,DW ,2/25/22,1,0,0
+2,A,6,Non-Dormant,Control,DW ,3/4/22,1,0,0
+2,A,6,Non-Dormant,Control,BQ,3/11/22,1,0,0
+2,A,6,Non-Dormant,Control,DW,3/18/22,1,0,0
+2,A,6,Non-Dormant,Control,DW,3/25/22,1,1,1
+2,A,6,Non-Dormant,Control,DW ,4/8/22,1,0,0
+2,A,6,Non-Dormant,Control,DW,4/15/22,1,0,0
+2,A,6,Non-Dormant,Control,BQ,4/22/22,1,0,0
+2,A,6,Non-Dormant,Control,ET ,4/29/22,1,0,0
+2,A,6,Non-Dormant,Control,ET,5/5/22,1,0,0
+2,A,6,Non-Dormant,Control,BQ,5/13/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,5/19/22,2,0,0
+2,A,6,Non-Dormant,Control,CX,5/25/22,2,0,0
+2,A,6,Non-Dormant,Control,CX,6/10/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,6/17/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,6/24/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,6/29/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,7/15/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,7/22/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,7/29/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,8/2/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,8/5/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,8/12/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,8/19/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,8/26/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,9/2/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,9/9/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,9/16/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,9/23/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,9/29/22,2,0,0
+2,A,6,Non-Dormant,Control,YK,10/7/22,2,0,0
+2,A,6,Non-Dormant,Control,YK,10/14/22,2,0,0
+2,A,6,Non-Dormant,Control,YK,10/21/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,10/26/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ,11/4/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,11/10/22,2,0,0
+2,A,6,Non-Dormant,Control,YK,11/18/22,2,0,0
+2,A,6,Non-Dormant,Control,ET,11/22/22,2,0,0
+2,A,6,Non-Dormant,Control,YK,12/2/22,2,0,0
+2,A,6,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,5/13/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,5/20/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,5/26/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,6/2/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,6/10/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,6/16/21,1,0,0
+3,A,13,Dormant,Native Soil,KD,6/23/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,6/30/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,7/7/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,7/14/21,1,0,0
+3,A,13,Dormant,Native Soil,KD,7/21/21,1,0,0
+3,A,13,Dormant,Native Soil,KD,7/28/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,8/4/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,8/11/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,8/17/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,8/25/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,9/2/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,9/8/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,9/15/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,9/22/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,9/29/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,10/6/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,10/13/21,1,6,7
+3,A,13,Dormant,Native Soil,DW,10/20/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,10/27/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,11/3/21,1,3,8
+3,A,13,Dormant,Native Soil,DW,11/10/21,1,0,0
+3,A,13,Dormant,Native Soil,DW,11/17/21,1,0,0
+3,A,13,Dormant,Native Soil,CF,11/22/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,12/1/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,12/8/21,1,2,2
+3,A,13,Dormant,Native Soil,BQ,12/15/21,1,0,0
+3,A,13,Dormant,Native Soil,BQ,12/22/21,1,0,0
+3,A,13,Dormant,Native Soil,N/A,12/29/21,1,1,1
+3,A,13,Dormant,Native Soil,BQ,1/5/22,1,0,0
+3,A,13,Dormant,Native Soil,BQ,1/12/22,1,0,0
+3,A,13,Dormant,Native Soil,BQ,1/19/22,1,0,0
+3,A,13,Dormant,Native Soil,DW,1/28/22,1,0,0
+3,A,13,Dormant,Native Soil,BQ,2/3/22,1,0,0
+3,A,13,Dormant,Native Soil,DW,2/11/22,1,0,0
+3,A,13,Dormant,Native Soil,DW,2/18/22,1,0,0
+3,A,13,Dormant,Native Soil,DW ,2/25/22,1,0,0
+3,A,13,Dormant,Native Soil,DW ,3/4/22,1,0,0
+3,A,13,Dormant,Native Soil,BQ,3/11/22,1,0,0
+3,A,13,Dormant,Native Soil,DW,3/18/22,1,0,0
+3,A,13,Dormant,Native Soil,DW,3/25/22,1,0,0
+3,A,13,Dormant,Native Soil,DW ,4/8/22,1,0,0
+3,A,13,Dormant,Native Soil,DW,4/15/22,1,0,0
+3,A,13,Dormant,Native Soil,BQ,4/22/22,1,0,0
+3,A,13,Dormant,Native Soil,ET ,4/29/22,1,0,0
+3,A,13,Dormant,Native Soil,ET,5/5/22,1,0,0
+3,A,13,Dormant,Native Soil,BQ,5/13/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,5/19/22,2,0,0
+3,A,13,Dormant,Native Soil,CX,5/25/22,2,0,0
+3,A,13,Dormant,Native Soil,CX,6/10/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,6/17/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,6/24/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,6/29/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,7/15/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,7/22/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,7/29/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,8/2/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,8/5/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,8/12/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,8/19/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,8/26/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,9/2/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,9/9/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,9/16/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,9/23/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,9/29/22,2,0,0
+3,A,13,Dormant,Native Soil,YK,10/7/22,2,0,0
+3,A,13,Dormant,Native Soil,YK,10/14/22,2,0,0
+3,A,13,Dormant,Native Soil,YK,10/21/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,10/26/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ,11/4/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,11/10/22,2,0,0
+3,A,13,Dormant,Native Soil,YK,11/18/22,2,0,0
+3,A,13,Dormant,Native Soil,ET,11/22/22,2,0,0
+3,A,13,Dormant,Native Soil,YK,12/2/22,2,0,0
+3,A,13,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,8/25/21,1,1,1
+3,A,13,Non-Dormant,Native Soil,DW,9/2/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,9/8/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,9/15/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,9/22/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,9/29/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,10/6/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,10/13/21,1,0,4
+3,A,13,Non-Dormant,Native Soil,DW,10/20/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,10/27/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,11/10/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,11/17/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,1/28/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,2/11/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,2/18/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW ,2/25/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW ,3/4/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,3/18/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,3/25/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW ,4/8/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,DW,4/15/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,4/22/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,CX,5/25/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,CX,6/10/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,YK,10/7/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,YK,11/18/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,YK,12/2/22,2,0,0
+3,A,13,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,5/13/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,5/20/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,5/26/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/2/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/10/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/16/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,KD,6/23/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/30/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,7/7/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,7/14/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,KD,7/21/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,KD,7/28/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,8/4/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,8/11/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,8/17/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,8/25/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,9/2/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,9/8/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,9/15/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,9/22/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,9/29/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,10/6/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,10/13/21,1,5,5
+1,B/C,3.5,Dormant,Native Soil,DW,10/20/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,10/27/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,11/3/21,1,1,1
+1,B/C,3.5,Dormant,Native Soil,DW,11/10/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,11/17/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,CF,11/22/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,12/1/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,12/8/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,12/15/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,12/22/21,1,0,0
+1,B/C,3.5,Dormant,Native Soil,N/A,12/29/21,1,1,1
+1,B/C,3.5,Dormant,Native Soil,BQ,1/5/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,1/12/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,1/19/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,1/28/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,2/3/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,2/11/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,2/18/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW ,2/25/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW ,3/4/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,3/11/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,3/18/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,3/25/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW ,4/8/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,DW,4/15/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,4/22/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,ET ,4/29/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,5/5/22,1,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,5/13/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,5/19/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,CX,5/25/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,CX,6/10/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/17/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/24/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,6/29/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,7/15/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,7/22/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,7/29/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,8/2/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,8/5/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,8/12/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,8/19/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,8/26/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,9/2/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,9/9/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,9/16/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,9/23/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,9/29/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,YK,10/7/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,YK,10/14/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,YK,10/21/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,10/26/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ,11/4/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,11/10/22,2,1,1
+1,B/C,3.5,Dormant,Native Soil,YK,11/18/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,ET,11/22/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,YK,12/2/22,2,0,0
+1,B/C,3.5,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,8/25/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,9/2/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,9/8/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,9/15/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,9/22/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,9/29/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,10/6/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,10/13/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,10/20/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,10/27/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,11/10/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,11/17/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,1/28/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,2/11/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,2/18/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW ,2/25/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW ,3/4/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,3/18/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,3/25/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW ,4/8/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,DW,4/15/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,4/22/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,CX,5/25/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,CX,6/10/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,YK,10/7/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,YK,11/18/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,YK,12/2/22,2,0,0
+1,B/C,3.5,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+1,C,0,Dormant,Control,BQ,5/13/21,1,0,0
+1,C,0,Dormant,Control,BQ,5/20/21,1,0,0
+1,C,0,Dormant,Control,BQ,5/26/21,1,0,0
+1,C,0,Dormant,Control,BQ,6/2/21,1,0,0
+1,C,0,Dormant,Control,BQ,6/10/21,1,2,2
+1,C,0,Dormant,Control,BQ,6/16/21,1,0,0
+1,C,0,Dormant,Control,KD,6/23/21,1,0,0
+1,C,0,Dormant,Control,BQ,6/30/21,1,0,0
+1,C,0,Dormant,Control,BQ,7/7/21,1,0,0
+1,C,0,Dormant,Control,BQ,7/14/21,1,0,0
+1,C,0,Dormant,Control,KD,7/21/21,1,0,0
+1,C,0,Dormant,Control,KD,7/28/21,1,0,0
+1,C,0,Dormant,Control,BQ,8/4/21,1,0,0
+1,C,0,Dormant,Control,BQ,8/11/21,1,0,0
+1,C,0,Dormant,Control,BQ,8/17/21,1,0,0
+1,C,0,Dormant,Control,DW,8/25/21,1,0,1
+1,C,0,Dormant,Control,DW,9/2/21,1,0,0
+1,C,0,Dormant,Control,DW,9/8/21,1,0,0
+1,C,0,Dormant,Control,DW,9/15/21,1,1,1
+1,C,0,Dormant,Control,DW,9/22/21,1,0,0
+1,C,0,Dormant,Control,DW,9/29/21,1,7,8
+1,C,0,Dormant,Control,DW,10/6/21,1,2,2
+1,C,0,Dormant,Control,DW,10/13/21,1,1,3
+1,C,0,Dormant,Control,DW,10/20/21,1,0,0
+1,C,0,Dormant,Control,DW,10/27/21,1,0,0
+1,C,0,Dormant,Control,DW,11/3/21,1,2,2
+1,C,0,Dormant,Control,DW,11/10/21,1,0,0
+1,C,0,Dormant,Control,DW,11/17/21,1,1,1
+1,C,0,Dormant,Control,CF,11/22/21,1,1,1
+1,C,0,Dormant,Control,BQ,12/1/21,1,0,0
+1,C,0,Dormant,Control,BQ,12/8/21,1,0,0
+1,C,0,Dormant,Control,BQ,12/15/21,1,0,0
+1,C,0,Dormant,Control,BQ,12/22/21,1,0,0
+1,C,0,Dormant,Control,N/A,12/29/21,1,0,0
+1,C,0,Dormant,Control,BQ,1/5/22,1,0,0
+1,C,0,Dormant,Control,BQ,1/12/22,1,0,0
+1,C,0,Dormant,Control,BQ,1/19/22,1,0,0
+1,C,0,Dormant,Control,DW,1/28/22,1,0,0
+1,C,0,Dormant,Control,BQ,2/3/22,1,0,0
+1,C,0,Dormant,Control,DW,2/11/22,1,0,0
+1,C,0,Dormant,Control,DW,2/18/22,1,0,0
+1,C,0,Dormant,Control,DW ,2/25/22,1,0,0
+1,C,0,Dormant,Control,DW ,3/4/22,1,0,0
+1,C,0,Dormant,Control,BQ,3/11/22,1,0,0
+1,C,0,Dormant,Control,DW,3/18/22,1,0,0
+1,C,0,Dormant,Control,DW,3/25/22,1,0,0
+1,C,0,Dormant,Control,DW ,4/8/22,1,0,0
+1,C,0,Dormant,Control,DW,4/15/22,1,0,0
+1,C,0,Dormant,Control,BQ,4/22/22,1,0,0
+1,C,0,Dormant,Control,ET ,4/29/22,1,0,0
+1,C,0,Dormant,Control,ET,5/5/22,1,0,0
+1,C,0,Dormant,Control,BQ,5/13/22,2,0,0
+1,C,0,Dormant,Control,BQ,5/19/22,2,0,0
+1,C,0,Dormant,Control,CX,5/25/22,2,0,0
+1,C,0,Dormant,Control,CX,6/10/22,2,0,0
+1,C,0,Dormant,Control,BQ,6/17/22,2,0,0
+1,C,0,Dormant,Control,BQ,6/24/22,2,0,0
+1,C,0,Dormant,Control,BQ,6/29/22,2,0,0
+1,C,0,Dormant,Control,BQ,7/15/22,2,0,0
+1,C,0,Dormant,Control,BQ,7/22/22,2,0,0
+1,C,0,Dormant,Control,ET,7/29/22,2,0,0
+1,C,0,Dormant,Control,ET,8/2/22,2,0,0
+1,C,0,Dormant,Control,ET,8/5/22,2,0,0
+1,C,0,Dormant,Control,BQ,8/12/22,2,0,0
+1,C,0,Dormant,Control,BQ,8/19/22,2,0,0
+1,C,0,Dormant,Control,BQ,8/26/22,2,0,0
+1,C,0,Dormant,Control,BQ,9/2/22,2,0,0
+1,C,0,Dormant,Control,BQ,9/9/22,2,0,0
+1,C,0,Dormant,Control,BQ,9/16/22,2,0,0
+1,C,0,Dormant,Control,BQ,9/23/22,2,0,0
+1,C,0,Dormant,Control,ET,9/29/22,2,0,0
+1,C,0,Dormant,Control,YK,10/7/22,2,0,0
+1,C,0,Dormant,Control,YK,10/14/22,2,0,0
+1,C,0,Dormant,Control,YK,10/21/22,2,0,0
+1,C,0,Dormant,Control,ET,10/26/22,2,0,0
+1,C,0,Dormant,Control,BQ,11/4/22,2,0,0
+1,C,0,Dormant,Control,ET,11/10/22,2,0,0
+1,C,0,Dormant,Control,YK,11/18/22,2,0,0
+1,C,0,Dormant,Control,ET,11/22/22,2,0,0
+1,C,0,Dormant,Control,YK,12/2/22,2,0,0
+1,C,0,Dormant,Control,BQ & EG,12/9/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,5/13/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,5/20/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,5/26/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,6/2/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,6/10/21,1,1,1
+1,C,0,Non-Dormant,Control,BQ,6/16/21,1,0,0
+1,C,0,Non-Dormant,Control,KD,6/23/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,6/30/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,7/7/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,7/14/21,1,0,0
+1,C,0,Non-Dormant,Control,KD,7/21/21,1,4,5
+1,C,0,Non-Dormant,Control,KD,7/28/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,8/4/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,8/11/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,8/17/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,8/25/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,9/2/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,9/8/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,9/15/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,9/22/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,9/29/21,1,1,3
+1,C,0,Non-Dormant,Control,DW,10/6/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,10/13/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,10/20/21,1,1,1
+1,C,0,Non-Dormant,Control,DW,10/27/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,11/3/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,11/10/21,1,0,0
+1,C,0,Non-Dormant,Control,DW,11/17/21,1,2,2
+1,C,0,Non-Dormant,Control,CF,11/22/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,12/1/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,12/8/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,12/15/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,12/22/21,1,0,0
+1,C,0,Non-Dormant,Control,N/A,12/29/21,1,0,0
+1,C,0,Non-Dormant,Control,BQ,1/5/22,1,0,0
+1,C,0,Non-Dormant,Control,BQ,1/12/22,1,0,0
+1,C,0,Non-Dormant,Control,BQ,1/19/22,1,0,0
+1,C,0,Non-Dormant,Control,DW,1/28/22,1,0,0
+1,C,0,Non-Dormant,Control,BQ,2/3/22,1,0,0
+1,C,0,Non-Dormant,Control,DW,2/11/22,1,0,0
+1,C,0,Non-Dormant,Control,DW,2/18/22,1,0,0
+1,C,0,Non-Dormant,Control,DW ,2/25/22,1,0,0
+1,C,0,Non-Dormant,Control,DW ,3/4/22,1,0,0
+1,C,0,Non-Dormant,Control,BQ,3/11/22,1,0,0
+1,C,0,Non-Dormant,Control,DW,3/18/22,1,0,0
+1,C,0,Non-Dormant,Control,DW,3/25/22,1,0,0
+1,C,0,Non-Dormant,Control,DW ,4/8/22,1,0,0
+1,C,0,Non-Dormant,Control,DW,4/15/22,1,0,0
+1,C,0,Non-Dormant,Control,BQ,4/22/22,1,0,0
+1,C,0,Non-Dormant,Control,ET ,4/29/22,1,0,0
+1,C,0,Non-Dormant,Control,ET,5/5/22,1,0,0
+1,C,0,Non-Dormant,Control,BQ,5/13/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,5/19/22,2,0,0
+1,C,0,Non-Dormant,Control,CX,5/25/22,2,0,0
+1,C,0,Non-Dormant,Control,CX,6/10/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,6/17/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,6/24/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,6/29/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,7/15/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,7/22/22,2,0,0
+1,C,0,Non-Dormant,Control,ET,7/29/22,2,0,0
+1,C,0,Non-Dormant,Control,ET,8/2/22,2,0,0
+1,C,0,Non-Dormant,Control,ET,8/5/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,8/12/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,8/19/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,8/26/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,9/2/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,9/9/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,9/16/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,9/23/22,2,0,0
+1,C,0,Non-Dormant,Control,ET,9/29/22,2,0,0
+1,C,0,Non-Dormant,Control,YK,10/7/22,2,0,0
+1,C,0,Non-Dormant,Control,YK,10/14/22,2,0,0
+1,C,0,Non-Dormant,Control,YK,10/21/22,2,0,0
+1,C,0,Non-Dormant,Control,ET,10/26/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ,11/4/22,2,0,0
+1,C,0,Non-Dormant,Control,ET,11/10/22,2,0,0
+1,C,0,Non-Dormant,Control,YK,11/18/22,2,0,1
+1,C,0,Non-Dormant,Control,ET,11/22/22,2,0,0
+1,C,0,Non-Dormant,Control,YK,12/2/22,2,0,0
+1,C,0,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,5/13/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,5/20/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,5/26/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,6/2/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,6/10/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,6/16/21,1,0,0
+1,C,4,Dormant,High Humidity,KD,6/23/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,6/30/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,7/7/21,1,2,2
+1,C,4,Dormant,High Humidity,BQ,7/14/21,1,11,12
+1,C,4,Dormant,High Humidity,KD,7/21/21,1,3,3
+1,C,4,Dormant,High Humidity,KD,7/28/21,1,0,1
+1,C,4,Dormant,High Humidity,BQ,8/4/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,8/11/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,8/17/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,8/25/21,1,0,1
+1,C,4,Dormant,High Humidity,DW,9/2/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,9/8/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,9/15/21,1,0,2
+1,C,4,Dormant,High Humidity,DW,9/22/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,9/29/21,1,10,15
+1,C,4,Dormant,High Humidity,DW,10/6/21,1,2,2
+1,C,4,Dormant,High Humidity,DW,10/13/21,1,2,2
+1,C,4,Dormant,High Humidity,DW,10/20/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,10/27/21,1,2,2
+1,C,4,Dormant,High Humidity,DW,11/3/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,11/10/21,1,0,0
+1,C,4,Dormant,High Humidity,DW,11/17/21,1,6,6
+1,C,4,Dormant,High Humidity,CF,11/22/21,1,5,5
+1,C,4,Dormant,High Humidity,BQ,12/1/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,12/8/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,12/15/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,12/22/21,1,0,0
+1,C,4,Dormant,High Humidity,N/A,12/29/21,1,0,0
+1,C,4,Dormant,High Humidity,BQ,1/5/22,1,0,0
+1,C,4,Dormant,High Humidity,BQ,1/12/22,1,0,0
+1,C,4,Dormant,High Humidity,BQ,1/19/22,1,0,0
+1,C,4,Dormant,High Humidity,DW,1/28/22,1,0,0
+1,C,4,Dormant,High Humidity,BQ,2/3/22,1,0,0
+1,C,4,Dormant,High Humidity,DW,2/11/22,1,0,0
+1,C,4,Dormant,High Humidity,DW,2/18/22,1,0,0
+1,C,4,Dormant,High Humidity,DW ,2/25/22,1,0,0
+1,C,4,Dormant,High Humidity,DW ,3/4/22,1,0,0
+1,C,4,Dormant,High Humidity,BQ,3/11/22,1,0,0
+1,C,4,Dormant,High Humidity,DW,3/18/22,1,0,0
+1,C,4,Dormant,High Humidity,DW,3/25/22,1,0,0
+1,C,4,Dormant,High Humidity,DW ,4/8/22,1,0,0
+1,C,4,Dormant,High Humidity,DW,4/15/22,1,0,0
+1,C,4,Dormant,High Humidity,BQ,4/22/22,1,0,0
+1,C,4,Dormant,High Humidity,ET ,4/29/22,1,0,0
+1,C,4,Dormant,High Humidity,ET,5/5/22,1,0,0
+1,C,4,Dormant,High Humidity,BQ,5/13/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,5/19/22,2,0,0
+1,C,4,Dormant,High Humidity,CX,5/25/22,2,0,0
+1,C,4,Dormant,High Humidity,CX,6/10/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,6/17/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,6/24/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,6/29/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,7/15/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,7/22/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,7/29/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,8/2/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,8/5/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,8/12/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,8/19/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,8/26/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,9/2/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,9/9/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,9/16/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,9/23/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,9/29/22,2,0,0
+1,C,4,Dormant,High Humidity,YK,10/7/22,2,0,0
+1,C,4,Dormant,High Humidity,YK,10/14/22,2,0,0
+1,C,4,Dormant,High Humidity,YK,10/21/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,10/26/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ,11/4/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,11/10/22,2,0,0
+1,C,4,Dormant,High Humidity,YK,11/18/22,2,0,0
+1,C,4,Dormant,High Humidity,ET,11/22/22,2,0,0
+1,C,4,Dormant,High Humidity,YK,12/2/22,2,0,0
+1,C,4,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/30/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,7/7/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,KD,7/21/21,1,0,1
+1,C,4,Non-Dormant,High Humidity,KD,7/28/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,8/25/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,9/2/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,9/8/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,9/15/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,9/22/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,9/29/21,1,3,3
+1,C,4,Non-Dormant,High Humidity,DW,10/6/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,10/13/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,10/20/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,10/27/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,11/10/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,11/17/21,1,2,2
+1,C,4,Non-Dormant,High Humidity,CF,11/22/21,1,1,1
+1,C,4,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,1/28/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,2/11/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,2/18/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW ,2/25/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW ,3/4/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,3/18/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,3/25/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW ,4/8/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,DW,4/15/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,4/22/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,CX,5/25/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,CX,6/10/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,YK,10/7/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,YK,11/18/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,YK,12/2/22,2,0,0
+1,C,4,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,5/13/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,5/20/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,5/26/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,6/2/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,6/10/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,6/16/21,1,0,0
+2,C,8,Dormant,Native Soil,KD,6/23/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,6/30/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,7/7/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,7/14/21,1,0,0
+2,C,8,Dormant,Native Soil,KD,7/21/21,1,0,0
+2,C,8,Dormant,Native Soil,KD,7/28/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,8/4/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,8/11/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,8/17/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,8/25/21,1,0,3
+2,C,8,Dormant,Native Soil,DW,9/2/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,9/8/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,9/15/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,9/22/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,9/29/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,10/6/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,10/13/21,1,2,2
+2,C,8,Dormant,Native Soil,DW,10/20/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,10/27/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,11/3/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,11/10/21,1,0,0
+2,C,8,Dormant,Native Soil,DW,11/17/21,1,0,0
+2,C,8,Dormant,Native Soil,CF,11/22/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,12/1/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,12/8/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,12/15/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,12/22/21,1,0,0
+2,C,8,Dormant,Native Soil,N/A,12/29/21,1,0,0
+2,C,8,Dormant,Native Soil,BQ,1/5/22,1,0,0
+2,C,8,Dormant,Native Soil,BQ,1/12/22,1,0,0
+2,C,8,Dormant,Native Soil,BQ,1/19/22,1,0,0
+2,C,8,Dormant,Native Soil,DW,1/28/22,1,0,0
+2,C,8,Dormant,Native Soil,BQ,2/3/22,1,0,0
+2,C,8,Dormant,Native Soil,DW,2/11/22,1,0,0
+2,C,8,Dormant,Native Soil,DW,2/18/22,1,0,0
+2,C,8,Dormant,Native Soil,DW ,2/25/22,1,0,0
+2,C,8,Dormant,Native Soil,DW ,3/4/22,1,0,0
+2,C,8,Dormant,Native Soil,BQ,3/11/22,1,0,0
+2,C,8,Dormant,Native Soil,DW,3/18/22,1,0,0
+2,C,8,Dormant,Native Soil,DW,3/25/22,1,0,0
+2,C,8,Dormant,Native Soil,DW ,4/8/22,1,0,0
+2,C,8,Dormant,Native Soil,DW,4/15/22,1,0,0
+2,C,8,Dormant,Native Soil,BQ,4/22/22,1,0,0
+2,C,8,Dormant,Native Soil,ET ,4/29/22,1,0,0
+2,C,8,Dormant,Native Soil,ET,5/5/22,1,0,0
+2,C,8,Dormant,Native Soil,BQ,5/13/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,5/19/22,2,0,0
+2,C,8,Dormant,Native Soil,CX,5/25/22,2,0,0
+2,C,8,Dormant,Native Soil,CX,6/10/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,6/17/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,6/24/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,6/29/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,7/15/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,7/22/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,7/29/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,8/2/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,8/5/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,8/12/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,8/19/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,8/26/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,9/2/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,9/9/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,9/16/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,9/23/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,9/29/22,2,0,0
+2,C,8,Dormant,Native Soil,YK,10/7/22,2,0,0
+2,C,8,Dormant,Native Soil,YK,10/14/22,2,0,0
+2,C,8,Dormant,Native Soil,YK,10/21/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,10/26/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ,11/4/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,11/10/22,2,0,0
+2,C,8,Dormant,Native Soil,YK,11/18/22,2,0,0
+2,C,8,Dormant,Native Soil,ET,11/22/22,2,0,0
+2,C,8,Dormant,Native Soil,YK,12/2/22,2,0,0
+2,C,8,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,8/25/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,9/2/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,9/8/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,9/15/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,9/22/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,9/29/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,10/6/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,10/13/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,10/20/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,10/27/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,11/10/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,11/17/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,1/28/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,2/11/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,2/18/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW ,2/25/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW ,3/4/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,3/18/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,3/25/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW ,4/8/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,DW,4/15/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,4/22/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,CX,5/25/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,CX,6/10/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,YK,10/7/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,YK,11/18/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,YK,12/2/22,2,0,0
+2,C,8,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+3,C,11,Dormant,Control,BQ,5/13/21,1,0,0
+3,C,11,Dormant,Control,BQ,5/20/21,1,0,0
+3,C,11,Dormant,Control,BQ,5/26/21,1,0,0
+3,C,11,Dormant,Control,BQ,6/2/21,1,0,0
+3,C,11,Dormant,Control,BQ,6/10/21,1,9,9
+3,C,11,Dormant,Control,BQ,6/16/21,1,0,0
+3,C,11,Dormant,Control,KD,6/23/21,1,0,0
+3,C,11,Dormant,Control,BQ,6/30/21,1,0,0
+3,C,11,Dormant,Control,BQ,7/7/21,1,12,12
+3,C,11,Dormant,Control,BQ,7/14/21,1,5,6
+3,C,11,Dormant,Control,KD,7/21/21,1,0,0
+3,C,11,Dormant,Control,KD,7/28/21,1,0,0
+3,C,11,Dormant,Control,BQ,8/4/21,1,2,5
+3,C,11,Dormant,Control,BQ,8/11/21,1,0,0
+3,C,11,Dormant,Control,BQ,8/17/21,1,0,0
+3,C,11,Dormant,Control,DW,8/25/21,1,0,4
+3,C,11,Dormant,Control,DW,9/2/21,1,0,0
+3,C,11,Dormant,Control,DW,9/8/21,1,0,0
+3,C,11,Dormant,Control,DW,9/15/21,1,0,0
+3,C,11,Dormant,Control,DW,9/22/21,1,0,0
+3,C,11,Dormant,Control,DW,9/29/21,1,0,0
+3,C,11,Dormant,Control,DW,10/6/21,1,3,3
+3,C,11,Dormant,Control,DW,10/13/21,1,2,2
+3,C,11,Dormant,Control,DW,10/20/21,1,0,0
+3,C,11,Dormant,Control,DW,10/27/21,1,0,0
+3,C,11,Dormant,Control,DW,11/3/21,1,0,0
+3,C,11,Dormant,Control,DW,11/10/21,1,0,0
+3,C,11,Dormant,Control,DW,11/17/21,1,0,0
+3,C,11,Dormant,Control,CF,11/22/21,1,0,0
+3,C,11,Dormant,Control,BQ,12/1/21,1,0,0
+3,C,11,Dormant,Control,BQ,12/8/21,1,0,1
+3,C,11,Dormant,Control,BQ,12/15/21,1,0,0
+3,C,11,Dormant,Control,BQ,12/22/21,1,0,0
+3,C,11,Dormant,Control,N/A,12/29/21,1,0,0
+3,C,11,Dormant,Control,BQ,1/5/22,1,0,0
+3,C,11,Dormant,Control,BQ,1/12/22,1,0,0
+3,C,11,Dormant,Control,BQ,1/19/22,1,0,0
+3,C,11,Dormant,Control,DW,1/28/22,1,0,0
+3,C,11,Dormant,Control,BQ,2/3/22,1,0,0
+3,C,11,Dormant,Control,DW,2/11/22,1,0,0
+3,C,11,Dormant,Control,DW,2/18/22,1,0,0
+3,C,11,Dormant,Control,DW,2/25/22,1,0,0
+3,C,11,Dormant,Control,DW,3/4/22,1,0,0
+3,C,11,Dormant,Control,BQ,3/11/22,1,0,0
+3,C,11,Dormant,Control,DW,3/18/22,1,0,0
+3,C,11,Dormant,Control,DW,3/25/22,1,0,0
+3,C,11,Dormant,Control,DW,4/8/22,1,0,0
+3,C,11,Dormant,Control,DW,4/15/22,1,0,0
+3,C,11,Dormant,Control,BQ,4/22/22,1,0,0
+3,C,11,Dormant,Control,ET ,4/29/22,1,0,0
+3,C,11,Dormant,Control,ET,5/5/22,1,0,0
+3,C,11,Dormant,Control,BQ,5/13/22,2,0,0
+3,C,11,Dormant,Control,BQ,5/19/22,2,0,0
+3,C,11,Dormant,Control,CX,5/25/22,2,0,0
+3,C,11,Dormant,Control,CX,6/10/22,2,0,0
+3,C,11,Dormant,Control,BQ,6/17/22,2,0,0
+3,C,11,Dormant,Control,BQ,6/24/22,2,0,0
+3,C,11,Dormant,Control,BQ,6/29/22,2,0,0
+3,C,11,Dormant,Control,BQ,7/15/22,2,0,0
+3,C,11,Dormant,Control,BQ,7/22/22,2,0,0
+3,C,11,Dormant,Control,ET,7/29/22,2,0,0
+3,C,11,Dormant,Control,ET,8/2/22,2,0,0
+3,C,11,Dormant,Control,ET,8/5/22,2,0,0
+3,C,11,Dormant,Control,BQ,8/12/22,2,0,0
+3,C,11,Dormant,Control,BQ,8/19/22,2,0,0
+3,C,11,Dormant,Control,BQ,8/26/22,2,0,0
+3,C,11,Dormant,Control,BQ,9/2/22,2,0,0
+3,C,11,Dormant,Control,BQ,9/9/22,2,0,0
+3,C,11,Dormant,Control,BQ,9/16/22,2,0,1
+3,C,11,Dormant,Control,BQ,9/23/22,2,0,0
+3,C,11,Dormant,Control,ET,9/29/22,2,0,0
+3,C,11,Dormant,Control,YK,10/7/22,2,0,0
+3,C,11,Dormant,Control,YK,10/14/22,2,0,0
+3,C,11,Dormant,Control,YK,10/21/22,2,0,0
+3,C,11,Dormant,Control,ET,10/26/22,2,0,0
+3,C,11,Dormant,Control,BQ,11/4/22,2,0,0
+3,C,11,Dormant,Control,ET,11/10/22,2,0,0
+3,C,11,Dormant,Control,YK,11/18/22,2,0,0
+3,C,11,Dormant,Control,ET,11/22/22,2,0,0
+3,C,11,Dormant,Control,YK,12/2/22,2,0,0
+3,C,11,Dormant,Control,BQ & EG,12/9/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,5/13/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,5/20/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,5/26/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,6/2/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,6/10/21,1,3,3
+3,C,11,Non-Dormant,Control,BQ,6/16/21,1,0,0
+3,C,11,Non-Dormant,Control,KD,6/23/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,6/30/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,7/7/21,1,15,15
+3,C,11,Non-Dormant,Control,BQ,7/14/21,1,0,0
+3,C,11,Non-Dormant,Control,KD,7/21/21,1,0,0
+3,C,11,Non-Dormant,Control,KD,7/28/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,8/4/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,8/11/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,8/17/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,8/25/21,1,0,1
+3,C,11,Non-Dormant,Control,DW,9/2/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,9/8/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,9/15/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,9/22/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,9/29/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,10/6/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,10/13/21,1,1,1
+3,C,11,Non-Dormant,Control,DW,10/20/21,1,0,1
+3,C,11,Non-Dormant,Control,DW,10/27/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,11/3/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,11/10/21,1,0,0
+3,C,11,Non-Dormant,Control,DW,11/17/21,1,0,0
+3,C,11,Non-Dormant,Control,CF,11/22/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,12/1/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,12/8/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,12/15/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,12/22/21,1,0,0
+3,C,11,Non-Dormant,Control,N/A,12/29/21,1,0,0
+3,C,11,Non-Dormant,Control,BQ,1/5/22,1,0,0
+3,C,11,Non-Dormant,Control,BQ,1/12/22,1,0,0
+3,C,11,Non-Dormant,Control,BQ,1/19/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,1/28/22,1,0,0
+3,C,11,Non-Dormant,Control,BQ,2/3/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,2/11/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,2/18/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,2/25/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,3/4/22,1,0,0
+3,C,11,Non-Dormant,Control,BQ,3/11/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,3/18/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,3/25/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,4/8/22,1,0,0
+3,C,11,Non-Dormant,Control,DW,4/15/22,1,0,0
+3,C,11,Non-Dormant,Control,BQ,4/22/22,1,0,0
+3,C,11,Non-Dormant,Control,ET ,4/29/22,1,0,0
+3,C,11,Non-Dormant,Control,ET,5/5/22,1,0,0
+3,C,11,Non-Dormant,Control,BQ,5/13/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,5/19/22,2,0,0
+3,C,11,Non-Dormant,Control,CX,5/25/22,2,0,0
+3,C,11,Non-Dormant,Control,CX,6/10/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,6/17/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,6/24/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,6/29/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,7/15/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,7/22/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,7/29/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,8/2/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,8/5/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,8/12/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,8/19/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,8/26/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,9/2/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,9/9/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,9/16/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,9/23/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,9/29/22,2,0,0
+3,C,11,Non-Dormant,Control,YK,10/7/22,2,0,0
+3,C,11,Non-Dormant,Control,YK,10/14/22,2,0,0
+3,C,11,Non-Dormant,Control,YK,10/21/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,10/26/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ,11/4/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,11/10/22,2,0,0
+3,C,11,Non-Dormant,Control,YK,11/18/22,2,0,0
+3,C,11,Non-Dormant,Control,ET,11/22/22,2,0,0
+3,C,11,Non-Dormant,Control,YK,12/2/22,2,0,0
+3,C,11,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,5/13/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,5/20/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,5/26/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,6/2/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,6/10/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,6/16/21,1,0,0
+3,D,12,Dormant,High Humidity,KD,6/23/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,6/30/21,1,1,1
+3,D,12,Dormant,High Humidity,BQ,7/7/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,7/14/21,1,0,0
+3,D,12,Dormant,High Humidity,KD,7/21/21,1,4,10
+3,D,12,Dormant,High Humidity,KD,7/28/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,8/4/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,8/11/21,1,1,1
+3,D,12,Dormant,High Humidity,BQ,8/17/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,8/25/21,1,0,4
+3,D,12,Dormant,High Humidity,DW,9/2/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,9/8/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,9/15/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,9/22/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,9/29/21,1,12,20
+3,D,12,Dormant,High Humidity,DW,10/6/21,1,NA,NA
+3,D,12,Dormant,High Humidity,DW,10/13/21,1,2,2
+3,D,12,Dormant,High Humidity,DW,10/20/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,10/27/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,11/3/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,11/10/21,1,0,0
+3,D,12,Dormant,High Humidity,DW,11/17/21,1,6,6
+3,D,12,Dormant,High Humidity,CF,11/22/21,1,2,2
+3,D,12,Dormant,High Humidity,BQ,12/1/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,12/8/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,12/15/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,12/22/21,1,0,0
+3,D,12,Dormant,High Humidity,N/A,12/29/21,1,0,0
+3,D,12,Dormant,High Humidity,BQ,1/5/22,1,0,0
+3,D,12,Dormant,High Humidity,BQ,1/12/22,1,0,0
+3,D,12,Dormant,High Humidity,BQ,1/19/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,1/28/22,1,0,0
+3,D,12,Dormant,High Humidity,BQ,2/3/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,2/11/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,2/18/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,2/25/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,3/4/22,1,0,0
+3,D,12,Dormant,High Humidity,BQ,3/11/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,3/18/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,3/25/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,4/8/22,1,0,0
+3,D,12,Dormant,High Humidity,DW,4/15/22,1,0,0
+3,D,12,Dormant,High Humidity,BQ,4/22/22,1,0,0
+3,D,12,Dormant,High Humidity,ET ,4/29/22,1,0,0
+3,D,12,Dormant,High Humidity,ET,5/5/22,1,0,0
+3,D,12,Dormant,High Humidity,BQ,5/13/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,5/19/22,2,0,0
+3,D,12,Dormant,High Humidity,CX,5/25/22,2,0,0
+3,D,12,Dormant,High Humidity,CX,6/10/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,6/17/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,6/24/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,6/29/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,7/15/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,7/22/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,7/29/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,8/2/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,8/5/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,8/12/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,8/19/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,8/26/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,9/2/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,9/9/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,9/16/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,9/23/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,9/29/22,2,0,0
+3,D,12,Dormant,High Humidity,YK,10/7/22,2,0,0
+3,D,12,Dormant,High Humidity,YK,10/14/22,2,0,0
+3,D,12,Dormant,High Humidity,YK,10/21/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,10/26/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ,11/4/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,11/10/22,2,0,0
+3,D,12,Dormant,High Humidity,YK,11/18/22,2,0,0
+3,D,12,Dormant,High Humidity,ET,11/22/22,2,0,0
+3,D,12,Dormant,High Humidity,YK,12/2/22,2,0,0
+3,D,12,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/30/21,1,9,11
+3,D,12,Non-Dormant,High Humidity,BQ,7/7/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,KD,7/21/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,KD,7/28/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,8/25/21,1,0,1
+3,D,12,Non-Dormant,High Humidity,DW,9/2/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,9/8/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,9/15/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,9/22/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,9/29/21,1,6,6
+3,D,12,Non-Dormant,High Humidity,DW,10/6/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,10/13/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,10/20/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,10/27/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,11/10/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,11/17/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,CF,11/22/21,1,1,3
+3,D,12,Non-Dormant,High Humidity,BQ,12/1/21,1,1,1
+3,D,12,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,1/28/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,2/11/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,2/18/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,2/25/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,3/4/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,3/18/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,3/25/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,4/8/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,DW,4/15/22,1,1,1
+3,D,12,Non-Dormant,High Humidity,BQ,4/22/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,CX,5/25/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,CX,6/10/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,YK,10/7/22,2,2,2
+3,D,12,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,YK,11/18/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,YK,12/2/22,2,0,0
+3,D,12,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+4,E,4,Dormant,Control,BQ,5/13/21,1,0,0
+4,E,4,Dormant,Control,BQ,5/20/21,1,0,0
+4,E,4,Dormant,Control,BQ,5/26/21,1,0,0
+4,E,4,Dormant,Control,BQ,6/2/21,1,0,0
+4,E,4,Dormant,Control,BQ,6/10/21,1,3,3
+4,E,4,Dormant,Control,BQ,6/16/21,1,0,0
+4,E,4,Dormant,Control,KD,6/23/21,1,0,0
+4,E,4,Dormant,Control,BQ,6/30/21,1,0,0
+4,E,4,Dormant,Control,BQ,7/7/21,1,4,5
+4,E,4,Dormant,Control,BQ,7/14/21,1,21,24
+4,E,4,Dormant,Control,KD,7/21/21,1,0,0
+4,E,4,Dormant,Control,KD,7/28/21,1,0,0
+4,E,4,Dormant,Control,BQ,8/4/21,1,0,0
+4,E,4,Dormant,Control,BQ,8/11/21,1,0,0
+4,E,4,Dormant,Control,BQ,8/17/21,1,0,0
+4,E,4,Dormant,Control,DW,8/25/21,1,0,10
+4,E,4,Dormant,Control,DW,9/2/21,1,0,0
+4,E,4,Dormant,Control,DW,9/8/21,1,0,0
+4,E,4,Dormant,Control,DW,9/15/21,1,0,0
+4,E,4,Dormant,Control,DW,9/22/21,1,0,0
+4,E,4,Dormant,Control,DW,9/29/21,1,4,13
+4,E,4,Dormant,Control,DW,10/6/21,1,3,3
+4,E,4,Dormant,Control,DW,10/13/21,1,5,5
+4,E,4,Dormant,Control,DW,10/20/21,1,0,0
+4,E,4,Dormant,Control,DW,10/27/21,1,0,0
+4,E,4,Dormant,Control,DW,11/3/21,1,0,0
+4,E,4,Dormant,Control,DW,11/10/21,1,0,0
+4,E,4,Dormant,Control,DW,11/17/21,1,3,3
+4,E,4,Dormant,Control,CF,11/22/21,1,1,1
+4,E,4,Dormant,Control,BQ,12/1/21,1,0,0
+4,E,4,Dormant,Control,BQ,12/8/21,1,1,1
+4,E,4,Dormant,Control,BQ,12/15/21,1,0,0
+4,E,4,Dormant,Control,BQ,12/22/21,1,0,0
+4,E,4,Dormant,Control,N/A,12/29/21,1,0,0
+4,E,4,Dormant,Control,BQ,1/5/22,1,0,0
+4,E,4,Dormant,Control,BQ,1/12/22,1,0,0
+4,E,4,Dormant,Control,BQ,1/19/22,1,0,0
+4,E,4,Dormant,Control,DW,1/28/22,1,0,0
+4,E,4,Dormant,Control,BQ,2/3/22,1,0,0
+4,E,4,Dormant,Control,DW,2/11/22,1,0,0
+4,E,4,Dormant,Control,DW,2/18/22,1,0,0
+4,E,4,Dormant,Control,DW,2/25/22,1,0,0
+4,E,4,Dormant,Control,DW,3/4/22,1,0,0
+4,E,4,Dormant,Control,BQ,3/11/22,1,0,0
+4,E,4,Dormant,Control,DW,3/18/22,1,0,0
+4,E,4,Dormant,Control,DW,3/25/22,1,0,0
+4,E,4,Dormant,Control,DW,4/8/22,1,0,0
+4,E,4,Dormant,Control,DW,4/15/22,1,0,0
+4,E,4,Dormant,Control,BQ,4/22/22,1,0,0
+4,E,4,Dormant,Control,ET ,4/29/22,1,0,0
+4,E,4,Dormant,Control,ET,5/5/22,1,0,0
+4,E,4,Dormant,Control,BQ,5/13/22,2,0,0
+4,E,4,Dormant,Control,BQ,5/19/22,2,0,0
+4,E,4,Dormant,Control,CX,5/25/22,2,0,0
+4,E,4,Dormant,Control,CX,6/10/22,2,0,0
+4,E,4,Dormant,Control,BQ,6/17/22,2,0,0
+4,E,4,Dormant,Control,BQ,6/24/22,2,0,0
+4,E,4,Dormant,Control,BQ,6/29/22,2,0,0
+4,E,4,Dormant,Control,BQ,7/15/22,2,0,0
+4,E,4,Dormant,Control,BQ,7/22/22,2,0,0
+4,E,4,Dormant,Control,ET,7/29/22,2,0,0
+4,E,4,Dormant,Control,ET,8/2/22,2,0,0
+4,E,4,Dormant,Control,ET,8/5/22,2,0,0
+4,E,4,Dormant,Control,BQ,8/12/22,2,0,0
+4,E,4,Dormant,Control,BQ,8/19/22,2,0,0
+4,E,4,Dormant,Control,BQ,8/26/22,2,0,0
+4,E,4,Dormant,Control,BQ,9/2/22,2,0,0
+4,E,4,Dormant,Control,BQ,9/9/22,2,0,0
+4,E,4,Dormant,Control,BQ,9/16/22,2,0,0
+4,E,4,Dormant,Control,BQ,9/23/22,2,0,2
+4,E,4,Dormant,Control,ET,9/29/22,2,0,0
+4,E,4,Dormant,Control,YK,10/7/22,2,0,0
+4,E,4,Dormant,Control,YK,10/14/22,2,0,1
+4,E,4,Dormant,Control,YK,10/21/22,2,0,0
+4,E,4,Dormant,Control,ET,10/26/22,2,0,0
+4,E,4,Dormant,Control,BQ,11/4/22,2,0,0
+4,E,4,Dormant,Control,ET,11/10/22,2,0,0
+4,E,4,Dormant,Control,YK,11/18/22,2,0,0
+4,E,4,Dormant,Control,ET,11/22/22,2,0,0
+4,E,4,Dormant,Control,YK,12/2/22,2,0,0
+4,E,4,Dormant,Control,BQ & EG,12/9/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,5/13/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,5/20/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,5/26/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,6/2/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,6/10/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,6/16/21,1,0,0
+4,E,4,Non-Dormant,Control,KD,6/23/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,6/30/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,7/7/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,7/14/21,1,0,0
+4,E,4,Non-Dormant,Control,KD,7/21/21,1,0,0
+4,E,4,Non-Dormant,Control,KD,7/28/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,8/4/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,8/11/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,8/17/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,8/25/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,9/2/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,9/8/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,9/15/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,9/22/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,9/29/21,1,1,2
+4,E,4,Non-Dormant,Control,DW,10/6/21,1,3,3
+4,E,4,Non-Dormant,Control,DW,10/13/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,10/20/21,1,1,1
+4,E,4,Non-Dormant,Control,DW,10/27/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,11/3/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,11/10/21,1,0,0
+4,E,4,Non-Dormant,Control,DW,11/17/21,1,1,1
+4,E,4,Non-Dormant,Control,CF,11/22/21,1,0,1
+4,E,4,Non-Dormant,Control,BQ,12/1/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,12/8/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,12/15/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,12/22/21,1,0,1
+4,E,4,Non-Dormant,Control,N/A,12/29/21,1,0,0
+4,E,4,Non-Dormant,Control,BQ,1/5/22,1,0,0
+4,E,4,Non-Dormant,Control,BQ,1/12/22,1,0,0
+4,E,4,Non-Dormant,Control,BQ,1/19/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,1/28/22,1,0,0
+4,E,4,Non-Dormant,Control,BQ,2/3/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,2/11/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,2/18/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,2/25/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,3/4/22,1,0,0
+4,E,4,Non-Dormant,Control,BQ,3/11/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,3/18/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,3/25/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,4/8/22,1,0,0
+4,E,4,Non-Dormant,Control,DW,4/15/22,1,0,0
+4,E,4,Non-Dormant,Control,BQ,4/22/22,1,0,0
+4,E,4,Non-Dormant,Control,ET ,4/29/22,1,0,0
+4,E,4,Non-Dormant,Control,ET,5/5/22,1,0,0
+4,E,4,Non-Dormant,Control,BQ,5/13/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,5/19/22,2,0,0
+4,E,4,Non-Dormant,Control,CX,5/25/22,2,0,0
+4,E,4,Non-Dormant,Control,CX,6/10/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,6/17/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,6/24/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,6/29/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,7/15/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,7/22/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,7/29/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,8/2/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,8/5/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,8/12/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,8/19/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,8/26/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,9/2/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,9/9/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,9/16/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,9/23/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,9/29/22,2,0,0
+4,E,4,Non-Dormant,Control,YK,10/7/22,2,0,0
+4,E,4,Non-Dormant,Control,YK,10/14/22,2,0,0
+4,E,4,Non-Dormant,Control,YK,10/21/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,10/26/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ,11/4/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,11/10/22,2,0,0
+4,E,4,Non-Dormant,Control,YK,11/18/22,2,0,0
+4,E,4,Non-Dormant,Control,ET,11/22/22,2,0,0
+4,E,4,Non-Dormant,Control,YK,12/2/22,2,0,0
+4,E,4,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,5/13/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,5/20/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,5/26/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,6/2/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,6/10/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,6/16/21,1,0,0
+2,E,5,Dormant,High Humidity,KD,6/23/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,6/30/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,7/7/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,7/14/21,1,0,0
+2,E,5,Dormant,High Humidity,KD,7/21/21,1,1,2
+2,E,5,Dormant,High Humidity,KD,7/28/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,8/4/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,8/11/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,8/17/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,8/25/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,9/2/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,9/8/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,9/15/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,9/22/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,9/29/21,1,17,26
+2,E,5,Dormant,High Humidity,DW,10/6/21,1,4,4
+2,E,5,Dormant,High Humidity,DW,10/13/21,1,2,2
+2,E,5,Dormant,High Humidity,DW,10/20/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,10/27/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,11/3/21,1,0,0
+2,E,5,Dormant,High Humidity,DW,11/10/21,1,2,2
+2,E,5,Dormant,High Humidity,DW,11/17/21,1,3,3
+2,E,5,Dormant,High Humidity,CF,11/22/21,1,3,3
+2,E,5,Dormant,High Humidity,BQ,12/1/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,12/8/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,12/15/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,12/22/21,1,0,0
+2,E,5,Dormant,High Humidity,N/A,12/29/21,1,0,0
+2,E,5,Dormant,High Humidity,BQ,1/5/22,1,0,0
+2,E,5,Dormant,High Humidity,BQ,1/12/22,1,0,0
+2,E,5,Dormant,High Humidity,BQ,1/19/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,1/28/22,1,0,0
+2,E,5,Dormant,High Humidity,BQ,2/3/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,2/11/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,2/18/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,2/25/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,3/4/22,1,0,0
+2,E,5,Dormant,High Humidity,BQ,3/11/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,3/18/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,3/25/22,1,0,0
+2,E,5,Dormant,High Humidity,DW,4/8/22,1,1,1
+2,E,5,Dormant,High Humidity,DW,4/15/22,1,0,0
+2,E,5,Dormant,High Humidity,BQ,4/22/22,1,0,0
+2,E,5,Dormant,High Humidity,ET ,4/29/22,1,0,0
+2,E,5,Dormant,High Humidity,ET,5/5/22,1,0,0
+2,E,5,Dormant,High Humidity,BQ,5/13/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,5/19/22,2,0,0
+2,E,5,Dormant,High Humidity,CX,5/25/22,2,0,0
+2,E,5,Dormant,High Humidity,CX,6/10/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,6/17/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,6/24/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,6/29/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,7/15/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,7/22/22,2,0,0
+2,E,5,Dormant,High Humidity,ET,7/29/22,2,0,0
+2,E,5,Dormant,High Humidity,ET,8/2/22,2,0,0
+2,E,5,Dormant,High Humidity,ET,8/5/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,8/12/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,8/19/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,8/26/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,9/2/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,9/9/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,9/16/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,9/23/22,2,0,0
+2,E,5,Dormant,High Humidity,ET,9/29/22,2,0,0
+2,E,5,Dormant,High Humidity,YK,10/7/22,2,4,4
+2,E,5,Dormant,High Humidity,YK,10/14/22,2,0,0
+2,E,5,Dormant,High Humidity,YK,10/21/22,2,2,2
+2,E,5,Dormant,High Humidity,ET,10/26/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ,11/4/22,2,0,0
+2,E,5,Dormant,High Humidity,ET,11/10/22,2,0,0
+2,E,5,Dormant,High Humidity,YK,11/18/22,2,0,0
+2,E,5,Dormant,High Humidity,ET,11/22/22,2,1,1
+2,E,5,Dormant,High Humidity,YK,12/2/22,2,0,0
+2,E,5,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/30/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,7/7/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,KD,7/21/21,1,16,16
+2,E,5,Non-Dormant,High Humidity,KD,7/28/21,1,0,1
+2,E,5,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,8/25/21,1,0,1
+2,E,5,Non-Dormant,High Humidity,DW,9/2/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,9/8/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,9/15/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,9/22/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,9/29/21,1,6,7
+2,E,5,Non-Dormant,High Humidity,DW,10/6/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,10/13/21,1,1,1
+2,E,5,Non-Dormant,High Humidity,DW,10/20/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,10/27/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,11/10/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,11/17/21,1,1,1
+2,E,5,Non-Dormant,High Humidity,CF,11/22/21,1,1,1
+2,E,5,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,1/12/22,1,1,1
+2,E,5,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,1/28/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,2/11/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,2/18/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,2/25/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,3/4/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,3/18/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,3/25/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,4/8/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,DW,4/15/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,4/22/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,CX,5/25/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,CX,6/10/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,YK,10/7/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,YK,11/18/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,YK,12/2/22,2,0,0
+2,E,5,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+6,F,13,Dormant,Control,BQ,5/13/21,1,0,0
+6,F,13,Dormant,Control,BQ,5/20/21,1,0,0
+6,F,13,Dormant,Control,BQ,5/26/21,1,0,0
+6,F,13,Dormant,Control,BQ,6/2/21,1,0,0
+6,F,13,Dormant,Control,BQ,6/10/21,1,19,19
+6,F,13,Dormant,Control,BQ,6/16/21,1,0,0
+6,F,13,Dormant,Control,KD,6/23/21,1,0,0
+6,F,13,Dormant,Control,BQ,6/30/21,1,0,0
+6,F,13,Dormant,Control,BQ,7/7/21,1,0,0
+6,F,13,Dormant,Control,BQ,7/14/21,1,13,13
+6,F,13,Dormant,Control,KD,7/21/21,1,0,0
+6,F,13,Dormant,Control,KD,7/28/21,1,0,2
+6,F,13,Dormant,Control,BQ,8/4/21,1,0,0
+6,F,13,Dormant,Control,BQ,8/11/21,1,0,0
+6,F,13,Dormant,Control,BQ,8/17/21,1,0,0
+6,F,13,Dormant,Control,DW,8/25/21,1,0,11
+6,F,13,Dormant,Control,DW,9/2/21,1,0,1
+6,F,13,Dormant,Control,DW,9/8/21,1,0,0
+6,F,13,Dormant,Control,DW,9/15/21,1,0,3
+6,F,13,Dormant,Control,DW,9/22/21,1,0,0
+6,F,13,Dormant,Control,BQ,9/29/21,1,1,7
+6,F,13,Dormant,Control,DW,10/6/21,1,0,0
+6,F,13,Dormant,Control,DW,10/13/21,1,1,1
+6,F,13,Dormant,Control,DW,10/20/21,1,0,0
+6,F,13,Dormant,Control,DW,10/27/21,1,0,0
+6,F,13,Dormant,Control,DW,11/3/21,1,0,0
+6,F,13,Dormant,Control,DW,11/10/21,1,0,0
+6,F,13,Dormant,Control,DW,11/17/21,1,0,0
+6,F,13,Dormant,Control,CF,11/22/21,1,0,0
+6,F,13,Dormant,Control,BQ,12/1/21,1,0,0
+6,F,13,Dormant,Control,BQ,12/8/21,1,0,0
+6,F,13,Dormant,Control,BQ,12/15/21,1,0,0
+6,F,13,Dormant,Control,BQ,12/22/21,1,0,0
+6,F,13,Dormant,Control,N/A,12/29/21,1,0,0
+6,F,13,Dormant,Control,BQ,1/5/22,1,0,0
+6,F,13,Dormant,Control,BQ,1/12/22,1,0,0
+6,F,13,Dormant,Control,BQ,1/19/22,1,0,0
+6,F,13,Dormant,Control,DW,1/28/22,1,0,0
+6,F,13,Dormant,Control,BQ,2/3/22,1,0,0
+6,F,13,Dormant,Control,DW,2/11/22,1,0,0
+6,F,13,Dormant,Control,DW,2/18/22,1,0,0
+6,F,13,Dormant,Control,DW,2/25/22,1,0,0
+6,F,13,Dormant,Control,DW,3/4/22,1,0,0
+6,F,13,Dormant,Control,BQ,3/11/22,1,0,0
+6,F,13,Dormant,Control,DW,3/18/22,1,0,0
+6,F,13,Dormant,Control,DW,3/25/22,1,0,0
+6,F,13,Dormant,Control,DW,4/8/22,1,0,0
+6,F,13,Dormant,Control,DW,4/15/22,1,0,0
+6,F,13,Dormant,Control,BQ,4/22/22,1,0,0
+6,F,13,Dormant,Control,ET ,4/29/22,1,0,0
+6,F,13,Dormant,Control,ET,5/5/22,1,0,0
+6,F,13,Dormant,Control,BQ,5/13/22,2,0,0
+6,F,13,Dormant,Control,BQ,5/19/22,2,0,0
+6,F,13,Dormant,Control,CX,5/25/22,2,0,0
+6,F,13,Dormant,Control,CX,6/10/22,2,0,0
+6,F,13,Dormant,Control,BQ,6/17/22,2,0,0
+6,F,13,Dormant,Control,BQ,6/24/22,2,0,0
+6,F,13,Dormant,Control,BQ,6/29/22,2,0,0
+6,F,13,Dormant,Control,BQ,7/15/22,2,0,0
+6,F,13,Dormant,Control,BQ,7/22/22,2,0,0
+6,F,13,Dormant,Control,ET,7/29/22,2,0,0
+6,F,13,Dormant,Control,ET,8/2/22,2,0,0
+6,F,13,Dormant,Control,ET,8/5/22,2,0,0
+6,F,13,Dormant,Control,BQ,8/12/22,2,0,0
+6,F,13,Dormant,Control,BQ,8/19/22,2,0,0
+6,F,13,Dormant,Control,BQ,8/26/22,2,0,0
+6,F,13,Dormant,Control,BQ,9/2/22,2,0,0
+6,F,13,Dormant,Control,BQ,9/9/22,2,0,0
+6,F,13,Dormant,Control,BQ,9/16/22,2,0,0
+6,F,13,Dormant,Control,BQ,9/23/22,2,0,0
+6,F,13,Dormant,Control,ET,9/29/22,2,0,0
+6,F,13,Dormant,Control,YK,10/7/22,2,0,0
+6,F,13,Dormant,Control,YK,10/14/22,2,0,0
+6,F,13,Dormant,Control,YK,10/21/22,2,0,0
+6,F,13,Dormant,Control,ET,10/26/22,2,0,0
+6,F,13,Dormant,Control,BQ,11/4/22,2,0,0
+6,F,13,Dormant,Control,ET,11/10/22,2,0,0
+6,F,13,Dormant,Control,YK,11/18/22,2,0,0
+6,F,13,Dormant,Control,ET,11/22/22,2,0,0
+6,F,13,Dormant,Control,YK,12/2/22,2,0,0
+6,F,13,Dormant,Control,BQ & EG,12/9/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,5/13/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,5/20/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,5/26/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,6/2/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,6/10/21,1,1,1
+6,F,13,Non-Dormant,Control,BQ,6/16/21,1,0,0
+6,F,13,Non-Dormant,Control,KD,6/23/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,6/30/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,7/7/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,7/14/21,1,14,20
+6,F,13,Non-Dormant,Control,KD,7/21/21,1,0,2
+6,F,13,Non-Dormant,Control,KD,7/28/21,1,0,1
+6,F,13,Non-Dormant,Control,BQ,8/4/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,8/11/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,8/17/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,8/25/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,9/2/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,9/8/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,9/15/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,9/22/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,9/29/21,1,1,1
+6,F,13,Non-Dormant,Control,DW,10/6/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,10/13/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,10/20/21,1,1,1
+6,F,13,Non-Dormant,Control,DW,10/27/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,11/3/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,11/10/21,1,0,0
+6,F,13,Non-Dormant,Control,DW,11/17/21,1,0,0
+6,F,13,Non-Dormant,Control,CF,11/22/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,12/1/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,12/8/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,12/15/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,12/22/21,1,0,0
+6,F,13,Non-Dormant,Control,N/A,12/29/21,1,0,0
+6,F,13,Non-Dormant,Control,BQ,1/5/22,1,0,0
+6,F,13,Non-Dormant,Control,BQ,1/12/22,1,0,0
+6,F,13,Non-Dormant,Control,BQ,1/19/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,1/28/22,1,0,0
+6,F,13,Non-Dormant,Control,BQ,2/3/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,2/11/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,2/18/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,2/25/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,3/4/22,1,0,0
+6,F,13,Non-Dormant,Control,BQ,3/11/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,3/18/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,3/25/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,4/8/22,1,0,0
+6,F,13,Non-Dormant,Control,DW,4/15/22,1,0,0
+6,F,13,Non-Dormant,Control,BQ,4/22/22,1,0,0
+6,F,13,Non-Dormant,Control,ET ,4/29/22,1,0,0
+6,F,13,Non-Dormant,Control,ET,5/5/22,1,0,0
+6,F,13,Non-Dormant,Control,BQ,5/13/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,5/19/22,2,0,0
+6,F,13,Non-Dormant,Control,CX,5/25/22,2,0,0
+6,F,13,Non-Dormant,Control,CX,6/10/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,6/17/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,6/24/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,6/29/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,7/15/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,7/22/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,7/29/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,8/2/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,8/5/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,8/12/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,8/19/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,8/26/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,9/2/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,9/9/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,9/16/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,9/23/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,9/29/22,2,0,0
+6,F,13,Non-Dormant,Control,YK,10/7/22,2,0,2
+6,F,13,Non-Dormant,Control,YK,10/14/22,2,0,0
+6,F,13,Non-Dormant,Control,YK,10/21/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,10/26/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ,11/4/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,11/10/22,2,0,0
+6,F,13,Non-Dormant,Control,YK,11/18/22,2,0,0
+6,F,13,Non-Dormant,Control,ET,11/22/22,2,0,0
+6,F,13,Non-Dormant,Control,YK,12/2/22,2,0,0
+6,F,13,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,5/13/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,5/20/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,5/26/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,6/2/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,6/10/21,1,1,1
+6,G,13,Dormant,High Humidity,BQ,6/16/21,1,0,0
+6,G,13,Dormant,High Humidity,KD,6/23/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,6/30/21,1,10,10
+6,G,13,Dormant,High Humidity,BQ,7/7/21,1,2,2
+6,G,13,Dormant,High Humidity,BQ,7/14/21,1,0,0
+6,G,13,Dormant,High Humidity,KD,7/21/21,1,11,13
+6,G,13,Dormant,High Humidity,KD,7/28/21,1,1,1
+6,G,13,Dormant,High Humidity,BQ,8/4/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,8/11/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,8/17/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,8/25/21,1,0,7
+6,G,13,Dormant,High Humidity,DW,9/2/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,9/8/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,9/15/21,1,2,2
+6,G,13,Dormant,High Humidity,DW,9/22/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,9/29/21,1,9,17
+6,G,13,Dormant,High Humidity,DW,10/6/21,1,1,1
+6,G,13,Dormant,High Humidity,DW,10/13/21,1,1,1
+6,G,13,Dormant,High Humidity,DW,10/20/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,10/27/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,11/3/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,11/10/21,1,0,0
+6,G,13,Dormant,High Humidity,DW,11/17/21,1,1,1
+6,G,13,Dormant,High Humidity,CF,11/22/21,1,5,5
+6,G,13,Dormant,High Humidity,BQ,12/1/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,12/8/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,12/15/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,12/22/21,1,0,0
+6,G,13,Dormant,High Humidity,N/A,12/29/21,1,0,0
+6,G,13,Dormant,High Humidity,BQ,1/5/22,1,0,0
+6,G,13,Dormant,High Humidity,BQ,1/12/22,1,0,0
+6,G,13,Dormant,High Humidity,BQ,1/19/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,1/28/22,1,0,0
+6,G,13,Dormant,High Humidity,BQ,2/3/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,2/11/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,2/18/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,2/25/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,3/4/22,1,0,0
+6,G,13,Dormant,High Humidity,BQ,3/11/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,3/18/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,3/25/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,4/8/22,1,0,0
+6,G,13,Dormant,High Humidity,DW,4/15/22,1,0,0
+6,G,13,Dormant,High Humidity,BQ,4/22/22,1,0,0
+6,G,13,Dormant,High Humidity,ET ,4/29/22,1,0,0
+6,G,13,Dormant,High Humidity,ET,5/5/22,1,0,0
+6,G,13,Dormant,High Humidity,BQ,5/13/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,5/19/22,2,0,0
+6,G,13,Dormant,High Humidity,CX,5/25/22,2,0,0
+6,G,13,Dormant,High Humidity,CX,6/10/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,6/17/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,6/24/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,6/29/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,7/15/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,7/22/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,7/29/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,8/2/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,8/5/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,8/12/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,8/19/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,8/26/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,9/2/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,9/9/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,9/16/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,9/23/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,9/29/22,2,0,0
+6,G,13,Dormant,High Humidity,YK,10/7/22,2,0,0
+6,G,13,Dormant,High Humidity,YK,10/14/22,2,0,0
+6,G,13,Dormant,High Humidity,YK,10/21/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,10/26/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ,11/4/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,11/10/22,2,0,0
+6,G,13,Dormant,High Humidity,YK,11/18/22,2,0,0
+6,G,13,Dormant,High Humidity,ET,11/22/22,2,0,0
+6,G,13,Dormant,High Humidity,YK,12/2/22,2,0,0
+6,G,13,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/30/21,1,10,12
+6,G,13,Non-Dormant,High Humidity,BQ,7/7/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,KD,7/21/21,1,1,3
+6,G,13,Non-Dormant,High Humidity,KD,7/28/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,8/25/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,9/2/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,9/8/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,9/15/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,9/22/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,9/29/21,1,2,2
+6,G,13,Non-Dormant,High Humidity,DW,10/6/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,10/13/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,10/20/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,10/27/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,11/10/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,11/17/21,1,1,1
+6,G,13,Non-Dormant,High Humidity,CF,11/22/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,1/28/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,2/11/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,2/18/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,2/25/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,3/4/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,3/18/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,3/25/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,4/8/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,DW,4/15/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,4/22/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,CX,5/25/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,CX,6/10/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,YK,10/7/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,YK,11/18/22,2,1,1
+6,G,13,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,YK,12/2/22,2,0,0
+6,G,13,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,5/13/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,5/20/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,5/26/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/2/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/10/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/16/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,KD,6/23/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/30/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,7/7/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,7/14/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,KD,7/21/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,KD,7/28/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,8/4/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,8/11/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,8/17/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,8/25/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,9/2/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,DW,9/8/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,9/15/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,9/22/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,9/29/21,1,0,2
+4,G/H,2.5,Dormant,Native Soil,CF,10/6/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,10/13/21,1,2,10
+4,G/H,2.5,Dormant,Native Soil,CF,10/20/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,10/27/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,DW,11/3/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,11/10/21,1,0,1
+4,G/H,2.5,Dormant,Native Soil,CF,11/17/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,CF,11/22/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,12/1/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,12/8/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,12/15/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,12/22/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,N/A,12/29/21,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,1/5/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,1/12/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,1/19/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,1/28/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,2/3/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,2/11/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,2/18/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,2/25/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,3/4/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,3/11/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,3/18/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,3/25/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK ,4/1/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,4/8/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,4/15/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,4/22/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,ET ,4/29/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,5/5/22,1,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,5/13/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,5/19/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,5/25/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,XH,6/10/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/17/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/24/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,6/29/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,7/15/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,7/22/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,7/29/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,8/2/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,8/5/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,8/12/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,8/19/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,8/26/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,9/2/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,9/9/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,9/16/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,9/23/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,9/29/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,10/7/22,2,2,2
+4,G/H,2.5,Dormant,Native Soil,YK,10/14/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,YK,10/21/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,10/26/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,11/4/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,11/10/22,2,1,1
+4,G/H,2.5,Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,ET,11/22/22,2,0,0
+4,G/H,2.5,Dormant,Native Soil,BQ,12/2/22,2,2,3
+4,G/H,2.5,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,8/25/21,1,0,1
+4,G/H,2.5,Non-Dormant,Native Soil,CF,9/2/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,DW,9/8/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,9/15/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,9/22/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,9/29/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,10/6/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,10/13/21,1,0,6
+4,G/H,2.5,Non-Dormant,Native Soil,CF,10/20/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,10/27/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,11/10/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,11/17/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,1/28/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,2/11/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,2/18/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,2/25/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,3/4/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,3/18/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,3/25/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK ,4/1/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,4/8/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,4/15/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,4/22/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,5/25/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,XH,6/10/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,10/7/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ,12/2/22,2,0,0
+4,G/H,2.5,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,1,1
+4,H,4,Dormant,High Humidity,BQ,5/13/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,5/20/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,5/26/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,6/2/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,6/10/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,6/16/21,1,0,0
+4,H,4,Dormant,High Humidity,KD,6/23/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,6/30/21,1,14,15
+4,H,4,Dormant,High Humidity,BQ,7/7/21,1,3,3
+4,H,4,Dormant,High Humidity,BQ,7/14/21,1,0,0
+4,H,4,Dormant,High Humidity,KD,7/21/21,1,3,6
+4,H,4,Dormant,High Humidity,KD,7/28/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,8/4/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,8/11/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,8/17/21,1,0,0
+4,H,4,Dormant,High Humidity,CF,8/25/21,1,5,6
+4,H,4,Dormant,High Humidity,CF,9/2/21,1,0,0
+4,H,4,Dormant,High Humidity,DW,9/8/21,1,3,3
+4,H,4,Dormant,High Humidity,CF,9/15/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,9/22/21,1,0,0
+4,H,4,Dormant,High Humidity,CF,9/29/21,1,6,6
+4,H,4,Dormant,High Humidity,CF,10/6/21,1,3,3
+4,H,4,Dormant,High Humidity,CF,10/13/21,1,1,1
+4,H,4,Dormant,High Humidity,CF,10/20/21,1,0,0
+4,H,4,Dormant,High Humidity,CF,10/27/21,1,0,0
+4,H,4,Dormant,High Humidity,DW,11/3/21,1,0,0
+4,H,4,Dormant,High Humidity,CF,11/10/21,1,0,5
+4,H,4,Dormant,High Humidity,CF,11/17/21,1,0,0
+4,H,4,Dormant,High Humidity,CF,11/22/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,12/1/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,12/8/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,12/15/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,12/22/21,1,0,0
+4,H,4,Dormant,High Humidity,N/A,12/29/21,1,0,0
+4,H,4,Dormant,High Humidity,BQ,1/5/22,1,0,0
+4,H,4,Dormant,High Humidity,BQ,1/12/22,1,0,0
+4,H,4,Dormant,High Humidity,BQ,1/19/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,1/28/22,1,0,0
+4,H,4,Dormant,High Humidity,BQ,2/3/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,2/11/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,2/18/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,2/25/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,3/4/22,1,0,0
+4,H,4,Dormant,High Humidity,BQ,3/11/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,3/18/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,3/25/22,1,0,0
+4,H,4,Dormant,High Humidity,YK ,4/1/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,4/8/22,1,0,0
+4,H,4,Dormant,High Humidity,YK,4/15/22,1,0,0
+4,H,4,Dormant,High Humidity,ET,4/22/22,1,0,0
+4,H,4,Dormant,High Humidity,ET ,4/29/22,1,0,0
+4,H,4,Dormant,High Humidity,ET,5/5/22,1,0,0
+4,H,4,Dormant,High Humidity,BQ,5/13/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,5/19/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,5/25/22,2,0,0
+4,H,4,Dormant,High Humidity,XH,6/10/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,6/17/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,6/24/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,6/29/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,7/15/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,7/22/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,7/29/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,8/2/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,8/5/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,8/12/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,8/19/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,8/26/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,9/2/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,9/9/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,9/16/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,9/23/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,9/29/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,10/7/22,2,0,0
+4,H,4,Dormant,High Humidity,YK,10/14/22,2,7,7
+4,H,4,Dormant,High Humidity,YK,10/21/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,10/26/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ,11/4/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,11/10/22,2,2,2
+4,H,4,Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+4,H,4,Dormant,High Humidity,ET,11/22/22,2,1,1
+4,H,4,Dormant,High Humidity,BQ,12/2/22,2,0,0
+4,H,4,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/30/21,1,9,14
+4,H,4,Non-Dormant,High Humidity,BQ,7/7/21,1,5,5
+4,H,4,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,KD,7/21/21,1,0,1
+4,H,4,Non-Dormant,High Humidity,KD,7/28/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,8/25/21,1,0,1
+4,H,4,Non-Dormant,High Humidity,CF,9/2/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,DW,9/8/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,9/15/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,9/22/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,9/29/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,10/6/21,1,1,1
+4,H,4,Non-Dormant,High Humidity,CF,10/13/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,10/20/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,10/27/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,11/10/21,1,1,1
+4,H,4,Non-Dormant,High Humidity,CF,11/17/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,CF,11/22/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,1/28/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,2/11/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,2/18/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,2/25/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,3/4/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,3/18/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,3/25/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK ,4/1/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,4/8/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,YK,4/15/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,ET,4/22/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,5/25/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,XH,6/10/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,10/7/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ,12/2/22,2,0,0
+4,H,4,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,5/13/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,5/20/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,5/26/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,6/2/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,6/10/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,6/16/21,1,0,0
+6,H,13,Dormant,Native Soil,KD,6/23/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,6/30/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,7/7/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,7/14/21,1,0,0
+6,H,13,Dormant,Native Soil,KD,7/21/21,1,0,0
+6,H,13,Dormant,Native Soil,KD,7/28/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,8/4/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,8/11/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,8/17/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,8/25/21,1,0,1
+6,H,13,Dormant,Native Soil,CF,9/2/21,1,0,0
+6,H,13,Dormant,Native Soil,DW,9/8/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,9/15/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,9/22/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,9/29/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,10/6/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,10/13/21,1,9,11
+6,H,13,Dormant,Native Soil,CF,10/20/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,10/27/21,1,0,0
+6,H,13,Dormant,Native Soil,DW,11/3/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,11/10/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,11/17/21,1,0,0
+6,H,13,Dormant,Native Soil,CF,11/22/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,12/1/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,12/8/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,12/15/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,12/22/21,1,0,0
+6,H,13,Dormant,Native Soil,N/A,12/29/21,1,0,0
+6,H,13,Dormant,Native Soil,BQ,1/5/22,1,0,0
+6,H,13,Dormant,Native Soil,BQ,1/12/22,1,0,0
+6,H,13,Dormant,Native Soil,BQ,1/19/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,1/28/22,1,0,0
+6,H,13,Dormant,Native Soil,BQ,2/3/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,2/11/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,2/18/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,2/25/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,3/4/22,1,0,0
+6,H,13,Dormant,Native Soil,BQ,3/11/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,3/18/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,3/25/22,1,0,0
+6,H,13,Dormant,Native Soil,YK ,4/1/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,4/8/22,1,0,0
+6,H,13,Dormant,Native Soil,YK,4/15/22,1,0,0
+6,H,13,Dormant,Native Soil,ET,4/22/22,1,0,0
+6,H,13,Dormant,Native Soil,ET ,4/29/22,1,0,0
+6,H,13,Dormant,Native Soil,ET,5/5/22,1,0,0
+6,H,13,Dormant,Native Soil,BQ,5/13/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,5/19/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,5/25/22,2,0,0
+6,H,13,Dormant,Native Soil,XH,6/10/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,6/17/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,6/24/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,6/29/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,7/15/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,7/22/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,7/29/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,8/2/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,8/5/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,8/12/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,8/19/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,8/26/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,9/2/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,9/9/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,9/16/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,9/23/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,9/29/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,10/7/22,2,0,0
+6,H,13,Dormant,Native Soil,YK,10/14/22,2,0,0
+6,H,13,Dormant,Native Soil,YK,10/21/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,10/26/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,11/4/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,11/10/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+6,H,13,Dormant,Native Soil,ET,11/22/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ,12/2/22,2,0,0
+6,H,13,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,8/25/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,9/2/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,DW,9/8/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,9/15/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,9/22/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,9/29/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,10/6/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,10/13/21,1,0,4
+6,H,13,Non-Dormant,Native Soil,CF,10/20/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,10/27/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,11/10/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,11/17/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,1/28/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,2/11/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,2/18/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,2/25/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,3/4/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,3/18/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,3/25/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK ,4/1/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,4/8/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,YK,4/15/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,ET,4/22/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,5/25/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,XH,6/10/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,10/7/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ,12/2/22,2,0,0
+6,H,13,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+5,I,6,Dormant,Control,BQ,5/13/21,1,0,0
+5,I,6,Dormant,Control,BQ,5/20/21,1,0,0
+5,I,6,Dormant,Control,BQ,5/26/21,1,0,0
+5,I,6,Dormant,Control,BQ,6/2/21,1,0,0
+5,I,6,Dormant,Control,BQ,6/10/21,1,4,4
+5,I,6,Dormant,Control,BQ,6/16/21,1,0,0
+5,I,6,Dormant,Control,KD,6/23/21,1,0,0
+5,I,6,Dormant,Control,BQ,6/30/21,1,1,1
+5,I,6,Dormant,Control,BQ,7/7/21,1,2,2
+5,I,6,Dormant,Control,BQ,7/14/21,1,0,0
+5,I,6,Dormant,Control,KD,7/21/21,1,0,0
+5,I,6,Dormant,Control,KD,7/28/21,1,0,0
+5,I,6,Dormant,Control,BQ,8/4/21,1,0,0
+5,I,6,Dormant,Control,BQ,8/11/21,1,0,0
+5,I,6,Dormant,Control,BQ,8/17/21,1,0,0
+5,I,6,Dormant,Control,CF,8/25/21,1,0,0
+5,I,6,Dormant,Control,CF,9/2/21,1,0,0
+5,I,6,Dormant,Control,DW,9/8/21,1,0,0
+5,I,6,Dormant,Control,CF,9/15/21,1,0,0
+5,I,6,Dormant,Control,BQ,9/22/21,1,0,0
+5,I,6,Dormant,Control,CF,9/29/21,1,16,18
+5,I,6,Dormant,Control,CF,10/6/21,1,2,4
+5,I,6,Dormant,Control,CF,10/13/21,1,3,7
+5,I,6,Dormant,Control,CF,10/20/21,1,2,2
+5,I,6,Dormant,Control,CF,10/27/21,1,0,0
+5,I,6,Dormant,Control,DW,11/3/21,1,0,0
+5,I,6,Dormant,Control,CF,11/10/21,1,0,0
+5,I,6,Dormant,Control,CF,11/17/21,1,0,2
+5,I,6,Dormant,Control,CF,11/22/21,1,0,0
+5,I,6,Dormant,Control,BQ,12/1/21,1,0,0
+5,I,6,Dormant,Control,BQ,12/8/21,1,0,0
+5,I,6,Dormant,Control,BQ,12/15/21,1,0,0
+5,I,6,Dormant,Control,BQ,12/22/21,1,0,0
+5,I,6,Dormant,Control,N/A,12/29/21,1,0,0
+5,I,6,Dormant,Control,BQ,1/5/22,1,0,0
+5,I,6,Dormant,Control,BQ,1/12/22,1,0,0
+5,I,6,Dormant,Control,BQ,1/19/22,1,0,0
+5,I,6,Dormant,Control,YK,1/28/22,1,0,0
+5,I,6,Dormant,Control,BQ,2/3/22,1,0,0
+5,I,6,Dormant,Control,YK,2/11/22,1,0,0
+5,I,6,Dormant,Control,YK,2/18/22,1,0,0
+5,I,6,Dormant,Control,YK,2/25/22,1,0,0
+5,I,6,Dormant,Control,YK,3/4/22,1,0,0
+5,I,6,Dormant,Control,BQ,3/11/22,1,0,0
+5,I,6,Dormant,Control,YK,3/18/22,1,0,0
+5,I,6,Dormant,Control,YK,3/25/22,1,0,0
+5,I,6,Dormant,Control,YK ,4/1/22,1,0,0
+5,I,6,Dormant,Control,YK,4/8/22,1,0,0
+5,I,6,Dormant,Control,YK,4/15/22,1,0,0
+5,I,6,Dormant,Control,ET,4/22/22,1,0,0
+5,I,6,Dormant,Control,ET ,4/29/22,1,0,0
+5,I,6,Dormant,Control,ET,5/5/22,1,0,0
+5,I,6,Dormant,Control,BQ,5/13/22,2,0,0
+5,I,6,Dormant,Control,BQ,5/19/22,2,0,0
+5,I,6,Dormant,Control,ET,5/25/22,2,0,0
+5,I,6,Dormant,Control,XH,6/10/22,2,0,0
+5,I,6,Dormant,Control,BQ,6/17/22,2,0,0
+5,I,6,Dormant,Control,BQ,6/24/22,2,0,0
+5,I,6,Dormant,Control,BQ,6/29/22,2,0,0
+5,I,6,Dormant,Control,BQ,7/15/22,2,0,0
+5,I,6,Dormant,Control,BQ,7/22/22,2,0,0
+5,I,6,Dormant,Control,ET,7/29/22,2,0,0
+5,I,6,Dormant,Control,ET,8/2/22,2,0,0
+5,I,6,Dormant,Control,ET,8/5/22,2,0,0
+5,I,6,Dormant,Control,BQ,8/12/22,2,0,0
+5,I,6,Dormant,Control,BQ,8/19/22,2,0,0
+5,I,6,Dormant,Control,BQ,8/26/22,2,0,0
+5,I,6,Dormant,Control,BQ,9/2/22,2,0,0
+5,I,6,Dormant,Control,BQ,9/9/22,2,0,0
+5,I,6,Dormant,Control,BQ,9/16/22,2,0,0
+5,I,6,Dormant,Control,BQ,9/23/22,2,0,0
+5,I,6,Dormant,Control,ET,9/29/22,2,0,0
+5,I,6,Dormant,Control,BQ,10/7/22,2,0,0
+5,I,6,Dormant,Control,YK,10/14/22,2,0,0
+5,I,6,Dormant,Control,YK,10/21/22,2,0,0
+5,I,6,Dormant,Control,ET,10/26/22,2,0,0
+5,I,6,Dormant,Control,BQ,11/4/22,2,0,0
+5,I,6,Dormant,Control,ET,11/10/22,2,0,0
+5,I,6,Dormant,Control,BQ & EG,11/18/22,2,0,0
+5,I,6,Dormant,Control,ET,11/22/22,2,0,0
+5,I,6,Dormant,Control,BQ,12/2/22,2,0,0
+5,I,6,Dormant,Control,BQ & EG,12/9/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,5/13/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,5/20/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,5/26/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,6/2/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,6/10/21,1,33,33
+5,I,6,Non-Dormant,Control,BQ,6/16/21,1,1,1
+5,I,6,Non-Dormant,Control,KD,6/23/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,6/30/21,1,18,19
+5,I,6,Non-Dormant,Control,BQ,7/7/21,1,3,3
+5,I,6,Non-Dormant,Control,BQ,7/14/21,1,0,0
+5,I,6,Non-Dormant,Control,KD,7/21/21,1,2,2
+5,I,6,Non-Dormant,Control,KD,7/28/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,8/4/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,8/11/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,8/17/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,8/25/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,9/2/21,1,0,0
+5,I,6,Non-Dormant,Control,DW,9/8/21,1,0,2
+5,I,6,Non-Dormant,Control,CF,9/15/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,9/22/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,9/29/21,1,0,2
+5,I,6,Non-Dormant,Control,CF,10/6/21,1,0,1
+5,I,6,Non-Dormant,Control,CF,10/13/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,10/20/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,10/27/21,1,0,0
+5,I,6,Non-Dormant,Control,DW,11/3/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,11/10/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,11/17/21,1,0,0
+5,I,6,Non-Dormant,Control,CF,11/22/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,12/1/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,12/8/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,12/15/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,12/22/21,1,0,0
+5,I,6,Non-Dormant,Control,N/A,12/29/21,1,0,0
+5,I,6,Non-Dormant,Control,BQ,1/5/22,1,0,0
+5,I,6,Non-Dormant,Control,BQ,1/12/22,1,0,0
+5,I,6,Non-Dormant,Control,BQ,1/19/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,1/28/22,1,0,0
+5,I,6,Non-Dormant,Control,BQ,2/3/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,2/11/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,2/18/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,2/25/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,3/4/22,1,0,0
+5,I,6,Non-Dormant,Control,BQ,3/11/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,3/18/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,3/25/22,1,0,0
+5,I,6,Non-Dormant,Control,YK ,4/1/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,4/8/22,1,0,0
+5,I,6,Non-Dormant,Control,YK,4/15/22,1,0,0
+5,I,6,Non-Dormant,Control,ET,4/22/22,1,0,0
+5,I,6,Non-Dormant,Control,ET ,4/29/22,1,0,0
+5,I,6,Non-Dormant,Control,ET,5/5/22,1,0,0
+5,I,6,Non-Dormant,Control,BQ,5/13/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,5/19/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,5/25/22,2,0,0
+5,I,6,Non-Dormant,Control,XH,6/10/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,6/17/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,6/24/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,6/29/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,7/15/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,7/22/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,7/29/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,8/2/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,8/5/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,8/12/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,8/19/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,8/26/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,9/2/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,9/9/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,9/16/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,9/23/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,9/29/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,10/7/22,2,0,0
+5,I,6,Non-Dormant,Control,YK,10/14/22,2,0,0
+5,I,6,Non-Dormant,Control,YK,10/21/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,10/26/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,11/4/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,11/10/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ & EG,11/18/22,2,0,0
+5,I,6,Non-Dormant,Control,ET,11/22/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ,12/2/22,2,0,0
+5,I,6,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,5/13/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,5/20/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,5/26/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,6/2/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,6/10/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,6/16/21,1,0,0
+5,I,8,Dormant,High Humidity,KD,6/23/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,6/30/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,7/7/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,7/14/21,1,0,0
+5,I,8,Dormant,High Humidity,KD,7/21/21,1,0,0
+5,I,8,Dormant,High Humidity,KD,7/28/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,8/4/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,8/11/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,8/17/21,1,0,0
+5,I,8,Dormant,High Humidity,CF,8/25/21,1,0,0
+5,I,8,Dormant,High Humidity,CF,9/2/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,9/8/21,1,0,0
+5,I,8,Dormant,High Humidity,CF,9/15/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,9/22/21,1,0,0
+5,I,8,Dormant,High Humidity,CF,9/29/21,1,31,34
+5,I,8,Dormant,High Humidity,CF,10/6/21,1,2,5
+5,I,8,Dormant,High Humidity,CF,10/13/21,1,2,3
+5,I,8,Dormant,High Humidity,CF,10/20/21,1,0,1
+5,I,8,Dormant,High Humidity,CF,10/27/21,1,0,0
+5,I,8,Dormant,High Humidity,DW,11/3/21,1,0,0
+5,I,8,Dormant,High Humidity,CF,11/10/21,1,4,5
+5,I,8,Dormant,High Humidity,CF,11/17/21,1,0,0
+5,I,8,Dormant,High Humidity,CF,11/22/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,12/1/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,12/8/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,12/15/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,12/22/21,1,0,0
+5,I,8,Dormant,High Humidity,N/A,12/29/21,1,0,0
+5,I,8,Dormant,High Humidity,BQ,1/5/22,1,0,0
+5,I,8,Dormant,High Humidity,BQ,1/12/22,1,0,0
+5,I,8,Dormant,High Humidity,BQ,1/19/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,1/28/22,1,0,0
+5,I,8,Dormant,High Humidity,BQ,2/3/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,2/11/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,2/18/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,2/25/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,3/4/22,1,0,0
+5,I,8,Dormant,High Humidity,BQ,3/11/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,3/18/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,3/25/22,1,0,0
+5,I,8,Dormant,High Humidity,YK ,4/1/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,4/8/22,1,0,0
+5,I,8,Dormant,High Humidity,YK,4/15/22,1,0,0
+5,I,8,Dormant,High Humidity,ET,4/22/22,1,0,0
+5,I,8,Dormant,High Humidity,ET ,4/29/22,1,0,0
+5,I,8,Dormant,High Humidity,ET,5/5/22,1,0,0
+5,I,8,Dormant,High Humidity,BQ,5/13/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,5/19/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,5/25/22,2,0,0
+5,I,8,Dormant,High Humidity,XH,6/10/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,6/17/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,6/24/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,6/29/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,7/15/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,7/22/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,7/29/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,8/2/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,8/5/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,8/12/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,8/19/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,8/26/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,9/2/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,9/9/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,9/16/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,9/23/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,9/29/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,10/7/22,2,0,0
+5,I,8,Dormant,High Humidity,YK,10/14/22,2,0,0
+5,I,8,Dormant,High Humidity,YK,10/21/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,10/26/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,11/4/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,11/10/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+5,I,8,Dormant,High Humidity,ET,11/22/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ,12/2/22,2,0,0
+5,I,8,Dormant,High Humidity,BQ & EG,12/9/22,2,2,2
+5,I,8,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/30/21,1,51,51
+5,I,8,Non-Dormant,High Humidity,BQ,7/7/21,1,5,5
+5,I,8,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,KD,7/21/21,1,5,5
+5,I,8,Non-Dormant,High Humidity,KD,7/28/21,1,1,1
+5,I,8,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,8/25/21,1,1,2
+5,I,8,Non-Dormant,High Humidity,CF,9/2/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,9/8/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,9/15/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,9/22/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,9/29/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,10/6/21,1,1,1
+5,I,8,Non-Dormant,High Humidity,CF,10/13/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,10/20/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,10/27/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,11/10/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,11/17/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,CF,11/22/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,1/28/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,2/11/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,2/18/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,2/25/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,3/4/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,3/18/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,3/25/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK ,4/1/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,4/8/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,YK,4/15/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,ET,4/22/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,5/25/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,XH,6/10/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,10/7/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ,12/2/22,2,0,0
+5,I,8,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,5/13/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,5/20/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,5/26/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,6/2/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,6/10/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,6/16/21,1,0,0
+8,J,13,Dormant,Native Soil,KD,6/23/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,6/30/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,7/7/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,7/14/21,1,0,0
+8,J,13,Dormant,Native Soil,KD,7/21/21,1,0,0
+8,J,13,Dormant,Native Soil,KD,7/28/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,8/4/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,8/11/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,8/17/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,8/25/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,9/2/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,9/8/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,9/15/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,9/22/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,9/29/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,10/6/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,10/13/21,1,4,6
+8,J,13,Dormant,Native Soil,CF,10/20/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,10/27/21,1,0,0
+8,J,13,Dormant,Native Soil,DW,11/3/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,11/10/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,11/17/21,1,0,0
+8,J,13,Dormant,Native Soil,CF,11/22/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,12/1/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,12/8/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,12/15/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,12/22/21,1,0,0
+8,J,13,Dormant,Native Soil,N/A,12/29/21,1,0,0
+8,J,13,Dormant,Native Soil,BQ,1/5/22,1,0,0
+8,J,13,Dormant,Native Soil,BQ,1/12/22,1,0,0
+8,J,13,Dormant,Native Soil,BQ,1/19/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,1/28/22,1,0,0
+8,J,13,Dormant,Native Soil,BQ,2/3/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,2/11/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,2/18/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,2/25/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,3/4/22,1,0,0
+8,J,13,Dormant,Native Soil,BQ,3/11/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,3/18/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,3/25/22,1,0,0
+8,J,13,Dormant,Native Soil,YK ,4/1/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,4/8/22,1,0,0
+8,J,13,Dormant,Native Soil,YK,4/15/22,1,0,0
+8,J,13,Dormant,Native Soil,ET,4/22/22,1,0,0
+8,J,13,Dormant,Native Soil,ET ,4/29/22,1,0,0
+8,J,13,Dormant,Native Soil,ET,5/5/22,1,0,0
+8,J,13,Dormant,Native Soil,BQ,5/13/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,5/19/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,5/25/22,2,0,0
+8,J,13,Dormant,Native Soil,XH,6/10/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,6/17/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,6/24/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,6/29/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,7/15/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,7/22/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,7/29/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,8/2/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,8/5/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,8/12/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,8/19/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,8/26/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,9/2/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,9/9/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,9/16/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,9/23/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,9/29/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,10/7/22,2,0,0
+8,J,13,Dormant,Native Soil,YK,10/14/22,2,0,0
+8,J,13,Dormant,Native Soil,YK,10/21/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,10/26/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,11/4/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,11/10/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+8,J,13,Dormant,Native Soil,ET,11/22/22,2,0,0
+8,J,13,Dormant,Native Soil,BQ,12/2/22,2,1,1
+8,J,13,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,8/25/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,9/2/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,9/8/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,9/15/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,9/22/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,9/29/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,10/6/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,10/13/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,10/20/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,10/27/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,11/10/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,11/17/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,1/28/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,2/11/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,2/18/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,2/25/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,3/4/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,3/18/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,3/25/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK ,4/1/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,4/8/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,YK,4/15/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,ET,4/22/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,5/25/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,XH,6/10/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,10/7/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ,12/2/22,2,0,0
+8,J,13,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,5/13/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,5/20/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,5/26/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/2/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/10/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/16/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,KD,6/23/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/30/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,7/7/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,7/14/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,KD,7/21/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,KD,7/28/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,8/4/21,1,1,1
+5,J/K,6.5,Dormant,Native Soil,BQ,8/11/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,8/17/21,1,1,1
+5,J/K,6.5,Dormant,Native Soil,CF,8/25/21,1,3,3
+5,J/K,6.5,Dormant,Native Soil,CF,9/2/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,9/8/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,CF,9/15/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,9/22/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,CF,9/29/21,1,1,1
+5,J/K,6.5,Dormant,Native Soil,CF,10/6/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,CF,10/13/21,1,3,3
+5,J/K,6.5,Dormant,Native Soil,CF,10/20/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,CF,10/27/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,DW,11/3/21,1,1,1
+5,J/K,6.5,Dormant,Native Soil,CF,11/10/21,1,2,2
+5,J/K,6.5,Dormant,Native Soil,CF,11/17/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,CF,11/22/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,12/1/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,12/8/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,12/15/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,12/22/21,1,0,0
+5,J/K,6.5,Dormant,Native Soil,N/A,12/29/21,1,2,2
+5,J/K,6.5,Dormant,Native Soil,BQ,1/5/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,1/12/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,1/19/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,1/28/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,2/3/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,2/11/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,2/18/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,2/25/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,3/4/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,3/11/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,3/18/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,3/25/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK ,4/1/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,4/8/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,4/15/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,4/22/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,ET ,4/29/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,5/5/22,1,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,5/13/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,5/19/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,5/25/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,XH,6/10/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/17/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/24/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,6/29/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,7/15/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,7/22/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,7/29/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,8/2/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,8/5/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,8/12/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,8/19/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,8/26/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,9/2/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,9/9/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,9/16/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,9/23/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,9/29/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,10/7/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,10/14/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,YK,10/21/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,10/26/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,11/4/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,11/10/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,ET,11/22/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ,12/2/22,2,0,0
+5,J/K,6.5,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,8/25/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,9/2/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,9/8/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,9/15/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,9/22/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,9/29/21,1,1,1
+5,J/K,6.5,Non-Dormant,Native Soil,CF,10/6/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,10/13/21,1,1,3
+5,J/K,6.5,Non-Dormant,Native Soil,CF,10/20/21,1,1,1
+5,J/K,6.5,Non-Dormant,Native Soil,CF,10/27/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,11/10/21,1,1,1
+5,J/K,6.5,Non-Dormant,Native Soil,CF,11/17/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,1/28/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,2/11/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,2/18/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,2/25/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,3/4/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,3/18/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,3/25/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK ,4/1/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,4/8/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,4/15/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,4/22/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,5/25/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,XH,6/10/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,10/7/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,10/26/22,2,1,1
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ,12/2/22,2,0,0
+5,J/K,6.5,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+8,K,9,Dormant,Control,BQ,5/13/21,1,0,0
+8,K,9,Dormant,Control,BQ,5/20/21,1,0,0
+8,K,9,Dormant,Control,BQ,5/26/21,1,0,0
+8,K,9,Dormant,Control,BQ,6/2/21,1,0,0
+8,K,9,Dormant,Control,BQ,6/10/21,1,0,0
+8,K,9,Dormant,Control,BQ,6/16/21,1,0,0
+8,K,9,Dormant,Control,KD,6/23/21,1,0,0
+8,K,9,Dormant,Control,BQ,6/30/21,1,0,0
+8,K,9,Dormant,Control,BQ,7/7/21,1,0,0
+8,K,9,Dormant,Control,BQ,7/14/21,1,0,0
+8,K,9,Dormant,Control,KD,7/21/21,1,0,0
+8,K,9,Dormant,Control,KD,7/28/21,1,0,0
+8,K,9,Dormant,Control,BQ,8/4/21,1,0,0
+8,K,9,Dormant,Control,BQ,8/11/21,1,0,0
+8,K,9,Dormant,Control,BQ,8/17/21,1,0,0
+8,K,9,Dormant,Control,CF,8/25/21,1,0,0
+8,K,9,Dormant,Control,CF,9/2/21,1,0,0
+8,K,9,Dormant,Control,BQ,9/8/21,1,0,0
+8,K,9,Dormant,Control,CF,9/15/21,1,0,0
+8,K,9,Dormant,Control,BQ,9/22/21,1,0,0
+8,K,9,Dormant,Control,CF,9/29/21,1,25,27
+8,K,9,Dormant,Control,CF,10/6/21,1,0,1
+8,K,9,Dormant,Control,CF,10/13/21,1,2,3
+8,K,9,Dormant,Control,CF,10/20/21,1,0,1
+8,K,9,Dormant,Control,CF,10/27/21,1,0,0
+8,K,9,Dormant,Control,DW,11/3/21,1,0,0
+8,K,9,Dormant,Control,CF,11/10/21,1,2,2
+8,K,9,Dormant,Control,CF,11/17/21,1,0,0
+8,K,9,Dormant,Control,CF,11/22/21,1,0,0
+8,K,9,Dormant,Control,BQ,12/1/21,1,0,0
+8,K,9,Dormant,Control,BQ,12/8/21,1,0,0
+8,K,9,Dormant,Control,BQ,12/15/21,1,0,0
+8,K,9,Dormant,Control,BQ,12/22/21,1,0,0
+8,K,9,Dormant,Control,N/A,12/29/21,1,0,0
+8,K,9,Dormant,Control,BQ,1/5/22,1,0,0
+8,K,9,Dormant,Control,BQ,1/12/22,1,0,0
+8,K,9,Dormant,Control,BQ,1/19/22,1,0,0
+8,K,9,Dormant,Control,YK,1/28/22,1,0,0
+8,K,9,Dormant,Control,BQ,2/3/22,1,0,0
+8,K,9,Dormant,Control,YK,2/11/22,1,0,0
+8,K,9,Dormant,Control,YK,2/18/22,1,0,0
+8,K,9,Dormant,Control,YK,2/25/22,1,0,0
+8,K,9,Dormant,Control,YK,3/4/22,1,0,0
+8,K,9,Dormant,Control,BQ,3/11/22,1,0,0
+8,K,9,Dormant,Control,YK,3/18/22,1,0,0
+8,K,9,Dormant,Control,YK,3/25/22,1,0,0
+8,K,9,Dormant,Control,YK ,4/1/22,1,0,0
+8,K,9,Dormant,Control,YK,4/8/22,1,0,0
+8,K,9,Dormant,Control,YK,4/15/22,1,0,0
+8,K,9,Dormant,Control,ET,4/22/22,1,0,0
+8,K,9,Dormant,Control,ET ,4/29/22,1,0,0
+8,K,9,Dormant,Control,ET,5/5/22,1,0,0
+8,K,9,Dormant,Control,BQ,5/13/22,2,0,0
+8,K,9,Dormant,Control,BQ,5/19/22,2,0,0
+8,K,9,Dormant,Control,ET,5/25/22,2,0,0
+8,K,9,Dormant,Control,XH,6/10/22,2,0,0
+8,K,9,Dormant,Control,BQ,6/17/22,2,0,0
+8,K,9,Dormant,Control,BQ,6/24/22,2,0,0
+8,K,9,Dormant,Control,BQ,6/29/22,2,0,0
+8,K,9,Dormant,Control,BQ,7/15/22,2,0,0
+8,K,9,Dormant,Control,BQ,7/22/22,2,0,0
+8,K,9,Dormant,Control,ET,7/29/22,2,0,0
+8,K,9,Dormant,Control,ET,8/2/22,2,0,0
+8,K,9,Dormant,Control,ET,8/5/22,2,0,0
+8,K,9,Dormant,Control,BQ,8/12/22,2,0,0
+8,K,9,Dormant,Control,BQ,8/19/22,2,0,0
+8,K,9,Dormant,Control,BQ,8/26/22,2,0,0
+8,K,9,Dormant,Control,BQ,9/2/22,2,0,0
+8,K,9,Dormant,Control,BQ,9/9/22,2,0,0
+8,K,9,Dormant,Control,BQ,9/16/22,2,0,0
+8,K,9,Dormant,Control,BQ,9/23/22,2,0,0
+8,K,9,Dormant,Control,ET,9/29/22,2,0,0
+8,K,9,Dormant,Control,BQ,10/7/22,2,0,0
+8,K,9,Dormant,Control,YK,10/14/22,2,1,1
+8,K,9,Dormant,Control,YK,10/21/22,2,0,0
+8,K,9,Dormant,Control,ET,10/26/22,2,0,0
+8,K,9,Dormant,Control,BQ,11/4/22,2,0,0
+8,K,9,Dormant,Control,ET,11/10/22,2,0,0
+8,K,9,Dormant,Control,BQ & EG,11/18/22,2,0,0
+8,K,9,Dormant,Control,ET,11/22/22,2,0,0
+8,K,9,Dormant,Control,BQ,12/2/22,2,0,0
+8,K,9,Dormant,Control,BQ & EG,12/9/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,5/13/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,5/20/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,5/26/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,6/2/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,6/10/21,1,18,18
+8,K,9,Non-Dormant,Control,BQ,6/16/21,1,0,0
+8,K,9,Non-Dormant,Control,KD,6/23/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,6/30/21,1,33,33
+8,K,9,Non-Dormant,Control,BQ,7/7/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,7/14/21,1,0,0
+8,K,9,Non-Dormant,Control,KD,7/21/21,1,0,0
+8,K,9,Non-Dormant,Control,KD,7/28/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,8/4/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,8/11/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,8/17/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,8/25/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,9/2/21,1,0,2
+8,K,9,Non-Dormant,Control,BQ,9/8/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,9/15/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,9/22/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,9/29/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,10/6/21,1,1,1
+8,K,9,Non-Dormant,Control,CF,10/13/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,10/20/21,1,1,1
+8,K,9,Non-Dormant,Control,CF,10/27/21,1,0,0
+8,K,9,Non-Dormant,Control,DW,11/3/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,11/10/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,11/17/21,1,0,0
+8,K,9,Non-Dormant,Control,CF,11/22/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,12/1/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,12/8/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,12/15/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,12/22/21,1,0,0
+8,K,9,Non-Dormant,Control,N/A,12/29/21,1,0,0
+8,K,9,Non-Dormant,Control,BQ,1/5/22,1,0,0
+8,K,9,Non-Dormant,Control,BQ,1/12/22,1,0,0
+8,K,9,Non-Dormant,Control,BQ,1/19/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,1/28/22,1,0,0
+8,K,9,Non-Dormant,Control,BQ,2/3/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,2/11/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,2/18/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,2/25/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,3/4/22,1,0,0
+8,K,9,Non-Dormant,Control,BQ,3/11/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,3/18/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,3/25/22,1,0,0
+8,K,9,Non-Dormant,Control,YK ,4/1/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,4/8/22,1,0,0
+8,K,9,Non-Dormant,Control,YK,4/15/22,1,0,0
+8,K,9,Non-Dormant,Control,ET,4/22/22,1,0,0
+8,K,9,Non-Dormant,Control,ET ,4/29/22,1,0,0
+8,K,9,Non-Dormant,Control,ET,5/5/22,1,0,0
+8,K,9,Non-Dormant,Control,BQ,5/13/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,5/19/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,5/25/22,2,0,0
+8,K,9,Non-Dormant,Control,XH,6/10/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,6/17/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,6/24/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,6/29/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,7/15/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,7/22/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,7/29/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,8/2/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,8/5/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,8/12/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,8/19/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,8/26/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,9/2/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,9/9/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,9/16/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,9/23/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,9/29/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,10/7/22,2,0,0
+8,K,9,Non-Dormant,Control,YK,10/14/22,2,0,0
+8,K,9,Non-Dormant,Control,YK,10/21/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,10/26/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,11/4/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,11/10/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ & EG,11/18/22,2,0,0
+8,K,9,Non-Dormant,Control,ET,11/22/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ,12/2/22,2,0,0
+8,K,9,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,5/13/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,5/20/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,5/26/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,6/2/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,6/10/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,6/16/21,1,0,0
+7,L,5,Dormant,High Humidity,KD,6/23/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,6/30/21,1,1,1
+7,L,5,Dormant,High Humidity,BQ,7/7/21,1,1,1
+7,L,5,Dormant,High Humidity,BQ,7/14/21,1,0,0
+7,L,5,Dormant,High Humidity,KD,7/21/21,1,0,0
+7,L,5,Dormant,High Humidity,KD,7/28/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,8/4/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,8/11/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,8/17/21,1,0,0
+7,L,5,Dormant,High Humidity,CF,8/25/21,1,1,2
+7,L,5,Dormant,High Humidity,CF,9/2/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,9/8/21,1,0,0
+7,L,5,Dormant,High Humidity,CF,9/15/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,9/22/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,9/29/21,1,23,24
+7,L,5,Dormant,High Humidity,CF,10/6/21,1,0,1
+7,L,5,Dormant,High Humidity,CF,10/13/21,1,0,0
+7,L,5,Dormant,High Humidity,CF,10/20/21,1,0,1
+7,L,5,Dormant,High Humidity,CF,10/27/21,1,0,0
+7,L,5,Dormant,High Humidity,DW,11/3/21,1,0,0
+7,L,5,Dormant,High Humidity,CF,11/10/21,1,1,2
+7,L,5,Dormant,High Humidity,CF,11/17/21,1,0,0
+7,L,5,Dormant,High Humidity,CF,11/22/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,12/1/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,12/8/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,12/15/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,12/22/21,1,0,0
+7,L,5,Dormant,High Humidity,N/A,12/29/21,1,0,0
+7,L,5,Dormant,High Humidity,BQ,1/5/22,1,0,0
+7,L,5,Dormant,High Humidity,BQ,1/12/22,1,0,0
+7,L,5,Dormant,High Humidity,BQ,1/19/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,1/28/22,1,0,0
+7,L,5,Dormant,High Humidity,BQ,2/3/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,2/11/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,2/18/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,2/25/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,3/4/22,1,0,0
+7,L,5,Dormant,High Humidity,BQ,3/11/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,3/18/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,3/25/22,1,0,0
+7,L,5,Dormant,High Humidity,YK ,4/1/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,4/8/22,1,0,0
+7,L,5,Dormant,High Humidity,YK,4/15/22,1,0,0
+7,L,5,Dormant,High Humidity,ET,4/22/22,1,0,0
+7,L,5,Dormant,High Humidity,ET ,4/29/22,1,0,0
+7,L,5,Dormant,High Humidity,ET,5/5/22,1,0,0
+7,L,5,Dormant,High Humidity,BQ,5/13/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,5/19/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,5/25/22,2,0,0
+7,L,5,Dormant,High Humidity,XH,6/10/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,6/17/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,6/24/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,6/29/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,7/15/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,7/22/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,7/29/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,8/2/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,8/5/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,8/12/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,8/19/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,8/26/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,9/2/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,9/9/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,9/16/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,9/23/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,9/29/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,10/7/22,2,0,0
+7,L,5,Dormant,High Humidity,YK,10/14/22,2,0,0
+7,L,5,Dormant,High Humidity,YK,10/21/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,10/26/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,11/4/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,11/10/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+7,L,5,Dormant,High Humidity,ET,11/22/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ,12/2/22,2,0,0
+7,L,5,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/30/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,7/7/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,KD,7/21/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,KD,7/28/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,8/25/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,9/2/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/8/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,9/15/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/22/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/29/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,10/6/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,10/13/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,10/20/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,10/27/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,11/10/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,11/17/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,CF,11/22/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,1/28/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,2/11/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,2/18/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,2/25/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,3/4/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,3/18/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,3/25/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK ,4/1/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,4/8/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,YK,4/15/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,ET,4/22/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,5/25/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,XH,6/10/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,10/7/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ,12/2/22,2,0,0
+7,L,5,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+7,M,3,Dormant,Control,BQ,5/13/21,1,0,0
+7,M,3,Dormant,Control,BQ,5/20/21,1,0,0
+7,M,3,Dormant,Control,BQ,5/26/21,1,0,0
+7,M,3,Dormant,Control,BQ,6/2/21,1,0,0
+7,M,3,Dormant,Control,BQ,6/10/21,1,0,0
+7,M,3,Dormant,Control,BQ,6/16/21,1,0,0
+7,M,3,Dormant,Control,KD,6/23/21,1,0,0
+7,M,3,Dormant,Control,BQ,6/30/21,1,3,3
+7,M,3,Dormant,Control,BQ,7/7/21,1,0,0
+7,M,3,Dormant,Control,BQ,7/14/21,1,0,0
+7,M,3,Dormant,Control,KD,7/21/21,1,0,0
+7,M,3,Dormant,Control,KD,7/28/21,1,0,0
+7,M,3,Dormant,Control,BQ,8/4/21,1,0,0
+7,M,3,Dormant,Control,BQ,8/11/21,1,0,0
+7,M,3,Dormant,Control,BQ,8/17/21,1,0,0
+7,M,3,Dormant,Control,CF,8/25/21,1,2,3
+7,M,3,Dormant,Control,CF,9/2/21,1,0,1
+7,M,3,Dormant,Control,BQ,9/8/21,1,0,0
+7,M,3,Dormant,Control,CF,9/15/21,1,1,2
+7,M,3,Dormant,Control,BQ,9/22/21,1,0,0
+7,M,3,Dormant,Control,BQ,9/29/21,1,14,14
+7,M,3,Dormant,Control,CF,10/6/21,1,5,5
+7,M,3,Dormant,Control,CF,10/13/21,1,0,0
+7,M,3,Dormant,Control,CF,10/20/21,1,0,0
+7,M,3,Dormant,Control,CF,10/27/21,1,1,1
+7,M,3,Dormant,Control,DW,11/3/21,1,0,0
+7,M,3,Dormant,Control,CF,11/10/21,1,2,2
+7,M,3,Dormant,Control,CF,11/17/21,1,0,0
+7,M,3,Dormant,Control,CF,11/22/21,1,0,0
+7,M,3,Dormant,Control,BQ,12/1/21,1,0,0
+7,M,3,Dormant,Control,BQ,12/8/21,1,0,0
+7,M,3,Dormant,Control,BQ,12/15/21,1,0,0
+7,M,3,Dormant,Control,BQ,12/22/21,1,0,0
+7,M,3,Dormant,Control,N/A,12/29/21,1,0,0
+7,M,3,Dormant,Control,BQ,1/5/22,1,0,0
+7,M,3,Dormant,Control,BQ,1/12/22,1,0,0
+7,M,3,Dormant,Control,BQ,1/19/22,1,0,0
+7,M,3,Dormant,Control,YK,1/28/22,1,0,0
+7,M,3,Dormant,Control,BQ,2/3/22,1,0,0
+7,M,3,Dormant,Control,YK,2/11/22,1,0,0
+7,M,3,Dormant,Control,YK,2/18/22,1,0,0
+7,M,3,Dormant,Control,YK,2/25/22,1,0,0
+7,M,3,Dormant,Control,YK,3/4/22,1,0,0
+7,M,3,Dormant,Control,BQ,3/11/22,1,0,0
+7,M,3,Dormant,Control,YK,3/18/22,1,0,0
+7,M,3,Dormant,Control,YK,3/25/22,1,0,0
+7,M,3,Dormant,Control,YK ,4/1/22,1,0,0
+7,M,3,Dormant,Control,YK,4/8/22,1,0,0
+7,M,3,Dormant,Control,YK,4/15/22,1,0,0
+7,M,3,Dormant,Control,ET,4/22/22,1,0,0
+7,M,3,Dormant,Control,ET ,4/29/22,1,0,0
+7,M,3,Dormant,Control,ET,5/5/22,1,0,0
+7,M,3,Dormant,Control,BQ,5/13/22,2,0,0
+7,M,3,Dormant,Control,BQ,5/19/22,2,0,0
+7,M,3,Dormant,Control,ET,5/25/22,2,0,0
+7,M,3,Dormant,Control,XH,6/10/22,2,0,0
+7,M,3,Dormant,Control,BQ,6/17/22,2,0,0
+7,M,3,Dormant,Control,BQ,6/24/22,2,0,0
+7,M,3,Dormant,Control,BQ,6/29/22,2,0,0
+7,M,3,Dormant,Control,BQ,7/15/22,2,0,0
+7,M,3,Dormant,Control,BQ,7/22/22,2,0,0
+7,M,3,Dormant,Control,ET,7/29/22,2,0,0
+7,M,3,Dormant,Control,ET,8/2/22,2,0,0
+7,M,3,Dormant,Control,ET,8/5/22,2,0,0
+7,M,3,Dormant,Control,BQ,8/12/22,2,0,0
+7,M,3,Dormant,Control,BQ,8/19/22,2,0,0
+7,M,3,Dormant,Control,BQ,8/26/22,2,0,0
+7,M,3,Dormant,Control,BQ,9/2/22,2,0,0
+7,M,3,Dormant,Control,BQ,9/9/22,2,0,0
+7,M,3,Dormant,Control,BQ,9/16/22,2,0,0
+7,M,3,Dormant,Control,BQ,9/23/22,2,0,0
+7,M,3,Dormant,Control,ET,9/29/22,2,0,0
+7,M,3,Dormant,Control,BQ,10/7/22,2,0,0
+7,M,3,Dormant,Control,YK,10/14/22,2,0,1
+7,M,3,Dormant,Control,YK,10/21/22,2,0,0
+7,M,3,Dormant,Control,ET,10/26/22,2,0,0
+7,M,3,Dormant,Control,BQ,11/4/22,2,0,0
+7,M,3,Dormant,Control,ET,11/10/22,2,0,0
+7,M,3,Dormant,Control,BQ & EG,11/18/22,2,0,0
+7,M,3,Dormant,Control,ET,11/22/22,2,0,0
+7,M,3,Dormant,Control,BQ,12/2/22,2,0,0
+7,M,3,Dormant,Control,BQ & EG,12/9/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,5/13/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,5/20/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,5/26/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,6/2/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,6/10/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,6/16/21,1,0,0
+7,M,3,Non-Dormant,Control,KD,6/23/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,6/30/21,1,3,3
+7,M,3,Non-Dormant,Control,BQ,7/7/21,1,28,28
+7,M,3,Non-Dormant,Control,BQ,7/14/21,1,0,0
+7,M,3,Non-Dormant,Control,KD,7/21/21,1,0,0
+7,M,3,Non-Dormant,Control,KD,7/28/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,8/4/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,8/11/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,8/17/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,8/25/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,9/2/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,9/8/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,9/15/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,9/22/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,9/29/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,10/6/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,10/13/21,1,0,2
+7,M,3,Non-Dormant,Control,CF,10/20/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,10/27/21,1,0,0
+7,M,3,Non-Dormant,Control,DW,11/3/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,11/10/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,11/17/21,1,0,0
+7,M,3,Non-Dormant,Control,CF,11/22/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,12/1/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,12/8/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,12/15/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,12/22/21,1,0,0
+7,M,3,Non-Dormant,Control,N/A,12/29/21,1,0,0
+7,M,3,Non-Dormant,Control,BQ,1/5/22,1,0,0
+7,M,3,Non-Dormant,Control,BQ,1/12/22,1,0,0
+7,M,3,Non-Dormant,Control,BQ,1/19/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,1/28/22,1,0,0
+7,M,3,Non-Dormant,Control,BQ,2/3/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,2/11/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,2/18/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,2/25/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,3/4/22,1,0,0
+7,M,3,Non-Dormant,Control,BQ,3/11/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,3/18/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,3/25/22,1,0,0
+7,M,3,Non-Dormant,Control,YK ,4/1/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,4/8/22,1,0,0
+7,M,3,Non-Dormant,Control,YK,4/15/22,1,0,0
+7,M,3,Non-Dormant,Control,ET,4/22/22,1,0,0
+7,M,3,Non-Dormant,Control,ET ,4/29/22,1,0,0
+7,M,3,Non-Dormant,Control,ET,5/5/22,1,0,0
+7,M,3,Non-Dormant,Control,BQ,5/13/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,5/19/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,5/25/22,2,0,0
+7,M,3,Non-Dormant,Control,XH,6/10/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,6/17/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,6/24/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,6/29/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,7/15/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,7/22/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,7/29/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,8/2/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,8/5/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,8/12/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,8/19/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,8/26/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,9/2/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,9/9/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,9/16/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,9/23/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,9/29/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,10/7/22,2,0,0
+7,M,3,Non-Dormant,Control,YK,10/14/22,2,0,0
+7,M,3,Non-Dormant,Control,YK,10/21/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,10/26/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,11/4/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,11/10/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ & EG,11/18/22,2,0,0
+7,M,3,Non-Dormant,Control,ET,11/22/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ,12/2/22,2,0,0
+7,M,3,Non-Dormant,Control,BQ & EG,12/9/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,5/13/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,5/20/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,5/26/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,6/2/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,6/10/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,6/16/21,1,0,0
+7,M,7,Dormant,Native Soil,KD,6/23/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,6/30/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,7/7/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,7/14/21,1,0,0
+7,M,7,Dormant,Native Soil,KD,7/21/21,1,0,0
+7,M,7,Dormant,Native Soil,KD,7/28/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,8/4/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,8/11/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,8/17/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,8/25/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,9/2/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,9/8/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,9/15/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,9/22/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,9/29/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,10/6/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,10/13/21,1,2,2
+7,M,7,Dormant,Native Soil,CF,10/20/21,1,2,2
+7,M,7,Dormant,Native Soil,CF,10/27/21,1,0,0
+7,M,7,Dormant,Native Soil,DW,11/3/21,1,4,4
+7,M,7,Dormant,Native Soil,CF,11/10/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,11/17/21,1,0,0
+7,M,7,Dormant,Native Soil,CF,11/22/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,12/1/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,12/8/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,12/15/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,12/22/21,1,0,0
+7,M,7,Dormant,Native Soil,N/A,12/29/21,1,0,0
+7,M,7,Dormant,Native Soil,BQ,1/5/22,1,0,0
+7,M,7,Dormant,Native Soil,BQ,1/12/22,1,0,0
+7,M,7,Dormant,Native Soil,BQ,1/19/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,1/28/22,1,0,0
+7,M,7,Dormant,Native Soil,BQ,2/3/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,2/11/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,2/18/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,2/25/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,3/4/22,1,0,0
+7,M,7,Dormant,Native Soil,BQ,3/11/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,3/18/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,3/25/22,1,0,0
+7,M,7,Dormant,Native Soil,YK ,4/1/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,4/8/22,1,0,0
+7,M,7,Dormant,Native Soil,YK,4/15/22,1,0,0
+7,M,7,Dormant,Native Soil,ET,4/22/22,1,0,0
+7,M,7,Dormant,Native Soil,ET ,4/29/22,1,0,0
+7,M,7,Dormant,Native Soil,ET,5/5/22,1,0,0
+7,M,7,Dormant,Native Soil,BQ,5/13/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,5/19/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,5/25/22,2,0,0
+7,M,7,Dormant,Native Soil,XH,6/10/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,6/17/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,6/24/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,6/29/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,7/15/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,7/22/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,7/29/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,8/2/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,8/5/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,8/12/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,8/19/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,8/26/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,9/2/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,9/9/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,9/16/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,9/23/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,9/29/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,10/7/22,2,0,0
+7,M,7,Dormant,Native Soil,YK,10/14/22,2,0,0
+7,M,7,Dormant,Native Soil,YK,10/21/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,10/26/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,11/4/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,11/10/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+7,M,7,Dormant,Native Soil,ET,11/22/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ,12/2/22,2,0,0
+7,M,7,Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,5/13/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,5/20/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,5/26/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/2/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/10/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/16/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,KD,6/23/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/30/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,7/7/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,7/14/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,KD,7/21/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,KD,7/28/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,8/4/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,8/11/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,8/17/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,CF,8/25/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,CF,9/2/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/8/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,CF,9/15/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/22/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/29/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,CF,10/6/21,1,1,1
+7,M,7,Non-Dormant,Native Soil,CF,10/13/21,1,4,5
+7,M,7,Non-Dormant,Native Soil,CF,10/20/21,1,1,2
+7,M,7,Non-Dormant,Native Soil,CF,10/27/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,DW,11/3/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,CF,11/10/21,1,1,1
+7,M,7,Non-Dormant,Native Soil,CF,11/17/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,CF,11/22/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,12/1/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,12/8/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,12/15/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,12/22/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,N/A,12/29/21,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,1/5/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,1/12/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,1/19/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,1/28/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,2/3/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,2/11/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,2/18/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,2/25/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,3/4/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,3/11/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,3/18/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,3/25/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK ,4/1/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,4/8/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,YK,4/15/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,ET,4/22/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,ET ,4/29/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,ET,5/5/22,1,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,5/13/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,5/19/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,5/25/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,XH,6/10/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/17/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/24/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,6/29/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,7/15/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,7/22/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,7/29/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,8/2/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,8/5/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,8/12/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,8/19/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,8/26/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/2/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/9/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/16/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,9/23/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,9/29/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,10/7/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,YK,10/14/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,YK,10/21/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,10/26/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,11/4/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,11/10/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ & EG,11/18/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,ET,11/22/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ,12/2/22,2,0,0
+7,M,7,Non-Dormant,Native Soil,BQ & EG,12/9/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,5/13/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,5/20/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,5/26/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,6/2/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,6/10/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,6/16/21,1,0,0
+8,M,10,Dormant,High Humidity,KD,6/23/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,6/30/21,1,13,13
+8,M,10,Dormant,High Humidity,BQ,7/7/21,1,2,2
+8,M,10,Dormant,High Humidity,BQ,7/14/21,1,0,0
+8,M,10,Dormant,High Humidity,KD,7/21/21,1,0,0
+8,M,10,Dormant,High Humidity,KD,7/28/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,8/4/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,8/11/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,8/17/21,1,0,0
+8,M,10,Dormant,High Humidity,CF,8/25/21,1,1,5
+8,M,10,Dormant,High Humidity,CF,9/2/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,9/8/21,1,0,0
+8,M,10,Dormant,High Humidity,CF,9/15/21,1,0,3
+8,M,10,Dormant,High Humidity,BQ,9/22/21,1,0,0
+8,M,10,Dormant,High Humidity,CF,9/29/21,1,20,20
+8,M,10,Dormant,High Humidity,CF,10/6/21,1,0,3
+8,M,10,Dormant,High Humidity,CF,10/13/21,1,0,0
+8,M,10,Dormant,High Humidity,CF,10/20/21,1,0,1
+8,M,10,Dormant,High Humidity,CF,10/27/21,1,0,0
+8,M,10,Dormant,High Humidity,DW,11/3/21,1,1,1
+8,M,10,Dormant,High Humidity,CF,11/10/21,1,3,3
+8,M,10,Dormant,High Humidity,CF,11/17/21,1,0,0
+8,M,10,Dormant,High Humidity,CF,11/22/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,12/1/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,12/8/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,12/15/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,12/22/21,1,0,0
+8,M,10,Dormant,High Humidity,N/A,12/29/21,1,0,0
+8,M,10,Dormant,High Humidity,BQ,1/5/22,1,0,0
+8,M,10,Dormant,High Humidity,BQ,1/12/22,1,0,0
+8,M,10,Dormant,High Humidity,BQ,1/19/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,1/28/22,1,0,0
+8,M,10,Dormant,High Humidity,BQ,2/3/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,2/11/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,2/18/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,2/25/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,3/4/22,1,0,0
+8,M,10,Dormant,High Humidity,BQ,3/11/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,3/18/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,3/25/22,1,0,0
+8,M,10,Dormant,High Humidity,YK ,4/1/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,4/8/22,1,0,0
+8,M,10,Dormant,High Humidity,YK,4/15/22,1,0,0
+8,M,10,Dormant,High Humidity,ET,4/22/22,1,0,0
+8,M,10,Dormant,High Humidity,ET ,4/29/22,1,0,0
+8,M,10,Dormant,High Humidity,ET,5/5/22,1,0,0
+8,M,10,Dormant,High Humidity,BQ,5/13/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,5/19/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,5/25/22,2,0,0
+8,M,10,Dormant,High Humidity,XH,6/10/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,6/17/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,6/24/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,6/29/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,7/15/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,7/22/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,7/29/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,8/2/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,8/5/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,8/12/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,8/19/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,8/26/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,9/2/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,9/9/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,9/16/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,9/23/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,9/29/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,10/7/22,2,0,0
+8,M,10,Dormant,High Humidity,YK,10/14/22,2,0,0
+8,M,10,Dormant,High Humidity,YK,10/21/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,10/26/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,11/4/22,2,0,0
+8,M,10,Dormant,High Humidity,ET,11/10/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ & EG,11/18/22,2,0,1
+8,M,10,Dormant,High Humidity,ET,11/22/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ,12/2/22,2,0,0
+8,M,10,Dormant,High Humidity,BQ & EG,12/9/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,5/13/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,5/20/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,5/26/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/2/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/10/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/16/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,KD,6/23/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/30/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,7/7/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,7/14/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,KD,7/21/21,1,20,20
+8,M,10,Non-Dormant,High Humidity,KD,7/28/21,1,0,1
+8,M,10,Non-Dormant,High Humidity,BQ,8/4/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,8/11/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,8/17/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,8/25/21,1,0,5
+8,M,10,Non-Dormant,High Humidity,CF,9/2/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,9/8/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,9/15/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,9/22/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,9/29/21,1,8,9
+8,M,10,Non-Dormant,High Humidity,CF,10/6/21,1,0,3
+8,M,10,Non-Dormant,High Humidity,CF,10/13/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,10/20/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,10/27/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,DW,11/3/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,11/10/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,11/17/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,CF,11/22/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,12/1/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,12/8/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,12/15/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,12/22/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,N/A,12/29/21,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,1/5/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,1/12/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,1/19/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,1/28/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,2/3/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,2/11/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,2/18/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,2/25/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,3/4/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,3/11/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,3/18/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,3/25/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK ,4/1/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,4/8/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,YK,4/15/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,ET,4/22/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,ET ,4/29/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,ET,5/5/22,1,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,5/13/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,5/19/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,5/25/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,XH,6/10/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/17/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/24/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,6/29/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,7/15/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,7/22/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,7/29/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,8/2/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,8/5/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,8/12/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,8/19/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,8/26/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,9/2/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,9/9/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,9/16/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,9/23/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,9/29/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,10/7/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,YK,10/14/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,YK,10/21/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,10/26/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,11/4/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,11/10/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ & EG,11/18/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,ET,11/22/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ,12/2/22,2,0,0
+8,M,10,Non-Dormant,High Humidity,BQ & EG,12/9/22,2,0,0

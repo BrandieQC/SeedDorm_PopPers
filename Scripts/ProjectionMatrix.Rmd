@@ -1,0 +1,661 @@
+---
+title: "ProjectionMatrix"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Code for the population projection matrix (Figure 6)
+
+## Not matching the previous fig 6
+
+## Load Libraries
+```{r}
+library(tidyverse)
+library(popbio) #https://cran.r-project.org/web/packages/popbio/popbio.pdf 
+library(boot)
+library(broom)
+
+BQSBPalette <- c("#FF9900","#B266FF", "#00CC00","#999999", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+BQDNDPalette <- c("#FF9900","#00CC00","#B266FF", "#999999", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+Dorm_order <- c("High", "Mixed", "Low")
+Envt_order <- c('Control','High Humidity','Native Soil','Litter')
+
+sem <- function(x, na.rm=FALSE) {           #for calculating standard error
+  sd(x,na.rm=na.rm)/sqrt(length(na.omit(x)))
+} 
+
+set.seed(15)
+```
+
+## Load the Data
+
+```{r}
+allsbdata <- read_csv("../Raw.Data/AllSBData.csv") #SB pots weekly census data 
+allsbdata_pop <- unite(allsbdata, "PopId", c(Col,Row)) #create PopId column 
+
+minsdls_IC_cages <- read_csv("../Processed.Data/TotalSeedlings.csv")
+
+fruits_cages <- read_csv("../Raw.Data/AllYearsRepTraits.csv") %>% #fruit number per individual per pop in cages 
+  select(Block:BandColor, Fruits)
+fruits_cages_popid <- unite(fruits_cages, "PopId", c(Col,Row))
+
+y1totalseeds <- tibble(RILSet=c("Italy x Sweden", "Italy x Sweden", "Germany x Tajikistan", "Germany x Tajikistan", "UK x USA", "UK x USA", "Italy x Sweden" ,"Germany x Tajikistan","UK x USA"), Dormancy=c("Dormant", "Non-Dormant", "Dormant", "Non-Dormant", "Dormant", "Non-Dormant", "Mixed", "Mixed","Mixed"), TotalSeeds=c(622, 622, 617, 617, 624, 624, 624, 616, 640)) #total number of seeds planted in each pop
+
+allcages_popdata <- read_csv("../Processed.Data/AllYearsPopCensus_PopSize.csv") #weekly census data for pop cages. 
+allcages_popdata_id <- unite(allcages_popdata, "PopId", c(Col,Row)) #create PopId column 
+
+censusdates_all <- read_csv("../Raw.Data/CensusDates_All.csv") #to match censsus numbers to dates and years 
+censusdates_all <- unite(censusdates_all, "PopId", c(Col,Row))
+censusdates_all$Date <- as.Date(censusdates_all$Date, format = "%m/%d/%y")
+censusdates_all_julian <- censusdates_all %>% mutate(JulianDate = yday(censusdates_all$Date))
+
+totalrose_IC_cages <- read_csv("../Processed.Data/TotalRosettes.csv") # total number new rose for each pop cage and year
+
+total_FRMD_cages <- read_csv("../Processed.Data/TotalRep.csv") # total number new rep for each pop cage and year
+```
+
+## Need estimate of number of seeds planted inside the circle
+### Get proportion of rosettes inside circle out of total rosettes in each pop cage 
+```{r}
+#calculate total rosettes outside circle
+rosettes_OC_long <- allcages_popdata_id %>% filter(Year != 3) %>% #not enough rosette data in year 3 
+  select(Block:Ident, CensusN, RosetteN.OC) 
+rosettes_OC_wide = spread(rosettes_OC_long, CensusN, RosetteN.OC)
+rosettes_OC_wide_new <- rosettes_OC_wide
+rosettes_OC_wide_new[10:54] = rosettes_OC_wide_new[10:54] - rosettes_OC_wide_new[(10:54)-1] #calculate the number of new rosettes at each census
+
+#convert back to long
+newrosettes_OC_long = gather(rosettes_OC_wide_new, CensusN, Newrosettes, "1.01":"2.21", factor_key = TRUE)
+
+#convert negatives into 0s
+newrosettes_OC_long$Newrosettes <- ifelse(newrosettes_OC_long$Newrosettes < 0, 0, newrosettes_OC_long$Newrosettes)
+
+#add in date info
+newrosettes_OC_long$CensusN <- as.character(newrosettes_OC_long$CensusN)
+newrosettes_OC_long_dates <- merge(newrosettes_OC_long, censusdates_all_julian)
+totalrosettes_OC <- newrosettes_OC_long_dates %>% group_by(PopId, Block, RILSet, Dormancy, Envt, Year) %>% 
+  filter(!is.na(Newrosettes)) %>% 
+  summarize(OCTotalrosettes=sum(Newrosettes))
+
+totalrosettes_circle <- totalrose_IC_cages %>% rename(CircleTotalrosettes=Totalrosettes)
+
+#proportion of rosettes in each pop that were in circle vs. OC
+rose_wholepop <- left_join(totalrosettes_OC, totalrosettes_circle) %>%
+  mutate(COCTOTROSE=CircleTotalrosettes+OCTotalrosettes, 
+         PropCircleRose=CircleTotalrosettes/COCTOTROSE)
+```
+
+### Calculating total seeds planted in circle
+```{r}
+#for pops with no surv to rose in year 1, use the averages per environmental treatment 
+propcirclerose_summary <- rose_wholepop %>% 
+  filter(RILSet=="Italy x Sweden", Year == 1) %>% 
+  filter(!is.na(PropCircleRose)) %>% 
+  group_by(Envt, Year) %>% 
+  summarise(meanProp=mean(PropCircleRose), SE=sd(PropCircleRose)/sqrt(n()))
+
+y1totalseeds_IC_cages_wrose <- left_join(rose_wholepop, y1totalseeds) %>% 
+  filter(RILSet=="Italy x Sweden", Year == 1) %>% 
+  filter(!is.na(PropCircleRose)) %>% #for pops with rosettes
+  mutate(CircleSeeds = ifelse(PropCircleRose==0, 0.1*TotalSeeds, #assume that at least some seeds made it in the circle
+                            ifelse(PropCircleRose==1, 0.9*TotalSeeds, #assume that at least some seeds made it outside the circle 
+                                   TotalSeeds*PropCircleRose))) %>% 
+  select(PopId:Year, PropCircleRose:CircleSeeds)
+
+y1totalseeds_IC_cages_norose <- left_join(rose_wholepop, y1totalseeds) %>% 
+  filter(RILSet=="Italy x Sweden", Year == 1) %>% 
+  filter(is.na(PropCircleRose)) %>% #for pops w/ no rose 
+  mutate(CircleSeeds=ifelse(Envt=="Control", 0.74*TotalSeeds,
+                            ifelse(Envt=="High Humidity", 0.81*TotalSeeds,
+                                   ifelse(Envt=="Litter", 0.68*TotalSeeds,
+                                          0.99*TotalSeeds)))) %>% 
+  select(PopId:Year, PropCircleRose:CircleSeeds)
+
+y1totalseeds_IC_cages <- rbind(y1totalseeds_IC_cages_wrose, y1totalseeds_IC_cages_norose)
+nrow(y1totalseeds_IC_cages) #96 rows for all 96 Italy x Sweden pops
+```
+
+## Investigating Early Rep Pops
+```{r}
+allcages_popdata_id %>% filter(CensusN <=1.19) %>%
+   mutate(TotalRep = Fruiting.circle+mat.dead.circle+Fruiting.OC+mat.dead.OC) %>% 
+  group_by(PopId) %>% 
+  summarise(sumTotalRep=sum(TotalRep, na.rm = TRUE)) %>% #this is not a real sum of rep (just a way for me to see which pops had some summer/early fall rep)
+  filter(sumTotalRep >0)
+
+#12 pops with summer/early fall rep 
+#A3 (litter), A4 (humidity, mixed), A5 (litter), B2 (HH, ND), B4 (HH, D), B6 (HH, ND), B13 (litter), C3 (litter), C4 (BS,litter), C7 (control, D), L5 (BS, litter), M10 (BS, litter)
+
+#label those populations so I can remove them from the germ calcs
+early_rep <- allcages_popdata_id %>% 
+   filter(CensusN <=1.19) %>%
+   mutate(TotalRep = Fruiting.circle+mat.dead.circle+Fruiting.OC+mat.dead.OC) %>% 
+   group_by(PopId) %>% 
+   summarise(sumTotalRep=sum(TotalRep, na.rm = TRUE)) %>%  #this is not a real sum of rep (just a way for me to see which pops had some summer/early fall rep)
+  mutate(Early.Rep=if_else(sumTotalRep==0, "no", "yes")) %>% 
+  select(PopId, Early.Rep)
+```
+
+Merge with germ data
+```{r}
+minsdls_IC_cages_early_rep <- left_join(minsdls_IC_cages, early_rep)
+```
+
+## Vital Rates
+
+### Year 1 Fresh Seeds Germination Rate (G.f)
+
+-   min fresh from cages = \# of min sdls in circle in year 1 / \# of seeds planted in circle in year 1
+
+```{r}
+y1_mingerms <- minsdls_IC_cages_early_rep %>%
+  filter(RILSet=="Italy x Sweden", Early.Rep == "no") %>% 
+  filter(Year == 1) %>% 
+  select(PopId:Envt, Y1Germs=Totalsdls)
+
+y1_minfreshgerm <- left_join(y1totalseeds_IC_cages, y1_mingerms) %>% 
+  mutate(MinFreshGermProp = Y1Germs/CircleSeeds) %>% 
+  select(PopId:Block, Dormancy:Envt, CircleSeeds:MinFreshGermProp)
+
+y1_minfreshgerm %>% filter(MinFreshGermProp >= 1) #0 cases where more germs than seeds planted 
+```
+
+## Germination Rate of Seeds in the Seedbank (Gsb)
+
+-   seed bank germination from SB pots = \# of germs in year 2 of SB pots / (\# of seeds planted - \# of germs in year 1 of SB pots)
+
+```{r}
+allsbdatatotal_year <- allsbdata_pop %>% group_by(PopId, Block, Dormancy, EnvtTrt, Year) %>% 
+  summarise(ConfTotal = sum(Confirmed.Total, na.rm = TRUE), MaxTotal = sum(Max.Total, na.rm = TRUE)) #total germination for each pop and year 
+
+sbseeds_sbpots <- allsbdatatotal_year %>% filter(Year==1) %>% 
+  mutate(SBSeeds_Max = 114-MaxTotal, SBSeeds_Min = 114-ConfTotal) %>% select(PopId:EnvtTrt, SBSeeds_Max, SBSeeds_Min)
+
+y2germs_sbpots <- allsbdatatotal_year %>% filter(Year == 2) %>% 
+  select(PopId:EnvtTrt, MaxTotal, ConfTotal)
+
+sbg_sbspots <- left_join(y2germs_sbpots, sbseeds_sbpots) %>% 
+  mutate(GermProp_Max=MaxTotal/SBSeeds_Max, GermProp_Min=ConfTotal/SBSeeds_Min)
+```
+
+### Maximum sbg across all cages and pots 
+```{r}
+#from individual pops
+summary(sbg_sbspots) #Max: 0.151515   Conf: 0.131579
+
+#from trt avgs 
+sbg_sbspots_summary <- sbg_sbspots %>% 
+  group_by(Dormancy, EnvtTrt) %>% 
+  summarise(meanGermProp_Conf=mean(GermProp_Min, na.rm = TRUE), semConf=sem(GermProp_Min),
+            meanGermProp_Max=mean(GermProp_Max), semMax=sem(GermProp_Max))
+summary(sbg_sbspots_summary) # Max.   :0.037035 and  Min   :0.030583 
+
+##Use 0.1516
+```
+
+## Survival of seeds in seedbank (for 1 year)
+```{r}
+allsbdatatotal <- allsbdata_pop %>% group_by(PopId, Block, Dormancy, EnvtTrt) %>% 
+  summarise(ConfTotal = sum(Confirmed.Total, na.rm = TRUE), MaxTotal = sum(Max.Total, na.rm = TRUE)) #total germination for each pop across both years 
+
+seed_surv <- allsbdatatotal %>% mutate(ConfSdlSurv=ConfTotal/114, MaxSdlSurv=MaxTotal/114) #assume that any seeds that did not germinate died 
+
+seed_surv_summary <- seed_surv %>% group_by(Dormancy, EnvtTrt) %>% summarise(meanConfSdlSurv=mean(ConfSdlSurv), SEC=sd(ConfSdlSurv)/sqrt(n()), meanMaxSdlSurv=mean(MaxSdlSurv), SEM=sd(MaxSdlSurv)/sqrt(n()))
+
+seed_surv_summary %>% ggplot(aes(x=EnvtTrt, y=meanMaxSdlSurv, group=Dormancy, fill=Dormancy)) +
+    geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanMaxSdlSurv-SEM,ymax=meanMaxSdlSurv+SEM),width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Proportion of Seed Survival") +
+   scale_fill_manual(values=BQSBPalette) +
+   # theme(text=element_text(size=37)) +
+   ggtitle("Max Total") +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1)) 
+```
+
+### Note: no seed survival for the Litter treatment - get the average for dorm/non-dorm
+```{r}
+seed_surv_summary_allenv <- seed_surv %>% group_by(Dormancy) %>% summarise(meanConfSdlSurv=mean(ConfSdlSurv), SEC=sd(ConfSdlSurv)/sqrt(n()), meanMaxSdlSurv=mean(MaxSdlSurv), SEM=sd(MaxSdlSurv)/sqrt(n()))
+
+seed_surv_summary_allenv %>% ggplot(aes(x=Dormancy, y=meanConfSdlSurv)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanConfSdlSurv-SEC,ymax=meanConfSdlSurv+SEC),width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() 
+
+seed_surv_summary_allenv %>% ggplot(aes(x=Dormancy, y=meanMaxSdlSurv)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=meanMaxSdlSurv-SEM,ymax=meanMaxSdlSurv+SEM),width=.2, position = 
+                    position_dodge(0.75)) +
+    theme_classic() 
+```
+
+### Note: no seed survival for the Mixed treatment - so take mean of envts
+```{r}
+seed_surv_mixed_summary <-  seed_surv %>%
+  group_by(EnvtTrt) %>% 
+  summarise(meanConfSdlSurv=mean(ConfSdlSurv), SEC=sd(ConfSdlSurv)/sqrt(n()), meanMaxSdlSurv=mean(MaxSdlSurv), SEM=sd(MaxSdlSurv)/sqrt(n()))
+```
+
+## Survival to Reproduction (Srep)
+```{r}
+#from max germ 
+minsdls_IC_cages_noy3 <- minsdls_IC_cages %>% 
+  filter(Year!=3) %>% 
+  select(PopId:Year, Totalsdls)
+
+survtoFRMDfromsdl_circle_min <- full_join(total_FRMD_cages, minsdls_IC_cages_noy3) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  select(PopId:Year, TotalFRMD, Totalsdls) %>% 
+  mutate(SurvtoRep = ifelse(Totalsdls==0, 0, TotalFRMD/Totalsdls))
+```
+
+## Fecundity (F)
+```{r}
+#avg rep = each indiv fruit number *29 averaged for each pop
+fruits_to_seeds <- fruits_cages_popid %>% 
+  filter(RILSet=="IS") %>% 
+  mutate(EstSeeds=Fruits*29) %>% 
+  group_by(PopId, Block, Dormancy, Envt, Year) %>% 
+  summarise(meanEstSeeds=mean(EstSeeds)) %>% 
+  select(PopId:Year, meanEstSeeds)
+#fruits_to_seeds %>% arrange(Block, Envt, Dormancy)
+#only counted fruit for 5 blocks! - 60 populations 
+
+fecundity <- left_join(total_FRMD_cages, fruits_to_seeds) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  filter(Block!=1, Block!=5, Block!=6) %>%  #Blocks 2, 3, 4, 7, 8 were consistently measured
+  mutate(meanEstSeeds=if_else(TotalFRMD == 0, 0, meanEstSeeds)) %>%  #fill in 0 estimated seeds when there were 0 rep indivs 
+  select(PopId:Year, TotalFRMD, meanEstSeeds)
+dim(fecundity) #60 pops
+fecundity %>% filter(is.na(meanEstSeeds)) #3 populations with some surv to rep inside the circle but no fecundity estimate 
+##Notes say J4 was skipped because all plants had decomposed before the fruit counts - L3 likely skipped for the same reason 
+##unknown why no data for the 1 rep indiv in F8 in year 2 
+```
+
+## Make a data sheet that has all the vital rates in it for each population
+
+### Merge 
+```{r}
+#gf.min.cages, gsb.0, gsb.max, srep.good, srep.bad, F.good, F.bad
+#gsb.max=0.1516 
+
+fecundity_mergeprep <- fecundity %>% 
+  select(PopId:Envt, Year, meanEstSeeds) %>% 
+  pivot_wider(names_from = Year, values_from = meanEstSeeds) %>% 
+  rename(F.good = "1", F.bad="2")
+#fecundity_mergeprep
+
+survtoFRMDfromsdl_circle_min_mergeprep <- survtoFRMDfromsdl_circle_min %>% 
+  select(PopId:Envt, Year, SurvtoRep) %>% 
+  pivot_wider(names_from = Year, values_from = SurvtoRep) %>% 
+   rename(srep.good = "1", srep.bad="2")
+#survtoFRMDfromsdl_circle_max_mergeprep
+
+w_merge <- left_join(fecundity_mergeprep, survtoFRMDfromsdl_circle_min_mergeprep)
+#w_merge
+
+germ_merge_prep <- y1_minfreshgerm %>% 
+  select(RILSet:Envt, MinFreshGermProp) %>% 
+  rename(gf.min.cages=MinFreshGermProp) %>% 
+  mutate(gsb.0=0, gsb.max=0.1516)
+#germ_merge_prep
+
+all_vital_merge <- left_join(w_merge, germ_merge_prep) %>% 
+  select(PopId:Envt, gf.min.cages, gsb.0, gsb.max, srep.good, srep.bad, F.good, F.bad)
+#all_vital_merge
+
+all_vital_merge %>% filter(is.na(gf.min.cages)) #all 0s at remaining life stages except pop B_6
+#B_6 removed from germ calcs because it had summer rep
+```
+
+### Add Seed survival 
+```{r}
+seed_surv_summary_prep <- seed_surv_summary %>% 
+  select(Dormancy, Envt=EnvtTrt, Sseed.max=meanMaxSdlSurv)
+
+seed_surv_summary_allenv_prep <- seed_surv_summary_allenv %>% 
+  mutate(Envt="Litter") %>% 
+  select(Dormancy, Envt, Sseed.max=meanMaxSdlSurv)
+
+seed_surv_mixed_summary_prep <- seed_surv_mixed_summary %>% 
+  mutate(Dormancy="Mixed") %>% 
+  select(Dormancy, Envt=EnvtTrt, Sseed.max=meanMaxSdlSurv)
+summary(seed_surv_mixed_summary_prep)
+
+summary(seed_surv)
+seed_surv_mixed_litter <- tibble(Dormancy="Mixed", Envt="Litter", Sseed.max=0.24232) #overall mean Sseed since I don't have any other way of estimating this 
+
+seed_surv_merge_prep <- bind_rows(seed_surv_summary_prep, seed_surv_summary_allenv_prep, seed_surv_mixed_summary_prep, seed_surv_mixed_litter) 
+seed_surv_merge_prep
+
+all_vital_merge_sseed <- left_join(all_vital_merge, seed_surv_merge_prep) %>% 
+  unite("DormEnvt", c(Dormancy, Envt), remove = FALSE)
+all_vital_merge_sseed
+
+trts_g.a.min <- all_vital_merge_sseed %>% select(DormEnvt) %>% 
+  arrange(DormEnvt) %>% unique() %>% pull(DormEnvt)
+trts_g.a.min
+```
+
+## Bootstrapping
+Randomly sample which pops go into the avg calcs, then use that "bootstrapped avg" to calculate the matrix elements to get confidence intervals around lambda
+
+### Make a nested data frame with one row for each block.
+Boot will sample each block with replacement 
+```{r}
+all_vital_boot_nest <- all_vital_merge_sseed %>% 
+  nest(.by=Block)
+```
+
+### Create the lambda_calc function 
+```{r}
+DNDPM.1 = matrix (0, 2, 2)
+DNDPM.2 = matrix (0, 2, 2)
+DNDPM.3 = matrix (0, 2, 2)
+DNDPM.4 = matrix (0, 2, 2)
+
+LAVALUES_boot = matrix(0, 12, 4) #12 rows for the treatments, 4 columns for the models
+rownames(LAVALUES_boot) <- trts_g.a.min
+#LAVALUES_boot
+
+lambda_calc <- function(data, indices) {
+  #data has to be nested by block 
+  
+  data <- data[indices,] #subset per bootstrap indices
+  
+  data <- data %>% unnest(data) #unnest so the function can access the vital rates
+  
+  data_means <- data %>% 
+    group_by(Dormancy, Envt) %>% 
+  summarise(mean_gf.min.cages = mean(gf.min.cages, na.rm = TRUE), 
+            mean_gsb.0 = mean(gsb.0), 
+            mean_gsb.max = mean(gsb.max), 
+            mean_Sseed.max = mean(Sseed.max),
+            mean_srep.good = mean(srep.good), 
+            mean_srep.bad = mean(srep.bad), 
+            mean_F.good = mean(F.good, na.rm = TRUE), 
+            mean_F.bad = mean(F.bad, na.rm = TRUE)) %>% 
+  unite("DormEnvt", c(Dormancy, Envt), remove = FALSE)
+
+for (i in trts_g.a.min) {
+  vtal_sub <- data_means %>% filter(DormEnvt==i)
+  DNDPM.1[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good)
+  DNDPM.1[1,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good
+  DNDPM.1[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.1[2,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  DNDPM.2[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good)
+  DNDPM.2[1,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good
+  DNDPM.2[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.2[2,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  DNDPM.3[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.0*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad)
+  DNDPM.3[1,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad
+  DNDPM.3[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.3[2,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  DNDPM.4[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.max*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad)
+  DNDPM.4[1,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad
+  DNDPM.4[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.4[2,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  if (is.na(DNDPM.1[1,1]))  {
+   LAVALUES_boot[i,1]= NA 
+  }
+  
+  if (!is.na(DNDPM.1[1,1])) {
+ LAVALUES_boot[i,1]= lambda(DNDPM.1) 
+  }
+  
+  if (is.na(DNDPM.2[1,1]))  {
+   LAVALUES_boot[i,2]= NA 
+  }
+  
+  if (!is.na(DNDPM.2[1,1])) {
+ LAVALUES_boot[i,2]= lambda(DNDPM.2) 
+  }
+  
+  if (is.na(DNDPM.3[1,1]))  {
+   LAVALUES_boot[i,3]= NA 
+  }
+  
+  if (!is.na(DNDPM.3[1,1])) {
+ LAVALUES_boot[i,3]= lambda(DNDPM.3) 
+  }
+  
+if (is.na(DNDPM.4[1,1]))  {
+   LAVALUES_boot[i,4]= NA 
+  }
+  
+  if (!is.na(DNDPM.4[1,1])) {
+ LAVALUES_boot[i,4]= lambda(DNDPM.4) 
+  }
+}
+  LAVALUES_boot
+}
+
+#lambda_calc(all_vital_boot_nest) #function works 
+```
+
+Log Transformed Lambda
+```{r}
+LAVALUES_boot_log = matrix(0, 12, 4) #12 rows for the treatments, 4 columns for the models
+rownames(LAVALUES_boot_log) <- trts_g.a.min
+#LAVALUES_boot
+
+lambda_calc_log <- function(data, indices) {
+  #data has to be nested by block 
+  
+  data <- data[indices,] #subset per bootstrap indices
+  
+  data <- data %>% unnest(data) #unnest so the function can access the vital rates
+  
+  data_means <- data %>% 
+    group_by(Dormancy, Envt) %>% 
+  summarise(mean_gf.min.cages = mean(gf.min.cages, na.rm = TRUE), 
+            mean_gsb.0 = mean(gsb.0), 
+            mean_gsb.max = mean(gsb.max), 
+            mean_Sseed.max = mean(Sseed.max),
+            mean_srep.good = mean(srep.good), 
+            mean_srep.bad = mean(srep.bad), 
+            mean_F.good = mean(F.good, na.rm = TRUE), 
+            mean_F.bad = mean(F.bad, na.rm = TRUE)) %>% 
+  unite("DormEnvt", c(Dormancy, Envt), remove = FALSE)
+
+for (i in trts_g.a.min) {
+  vtal_sub <- data_means %>% filter(DormEnvt==i)
+  DNDPM.1[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good)
+  DNDPM.1[1,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good
+  DNDPM.1[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.1[2,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  DNDPM.2[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good)
+  DNDPM.2[1,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good
+  DNDPM.2[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.2[2,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  DNDPM.3[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.0*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad)
+  DNDPM.3[1,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad
+  DNDPM.3[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.3[2,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  DNDPM.4[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.max*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad)
+  DNDPM.4[1,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad
+  DNDPM.4[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.4[2,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  if (is.na(DNDPM.1[1,1]))  {
+   LAVALUES_boot_log[i,1]= NA 
+  }
+  
+  if (!is.na(DNDPM.1[1,1])) {
+ LAVALUES_boot_log[i,1]= log(lambda(DNDPM.1)+1) 
+  }
+  
+  if (is.na(DNDPM.2[1,1]))  {
+   LAVALUES_boot_log[i,2]= NA 
+  }
+  
+  if (!is.na(DNDPM.2[1,1])) {
+ LAVALUES_boot_log[i,2]= log(lambda(DNDPM.2)+1) 
+  }
+  
+  if (is.na(DNDPM.3[1,1]))  {
+   LAVALUES_boot_log[i,3]= NA 
+  }
+  
+  if (!is.na(DNDPM.3[1,1])) {
+ LAVALUES_boot_log[i,3]= log(lambda(DNDPM.3)+1) 
+  }
+  
+if (is.na(DNDPM.4[1,1]))  {
+   LAVALUES_boot_log[i,4]= NA 
+  }
+  
+  if (!is.na(DNDPM.4[1,1])) {
+ LAVALUES_boot_log[i,4]= log(lambda(DNDPM.4)+1) 
+  }
+}
+  LAVALUES_boot_log
+}
+```
+
+### Perform the bootstrap sampling
+```{r}
+lambda.boot <- boot(data=all_vital_boot_nest, statistic = lambda_calc, R=1000)
+
+#str(lambda.boot)
+lambda.boot$t0 #looks correct
+
+for(i in 1:2) {
+  plot(lambda.boot, index=i) #distributions look pretty skewed 
+}
+
+#boot.ci(lambda.boot, type = "basic", index = 1)
+boot_results <- tidy(lambda.boot,conf.int=TRUE,conf.method="basic") 
+boot_results_perc <- tidy(lambda.boot,conf.int=TRUE,conf.method="perc") 
+
+trt_model_info <- as_tibble(trts_g.a.min) %>% 
+  rename(Treatment=value) %>% 
+  group_by(Treatment) %>% 
+  expand(Model = seq(1:4)) %>% 
+  arrange(Model) %>% 
+  separate(Treatment, into = c("Dormancy","Envt"), 
+           sep = "_", remove = FALSE)
+
+boot_results_trts <- bind_cols(trt_model_info, boot_results) %>% 
+  rename(Lambda=statistic)
+boot_results_trts
+write.csv(boot_results_trts, "../Processed.Data/BootLambdas.csv", row.names = FALSE)
+
+boot_results_trts_perc <- bind_cols(trt_model_info, boot_results_perc) %>% 
+  rename(Lambda=statistic)
+```
+
+### Log Transformed Lambda Bootstrap Sampling
+```{r}
+lambda.boot_log <- boot(data=all_vital_boot_nest, statistic = lambda_calc_log, R=1000)
+
+boot_results_perc_log <- tidy(lambda.boot_log,conf.int=TRUE,conf.method="perc") 
+
+boot_results_log_trts_perc <- bind_cols(trt_model_info, boot_results_perc_log) %>% 
+  rename(logLambda=statistic) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Dormant", "High"))
+```
+
+### View bootstrap results
+Log transformed lambda 
+```{r}
+model_names <- as_labeller(
+  c("1"="Model 1: \n No SB, 2 Good Years",
+    "2"="Model 2: \n Max SB, 2 Good years",
+    "3"="Model 3: \n No SB, 1 Good & 1 Bad Year",
+    "4"="Model 4: \n Max SB, 1 Good & 1 Bad Year"))
+
+boot_results_log_trts_perc$Envt <- factor(boot_results_log_trts_perc$Envt, levels = Envt_order)
+boot_results_log_trts_perc$Dormancy <- factor(boot_results_log_trts_perc$Dormancy, levels = Dorm_order)
+
+boot_fig_perc_log <- boot_results_log_trts_perc %>% 
+  ggplot(aes(x=Envt, y=logLambda, group = Dormancy, fill = Dormancy)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+    geom_errorbar(aes(ymin=conf.low,ymax=conf.high),
+                  width=.1, position = 
+                    position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+    ylab(paste0("log(Asymptotic Lambda)")) +
+    scale_fill_manual(values=BQDNDPalette) +
+  theme(text=element_text(size=25), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+  annotate("segment", x = 0, xend = 4.5, y = 0.6931472, yend = 0.6931472, colour = "blue", linetype=2) +
+  facet_wrap(~Model, scales = "free", labeller = model_names)
+ggsave("../Figures/Fig6_Boot_AsympLambda_Perc_Log.png", width=13, height=10, units="in")
+```
+
+## Calculate Sensitivities  
+
+### Treatment means
+```{r}
+all_vital_trtmeans <- all_vital_merge_sseed %>% 
+  group_by(Dormancy, Envt) %>% 
+  summarise(mean_gf.min.cages = mean(gf.min.cages, na.rm = TRUE), 
+            mean_gsb.0 = mean(gsb.0), 
+            mean_gsb.max = mean(gsb.max), 
+            mean_Sseed.max = mean(Sseed.max),
+            mean_srep.good = mean(srep.good), 
+            mean_srep.bad = mean(srep.bad), 
+            mean_F.good = mean(F.good, na.rm = TRUE), 
+            mean_F.bad = mean(F.bad, na.rm = TRUE)) %>% 
+  unite("DormEnvt", c(Dormancy, Envt), remove = FALSE)
+```
+
+### For loop for getting sensitivities 
+```{r}
+for (i in trts_g.a.min) {
+  vtal_sub <- all_vital_trtmeans %>% filter(DormEnvt==i)
+  DNDPM.1[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good)
+  DNDPM.1[1,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good
+  DNDPM.1[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.1[2,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  print(sensitivity(DNDPM.1))
+  print(lambda(DNDPM.1))
+  
+  DNDPM.2[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good)
+  DNDPM.2[1,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good
+  DNDPM.2[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.2[2,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  print(sensitivity(DNDPM.2))
+  print(lambda(DNDPM.2))
+  
+  DNDPM.3[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.0*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad)
+  DNDPM.3[1,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad
+  DNDPM.3[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.3[2,2] = vtal_sub$mean_gsb.0*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  
+  print(sensitivity(DNDPM.3))
+  print(lambda(DNDPM.3))
+  
+  DNDPM.4[1,1] = (vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad) + ((1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max*vtal_sub$mean_gsb.max*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad)
+  DNDPM.4[1,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.bad*vtal_sub$mean_F.bad
+  DNDPM.4[2,1] = vtal_sub$mean_gf.min.cages*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+  DNDPM.4[2,2] = vtal_sub$mean_gsb.max*vtal_sub$mean_srep.good*vtal_sub$mean_F.good*(1-vtal_sub$mean_gf.min.cages)*vtal_sub$mean_Sseed.max
+
+  print(sensitivity(DNDPM.4))
+  print(lambda(DNDPM.4))
+}
+
+#output is in the order of trts_g.a.min and model type 
+#Ex: First four outputs = Dormant_Control, model 1-4
+trts_g.a.min
+```

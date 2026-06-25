@@ -1,0 +1,679 @@
+﻿Block,Col,Row,RILSet,Dormancy,Envt,Year,IndivID,BandColor,Date,BasalBranches,MainBranches,Height,Fruits
+1,A,0,IS,Dormant,Litter,1,1,IC,4/15/20,1,0,7.876,9
+1,A,0,IS,Dormant,Litter,1,2,OC,4/15/20,1,0,2.765,3
+1,A,0,IS,Dormant,Litter,1,3,OC,4/15/20,1,0,11.465,20
+1,A,0,IS,Dormant,Litter,1,4,OC,4/15/20,1,0,5.48,6
+1,A,0,IS,Dormant,Litter,1,5,OC,4/15/20,1,4,28.1,71
+1,A,0,IS,Dormant,Litter,1,6,OC,4/15/20,1,0,19.4,39
+1,A,0,IS,Dormant,Litter,1,7,OC,4/15/20,1,3,17.1,47
+1,A,0,IS,Dormant,Litter,1,8,OC,4/15/20,1,0,10.4,17
+1,A,0,IS,Dormant,Litter,1,9,OC,4/15/20,1,0,6.3,11
+1,A,0,IS,Dormant,Litter,1,10,OC,4/15/20,1,2,16.3,38
+1,A,0,IS,Dormant,Litter,1,11,IC,4/15/20,1,0,4,3
+1,A,0,IS,Dormant,Litter,1,12,OC,4/15/20,NA,NA,NA,11
+1,A,0,IS,Dormant,Litter,1,13,OC,4/15/20,NA,NA,NA,10
+1,A,0,IS,Dormant,Litter,1,14,OC,4/15/20,NA,NA,NA,5
+1,A,0,IS,Dormant,Litter,1,15,OC,4/15/20,NA,NA,NA,7
+1,A,0,IS,Dormant,Litter,1,16,OC,4/15/20,NA,NA,NA,5
+1,A,0,IS,Dormant,Litter,1,17,OC,4/15/20,NA,NA,NA,8
+1,A,0,IS,Dormant,Litter,1,18,OC,4/15/20,NA,NA,NA,14
+1,A,3,IS,Non-Dormant,Litter,1,1,OC,4/15/20,1,0,4.4,4
+1,A,3,IS,Non-Dormant,Litter,1,2,OC,4/15/20,1,0,4.5,3
+1,A,3,IS,Non-Dormant,Litter,1,3,OC,4/15/20,1,0,4.6,2
+1,A,3,IS,Non-Dormant,Litter,1,4,OC,4/15/20,1,0,3.3,2
+1,A,3,IS,Non-Dormant,Litter,1,5,OC,4/15/20,1,0,2.8,3
+1,A,3,IS,Non-Dormant,Litter,1,6,OC,4/15/20,1,0,5.2,3
+1,A,3,IS,Non-Dormant,Litter,1,7,OC,4/15/20,1,0,5.8,6
+1,A,3,IS,Non-Dormant,Litter,1,8,OC,4/15/20,1,0,4.3,3
+2,A,5,IS,Mixed,Litter,1,2,IC,4/17/20,1,0,3.5,2
+2,A,5,IS,Mixed,Litter,1,3,OC,4/17/20,1,0,5.8,4
+2,A,5,IS,Mixed,Litter,1,4,OC,4/17/20,1,0,5.5,7
+2,A,5,IS,Mixed,Litter,1,5,OC,4/17/20,1,0,4.4,6
+2,A,5,IS,Mixed,Litter,1,6,OC,4/17/20,1,1,15.2,17
+2,A,5,IS,Mixed,Litter,1,7,OC,4/17/20,4,0,17.2,103
+2,A,5,IS,Mixed,Litter,1,8,OC,4/17/20,1,0,5.6,11
+2,A,5,IS,Mixed,Litter,1,9,OC,4/17/20,1,0,4.5,8
+2,A,5,IS,Mixed,Litter,1,10,OC,4/17/20,1,1,16.3,15
+2,A,5,IS,Mixed,Litter,1,11,OC,4/17/20,1,0,6,7
+2,A,5,IS,Mixed,Litter,1,12,OC,4/17/20,1,0,6.8,9
+2,A,5,IS,Mixed,Litter,1,13,OC,4/17/20,1,0,3.3,5
+2,A,5,IS,Mixed,Litter,1,14,OC,4/17/20,2,1,13,31
+2,A,5,IS,Mixed,Litter,1,15,OC,4/17/20,1,0,17.5,23
+2,A,5,IS,Mixed,Litter,1,16,OC,4/17/20,2,1,15.2,28
+2,A,5,IS,Mixed,Litter,1,17,OC,4/17/20,1,0,10.4,9
+2,A,5,IS,Mixed,Litter,1,18,OC,4/17/20,1,0,8.8,10
+2,A,5,IS,Mixed,Litter,1,19,OC,4/17/20,1,0,4.9,5
+2,A,7,IS,Mixed,Native Soil,1,1,green,4/17/20,1,0,6.2,10
+2,A,7,IS,Mixed,Native Soil,1,2,orange,4/17/20,1,0,11,22
+2,A,7,IS,Mixed,Native Soil,1,3,blue,4/17/20,1,0,10.5,16
+2,A,7,IS,Mixed,Native Soil,1,4,purple,4/17/20,1,0,11.2,17
+2,A,7,IS,Mixed,Native Soil,1,5,yellow,4/17/20,1,0,11.7,13
+2,A,7,IS,Mixed,Native Soil,1,6,pink,4/17/20,1,0,19.5,22
+2,A,7,IS,Mixed,Native Soil,1,7,yellow-blue,4/17/20,1,0,11.5,23
+2,A,7,IS,Mixed,Native Soil,1,8,yellow-green,4/17/20,1,0,7.4,9
+2,A,7,IS,Mixed,Native Soil,1,9,orange-purple,4/17/20,1,0,15.8,29
+2,A,7,IS,Mixed,Native Soil,1,10,green-pink,4/17/20,1,0,5.5,5
+2,A,7,IS,Mixed,Native Soil,1,11,purple-pink,4/17/20,1,0,5.2,6
+2,A,7,IS,Mixed,Native Soil,1,12,purple-green,4/17/20,1,0,4.7,6
+2,A,7,IS,Mixed,Native Soil,1,14,green-orange,4/17/20,1,0,3.3,6
+2,A,7,IS,Mixed,Native Soil,1,15,blue-pink,4/17/20,1,1,23.8,56
+2,A,7,IS,Mixed,Native Soil,1,16,blue-purple,4/17/20,1,0,2.1,2
+2,A,7,IS,Mixed,Native Soil,1,17,yellow-purple,4/17/20,1,0,6,8
+2,A,7,IS,Mixed,Native Soil,1,18,yellow-pink,4/17/20,1,0,2,3
+2,A,7,IS,Mixed,Native Soil,1,19,OC,4/17/20,1,3,23.9,80
+2,A,7,IS,Mixed,Native Soil,1,20,OC,4/17/20,2,4,25,109
+3,A,9,IS,Dormant,Native Soil,1,1,pink,4/27/20,6,4,36.6,516
+3,A,9,IS,Dormant,Native Soil,1,2,yellow,4/27/20,3,6,34.5,362
+3,A,9,IS,Dormant,Native Soil,1,4,green,4/27/20,1,0,4.9,6
+3,A,9,IS,Dormant,Native Soil,1,5,purple,4/27/20,1,3,25.8,70
+3,A,9,IS,Dormant,Native Soil,1,6,blue,4/27/20,1,0,12.1,18
+3,A,9,IS,Dormant,Native Soil,1,7,IC,5/4/20,5,0,21,94
+3,A,9,IS,Dormant,Native Soil,1,8,IC,5/4/20,1,0,10.5,13
+3,A,9,IS,Dormant,Native Soil,1,9,IC,5/4/20,1,0,3.4,4
+3,A,9,IS,Dormant,Native Soil,1,10,IC,5/4/20,1,0,11.4,14
+3,A,9,IS,Dormant,Native Soil,1,11,IC,5/4/20,3,2,31.6,110
+3,A,9,IS,Dormant,Native Soil,1,12,IC,5/4/20,1,0,5.6,8
+3,A,9,IS,Dormant,Native Soil,1,13,IC,5/4/20,1,0,17.2,22
+3,A,9,IS,Dormant,Native Soil,1,14,IC,5/4/20,1,0,9.4,14
+3,A,9,IS,Dormant,Native Soil,1,15,IC,5/4/20,1,0,4,5
+3,A,9,IS,Dormant,Native Soil,1,16,IC,5/4/20,1,0,16.2,25
+3,A,9,IS,Dormant,Native Soil,1,17,IC,5/4/20,1,0,14.1,18
+3,A,9,IS,Dormant,Native Soil,1,18,IC,5/4/20,1,0,6.4,6
+3,A,9,IS,Dormant,Native Soil,1,19,IC,5/4/20,1,0,19.1,28
+3,A,9,IS,Dormant,Native Soil,1,20,OC,5/4/20,3,4,29.8,188
+1,B,2,IS,Non-Dormant,High Humidity,1,1,IC,4/15/20,1,0,2.4,2
+1,B,2,IS,Non-Dormant,High Humidity,1,2,IC,4/15/20,1,0,2.6,3
+1,B,2,IS,Non-Dormant,High Humidity,1,3,IC,4/15/20,1,0,3.5,4
+1,B,2,IS,Non-Dormant,High Humidity,1,4,IC,4/15/20,1,0,6.1,6
+1,B,2,IS,Non-Dormant,High Humidity,1,5,IC,4/15/20,1,0,2.7,3
+1,B,2,IS,Non-Dormant,High Humidity,1,6,IC,4/15/20,1,0,8.7,9
+1,B,2,IS,Non-Dormant,High Humidity,1,7,IC,4/15/20,1,0,8.5,15
+1,B,2,IS,Non-Dormant,High Humidity,1,8,IC,4/15/20,1,0,3.5,3
+1,B,2,IS,Non-Dormant,High Humidity,1,9,IC,4/15/20,1,0,2.2,2
+1,B,2,IS,Non-Dormant,High Humidity,1,10,IC,4/15/20,1,0,2.7,1
+1,B,2,IS,Non-Dormant,High Humidity,1,11,IC,4/15/20,1,0,2,1
+1,B,2,IS,Non-Dormant,High Humidity,1,12,IC,4/15/20,1,0,10.3,10
+1,B,2,IS,Non-Dormant,High Humidity,1,13,IC,4/15/20,1,0,17.8,21
+1,B,2,IS,Non-Dormant,High Humidity,1,14,IC,4/15/20,1,0,12.1,16
+1,B,2,IS,Non-Dormant,High Humidity,1,15,OC,4/15/20,2,6,26.1,214
+1,B,2,IS,Non-Dormant,High Humidity,1,16,OC,4/15/20,5,6,22.4,87
+1,B,2,IS,Non-Dormant,High Humidity,1,17,OC,4/15/20,3,0,22.5,19
+1,B,2,IS,Non-Dormant,High Humidity,1,18,OC,4/15/20,NA,NA,NA,42
+1,B,2,IS,Non-Dormant,High Humidity,1,19,OC,4/15/20,NA,NA,NA,129
+1,B,2,IS,Non-Dormant,High Humidity,1,20,OC,4/15/20,NA,NA,NA,16
+2,B,6,IS,Non-Dormant,High Humidity,1,1,orange,17-Apr,1,0,3.8,2
+2,B,6,IS,Non-Dormant,High Humidity,1,3,pink,4/17/20,1,0,16.4,19
+2,B,6,IS,Non-Dormant,High Humidity,1,5,blue,4/17/20,5,0,18.1,84
+2,B,6,IS,Non-Dormant,High Humidity,1,6,purple-pink,4/17/20,1,0,10.5,12
+2,B,6,IS,Non-Dormant,High Humidity,1,7,orange-pink,4/17/20,1,3,30.5,81
+2,B,6,IS,Non-Dormant,High Humidity,1,9,blue-yellow,4/17/20,1,0,4.6,11
+2,B,6,IS,Non-Dormant,High Humidity,1,10,IC,4/17/20,10,0,23,261
+2,B,6,IS,Non-Dormant,High Humidity,1,11,IC,4/17/20,3,0,19.9,35
+2,B,6,IS,Non-Dormant,High Humidity,1,12,OC,4/17/20,6,1,48.5,291
+2,B,6,IS,Non-Dormant,High Humidity,1,13,OC,4/17/20,11,2,51,713
+2,B,6,IS,Non-Dormant,High Humidity,1,14,OC,4/17/20,1,2,14.2,31
+2,B,6,IS,Non-Dormant,High Humidity,1,15,OC,4/17/20,1,0,22.7,27
+2,B,6,IS,Non-Dormant,High Humidity,1,16,OC,4/17/20,2,2,16.9,47
+2,B,6,IS,Non-Dormant,High Humidity,1,17,OC,4/17/20,3,0,6.5,15
+2,B,6,IS,Non-Dormant,High Humidity,1,18,OC,4/17/20,4,3,18.5,142
+2,B,6,IS,Non-Dormant,High Humidity,1,19,OC,4/17/20,1,0,5,5
+2,B,6,IS,Non-Dormant,High Humidity,1,20,OC,4/17/20,1,2,36.8,76
+2,B,7,IS,Mixed,Control,1,1,yellow,4/17/20,2,2,23.2,65
+2,B,7,IS,Mixed,Control,1,2,blue,4/17/20,4,2,16.4,137
+2,B,7,IS,Mixed,Control,1,3,green,4/17/20,1,1,26.2,64
+2,B,7,IS,Mixed,Control,1,4,orange,4/17/20,1,0,16.8,20
+2,B,7,IS,Mixed,Control,1,5,purple,4/17/20,3,1,10.5,53
+2,B,7,IS,Mixed,Control,1,6,pink,4/17/20,3,0,5.5,13
+2,B,7,IS,Mixed,Control,1,7,IC,4/17/20,1,0,7.9,10
+2,B,7,IS,Mixed,Control,1,8,IC,4/17/20,1,3,31.4,105
+2,B,7,IS,Mixed,Control,1,9,IC,4/17/20,1,0,4.6,5
+2,B,7,IS,Mixed,Control,1,10,OC,4/22/20,3,0,7.4,18
+2,B,7,IS,Mixed,Control,1,11,OC,4/22/20,1,0,7.2,9
+2,B,7,IS,Mixed,Control,1,12,OC,4/22/20,2,0,6.2,14
+2,B,7,IS,Mixed,Control,1,13,OC,4/22/20,2,2,7.7,26
+2,B,7,IS,Mixed,Control,1,14,OC,4/22/20,1,0,17.2,29
+2,B,7,IS,Mixed,Control,1,15,OC,4/22/20,1,0,7.7,9
+2,B,7,IS,Mixed,Control,1,16,OC,4/22/20,1,3,23.2,85
+2,B,7,IS,Mixed,Control,1,17,OC,4/22/20,4,2,17.8,129
+2,B,7,IS,Mixed,Control,1,18,OC,4/22/20,1,3,27.2,71
+2,B,7,IS,Mixed,Control,1,19,OC,4/22/20,3,1,24.9,92
+2,B,7,IS,Mixed,Control,1,20,OC,4/22/20,1,4,35.5,76
+3,B,11,IS,Non-Dormant,Native Soil,1,1,green,5/6/20,1,1,13.5,12
+3,B,11,IS,Non-Dormant,Native Soil,1,2,yellow,5/6/20,1,0,6.9,2
+3,B,11,IS,Non-Dormant,Native Soil,1,3,purple,5/6/20,1,0,10.4,8
+3,B,11,IS,Non-Dormant,Native Soil,1,4,pink,5/6/20,1,0,2.4,2
+3,B,11,IS,Non-Dormant,Native Soil,1,5,IC,5/6/20,2,1,14.7,27
+3,B,11,IS,Non-Dormant,Native Soil,1,6,IC,5/6/20,1,0,8.4,10
+3,B,11,IS,Non-Dormant,Native Soil,1,7,IC,5/6/20,1,0,7.9,8
+3,B,11,IS,Non-Dormant,Native Soil,1,8,IC,5/6/20,1,0,9.1,7
+3,B,11,IS,Non-Dormant,Native Soil,1,9,IC,5/6/20,1,0,2.9,4
+3,B,11,IS,Non-Dormant,Native Soil,1,10,IC,5/6/20,1,0,5.4,5
+3,B,11,IS,Non-Dormant,Native Soil,1,11,IC,5/6/20,1,0,5.4,4
+3,B,11,IS,Non-Dormant,Native Soil,1,12,IC,5/6/20,1,0,10,14
+3,B,11,IS,Non-Dormant,Native Soil,1,13,IC,5/6/20,1,0,3.8,4
+3,B,11,IS,Non-Dormant,Native Soil,1,14,IC,5/6/20,1,1,25.8,53
+3,B,11,IS,Non-Dormant,Native Soil,1,15,IC,5/6/20,1,0,5.4,10
+3,B,11,IS,Non-Dormant,Native Soil,1,16,IC,5/6/20,1,0,10.8,16
+3,B,11,IS,Non-Dormant,Native Soil,1,17,OC,5/6/20,1,0,13.6,17
+3,B,11,IS,Non-Dormant,Native Soil,1,18,OC,5/6/20,1,4,22.3,79
+3,B,11,IS,Non-Dormant,Native Soil,1,19,OC,5/6/20,2,2,23.6,33
+3,B,11,IS,Non-Dormant,Native Soil,1,20,OC,5/6/20,1,1,27.8,51
+3,B,12,IS,Mixed,Native Soil,1,2,green,5/4/20,1,0,2.6,4
+3,B,12,IS,Mixed,Native Soil,1,3,purple,5/4/20,1,0,9.9,8
+3,B,12,IS,Mixed,Native Soil,1,5,yellow,4-May,1,0,3.2,4
+3,B,12,IS,Mixed,Native Soil,1,6,IC,4-May,1,0,3.7,5
+3,B,12,IS,Mixed,Native Soil,1,7,IC,4-May,2,0,4.4,7
+3,B,12,IS,Mixed,Native Soil,1,8,IC,4-May,2,0,1.3,3
+3,B,12,IS,Mixed,Native Soil,1,9,IC,4-May,1,0,7.9,11
+3,B,12,IS,Mixed,Native Soil,1,10,IC,4-May,1,0,3.9,5
+3,B,12,IS,Mixed,Native Soil,1,11,IC,4-May,1,0,2.2,3
+3,B,12,IS,Mixed,Native Soil,1,12,IC,4-May,1,0,13.1,23
+3,B,12,IS,Mixed,Native Soil,1,13,IC,4-May,1,0,5.6,8
+3,B,12,IS,Mixed,Native Soil,1,14,IC,4-May,1,1,24.5,45
+3,B,12,IS,Mixed,Native Soil,1,15,IC,4-May,1,0,8,9
+3,B,12,IS,Mixed,Native Soil,1,16,IC,4-May,1,0,9.8,15
+3,B,12,IS,Mixed,Native Soil,1,17,IC,4-May,1,0,12.1,16
+3,B,12,IS,Mixed,Native Soil,1,18,IC,4-May,1,0,3.8,7
+3,B,12,IS,Mixed,Native Soil,1,19,IC,4-May,1,0,4.5,5
+3,B,12,IS,Mixed,Native Soil,1,20,OC,4-May,1,2,26.1,62
+1,C,2,IS,Non-Dormant,Control,1,1,OC,4/15/20,1,0,7.2,11
+1,C,2,IS,Non-Dormant,Control,1,2,OC,4/15/20,1,0,16.9,23
+1,C,2,IS,Non-Dormant,Control,1,3,OC,4/15/20,2,2,9.4,31
+1,C,2,IS,Non-Dormant,Control,1,4,OC,4/15/20,1,0,12.8,19
+2,C,7,IS,Dormant,Control,1,1,OC,4/22/20,1,0,6.6,9
+2,C,7,IS,Dormant,Control,1,2,OC,4/22/20,1,0,3.3,4
+2,C,7,IS,Dormant,Control,1,3,OC,4/22/20,1,0,3.7,5
+2,C,7,IS,Dormant,Control,1,4,OC,4/22/20,1,0,3.3,4
+2,C,7,IS,Dormant,Control,1,5,OC,4/22/20,1,0,2.8,3
+2,C,7,IS,Dormant,Control,1,6,OC,4/22/20,1,0,1.5,2
+2,C,7,IS,Dormant,Control,1,7,OC,4/22/20,1,0,2.5,3
+2,C,7,IS,Dormant,Control,1,8,OC,4/22/20,1,0,4.2,5
+2,C,7,IS,Dormant,Control,1,9,OC,4/22/20,1,0,5.6,6
+2,C,7,IS,Dormant,Control,1,10,OC,4/22/20,1,0,6.3,7
+2,C,7,IS,Dormant,Control,1,11,OC,4/22/20,1,0,3.5,3
+2,C,7,IS,Dormant,Control,1,12,OC,4/22/20,2,0,4.9,4
+2,C,7,IS,Dormant,Control,1,13,OC,4/22/20,3,0,6.6,11
+2,C,7,IS,Dormant,Control,1,14,OC,4/22/20,2,1,8.8,17
+2,C,7,IS,Dormant,Control,1,15,OC,4/22/20,2,1,15.6,41
+2,C,7,IS,Dormant,Control,1,16,OC,4/22/20,1,0,3.9,4
+2,C,7,IS,Dormant,Control,1,17,OC,4/22/20,1,0,7,6
+2,C,7,IS,Dormant,Control,1,18,OC,4/22/20,1,0,4.2,5
+2,C,7,IS,Dormant,Control,1,19,OC,4/22/20,1,5,22,133
+2,C,7,IS,Dormant,Control,1,20,OC,4/22/20,2,0,27.2,35
+3,C,10,IS,Dormant,High Humidity,1,2,yellow,4-May,1,1,19.4,33
+3,C,10,IS,Dormant,High Humidity,1,3,OC,4-May,1,3,24.6,71
+3,C,10,IS,Dormant,High Humidity,1,4,OC,4-May,7,5,23.6,554
+3,C,13,IS,Mixed,High Humidity,1,1,OC,5/4/20,1,2,28.5,26
+3,C,13,IS,Mixed,High Humidity,1,2,OC,5/4/20,1,1,16.1,30
+3,C,13,IS,Mixed,High Humidity,1,3,OC,5/4/20,1,2,23.1,62
+3,C,13,IS,Mixed,High Humidity,1,4,OC,5/4/20,1,3,23.1,80
+3,C,13,IS,Mixed,High Humidity,1,5,OC,5/4/20,4,0,10.4,31
+2,D,5,IS,Mixed,High Humidity,1,1,blue,4/22/20,1,0,18.1,30
+2,D,5,IS,Mixed,High Humidity,1,2,orange,4/22/20,3,2,35.1,183
+2,D,5,IS,Mixed,High Humidity,1,3,green,4/22/20,4,4,26.9,168
+2,D,5,IS,Mixed,High Humidity,1,4,yellow,4/22/20,5,3,29.5,240
+2,D,5,IS,Mixed,High Humidity,1,5,green-red,4/22/20,1,7,36.6,245
+2,D,5,IS,Mixed,High Humidity,1,7,pink,22-Apr,7,3,34.4,195
+2,D,5,IS,Mixed,High Humidity,1,8,IC,22-Apr,1,1,16.9,24
+2,D,5,IS,Mixed,High Humidity,1,9,IC,22-Apr,1,0,4.4,6
+2,D,5,IS,Mixed,High Humidity,1,10,IC,22-Apr,1,0,3.5,3
+2,D,5,IS,Mixed,High Humidity,1,11,IC,22-Apr,1,0,19.1,30
+2,D,5,IS,Mixed,High Humidity,1,12,IC,22-Apr,1,0,25,28
+2,D,5,IS,Mixed,High Humidity,1,13,IC,22-Apr,1,2,20.2,54
+2,D,5,IS,Mixed,High Humidity,1,14,IC,22-Apr,2,2,23.4,93
+2,D,5,IS,Mixed,High Humidity,1,15,OC,22-Apr,2,6,27.8,150
+2,D,5,IS,Mixed,High Humidity,1,16,OC,22-Apr,8,3,29.5,732
+2,D,5,IS,Mixed,High Humidity,1,17,OC,22-Apr,1,3,43.2,130
+2,D,5,IS,Mixed,High Humidity,1,18,OC,22-Apr,2,0,6.8,6
+2,D,5,IS,Mixed,High Humidity,1,19,OC,22-Apr,1,5,40,114
+2,D,5,IS,Mixed,High Humidity,1,20,OC,22-Apr,16,7,39,1116
+2,D,6,IS,Dormant,High Humidity,1,1,purple,4/24/20,1,0,18.5,31
+2,D,6,IS,Dormant,High Humidity,1,2,orange,4/24/20,3,2,19.9,72
+2,D,6,IS,Dormant,High Humidity,1,3,pink,4/24/20,1,0,3.5,3
+2,D,6,IS,Dormant,High Humidity,1,4,green,4/24/20,4,0,24.8,127
+2,D,6,IS,Dormant,High Humidity,1,5,yellow,4/24/20,1,0,8.6,10
+2,D,6,IS,Dormant,High Humidity,1,6,blue,4/24/20,2,1,7.1,19
+2,D,6,IS,Dormant,High Humidity,1,7,IC,4/24/20,NA,NA,NA,29
+2,D,6,IS,Dormant,High Humidity,1,8,IC,4/24/20,NA,NA,NA,130
+2,D,6,IS,Dormant,High Humidity,1,9,IC,4/24/20,NA,NA,NA,15
+2,D,6,IS,Dormant,High Humidity,1,10,IC,4/24/20,NA,NA,NA,25
+2,D,6,IS,Dormant,High Humidity,1,11,IC,4/24/20,NA,NA,NA,50
+2,D,6,IS,Dormant,High Humidity,1,12,IC,4/24/20,NA,NA,NA,30
+2,D,6,IS,Dormant,High Humidity,1,13,IC,4/24/20,NA,NA,NA,5
+2,D,6,IS,Dormant,High Humidity,1,14,IC,4/24/20,NA,NA,NA,12
+2,D,6,IS,Dormant,High Humidity,1,15,IC,4/24/20,NA,NA,NA,213
+2,D,6,IS,Dormant,High Humidity,1,16,OC,4/24/20,NA,NA,NA,278
+2,D,6,IS,Dormant,High Humidity,1,17,OC,4/24/20,NA,NA,NA,105
+2,D,6,IS,Dormant,High Humidity,1,18,OC,4/24/20,NA,NA,NA,18
+2,D,6,IS,Dormant,High Humidity,1,19,OC,4/24/20,NA,NA,NA,38
+2,D,6,IS,Dormant,High Humidity,1,20,OC,4/24/20,NA,NA,NA,133
+2,D,8,IS,Non-Dormant,Litter,1,1,blue,4/24/20,5,4,28.6,322
+2,D,8,IS,Non-Dormant,Litter,1,2,pink,4/24/20,1,0,17.6,18
+2,D,8,IS,Non-Dormant,Litter,1,3,OC,4/24/20,1,2,23.8,55
+2,D,8,IS,Non-Dormant,Litter,1,4,OC,4/24/20,1,3,29.6,61
+2,D,8,IS,Non-Dormant,Litter,1,5,OC,4/24/20,1,0,8,9
+2,D,8,IS,Non-Dormant,Litter,1,6,OC,4/24/20,1,3,34.5,112
+2,D,8,IS,Non-Dormant,Litter,1,7,OC,4/24/20,1,4,39.8,176
+2,D,8,IS,Non-Dormant,Litter,1,8,OC,4/24/20,1,0,7.6,7
+2,D,8,IS,Non-Dormant,Litter,1,9,OC,4/24/20,1,0,13,10
+2,D,8,IS,Non-Dormant,Litter,1,10,OC,4/24/20,1,3,26.5,45
+2,D,8,IS,Non-Dormant,Litter,1,11,OC,4/24/20,2,6,29.8,242
+3,D,9,IS,Non-Dormant,Control,1,2,IC,6-May,1,0,8.5,5
+3,D,9,IS,Non-Dormant,Control,1,3,IC,6-May,1,0,2.9,2
+3,D,9,IS,Non-Dormant,Control,1,4,OC,6-May,4,0,22.8,110
+3,D,9,IS,Non-Dormant,Control,1,5,OC,6-May,5,2,30,339
+3,D,9,IS,Non-Dormant,Control,1,6,OC,6-May,8,1,27.6,320
+3,D,13,IS,Dormant,Control,1,1,yellow,6-May,4,0,7.1,21
+3,D,13,IS,Dormant,Control,1,2,OC,6-May,2,2,16.4,80
+3,D,13,IS,Dormant,Control,1,3,OC,6-May,4,3,20.2,135
+3,D,13,IS,Dormant,Control,1,4,OC,6-May,1,1,12.8,22
+3,D,13,IS,Dormant,Control,1,5,OC,6-May,2,2,17.3,83
+3,D,13,IS,Dormant,Control,1,6,OC,6-May,3,1,11.5,25
+3,D,13,IS,Dormant,Control,1,7,OC,6-May,1,2,22.2,62
+4,E,1,IS,Non-Dormant,Native Soil,1,1,orange,5/6/20,1,0,11.5,22
+4,E,1,IS,Non-Dormant,Native Soil,1,2,pink,5/6/20,1,0,15.5,16
+4,E,1,IS,Non-Dormant,Native Soil,1,3,yellow,5/6/20,1,0,15.7,22
+4,E,1,IS,Non-Dormant,Native Soil,1,4,purple,5/6/20,1,0,8.5,9
+4,E,1,IS,Non-Dormant,Native Soil,1,5,green,5/6/20,2,0,11.4,8
+4,E,1,IS,Non-Dormant,Native Soil,1,6,blue,5/6/20,1,1,9.5,8
+4,E,1,IS,Non-Dormant,Native Soil,1,7,purple-orange,5/6/20,1,0,7.9,12
+4,E,1,IS,Non-Dormant,Native Soil,1,8,purple-pink,5/6/20,1,1,15.1,27
+4,E,1,IS,Non-Dormant,Native Soil,1,9,green-orange,5/6/20,1,0,22.6,37
+4,E,1,IS,Non-Dormant,Native Soil,1,10,yellow-blue,5/6/20,1,0,3.5,3
+4,E,1,IS,Non-Dormant,Native Soil,1,11,IC,5/6/20,1,2,13.2,24
+4,E,1,IS,Non-Dormant,Native Soil,1,12,IC,5/6/20,1,0,18.4,15
+4,E,1,IS,Non-Dormant,Native Soil,1,13,IC,5/6/20,1,0,5.7,6
+4,E,1,IS,Non-Dormant,Native Soil,1,14,IC,5/6/20,1,0,12.8,12
+4,E,1,IS,Non-Dormant,Native Soil,1,15,IC,5/6/20,1,2,14.1,18
+4,E,1,IS,Non-Dormant,Native Soil,1,16,IC,5/6/20,1,0,4.9,4
+4,E,1,IS,Non-Dormant,Native Soil,1,17,IC,5/6/20,1,1,17.5,16
+4,E,1,IS,Non-Dormant,Native Soil,1,18,IC,5/6/20,1,0,7.8,9
+4,E,1,IS,Non-Dormant,Native Soil,1,19,IC,5/6/20,1,0,11.3,13
+4,E,1,IS,Non-Dormant,Native Soil,1,20,IC,5/6/20,1,0,10.9,10
+4,E,2,IS,Mixed,Control,1,3,blue,5/7/20,2,0,3.5,6
+4,E,2,IS,Mixed,Control,1,4,IC,5/7/20,6,0,8.2,29
+4,E,2,IS,Mixed,Control,1,5,IC,5/7/20,4,1,21.5,93
+4,E,2,IS,Mixed,Control,1,6,OC,5/7/20,2,3,19.5,35
+4,E,2,IS,Mixed,Control,1,7,OC,5/7/20,6,3,30.5,301
+4,E,2,IS,Mixed,Control,1,8,OC,5/7/20,1,0,7.5,9
+4,E,2,IS,Mixed,Control,1,9,OC,5/7/20,1,2,30.8,57
+4,E,2,IS,Mixed,Control,1,10,OC,5/7/20,3,2,24,207
+4,E,2,IS,Mixed,Control,1,11,OC,5/7/20,3,2,15.4,25
+4,E,2,IS,Mixed,Control,1,12,OC,5/7/20,3,0,12.2,57
+4,E,2,IS,Mixed,Control,1,13,OC,5/7/20,3,3,10.7,14
+4,E,2,IS,Mixed,Control,1,14,OC,5/7/20,1,0,8.8,12
+4,E,2,IS,Mixed,Control,1,15,OC,5/7/20,3,1,9.9,8
+4,E,2,IS,Mixed,Control,1,16,OC,5/7/20,3,2,9.9,57
+4,E,2,IS,Mixed,Control,1,17,OC,5/7/20,6,5,25.7,438
+4,E,3,IS,Non-Dormant,Control,1,2,IC,5/7/20,6,5,21.9,279
+2,E,7,IS,Dormant,Litter,1,1,OC,22-Apr,1,0,2.4,2
+2,E,7,IS,Dormant,Litter,1,2,OC,22-Apr,1,0,9.6,11
+2,E,7,IS,Dormant,Litter,1,3,OC,22-Apr,1,0,2.7,2
+2,E,7,IS,Dormant,Litter,1,4,OC,22-Apr,1,0,4,2
+2,E,7,IS,Dormant,Litter,1,5,OC,22-Apr,1,2,9.8,18
+2,E,7,IS,Dormant,Litter,1,6,OC,22-Apr,1,4,23,137
+2,E,7,IS,Dormant,Litter,1,7,OC,22-Apr,1,0,15.8,21
+2,E,7,IS,Dormant,Litter,1,8,OC,22-Apr,1,0,14.9,17
+2,E,7,IS,Dormant,Litter,1,9,OC,22-Apr,4,1,21.9,159
+4,F,3,IS,Dormant,High Humidity,1,1,purple,5/7/20,12,10,13.7,419
+4,F,3,IS,Dormant,High Humidity,1,2,orange,5/7/20,1,0,6.2,16
+4,F,3,IS,Dormant,High Humidity,1,5,blue,5/7/20,1,0,9.4,21
+4,F,3,IS,Dormant,High Humidity,1,6,pink,5/7/20,1,5,10.1,70
+4,F,3,IS,Dormant,High Humidity,1,7,IC,5/7/20,1,1,18.5,28
+4,F,3,IS,Dormant,High Humidity,1,8,IC,5/7/20,2,0,13.2,22
+4,F,3,IS,Dormant,High Humidity,1,9,IC,5/7/20,1,1,17.9,36
+4,F,3,IS,Dormant,High Humidity,1,10,IC,5/7/20,1,0,5.9,9
+4,F,3,IS,Dormant,High Humidity,1,11,IC,5/7/20,1,0,20.4,35
+4,F,3,IS,Dormant,High Humidity,1,12,OC,5/7/20,2,1,23.4,79
+4,F,3,IS,Dormant,High Humidity,1,13,OC,5/7/20,1,0,37.5,50
+4,F,3,IS,Dormant,High Humidity,1,14,OC,5/7/20,1,2,9.5,22
+4,F,3,IS,Dormant,High Humidity,1,15,OC,5/7/20,1,5,26.5,153
+4,F,3,IS,Dormant,High Humidity,1,16,OC,5/7/20,3,5,28.2,273
+4,F,3,IS,Dormant,High Humidity,1,17,OC,5/7/20,1,1,15.2,33
+4,F,3,IS,Dormant,High Humidity,1,18,OC,5/7/20,2,2,14.9,47
+4,F,3,IS,Dormant,High Humidity,1,19,OC,5/7/20,1,0,23.5,28
+4,F,3,IS,Dormant,High Humidity,1,20,OC,5/7/20,8,6,44.7,1000
+4,F,4,IS,Mixed,High Humidity,1,1,orange,8-May,8,4,23.8,211
+4,F,4,IS,Mixed,High Humidity,1,3,blue,8-May,1,0,3.4,4
+4,F,4,IS,Mixed,High Humidity,1,4,purple,8-May,1,0,11.5,16
+4,F,4,IS,Mixed,High Humidity,1,5,pink,8-May,3,1,18,51
+4,F,4,IS,Mixed,High Humidity,1,6,IC,8-May,1,0,4.6,7
+4,F,4,IS,Mixed,High Humidity,1,7,IC,8-May,1,0,5.7,7
+4,F,4,IS,Mixed,High Humidity,1,8,IC,8-May,1,2,22.3,84
+4,F,4,IS,Mixed,High Humidity,1,9,IC,8-May,1,0,7.9,13
+4,F,4,IS,Mixed,High Humidity,1,10,IC,8-May,1,1,14.8,24
+4,F,4,IS,Mixed,High Humidity,1,11,IC,8-May,3,1,14.9,56
+4,F,4,IS,Mixed,High Humidity,1,12,IC,8-May,1,1,21.8,34
+4,F,4,IS,Mixed,High Humidity,1,13,IC,8-May,1,1,17.3,32
+4,F,4,IS,Mixed,High Humidity,1,14,IC,8-May,3,1,26.8,52
+4,F,4,IS,Mixed,High Humidity,1,15,IC,8-May,1,0,8,9
+4,F,4,IS,Mixed,High Humidity,1,16,IC,8-May,1,2,21,106
+4,F,4,IS,Mixed,High Humidity,1,17,IC,8-May,1,1,23.7,55
+4,F,4,IS,Mixed,High Humidity,1,18,IC,8-May,4,3,24.4,212
+4,F,4,IS,Mixed,High Humidity,1,19,OC,8-May,2,2,20.7,50
+4,F,4,IS,Mixed,High Humidity,1,20,OC,8-May,8,3,36,783
+2,F,6,IS,Dormant,Native Soil,1,1,green,4/27/20,2,4,23.6,81
+2,F,6,IS,Dormant,Native Soil,1,2,orange,4/27/20,6,0,19,125
+2,F,6,IS,Dormant,Native Soil,1,4,blue,4/27/20,3,1,19.5,88
+2,F,6,IS,Dormant,Native Soil,1,5,yellow,4/27/20,1,2,19.2,60
+2,F,6,IS,Dormant,Native Soil,1,6,purple,4/27/20,2,2,12.1,33
+2,F,6,IS,Dormant,Native Soil,1,7,pink-green,4/27/20,1,0,3.9,4
+2,F,6,IS,Dormant,Native Soil,1,8,blue-yellow,4/27/20,1,2,26.7,79
+2,F,6,IS,Dormant,Native Soil,1,9,purple-orange,4/27/20,1,0,1.4,2
+2,F,6,IS,Dormant,Native Soil,1,10,pink-yellow,4/27/20,1,0,13.6,16
+2,F,6,IS,Dormant,Native Soil,1,11,orange-blue,4/27/20,1,6,23.8,91
+2,F,6,IS,Dormant,Native Soil,1,12,IC,4/27/20,1,0,7.8,11
+2,F,6,IS,Dormant,Native Soil,1,13,IC,4/27/20,1,0,8.5,10
+2,F,6,IS,Dormant,Native Soil,1,14,IC,4/27/20,1,0,2.9,4
+2,F,6,IS,Dormant,Native Soil,1,15,IC,4/27/20,1,0,7,9
+2,F,6,IS,Dormant,Native Soil,1,16,IC,4/27/20,1,0,15.5,19
+2,F,6,IS,Dormant,Native Soil,1,17,IC,4/27/20,3,1,17.5,60
+2,F,6,IS,Dormant,Native Soil,1,18,IC,4/27/20,1,0,7.5,12
+2,F,6,IS,Dormant,Native Soil,1,19,IC,4/27/20,1,0,11.5,15
+2,F,6,IS,Dormant,Native Soil,1,20,IC,4/27/20,6,2,24.5,210
+2,F,8,IS,Non-Dormant,Native Soil,1,1,yellow,4/27/20,1,0,8.9,13
+2,F,8,IS,Non-Dormant,Native Soil,1,2,pink,4/27/20,3,3,31,221
+2,F,8,IS,Non-Dormant,Native Soil,1,3,blue,4/27/20,2,3,26.8,66
+2,F,8,IS,Non-Dormant,Native Soil,1,4,green,4/27/20,2,1,31,83
+2,F,8,IS,Non-Dormant,Native Soil,1,5,orange,4/27/20,1,3,22.5,64
+2,F,8,IS,Non-Dormant,Native Soil,1,6,IC,4/27/20,2,1,28.9,71
+2,F,8,IS,Non-Dormant,Native Soil,1,7,IC,4/27/20,1,1,15.9,20
+2,F,8,IS,Non-Dormant,Native Soil,1,8,IC,4/27/20,1,1,27,41
+2,F,8,IS,Non-Dormant,Native Soil,1,9,IC,4/27/20,1,0,7.5,4
+2,F,8,IS,Non-Dormant,Native Soil,1,10,IC,4/27/20,1,0,8,6
+2,F,8,IS,Non-Dormant,Native Soil,1,11,IC,4/27/20,NA,NA,NA,166
+2,F,8,IS,Non-Dormant,Native Soil,1,12,IC,4/27/20,NA,NA,NA,36
+2,F,8,IS,Non-Dormant,Native Soil,1,13,IC,4/27/20,NA,NA,NA,245
+2,F,8,IS,Non-Dormant,Native Soil,1,14,IC,4/27/20,NA,NA,NA,106
+2,F,8,IS,Non-Dormant,Native Soil,1,15,IC,4/27/20,NA,NA,NA,171
+2,F,8,IS,Non-Dormant,Native Soil,1,16,IC,4/27/20,NA,NA,NA,268
+2,F,8,IS,Non-Dormant,Native Soil,1,17,IC,4/27/20,NA,NA,NA,10
+2,F,8,IS,Non-Dormant,Native Soil,1,18,IC,4/27/20,NA,NA,NA,34
+2,F,8,IS,Non-Dormant,Native Soil,1,19,IC,4/27/20,NA,NA,NA,100
+2,F,8,IS,Non-Dormant,Native Soil,1,20,IC,4/27/20,NA,NA,NA,102
+6,F,9,IS,Non-Dormant,Control,1,1,OC,15-Apr,1,2,24.2,49
+4,G,2,IS,Dormant,Control,1,2,IC,8-May,2,0,10.4,14
+4,G,2,IS,Dormant,Control,1,3,OC,8-May,5,0,8.4,9
+4,G,2,IS,Dormant,Control,1,4,OC,8-May,5,2,30.2,256
+4,G,2,IS,Dormant,Control,1,5,OC,8-May,7,2,32.8,777
+4,G,2,IS,Dormant,Control,1,6,OC,8-May,3,0,3.9,7
+4,G,2,IS,Dormant,Control,1,7,OC,8-May,1,1,10.8,9
+4,G,2,IS,Dormant,Control,1,8,OC,8-May,2,0,17.9,87
+4,G,3,IS,Mixed,Litter,1,1,yellow,5/8/20,2,0,10.8,25
+4,G,3,IS,Mixed,Litter,1,3,green,8-May,4,3,22.5,308
+4,G,3,IS,Mixed,Litter,1,4,IC,8-May,1,2,15.8,51
+4,G,3,IS,Mixed,Litter,1,5,IC,8-May,2,2,12,52
+4,G,3,IS,Mixed,Litter,1,6,OC,8-May,1,0,14.7,19
+4,G,3,IS,Mixed,Litter,1,7,OC,8-May,1,3,37.4,92
+4,G,3,IS,Mixed,Litter,1,8,OC,8-May,2,1,15.8,56
+4,G,3,IS,Mixed,Litter,1,9,OC,8-May,1,1,6.2,12
+4,G,3,IS,Mixed,Litter,1,10,OC,8-May,2,1,14,50
+4,G,3,IS,Mixed,Litter,1,11,OC,8-May,3,2,18.9,119
+4,G,3,IS,Mixed,Litter,1,12,OC,8-May,1,1,17.9,32
+4,G,3,IS,Mixed,Litter,1,13,OC,8-May,1,3,20.9,58
+4,G,3,IS,Mixed,Litter,1,14,OC,8-May,2,1,14.7,44
+4,G,3,IS,Mixed,Litter,1,15,OC,8-May,1,1,14.8,20
+6,H,12,IS,Dormant,Litter,1,1,OC,15-Apr,2,0,14,38
+6,H,12,IS,Dormant,Litter,1,2,OC,15-Apr,2,4,27.9,152
+6,H,12,IS,Dormant,Litter,1,3,OC,15-Apr,1,0,11.4,21
+4,J,2,IS,Dormant,Native Soil,1,1,pink,8-May,1,3,17.2,49
+4,J,2,IS,Dormant,Native Soil,1,2,green,8-May,1,0,8.8,11
+4,J,2,IS,Dormant,Native Soil,1,3,purple,8-May,1,5,23.9,89
+4,J,2,IS,Dormant,Native Soil,1,4,blue,8-May,1,3,22,33
+4,J,2,IS,Dormant,Native Soil,1,5,yellow,8-May,1,1,16.5,27
+4,J,2,IS,Dormant,Native Soil,1,6,orange,8-May,1,2,18.4,44
+4,J,2,IS,Dormant,Native Soil,1,7,IC,8-May,1,2,18.9,52
+4,J,2,IS,Dormant,Native Soil,1,8,IC,8-May,1,0,9.7,13
+4,J,2,IS,Dormant,Native Soil,1,9,IC,8-May,1,0,3,4
+4,J,2,IS,Dormant,Native Soil,1,10,IC,8-May,1,0,4.8,6
+4,J,2,IS,Dormant,Native Soil,1,11,IC,8-May,4,0,26.8,61
+4,J,2,IS,Dormant,Native Soil,1,12,IC,8-May,1,2,20.8,65
+4,J,2,IS,Dormant,Native Soil,1,13,OC,8-May,3,0,21.1,41
+4,J,2,IS,Dormant,Native Soil,1,14,OC,8-May,1,0,9.4,11
+4,J,2,IS,Dormant,Native Soil,1,15,OC,8-May,1,0,14.7,16
+4,J,2,IS,Dormant,Native Soil,1,16,OC,8-May,2,5,27.2,254
+7,L,7,IS,Mixed,Native Soil,1,1,orange,5/8/20,1,5,24.8,161
+7,L,7,IS,Mixed,Native Soil,1,2,green,5/8/20,1,0,8.4,9
+7,L,7,IS,Mixed,Native Soil,1,3,pink,5/8/20,1,0,15.2,27
+8,L,10,IS,Dormant,Native Soil,1,1,purple,8-May,1,3,31.3,130
+8,L,10,IS,Dormant,Native Soil,1,2,yellow,8-May,1,0,13.8,22
+8,L,10,IS,Dormant,Native Soil,1,3,blue,8-May,1,0,13.2,18
+8,L,10,IS,Dormant,Native Soil,1,4,orange,8-May,1,0,10.3,15
+8,L,11,IS,Dormant,Control,1,2,purple,5/8/20,3,3,18.3,234
+7,M,1,IS,Non-Dormant,Native Soil,1,1,purple,5/8/20,5,1,24.9,177
+7,M,6,IS,Mixed,Control,1,1,blue,5/8/20,6,5,15.8,179
+8,M,9,IS,Mixed,Control,1,4,green,5/8/20,1,1,7.5,15
+8,M,9,IS,Mixed,Control,1,8,orange-green,8-May,1,1,6.6,18
+8,M,9,IS,Mixed,Control,1,10,pink-yellow,8-May,4,0,16.4,65
+8,M,12,IS,Non-Dormant,Native Soil,1,1,purple,8-May,3,3,29,204
+8,M,13,IS,Mixed,Native Soil,1,2,purple,8-May,1,0,7.5,10
+8,M,13,IS,Mixed,Native Soil,1,3,pink,8-May,1,0,29,47
+8,M,13,IS,Mixed,Native Soil,1,4,blue,8-May,1,0,5.4,6
+8,M,13,IS,Mixed,Native Soil,1,5,yellow,8-May,1,0,7.4,10
+8,M,13,IS,Mixed,Native Soil,1,6,orange,8-May,1,0,1.5,3
+8,M,13,IS,Mixed,Native Soil,1,7,orange-yellow,8-May,1,3,21.9,85
+1,A,0,IS,Dormant,Litter,2,0,unmarked,NA,0,0,0,0
+2,A,7,IS,Mixed,Native Soil,2,1,pink,4/15/21,1,0,2.6,2
+2,A,7,IS,Mixed,Native Soil,2,2,orange,4/15/21,1,0,12.9,19
+2,A,7,IS,Mixed,Native Soil,2,3,purple,4/15/21,1,1,16,27
+2,A,7,IS,Mixed,Native Soil,2,4,blue,4/15/21,1,0,12,13
+2,A,7,IS,Mixed,Native Soil,2,5,unmarked,4/15/21,1,0,6.9,7
+2,A,7,IS,Mixed,Native Soil,2,6,unmarked,4/15/21,1,0,1.6,2
+2,A,7,IS,Mixed,Native Soil,2,7,unmarked,4/15/21,1,0,4.3,4
+2,A,7,IS,Mixed,Native Soil,2,8,unmarked,4/15/21,1,0,3.2,3
+2,A,7,IS,Mixed,Native Soil,2,9,unmarked,4/15/21,1,0,3.5,3
+2,A,7,IS,Mixed,Native Soil,2,10,unmarked,4/15/21,1,0,7.8,7
+2,A,7,IS,Mixed,Native Soil,2,11,unmarked,4/15/21,1,0,8.4,7
+2,A,7,IS,Mixed,Native Soil,2,12,unmarked,4/15/21,1,0,1.8,2
+2,A,7,IS,Mixed,Native Soil,2,13,unmarked,4/15/21,1,0,2.5,2
+2,A,7,IS,Mixed,Native Soil,2,14,unmarked,4/15/21,1,0,5.5,3
+2,A,7,IS,Mixed,Native Soil,2,15,unmarked,4/15/21,1,0,11.4,9
+2,A,7,IS,Mixed,Native Soil,2,16,unmarked,4/15/21,1,0,2.5,2
+2,A,7,IS,Mixed,Native Soil,2,17,unmarked,4/15/21,1,0,1.2,2
+2,A,7,IS,Mixed,Native Soil,2,18,unmarked,4/15/21,1,0,4.8,4
+2,A,7,IS,Mixed,Native Soil,2,19,unmarked,4/15/21,1,0,3.6,2
+2,A,7,IS,Mixed,Native Soil,2,20,unmarked,4/15/21,1,0,3.2,3
+3,A,9,IS,Dormant,Native Soil,2,1,purple,4/23/21,1,0,0.4,1
+3,A,9,IS,Dormant,Native Soil,2,2,pink,4/23/21,1,0,2.1,3
+3,A,9,IS,Dormant,Native Soil,2,4,green,4/23/21,1,0,2.5,3
+3,A,9,IS,Dormant,Native Soil,2,5,orange,4/23/21,1,0,6.5,7
+3,A,9,IS,Dormant,Native Soil,2,10,purple-orange,4/23/21,1,0,9.4,13
+3,A,9,IS,Dormant,Native Soil,2,11,purple-yellow,4/23/21,1,0,8.4,13
+3,A,9,IS,Dormant,Native Soil,2,12,pink-blue,4/23/21,1,0,6,5
+3,A,9,IS,Dormant,Native Soil,2,13,pink-green,4/23/21,1,0,5.4,6
+3,A,9,IS,Dormant,Native Soil,2,14,pink-yellow,4/23/21,1,0,1.2,1
+3,A,9,IS,Dormant,Native Soil,2,15,orange-blue,4/23/21,1,0,1.8,2
+3,A,9,IS,Dormant,Native Soil,2,17,blue-green,4/23/21,1,0,2.9,4
+3,A,9,IS,Dormant,Native Soil,2,18,unmarked,4/23/21,1,0,2,3
+3,A,9,IS,Dormant,Native Soil,2,19,unmarked,4/23/21,1,0,9.1,7
+3,A,9,IS,Dormant,Native Soil,2,20,unmarked,4/23/21,1,0,10.3,11
+2,B,6,IS,Non-Dormant,High Humidity,2,2,pink,4/15/21,1,0,8.8,11
+2,B,6,IS,Non-Dormant,High Humidity,2,3,orange,4/15/21,1,0,2.5,4
+2,B,6,IS,Non-Dormant,High Humidity,2,4,yellow,4/15/21,1,0,2.6,2
+2,B,6,IS,Non-Dormant,High Humidity,2,6,purple,4/15/21,1,0,3,3
+2,B,6,IS,Non-Dormant,High Humidity,2,9,purple-green,4/15/21,1,0,9,9
+2,B,6,IS,Non-Dormant,High Humidity,2,10,purple-blue,4/15/21,1,0,8.5,9
+2,B,6,IS,Non-Dormant,High Humidity,2,11,unmarked,4/15/21,1,0,4.5,5
+2,B,6,IS,Non-Dormant,High Humidity,2,12,unmarked,4/15/21,1,0,3.3,2
+2,B,6,IS,Non-Dormant,High Humidity,2,13,unmarked,4/15/21,1,0,1.2,1
+2,B,6,IS,Non-Dormant,High Humidity,2,14,unmarked,4/15/21,1,0,1.8,2
+2,B,6,IS,Non-Dormant,High Humidity,2,15,unmarked,4/15/21,1,0,8,8
+2,B,7,IS,Mixed,Control,2,1,unmarked,4/15/21,2,0,8.8,13
+2,B,7,IS,Mixed,Control,2,2,unmarked,4/15/21,1,0,9,5
+2,B,7,IS,Mixed,Control,2,3,unmarked,4/15/21,1,0,6.9,4
+2,C,7,IS,Dormant,Control,2,3,pink,4/15/21,1,0,10.7,9
+2,C,7,IS,Dormant,Control,2,5,blue,4/15/21,1,0,9.2,6
+2,C,7,IS,Dormant,Control,2,6,unmarked,4/15/21,1,0,5.3,5
+2,C,7,IS,Dormant,Control,2,7,unmarked,4/15/21,1,0,3.6,3
+2,C,7,IS,Dormant,Control,2,8,unmarked,4/15/21,1,0,5,3
+2,C,7,IS,Dormant,Control,2,9,unmarked,4/15/21,1,0,7,9
+2,C,7,IS,Dormant,Control,2,10,unmarked,4/15/21,1,0,14.2,22
+3,C,9,IS,Mixed,Control,2,1,unmarked,4/23/21,1,0,20.6,28
+3,C,10,IS,Dormant,High Humidity,2,6,green,4/23/21,1,0,2.7,3
+3,C,10,IS,Dormant,High Humidity,2,7,purple-yellow,4/23/21,1,0,2,2
+3,C,10,IS,Dormant,High Humidity,2,11,orange-green,4/23/21,1,0,6.6,7
+3,C,10,IS,Dormant,High Humidity,2,12,orange-blue,4/23/21,1,0,3,4
+3,C,10,IS,Dormant,High Humidity,2,13,orange-purple,4/23/21,1,0,1.4,2
+3,C,10,IS,Dormant,High Humidity,2,14,orange-pink,4/23/21,1,1,4,7
+3,C,10,IS,Dormant,High Humidity,2,16,blue-pink,4/23/21,1,0,3.3,4
+3,C,10,IS,Dormant,High Humidity,2,18,blue-yellow,4/23/21,1,0,1.2,1
+3,C,10,IS,Dormant,High Humidity,2,19,pink-yellow,4/23/21,1,0,2.3,2
+3,C,10,IS,Dormant,High Humidity,2,20,pink-purple,4/23/21,1,0,4.4,4
+2,D,5,IS,Mixed,High Humidity,2,7,purple,4/22/21,1,0,4.1,3
+2,D,5,IS,Mixed,High Humidity,2,12,blue-orange,4/22/21,1,0,3.1,3
+2,D,5,IS,Mixed,High Humidity,2,13,green-pink,4/22/21,1,0,5,5
+2,D,5,IS,Mixed,High Humidity,2,14,green-yellow,4/22/21,1,0,19.8,31
+2,D,5,IS,Mixed,High Humidity,2,15,green-purple,4/22/21,1,0,6.5,4
+2,D,5,IS,Mixed,High Humidity,2,16,green-orange,4/22/21,1,0,3.9,4
+2,D,5,IS,Mixed,High Humidity,2,17,unmarked,4/22/21,1,0,8.1,9
+2,D,5,IS,Mixed,High Humidity,2,18,unmarked,4/22/21,1,0,12.6,12
+2,D,5,IS,Mixed,High Humidity,2,19,unmarked,4/22/21,1,0,6.2,6
+2,D,5,IS,Mixed,High Humidity,2,20,unmarked,4/22/21,1,0,2.7,2
+2,D,6,IS,Dormant,High Humidity,2,10,blue-orange,4/22/21,1,0,6.2,5
+2,D,6,IS,Dormant,High Humidity,2,11,green-orange,4/22/21,NA,NA,NA,1
+2,D,6,IS,Dormant,High Humidity,2,12,blue-yellow,4/22/21,1,0,1.7,2
+2,D,6,IS,Dormant,High Humidity,2,13,green-yellow,4/22/21,NA,NA,NA,2
+2,D,6,IS,Dormant,High Humidity,2,15,purple-orange,4/22/21,NA,NA,NA,2
+2,D,6,IS,Dormant,High Humidity,2,17,purple-yellow,4/22/21,1,0,8.7,9
+2,D,6,IS,Dormant,High Humidity,2,19,yellow-orange,4/22/21,1,0,4.9,6
+2,D,6,IS,Dormant,High Humidity,2,20,yellow-pink,4/22/21,1,0,2.6,3
+2,D,6,IS,Dormant,High Humidity,2,21,unmarked,4/22/21,1,2,13.3,21
+2,D,6,IS,Dormant,High Humidity,2,22,unmarked,4/22/21,1,1,19.6,27
+2,D,6,IS,Dormant,High Humidity,2,23,unmarked,4/22/21,1,0,4.2,3
+2,D,8,IS,Non-Dormant,Litter,2,1,green,4/22/21,1,0,12.9,13
+2,D,8,IS,Non-Dormant,Litter,2,2,pink,4/22/21,1,2,23.8,51
+2,D,8,IS,Non-Dormant,Litter,2,3,blue,4/22/21,1,0,4.6,5
+2,D,8,IS,Non-Dormant,Litter,2,5,yellow,4/22/21,1,0,4,4
+2,D,8,IS,Non-Dormant,Litter,2,6,purple,4/22/21,1,0,9.3,8
+2,D,8,IS,Non-Dormant,Litter,2,7,unmarked,4/22/21,1,0,3.7,3
+2,D,8,IS,Non-Dormant,Litter,2,8,unmarked,4/22/21,1,0,4.7,3
+2,D,8,IS,Non-Dormant,Litter,2,9,unmarked,4/22/21,1,0,2.4,2
+2,D,8,IS,Non-Dormant,Litter,2,10,unmarked,4/22/21,1,0,8.4,6
+2,D,8,IS,Non-Dormant,Litter,2,11,unmarked,4/22/21,1,0,10.9,8
+2,D,8,IS,Non-Dormant,Litter,2,12,unmarked,4/22/21,1,0,4.8,6
+2,D,8,IS,Non-Dormant,Litter,2,13,unmarked,4/22/21,1,0,4.8,4
+2,D,8,IS,Non-Dormant,Litter,2,14,unmarked,4/22/21,1,0,9,4
+2,D,8,IS,Non-Dormant,Litter,2,15,unmarked,4/22/21,1,0,2.8,2
+2,D,8,IS,Non-Dormant,Litter,2,16,unmarked,4/22/21,3,0,5.4,9
+2,D,8,IS,Non-Dormant,Litter,2,17,unmarked,4/22/21,1,2,13.4,22
+2,D,8,IS,Non-Dormant,Litter,2,18,unmarked,4/22/21,1,0,5.6,5
+3,D,9,IS,Non-Dormant,Control,2,6,yellow,4/23/21,1,0,11.4,14
+3,D,9,IS,Non-Dormant,Control,2,7,purple-pink,4/23/21,1,0,3.4,9
+3,D,9,IS,Non-Dormant,Control,2,8,blue-green,4/23/21,1,0,10.9,13
+3,D,9,IS,Non-Dormant,Control,2,12,pink-yellow,4/23/21,1,0,7.9,8
+3,D,9,IS,Non-Dormant,Control,2,13,orange-blue,4/23/21,1,0,5,4
+3,D,9,IS,Non-Dormant,Control,2,14,orange-purple,4/23/21,1,0,5.9,5
+3,D,9,IS,Non-Dormant,Control,2,15,purple-green,4/23/21,1,0,4,3
+3,D,9,IS,Non-Dormant,Control,2,16,purple-yellow,4/23/21,1,0,5.8,5
+3,D,9,IS,Non-Dormant,Control,2,17,pink-blue,4/23/21,1,0,3.8,3
+3,D,9,IS,Non-Dormant,Control,2,18,pink-orange,4/23/21,1,0,12.5,13
+3,D,9,IS,Non-Dormant,Control,2,19,blue-yellow,4/23/21,1,0,8.6,8
+3,D,9,IS,Non-Dormant,Control,2,20,green-orange,4/23/21,1,0,5.6,5
+4,E,1,IS,Non-Dormant,Native Soil,2,1,unmarked,4/26/21,1,0,13.2,11
+4,E,1,IS,Non-Dormant,Native Soil,2,2,unmarked,4/26/21,1,0,5.4,3
+4,E,1,IS,Non-Dormant,Native Soil,2,3,unmarked,4/26/21,1,0,5.9,3
+4,E,1,IS,Non-Dormant,Native Soil,2,4,unmarked,4/26/21,1,0,2.1,1
+4,E,1,IS,Non-Dormant,Native Soil,2,5,unmarked,4/26/21,1,0,2.1,2
+4,E,1,IS,Non-Dormant,Native Soil,2,6,unmarked,4/26/21,1,0,8.4,12
+4,E,1,IS,Non-Dormant,Native Soil,2,7,unmarked,4/26/21,1,0,2.6,2
+4,E,1,IS,Non-Dormant,Native Soil,2,8,unmarked,4/26/21,1,0,5.8,3
+4,E,1,IS,Non-Dormant,Native Soil,2,9,unmarked,4/26/21,1,0,3.6,1
+4,E,1,IS,Non-Dormant,Native Soil,2,10,unmarked,4/26/21,1,0,8.4,6
+4,E,2,IS,Mixed,Control,2,1,unmarked,4/26/21,1,0,3.4,0
+4,E,2,IS,Mixed,Control,2,2,unmarked,4/26/21,1,0,2.2,1
+4,E,2,IS,Mixed,Control,2,3,unmarked,4/26/21,1,0,5.2,3
+4,F,3,IS,Dormant,High Humidity,2,15,yellow-orange,4/26/21,1,0,3.5,4
+4,F,3,IS,Dormant,High Humidity,2,16,pink-blue,4/26/21,1,0,5.5,4
+4,F,3,IS,Dormant,High Humidity,2,17,purple-yellow,4/26/21,1,0,NA,5
+4,F,3,IS,Dormant,High Humidity,2,18,purple,4/26/21,1,0,2.9,3
+4,F,3,IS,Dormant,High Humidity,2,19,green,4/26/21,1,0,3.8,6
+4,F,3,IS,Dormant,High Humidity,2,20,orange-pink,4/26/21,1,0,4.6,4
+4,F,4,IS,Mixed,High Humidity,2,8,purple-pink,4/26/21,2,0,8.6,13
+4,F,4,IS,Mixed,High Humidity,2,11,pink-yellow,4/26/21,1,0,4.3,4
+4,F,4,IS,Mixed,High Humidity,2,12,blue,4/26/21,1,0,2.5,2
+4,F,4,IS,Mixed,High Humidity,2,14,orange-green,4/26/21,1,0,11.6,15
+4,F,4,IS,Mixed,High Humidity,2,15,orange-purple,4/26/21,1,1,21.4,49
+4,F,4,IS,Mixed,High Humidity,2,16,blue-yellow,4/26/21,1,0,3.3,5
+4,F,4,IS,Mixed,High Humidity,2,17,unmarked,4/26/21,1,0,3.8,4
+4,F,4,IS,Mixed,High Humidity,2,18,unmarked,4/26/21,1,0,5.9,9
+4,F,4,IS,Mixed,High Humidity,2,19,unmarked,4/26/21,1,0,2.8,3
+4,F,4,IS,Mixed,High Humidity,2,20,unmarked,4/26/21,1,0,1.6,1
+4,F,4,IS,Mixed,High Humidity,2,21,unmarked,4/26/21,1,0,4.2,4
+4,F,4,IS,Mixed,High Humidity,2,22,unmarked,4/26/21,1,0,5.4,5
+4,F,4,IS,Mixed,High Humidity,2,23,unmarked,4/26/21,1,0,8.1,9
+4,F,4,IS,Mixed,High Humidity,2,24,unmarked,4/26/21,1,0,1.8,1
+4,F,4,IS,Mixed,High Humidity,2,25,unmarked,4/26/21,1,0,3.2,2
+4,F,4,IS,Mixed,High Humidity,2,26,unmarked,4/26/21,1,0,3.9,4
+4,F,4,IS,Mixed,High Humidity,2,27,unmarked,4/26/21,1,0,6.8,7
+4,F,4,IS,Mixed,High Humidity,2,28,unmarked,4/26/21,1,0,3.3,2
+4,F,4,IS,Mixed,High Humidity,2,29,unmarked,4/26/21,1,0,4.6,3
+4,F,4,IS,Mixed,High Humidity,2,30,unmarked,4/26/21,1,0,2.4,3
+4,F,4,IS,Mixed,High Humidity,2,31,unmarked,4/26/21,1,0,2,1
+4,F,4,IS,Mixed,High Humidity,2,32,unmarked,4/26/21,1,1,6.8,2
+4,F,4,IS,Mixed,High Humidity,2,33,unmarked,4/26/21,1,0,5.1,3
+4,F,4,IS,Mixed,High Humidity,2,34,unmarked,4/26/21,1,0,1.6,1
+4,F,4,IS,Mixed,High Humidity,2,35,unmarked,4/26/21,1,0,3,4
+2,F,6,IS,Dormant,Native Soil,2,1,pink,4/22/21,1,0,1.1,1
+2,F,6,IS,Dormant,Native Soil,2,2,green,4/22/21,1,0,5.8,7
+2,F,6,IS,Dormant,Native Soil,2,5,orange,4/22/21,1,0,0.9,1
+2,F,6,IS,Dormant,Native Soil,2,6,unmarked,4/22/21,1,0,4.2,5
+4,G,3,IS,Mixed,Litter,2,0,unmarked,NA,0,0,0,0
+4,J,2,IS,Dormant,Native Soil,2,19,blue-yellow,4/26/21,1,0,1.3,2
+7,K,4,IS,Dormant,Control,2,1,yellow,4/15/21,2,1,22.9,51
+7,K,4,IS,Dormant,Control,2,2,blue,4/15/21,1,0,6.7,5
+7,K,4,IS,Dormant,Control,2,3,green,4/15/21,1,1,17.7,32
+7,K,4,IS,Dormant,Control,2,4,pink,4/15/21,1,1,18.6,32
+7,K,4,IS,Dormant,Control,2,5,green-yellow,4/15/21,1,0,5.6,7
+7,K,4,IS,Dormant,Control,2,6,purple-yellow,4/15/21,1,0,1,1
+7,K,4,IS,Dormant,Control,2,7,blue-pink,4/15/21,1,0,5.5,7
+7,K,4,IS,Dormant,Control,2,8,orange-purple,4/15/21,1,0,7.5,9
+7,K,4,IS,Dormant,Control,2,9,pink-green,4/15/21,1,1,14.4,22
+7,K,4,IS,Dormant,Control,2,10,unmarked,4/15/21,1,0,1.8,2
+7,K,4,IS,Dormant,Control,2,11,unmarked,4/15/21,1,0,5.4,6
+7,K,4,IS,Dormant,Control,2,12,unmarked,4/15/21,1,0,2.9,3
+7,K,4,IS,Dormant,Control,2,13,unmarked,4/15/21,1,1,5.5,7
+7,K,4,IS,Dormant,Control,2,14,unmarked,4/15/21,2,2,6.7,11
+7,K,4,IS,Dormant,Control,2,15,unmarked,4/15/21,1,0,2.9,2
+7,K,4,IS,Dormant,Control,2,16,unmarked,4/15/21,1,1,10.5,16
+7,K,4,IS,Dormant,Control,2,17,unmarked,4/15/21,1,0,1.8,1
+7,K,4,IS,Dormant,Control,2,18,unmarked,4/15/21,1,0,8.8,11
+7,K,4,IS,Dormant,Control,2,19,unmarked,4/15/21,1,1,7.4,8
+7,K,4,IS,Dormant,Control,2,20,unmarked,4/15/21,1,0,3.6,4
+7,L,6,IS,Mixed,High Humidity,2,1,purple,4/15/21,1,0,9.9,13
+7,L,6,IS,Mixed,High Humidity,2,2,pink,4/15/21,1,0,3.8,3
+7,L,6,IS,Mixed,High Humidity,2,3,unmarked,4/15/21,1,0,4.7,4
+7,L,6,IS,Mixed,High Humidity,2,4,unmarked,4/15/21,1,0,9.7,9
+7,L,6,IS,Mixed,High Humidity,2,5,unmarked,4/15/21,1,0,4.9,5
+7,L,7,IS,Mixed,Native Soil,2,7,blue-yellow,4/15/21,1,0,2.2,2
+7,L,7,IS,Mixed,Native Soil,2,12,purple-yellow,4/15/21,1,0,1.5,1
+7,L,7,IS,Mixed,Native Soil,2,15,yellow-orange,4/15/21,1,0,1,1
+7,L,7,IS,Mixed,Native Soil,2,16,purple-orange,5/20/21,1,2,NA,3
+7,L,7,IS,Mixed,Native Soil,2,21,unmarked,4/15/21,1,0,5.5,5
+7,L,7,IS,Mixed,Native Soil,2,22,unmarked,4/15/21,1,0,9.4,9
+7,L,7,IS,Mixed,Native Soil,2,23,unmarked,4/15/21,1,0,8.4,11
+8,L,11,IS,Dormant,Control,2,10,orange-purple,4/23/21,1,0,10.7,15
+8,L,11,IS,Dormant,Control,2,12,yellow-pink,4/23/21,1,0,8.4,9
+8,L,11,IS,Dormant,Control,2,14,blue-pink,4/23/21,1,0,9.5,9
+8,L,11,IS,Dormant,Control,2,16,blue-yellow,4/23/21,1,0,4,4
+7,M,6,IS,Mixed,Control,2,1,unmarked,4/15/21,1,0,7.4,8
+8,M,9,IS,Mixed,Control,2,3,blue,4/22/21,1,0,12.1,15
+8,M,9,IS,Mixed,Control,2,4,purple,4/22/21,1,0,12.1,10
+8,M,9,IS,Mixed,Control,2,5,green,4/22/21,1,0,3.5,2
+8,M,9,IS,Mixed,Control,2,6,yellow,4/22/21,3,0,5.5,18
+8,M,9,IS,Mixed,Control,2,7,orange-pink,4/22/21,1,0,5.7,6
+8,M,9,IS,Mixed,Control,2,8,orange-blue,4/22/21,1,0,8.8,6
+8,M,9,IS,Mixed,Control,2,9,orange-purple,4/22/21,1,0,3.6,2
+8,M,9,IS,Mixed,Control,2,10,unmarked,4/22/21,1,0,3.4,4
+8,M,9,IS,Mixed,Control,2,11,unmarked,4/22/21,1,1,5.6,8
+8,M,9,IS,Mixed,Control,2,12,unmarked,4/22/21,1,0,4.7,3
+8,M,13,IS,Mixed,Native Soil,2,1,blue,4/22/21,1,0,12.7,12
+8,M,13,IS,Mixed,Native Soil,2,2,unmarked,4/22/21,1,0,14.1,15
+8,M,13,IS,Mixed,Native Soil,2,3,unmarked,4/22/21,1,0,2.6,1
+8,M,13,IS,Mixed,Native Soil,2,4,unmarked,4/22/21,1,0,20.8,21
+8,M,13,IS,Mixed,Native Soil,2,5,unmarked,4/22/21,3,0,10.4,20
+8,M,13,IS,Mixed,Native Soil,2,6,unmarked,4/22/21,1,0,5.8,3
+8,M,13,IS,Mixed,Native Soil,2,7,unmarked,4/22/21,1,0,6.3,3
+8,M,13,IS,Mixed,Native Soil,2,8,unmarked,4/22/21,1,0,4.9,4
+8,M,13,IS,Mixed,Native Soil,2,9,unmarked,4/22/21,1,0,15.5,17
+8,M,13,IS,Mixed,Native Soil,2,10,unmarked,4/22/21,1,0,4.6,4
+8,M,13,IS,Mixed,Native Soil,2,11,unmarked,4/22/21,1,0,3.5,2
