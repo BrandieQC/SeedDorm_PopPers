@@ -18,10 +18,10 @@ Folders in this repository
 -  Figures
 
 ### Raw.Data
-This folder includes all data collected and used for analyses in this study. This data will also be archived in Dryad.
+This folder includes all data collected and used for analyses in this study. This data is also archived in Dryad (Dataset DOI: 10.5061/dryad.t1g1jwtjd).
 
 ### Processed.Data
-This folder includes all data files output by the R scripts and other processed data files. This data will also be archived in Dryad.
+This folder includes all data files output by the R scripts and other processed data files. This data is also archived in Dryad (Dataset DOI: 10.5061/dryad.t1g1jwtjd).
 
 ### Figures
 This folder includes all figures output by the R scripts, labeled to match the figure numbers in the mauscripts. 
