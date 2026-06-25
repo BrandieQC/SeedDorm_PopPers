@@ -1,0 +1,118 @@
+---
+title: "SeasonalGerm_SBPots"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Seasonal Germ in SB Pots (Fig S6)
+
+## Load Libraries
+```{r}
+library(tidyverse)
+
+cbbPalette2 <- c("#E69F00","#000000", "#56B4E9","#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+sem <- function(x, na.rm=FALSE) {           
+  #for calculating standard error
+  sd(x,na.rm=na.rm)/sqrt(length(na.omit(x)))
+} 
+```
+
+## Load the SB Pot data
+```{r}
+allsbdata <- read_csv("../Raw.Data/AllSBData.csv") %>% 
+  unite("Pot_ID", Col:EnvtTrt, remove = FALSE)
+```
+
+## Need a data frame with the number of new seedlings for each date 
+```{r}
+sb_sdls_by_date <- allsbdata %>% 
+  mutate(Date=mdy(Date), JulianDate=yday(Date))
+```
+
+## Need a data frame with the total number of seedlings for each SB pot 
+```{r}
+sb_sdls_total <- allsbdata %>% 
+  group_by(Pot_ID, Year) %>% 
+  summarise(Total_Conf=sum(Confirmed.Total, na.rm = TRUE), Total_Max=sum(Max.Total, na.rm = TRUE))
+
+#0 germ in ND control year 2, 1 germ in D control year 2
+```
+
+```{r}
+sb_sdls_by_date %>% 
+  #filter(Newsdls>0) %>% 
+  #filter(Envt=="Control") %>% 
+  #filter(Dormancy=="Non-Dormant") %>% 
+  ggplot(aes(x=JulianDate, y=Confirmed.Total, group=Dormancy, color=Dormancy)) +
+ # geom_point() +
+  geom_line() + 
+  theme_classic() +
+  facet_grid(Year ~ EnvtTrt)
+
+sb_sdls_by_date %>% 
+  filter(Date>"2021-09-01", Date<"2021-12-01") %>% 
+  ggplot(aes(x=Date, y=Confirmed.Total, group=Dormancy, color=Dormancy)) +
+  geom_line() + 
+  theme_classic() +
+  facet_grid(Year ~ EnvtTrt)
+```
+
+## Alternative Seasons (split up Oct and Nov) - collapse winter and spring
+```{r}
+add_seasons_SB <- sb_sdls_by_date %>% 
+  mutate(Season=if_else(JulianDate >= 78 & JulianDate <= 264, "Summer", #includes Spring
+                                if_else(JulianDate >= 265 & JulianDate <= 298, "Early Fall", 
+                                       "Late Fall")))  #includes Winter
+#dates based on calendar dates for seasons (not actual climate)
+
+seasonal_wintspr_summary <- add_seasons_SB %>% 
+  group_by(Pot_ID,Dormancy, EnvtTrt, Block, Year, Season) %>% 
+  summarise(SumSeasonGerms_Conf=sum(Confirmed.Total, na.rm = TRUE),
+            SumSeasonGerms_Max=sum(Max.Total, na.rm = TRUE))
+
+#merge with total sdls
+seasonal_wintspr_summary_with_total <- left_join(seasonal_wintspr_summary, sb_sdls_total) %>% 
+  mutate(Year=str_replace(Year,"^", "Year ")) %>% 
+  unite("Dorm_Envt", Dormancy:EnvtTrt, remove = FALSE)
+
+seasonal_wintspr_props <- seasonal_wintspr_summary_with_total %>% 
+  mutate(PropSeason_Conf=SumSeasonGerms_Conf/Total_Conf,
+         PropSeason_Max=SumSeasonGerms_Max/Total_Max)
+
+seasonal_wintspr_props_summary <- seasonal_wintspr_props %>% 
+  group_by(Dorm_Envt,Dormancy, EnvtTrt, Year, Season) %>% 
+  summarise(meanSeasonGerm_Conf=mean(PropSeason_Conf, na.rm = TRUE), semSeasonGerm_Conf=sem(PropSeason_Conf, na.rm=TRUE),
+            meanSeasonGerm_Max=mean(PropSeason_Max, na.rm = TRUE), semSeasonGerm_Max=sem(PropSeason_Max, na.rm=TRUE))
+
+seasonal_wintspr_props_summary$Season <- factor(seasonal_wintspr_props_summary$Season,
+                                               levels = c('Summer','Early Fall', 'Late Fall','Winter_Spring')) 
+seasonal_wintspr_props_summary %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low"),
+         Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  ggplot(aes(x=Dormancy, y=meanSeasonGerm_Conf, fill=Season)) +
+  geom_bar(stat = "identity", position = "fill", alpha=0.9, width=0.5) +
+  theme_classic() +
+  labs(y="Avg Proportion \n of Germinants", x="Dormancy", title="Confirmed Total") +
+  theme(text=element_text(size=25)) +
+  scale_fill_manual(values=cbbPalette2) +
+  facet_grid(Year ~ EnvtTrt)
+ggsave("../Figures/FigS6_SeasonalGerm_SBPots_Conf.png", width = 12, height = 8, units = "in")
+
+seasonal_wintspr_props_summary %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low"),
+         Dormancy=str_replace(Dormancy, "Dormant", "High")) %>% 
+  ggplot(aes(x=Dormancy, y=meanSeasonGerm_Max, fill=Season)) +
+  geom_bar(stat = "identity", position = "fill", alpha=0.9, width=0.5) +
+  theme_classic() +
+  labs(y="Avg Proportion \n of Germinants", x="Dormancy", title="Max Total") +
+  theme(text=element_text(size=25)) +
+  scale_fill_manual(values=cbbPalette2) +
+  facet_grid(Year ~ EnvtTrt)
+ggsave("../Figures/FigS6_SeasonalGerm_SBPots_Max.png", width = 12, height = 8, units = "in")
+```
