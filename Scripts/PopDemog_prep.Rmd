@@ -140,6 +140,7 @@ newsdls_circle_long <-
 newsdls_circle_long_dates <- 
   newsdls_circle_long %>% 
   left_join(censusdates_all_julian)
+write_csv(newsdls_circle_long_dates, "../Processed.Data/NewSdlsbyDate.csv")
 ```
 
 ### By Year
