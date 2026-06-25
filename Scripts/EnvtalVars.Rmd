@@ -1,0 +1,176 @@
+---
+title: "EnvtalVars"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Soil Temp, Moisture, and PPFD (Fig S7)
+
+## Load Libraries
+```{r}
+library(tidyverse)
+
+ENVTPalette <- c("#333333","#0072B2","#D55E00","#E69F00")
+
+sem <- function(x, na.rm=FALSE) {           #for calculating standard error
+  sd(x,na.rm=na.rm)/sqrt(length(na.omit(x)))
+} 
+```
+
+## Load the data
+```{r}
+soil_temp <- read_csv("../Raw.Data/SoilTemp_frostincl_no2022.csv")
+swc <- read_csv("../Raw.Data/SWC_frostincl_wirecutNA_no2022_neg0s.csv")
+ppfd <- read_csv("../Raw.Data/PPFD.csv")
+```
+
+## Soil Temp
+```{r}
+soil_temp_daily_summary <- soil_temp %>% 
+    group_by(PopID, Block, Treatment, Year, Month, Date) %>% 
+    filter(!is.na(Data.Temp)) %>% 
+    summarize (meanValue=mean(Data.Temp), maxValue=max(Data.Temp), minValue=min(Data.Temp))
+
+ soil_temp__summary_month = soil_temp_daily_summary %>%
+    mutate(Date2 = mdy(Date))
+  
+soil_temp_summary_bytrt <- soil_temp__summary_month %>% 
+    group_by(Year, Month, Treatment) %>% 
+    summarize(meanDailyAvg=mean(meanValue), SEAVG=sd(meanValue)/sqrt(n()), meanDailyMax=mean(maxValue),
+              SEMAX=sd(maxValue)/sqrt(n()), meanDailyMin=mean(minValue), SEMIN=sd(minValue)/sqrt(n()))
+  
+soil_temp_summary_bytrt$Month <- factor(soil_temp_summary_bytrt$Month, 
+                                        levels = c('Start','June','July','Aug', 'Sept', 'Oct', 'Nov', 'Dec', 'Jan',
+                                                   'Feb', 'Mar', 'April', 'End'))
+soil_temp_summary_bytrt$Treatment <- factor(soil_temp_summary_bytrt$Treatment, levels = c('Control','High Humidity','Native Soil','Litter'))
+  
+soil_temp_MEAN <- soil_temp_summary_bytrt %>%
+    ggplot(aes(x=Month, y=meanDailyAvg, group=Treatment, color=Treatment)) +
+    geom_point(size=3.5) +
+    geom_line(size=1.5) +
+    geom_errorbar(aes(ymin=meanDailyAvg-SEAVG,ymax=meanDailyAvg+SEAVG),width=.2) +
+    theme_classic() +
+    xlab("Month") + ggtitle("Daily Average") + ylab("Avg Soil Temp (°C)") +
+    scale_colour_manual(values=ENVTPalette) +
+   theme(text=element_text(size=30), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+    facet_grid(. ~Year) 
+ggsave("../Figures/FigS7a_SoilTemp_Avg.png", width=22, height=8)
+  
+  soil_temp_MAX <- soil_temp_summary_bytrt %>% 
+    ggplot(aes(x=Month, y=meanDailyMax, group=Treatment, color=Treatment)) +
+    geom_point(size=3.5) +
+    geom_line(size=1.5)+
+    geom_errorbar(aes(ymin=meanDailyMax-SEMAX,ymax=meanDailyMax+SEMAX),width=.2) +
+    theme_classic() +
+    xlab("Month") + ggtitle("Daily Max") + ylab("Max Soil Temp (°C)") +
+    annotate("segment", x = 0, xend = 13, y = 30, yend = 30, colour = "red", linetype=2, linewidth=1.5) +
+    #annotate("segment", x = 5.2, xend = 5.2, y = 0, yend = 30, colour = "#333333", linetype=2, linewidth=1) +
+    scale_colour_manual(values=ENVTPalette) +
+    theme(text=element_text(size=30), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+    facet_grid(. ~Year) 
+ ggsave("../Figures/FigS7a_SoilTemp_Max.png", width=22, height=8)
+  
+ 
+  soil_temp_MIN <- soil_temp_summary_bytrt %>% 
+    ggplot(aes(x=Month, y=meanDailyMin, group=Treatment, color=Treatment)) +
+    geom_point(size=3.5) +
+    geom_line(size=1.5)+
+    geom_errorbar(aes(ymin=meanDailyMin-SEMIN,ymax=meanDailyMin+SEMIN),width=.2) +
+    theme_classic() +
+    xlab("Month") + ggtitle("Daily Min") + ylab("Min Soil Temp (°C)") +
+    annotate("segment", x = 0, xend = 13, y = 6, yend = 6, colour = "red", linetype=2,  linewidth=1.5) +
+    scale_colour_manual(values=ENVTPalette) +
+    theme(text=element_text(size=30), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+    facet_grid(. ~Year) 
+ggsave("../Figures/FigS7a_SoilTemp_Min.png", width=22, height=8)
+  
+  #soil_temp_summary_bytrt %>% filter(meanDailyMax>=30) %>% arrange(Month)
+```
+
+## Soil Moisture
+```{r}
+swc_daily_summary <- swc %>% 
+    group_by(PopID, Block, Treatment, Year, Month, Date) %>% 
+    filter(!is.na(Data.SWC)) %>% 
+    summarize (meanValue=mean(Data.SWC), maxValue=max(Data.SWC), minValue=min(Data.SWC))
+
+ swc__summary_month = swc_daily_summary %>%
+    mutate(Date2 = mdy(Date))
+  
+swc_summary_bytrt <- swc__summary_month %>% 
+    group_by(Year, Month, Treatment) %>% 
+    summarize(meanDailyAvg=mean(meanValue), SEAVG=sd(meanValue)/sqrt(n()), meanDailyMax=mean(maxValue),
+              SEMAX=sd(maxValue)/sqrt(n()), meanDailyMin=mean(minValue), SEMIN=sd(minValue)/sqrt(n()))
+  
+swc_summary_bytrt$Month <- factor(swc_summary_bytrt$Month, 
+                                        levels = c('Start','June','July','Aug', 'Sept', 'Oct', 'Nov', 'Dec', 'Jan',
+                                                   'Feb', 'Mar', 'April', 'End'))
+
+swc_summary_bytrt$Treatment <- factor(swc_summary_bytrt$Treatment, levels = c('Control','High Humidity','Native Soil','Litter'))
+  
+swc_MEAN <- swc_summary_bytrt %>%
+    ggplot(aes(x=Month, y=meanDailyAvg, group=Treatment, color=Treatment)) +
+    geom_point(size=3.5) +
+    geom_line(size=1.5) +
+    geom_errorbar(aes(ymin=meanDailyAvg-SEAVG,ymax=meanDailyAvg+SEAVG),width=.2) +
+    theme_classic() +
+    xlab("Month") + ggtitle("Daily Average") + ylab(bquote('Avg SWC'~(m^3/m))) +
+    scale_colour_manual(values=ENVTPalette) +
+   theme(text=element_text(size=30), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+    facet_grid(. ~Year) 
+ggsave("../Figures/FigS7b_SWC_Avg.png", width=22, height=8)
+  
+  swc_MAX <- swc_summary_bytrt %>% 
+    ggplot(aes(x=Month, y=meanDailyMax, group=Treatment, color=Treatment)) +
+    geom_point(size=3.5) +
+    geom_line(size=1.5)+
+    geom_errorbar(aes(ymin=meanDailyMax-SEMAX,ymax=meanDailyMax+SEMAX),width=.2) +
+    theme_classic() +
+    xlab("Month") + ggtitle("Daily Max") + ylab(bquote('Max SWC'~(m^3/m))) +
+    annotate("segment", x = 0, xend = 13, y = 0.3, yend = 0.3, colour = "red", linetype=2, linewidth=1.5) +
+    #annotate("segment", x = 5.2, xend = 5.2, y = 0, yend = 30, colour = "#333333", linetype=2, linewidth=1) +
+    scale_colour_manual(values=ENVTPalette) +
+    theme(text=element_text(size=30), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+    facet_grid(. ~Year) 
+ ggsave("../Figures/FigS7b_SWC_Max.png", width=22, height=8)
+  
+ 
+  swc_MIN <- swc_summary_bytrt %>% 
+    ggplot(aes(x=Month, y=meanDailyMin, group=Treatment, color=Treatment)) +
+    geom_point(size=3.5) +
+    geom_line(size=1.5)+
+    geom_errorbar(aes(ymin=meanDailyMin-SEMIN,ymax=meanDailyMin+SEMIN),width=.2) +
+    theme_classic() +
+    xlab("Month") + ggtitle("Daily Min") + ylab(bquote('Min SWC'~(m^3/m))) +
+    annotate("segment", x = 0, xend = 13, y = 0.1, yend = 0.1, colour = "red", linetype=2,  linewidth=1.5) +
+    scale_colour_manual(values=ENVTPalette) +
+    theme(text=element_text(size=30), axis.text.x = element_text(angle = 45,  hjust = 1)) +
+    facet_grid(. ~Year) 
+ggsave("../Figures/FigS7b_SWC_Min.png", width=22, height=8)
+```
+
+## PPFD
+```{r}
+ppfd_summary <- ppfd %>% 
+  group_by(Treatment) %>% 
+  summarise(meanPPFD=mean(PPFD), semPPFD=sem(PPFD))
+
+ppfd_summary %>% 
+  ggplot(aes(x=Treatment, y=meanPPFD, fill=Treatment)) +
+  geom_col(width = 0.7,position = position_dodge(0.75)) +
+  geom_errorbar(aes(ymin=meanPPFD-semPPFD, ymax=meanPPFD+semPPFD),
+                  width=.2, position =position_dodge(0.75)) +
+    theme_classic() +
+    xlab("Environmental Treatment") +
+   ylab("Average PPFD") +
+   scale_fill_manual(values=ENVTPalette) +
+    theme(text=element_text(size=37)) +
+    scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(0, 1250)) 
+ggsave("../Figures/FigS7c_PPFD.png", width=12, height=8)
+```
