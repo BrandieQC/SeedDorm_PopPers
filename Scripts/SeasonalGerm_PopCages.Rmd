@@ -1,0 +1,142 @@
+---
+title: "SeasonalGerm_PopCages"
+author: "Brandie QC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Seasonal Germ in Pop Cages (Fig S5) and Lab Germ (Fig S4)
+
+## Load Libraries
+```{r}
+library(tidyverse)
+
+BQSBPalette <- c("#FF9900","#B266FF", "#00CC00","#999999", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+cbbPalette2 <- c("#E69F00","#000000", "#56B4E9","#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+RILS_order <- c("Italy x Sweden","Germany x Tajikistan","UK x USA")
+Dorm_order <- c("High", "Mixed", "Low")
+Envt_order <- c('Control','High Humidity','Native Soil','Litter')
+
+sem <- function(x, na.rm=FALSE) {           
+  #for caclulating standard error
+  sd(x,na.rm=na.rm)/sqrt(length(na.omit(x)))
+} 
+```
+
+## Lab Germination Assay
+```{r}
+labgerm <- read_csv("../Raw.Data/LabGermAssays_AllRILs.csv")
+
+labgerm_summary <- labgerm %>% 
+  mutate(germprop = Germs.4wks/Total.Seeds) %>% 
+  filter(!is.na(germprop)) %>% 
+  group_by(RIL.SET, Dormancy, GermTrt) %>% 
+  summarise(meanGermProp=mean(germprop), SE=sem(germprop)) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "ND", "Low")) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "D", "High")) %>% 
+  mutate(RIL.SET=str_replace(RIL.SET, "Italy x Swe", "Italy x Sweden")) %>% 
+  mutate(RIL.SET=str_replace(RIL.SET, "Bay x Sha", "Germany x Tajikistan")) %>% 
+  mutate(RIL.SET=str_replace(RIL.SET, "Cal x Tac", "UK x USA")) %>% 
+  mutate(GermTrt=str_replace(GermTrt, "Above", "26°C")) %>% 
+  mutate(GermTrt=str_replace(GermTrt, "Cold", "10°C")) %>% 
+  mutate(GermTrt=str_replace(GermTrt, "Optimal", "18°C")) 
+
+labgerm_summary %>% 
+  ggplot(aes(x=GermTrt, y=meanGermProp, group=Dormancy, colour = Dormancy)) +
+  geom_point(size=3) +
+  geom_line(linewidth = 2) +
+  geom_errorbar(aes(ymin=meanGermProp-SE,ymax=meanGermProp+SE),
+                width=.2) +
+  labs(x="Temperature Treatment", y="Avg Germination  \n Proportion") + 
+  scale_colour_manual(values=BQSBPalette) +
+  theme_classic() +
+  theme(text=element_text(size=37)) +
+  facet_grid(. ~factor(RIL.SET, level = RILS_order))
+ggsave("../Figures/FigS4_LabGerm.png", width=18, height=6, units="in")
+```
+
+## Load the germ by date data
+```{r}
+#min number of seedlings by date, over all 3 years 
+minsdls_IC_by_date <- read_csv("../Processed.Data/NewSdlsbyDate.csv")
+
+#total min sdls 
+minsdls_IC_cages_total <- read_csv("../Processed.Data/TotalSeedlings.csv") 
+```
+
+## New sdls by date
+```{r}
+minsdls_IC_by_date %>% 
+  #filter(Newsdls>0) %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  #filter(Envt=="Control") %>% 
+  #filter(Dormancy=="Non-Dormant") %>% 
+  ggplot(aes(x=JulianDate, y=Newsdls, group=Dormancy, color=Dormancy)) +
+ # geom_point() +
+  geom_line() + 
+  theme_classic() +
+  facet_grid(Year ~ Envt)
+```
+
+## Alternative Seasons (split up Oct and Nov) - collapse wint-spring
+```{r}
+add_seasons_cages <- minsdls_IC_by_date %>% 
+  mutate(Season=if_else(JulianDate >= 78 & JulianDate <= 264, "Summer", #includes Spring
+                            if_else(JulianDate >= 265 & JulianDate <= 298, "Early Fall", 
+                                "Late Fall"))) #includes Winter
+#dates based on calendar dates for seasons (not actual climate)
+#note this does not take into account that 2020 was a leap year 
+
+seasonal_summary_wintspr <- 
+  add_seasons_cages %>% 
+  group_by(PopId,RILSet,Dormancy, Envt, Year, Season) %>% 
+  summarise(SumSeasonGerms=sum(Newsdls, na.rm = TRUE))
+
+#merge with total sdls
+seasonal_summary_wintspr_with_total <- left_join(seasonal_summary_wintspr, minsdls_IC_cages_total) %>% 
+  mutate(Year=str_replace(Year,"^", "Year ")) %>% 
+  unite("Dorm_Envt", Dormancy:Envt, remove = FALSE)
+
+seasonal_props_wintspr <- seasonal_summary_wintspr_with_total %>% 
+  mutate(PropSeason=SumSeasonGerms/Totalsdls)
+
+seasonal_props_wintspr_summary <- seasonal_props_wintspr %>% 
+  group_by(RILSet,Dorm_Envt,Dormancy, Envt, Year, Season) %>% 
+  summarise(meanSeasonGerm=mean(PropSeason, na.rm = TRUE), semSeasonGerm=sem(PropSeason, na.rm=TRUE)) %>% 
+  mutate(Dormancy=str_replace(Dormancy, "Non-Dormant", "Low"),
+         Dormancy=str_replace(Dormancy, "Dormant", "High"),
+         Dormancy=str_replace(Dormancy, "Mixed", "Mixed"))
+
+seasonal_props_wintspr_summary$Season <- factor(seasonal_props_wintspr_summary$Season, levels = c('Summer','Early Fall', 'Late Fall','Winter_Spring'))
+seasonal_props_wintspr_summary$Envt <- factor(seasonal_props_wintspr_summary$Envt, levels = Envt_order)
+seasonal_props_wintspr_summary$Dormancy <- factor(seasonal_props_wintspr_summary$Dormancy, levels = Dorm_order)
+
+seasonal_props_wintspr_summary %>% 
+  filter(RILSet=="Italy x Sweden") %>% 
+  ggplot(aes(x=Dormancy, y=meanSeasonGerm, fill=Season)) +
+  geom_bar(stat = "identity", position = "fill", alpha=0.9, width=0.5) +
+  theme_classic() +
+  labs(y="Avg Proportion of Germinants", x="Dormancy", title="Italy x Sweden") +
+  theme(text=element_text(size=25)) +
+  scale_fill_manual(values=cbbPalette2) +
+  facet_grid(Year ~ Envt)
+ggsave("../Figures/FigS5_SeasonalGerm_IS.png", width = 16, height = 8, units = "in")
+
+seasonal_props_wintspr_summary$RILSet <- factor(seasonal_props_wintspr_summary$RILSet, levels = RILS_order)
+
+seasonal_props_wintspr_summary %>% 
+  filter(Envt=="Control") %>% 
+  ggplot(aes(x=Dormancy, y=meanSeasonGerm, fill=Season)) +
+  geom_bar(stat = "identity", position = "fill", alpha=0.9, width=0.5) +
+  theme_classic() +
+  labs(y="Avg Proportion of Germinants", x="Dormancy", title="Control Treatment") +
+  theme(text=element_text(size=25)) +
+  scale_fill_manual(values=cbbPalette2) +
+  facet_grid(Year ~ RILSet)
+ggsave("../Figures/FigS5_SeasonalGerm_CTRL.png", width = 12, height = 8, units = "in")
+```
