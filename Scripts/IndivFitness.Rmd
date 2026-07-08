@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Code for calculating individual fitness and producing Figure 3
+# Code for calculating individual fitness and producing Figure 2
 
 ## Load Libraries
 ```{r}
@@ -68,7 +68,7 @@ lifetimefitness_supp_summary %>%
     scale_y_continuous(expand = c(0, 0), limits = c(0, 150)) +
     scale_x_discrete(limits=c("1", "2")) +
     facet_grid(. ~Envt)
-ggsave("../Figures/Fig3C_LifetimeFit_Envt.png", width=18, height=7.5, units="in")
+ggsave("../Figures/Fig2C_LifetimeFit_Envt.png", width=18, height=7.5, units="in")
 ```
 
 ### Sample Sizes
@@ -119,7 +119,7 @@ reponly_supp_summary %>%
     scale_y_continuous(expand = c(0, 0), limits = c(0, 180)) +
      scale_x_discrete(limits=c("1", "2")) +
     facet_grid(. ~Envt)
-ggsave("../Figures/Fig3B_RepOutput_Envt.png", width=18, height=7.5, units="in")
+ggsave("../Figures/Fig2B_RepOutput_Envt.png", width=18, height=7.5, units="in")
 ```
 
 ### Sample Sizes
@@ -160,7 +160,7 @@ survtorep_supp_summary %>%
   scale_y_continuous(expand = c(0, 0), limits = c(0, 1.05)) +
   scale_x_discrete(limits=c("1", "2")) +
   facet_grid(. ~Envt)
-ggsave("../Figures/Fig3A_IndivSurvtoRep_Envt.png", width=18, height=7.5, units="in")
+ggsave("../Figures/Fig2A_IndivSurvtoRep_Envt.png", width=18, height=7.5, units="in")
 ```
 
 ### Sample Sizes

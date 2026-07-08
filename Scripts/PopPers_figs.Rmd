@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Code for making population persistence figures (Figures 5 and S9F)
+# Code for making population persistence figures (Figures 3 and S9F)
 
 ## Load libraries and constants
 ```{r}
@@ -139,7 +139,7 @@ ISy1persgraph <- ISdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(
     scale_x_discrete(expand = expansion(mult = c(0,0))) + 
     scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#000000", "#E69F00", "#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISCtrl_Y1.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISCtrl_Y1.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden HH
@@ -164,7 +164,7 @@ humidy1persgraph <- humiddfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=f
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#E69F00", "#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISHH_Y1.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISHH_Y1.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden Native Soil
@@ -189,7 +189,7 @@ soily1persgraph <- soildfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=fac
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISNS_Y1.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISNS_Y1.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden Litter
@@ -214,7 +214,7 @@ strawy1persgraph <- strawdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=f
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#000000", "#E69F00", "#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISLitter_Y1.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISLitter_Y1.png", width=10, height=5, units="in")
 ```
 
 ## Year 2
@@ -315,7 +315,7 @@ ISy1persgraph <- ISdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#FFFF99","#994C00", "#E69F00","#D55E00","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISCtrl_Y2.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISCtrl_Y2.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden HH
@@ -339,7 +339,7 @@ humidy1persgraph <- humiddfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=f
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#FFFF99", "#E69F00","#D55E00","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISHH_Y2.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISHH_Y2.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden Native Soil
@@ -363,7 +363,7 @@ soily1persgraph <- soildfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=fac
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#FFFF99","#D55E00","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISNS_Y2.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISNS_Y2.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden Litter
@@ -387,7 +387,7 @@ strawy1persgraph <- strawdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=f
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#FFFF99","#994C00", "#E69F00","#D55E00","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISLitter_Y2.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISLitter_Y2.png", width=10, height=5, units="in")
 ```
 
 ## Year 3
@@ -486,7 +486,7 @@ ISy1persgraph <- ISdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=factor(
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#00CCCC","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISCtrl_Y3.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISCtrl_Y3.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden HH
@@ -510,7 +510,7 @@ humidy1persgraph <- humiddfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=f
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#00CCCC","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISHH_Y3.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISHH_Y3.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden Native Soil
@@ -534,7 +534,7 @@ soily1persgraph <- soildfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=fac
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#FFFF99","#00CCCC","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISNS_Y3.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISNS_Y3.png", width=10, height=5, units="in")
 ```
 
 ### Italy x Sweden Litter
@@ -558,5 +558,5 @@ strawy1persgraph <- strawdfpers_long %>% ggplot(aes(y=Proportion, x=DORM, fill=f
     theme_classic() + 
     theme(text=element_text(size=30), legend.position = "none",            axis.title.y=element_blank(), axis.text.y=element_blank(),           axis.title.x=element_blank(), axis.text.x=element_blank()) +     scale_x_discrete(expand = expansion(mult = c(0,0))) +      scale_y_continuous(expand = expansion(mult = c(0, .05)), limits = c(0, 1)) +
     scale_fill_manual(values=c("#00CCCC","#009E73"))
-ggsave("../Figures/PopPersistence/Fig5_PopPers_ISLitter_Y3.png", width=10, height=5, units="in")
+ggsave("../Figures/PopPersistence/Fig3_PopPers_ISLitter_Y3.png", width=10, height=5, units="in")
 ```

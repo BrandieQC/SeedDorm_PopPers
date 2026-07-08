@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Code for Figures 2, 4, S9
+# Code for Figures 4, 5, S9
 
 ## Load Libraries and other constants
 ```{r}
@@ -83,7 +83,7 @@ allyearstotalsdls_summary_ENVT %>%
   scale_y_continuous(expand = c(0, 0), limits = c(0, 350)) + 
   scale_x_discrete(limits=c("1", "2", "3")) +
   facet_grid(. ~Envt)
-ggsave("../Figures/Fig2A_sdlnum_ENVT.png", width=18, height=9, units="in")
+ggsave("../Figures/Fig4A_sdlnum_ENVT.png", width=18, height=9, units="in")
 ```
 
 ## Change in Seedling Number - Fig 4 and S9E
@@ -141,7 +141,7 @@ sdls_flucts_summary_ENVT %>%
   scale_fill_manual(values=BQDNDPalette) +
   theme(text=element_text(size=37),  panel.background = element_rect(fill = NA, color = "black")) +
   facet_grid(. ~Envt)
-ggsave("../Figures/Fig4_sdlnumflucts_ENVT.png", width=18, height=9, units="in")
+ggsave("../Figures/Fig5_sdlnumflucts_ENVT.png", width=18, height=9, units="in")
 ```
 
 ## Seedling Establishment - Fig 2b and S9B
@@ -201,7 +201,7 @@ seasonalsurv_IS_plot <- totseasonalsdlssurv_summary_IS %>%
   theme(text=element_text(size=30), panel.background = element_rect(fill = NA, color = "black"), axis.text.x = element_text(angle = 45,  hjust = 1)) +
   scale_y_continuous(expand = expansion(mult = c(0, .1)), limits = c(-0.005, 1)) +
   facet_grid(Envt ~.)
-ggsave("../Figures/Fig2B_seasonalSdlEst_Envt.png", width=16, height=12, units="in")
+ggsave("../Figures/Fig4B_seasonalSdlEst_Envt.png", width=16, height=12, units="in")
 ```
 
 ## Survival to Rosette from Seedling - Fig 2c and S9C
@@ -265,7 +265,7 @@ survtorose_1_IS_summary %>%
     scale_y_continuous(expand = expansion(mult = c(0, 0)), limits = c(-0.001, 1)) +
     scale_x_continuous(breaks = seq(1, 3, by = 1)) +
     facet_grid(. ~Envt)
-ggsave("../Figures/Fig2C_SurvtoRose_ENVT.png", width=18, height=9, units="in")
+ggsave("../Figures/Fig4C_SurvtoRose_ENVT.png", width=18, height=9, units="in")
 ```
 
 ## Survival to Reproduction from Rosette - Fig 2D and S9D
@@ -330,5 +330,5 @@ survtoFRMD_ENVT_summary %>%
   theme(text=element_text(size=37), panel.background = element_rect(fill = NA, color = "black")) +
   scale_y_continuous(expand = expansion(mult = c(0, .2)), limits = c(0, 1)) +
   facet_grid(. ~Envt)
-ggsave("../Figures/Fig2D_SurvtoFRMD_ENVT.png", width=18, height=9, units="in")
+ggsave("../Figures/Fig4D_SurvtoFRMD_ENVT.png", width=18, height=9, units="in")
 ```
